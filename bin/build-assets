@@ -1,0 +1,26 @@
+#!/bin/sh -x
+ASSETS=`realpath $(dirname $0)/../assets`
+BASENAME=the_underbar
+LOGO_SVG=$ASSETS/$BASENAME.svg
+
+# FAVICON
+
+# main icon in various sizes
+for SIZE in 16 32 48 64 ; do
+    convert \
+        -background none \
+        -density 1000 \
+        -resize ${SIZE}x${SIZE} \
+        $LOGO_SVG \
+        $ASSETS/favicon-${SIZE}.png
+done
+
+# merge all in a single icon
+convert \
+    $ASSETS/favicon-16.png \
+    $ASSETS/favicon-32.png \
+    $ASSETS/favicon-48.png \
+    $ASSETS/favicon-64.png \
+    $ASSETS/../favicon.ico
+
+rm $ASSETS/favicon-*.png
