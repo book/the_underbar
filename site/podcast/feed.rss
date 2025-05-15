@@ -13,10 +13,17 @@
    <pubDate>Fri, 17 Jan 2025 20:00:00 GMT</pubDate>
    <title>The Underbar, episode 0: The New Perl Logo</title>
    <description>The New Perl Logo</description>
-   <guid>68a3f9e3-18a0f4a6-aa232dd1-0e237bb5</guid>
    <enclosure url="https://underbar.cpan.io/podcast/the_underbar-000-a-new-logo-for-Perl.mp3" type="audio/mpeg" length="26565334"/>
    <link>https://underbar.cpan.io/podcast/the_underbar-000-a-new-logo-for-Perl.mp3</link>
    <image href="https://underbar.cpan.io/podcast/the_underbar-000-800px.png" />
+  </item>
+  <item>
+   <pubDate>Thu, 15 May 2025 14:00:00 GMT</pubDate>
+   <title>The Underbar, episode 1: Perl Leadership</title>
+   <description>Perl Leadership</description>
+   <enclosure url="https://underbar.cpan.io/podcast/the_underbar-001-perl-leadership.mp3" type="audio/mpeg" length="26992836"/>
+   <link>https://underbar.cpan.io/podcast/the_underbar-001-perl-leadership.mp3</link>
+   <image href="https://underbar.cpan.io/podcast/the_underbar-800px.png" />
   </item>
 </channel>
 </rss>
