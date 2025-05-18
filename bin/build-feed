@@ -39,6 +39,9 @@ $feed->channel(
         image =>
           { href => "$podcast->{base_url}/podcast/the_underbar-800px.png" }
     },
+    podcast => {
+        license => 'CC-BY-NC-ND-4.0',
+    },
 );
 $feed->image(
     title       => $podcast->{title},

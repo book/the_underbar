@@ -14,6 +14,7 @@
 <language>en</language>
 <atom:link href="https://underbar.cpan.io/podcast/feed.rss" rel="self" type="application/rss+xml"/>
 <itunes:image href="https://underbar.cpan.io/podcast/the_underbar-800px.png"/>
+<podcast:license>CC-BY-NC-ND-4.0</podcast:license>
 
 <item>
 <title>The Underbar, episode 0: The New Perl Logo</title>
