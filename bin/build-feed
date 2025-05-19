@@ -1,0 +1,98 @@
+#!/usr/bin/env perl
+use v5.32;
+use warnings;
+use YAML::PP;
+use XML::RSS;
+use DateTime::Format::Strptime;
+
+# read the YAML
+my ($podcast) = YAML::PP->new->load_string( join '', <DATA> );
+
+# create the feed
+my $feed = XML::RSS->new( version => '2.0', encoding => 'UTF-8' );
+$feed->add_module(
+    prefix => 'atom',
+    uri    => 'http://www.w3.org/2005/Atom',
+);
+$feed->add_module(
+    prefix => 'itunes',
+    uri    => 'http://www.itunes.com/dtds/podcast-1.0.dtd',
+);
+$feed->add_module(
+    prefix => 'podcast',
+    uri    => 'https://podcastindex.org/namespace/1.0',
+);
+$feed->channel(
+    title       => $podcast->{title},
+    language    => 'en',
+    publisher   => $podcast->{publisher},
+    link        => "$podcast->{base_url}/",
+    description => $podcast->{description},
+    atom        => {
+        link => {
+            href => "$podcast->{base_url}/podcast/feed.rss",
+            rel  => 'self',
+            type => 'application/rss+xml'
+        }
+    },
+    itunes => {
+        image =>
+          { href => "$podcast->{base_url}/podcast/the_underbar-800px.png" }
+    },
+);
+$feed->image(
+    title       => $podcast->{title},
+    link        => "$podcast->{base_url}/podcast/the_underbar-800px.png",
+    description => $podcast->{description},
+);
+
+# used to parse the dates
+my $strp = DateTime::Format::Strptime->new(
+    pattern   => "%Y-%m-%d %H:%M",
+    strict    => 1,
+    on_error  => 'croak',
+    time_zone => 'Europe/Paris'
+);
+
+# add the episodes
+my $i = 0;
+for my $episode ( $podcast->{episodes}->@* ) {
+    my $link = join( '/', $podcast->{base_url}, podcast => $episode->{file} );
+    $feed->add_item(
+        title     => "The Underbar, episode $i: $episode->{title}",
+        link      => $link,
+        permaLink => $link,
+        enclosure => {
+            url    => $link,
+            length => $episode->{length},
+            type   => 'audio/mpeg'
+        },
+        pubDate => $strp->parse_datetime( $episode->{pubDate} )
+          ->strftime("%a, %e %b %Y %T %z"),
+        description => $episode->{description},
+        itunes      => { image => { href => $episode->{image} } },
+    );
+}
+continue { $i++ }
+
+print $feed->as_string;
+
+__DATA__
+title: The Underbar
+base_url: https://underbar.cpan.io
+description: The Underbar
+publisher: Philippe Bruhat (BooK)
+image: https://underbar.cpan.io/podcast/the_underbar-800px.png
+episodes:
+- title: The New Perl Logo
+  description: In this initial episode, we talk about the new Perl logo.
+  pubDate: 2025-01-17 20:00
+  file: the_underbar-000-a-new-logo-for-Perl.mp3
+  length: 26565334
+  image: https://underbar.cpan.io/podcast/the_underbar-000-800px.png
+- title: Perl Leadership
+  description: First part of a discussion about the next version of Perl.
+  pubDate: 2025-05-15 14:00
+  file: the_underbar-001-perl-leadership.mp3
+  length: 26992836
+  image: https://underbar.cpan.io/podcast/the_underbar-800px.png
