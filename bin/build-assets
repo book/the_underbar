@@ -7,7 +7,7 @@ SIZES="80 120 800"
 
 # FAVICON
 
-if ! [ -e $ASSETS/../favicon.ico ] ; then
+if [ $LOGO_SVG -nt $ASSETS/../favicon.ico ] ; then
     TMPDIR=$( mktemp -d )
     #
     # main icon in various sizes
@@ -33,7 +33,7 @@ fi
 # define the base logo (takes 90% of the image, with 5% margin around it)
 for SIZE in $SIZES ; do
     FILE=$ASSETS/$UNDERBAR-${SIZE}px.png
-    if ! [ -e $FILE ] ; then
+    if [ $LOGO_SVG -nt $FILE ] ; then
         echo Generating $FILE
         LOGO_SIZE=$( convert xc: -format "%[fx:$SIZE*.90]" info: )
         LOGO_MARGIN=$( convert xc: -format "%[fx:$SIZE*.05]" info: )
@@ -52,7 +52,7 @@ for SVG in $ASSETS/episode-*.svg ; do
     BASENAME=$( basename $SVG .svg )
     for SIZE in $SIZES ; do
         FILE=$ASSETS/$BASENAME-${SIZE}px.png
-        if ! [ -e $FILE ] ; then
+        if [ $SVG -nt $FILE ] ; then
             echo Generating $FILE
             convert -size ${SIZE}x${SIZE} xc:white \
                 \( -density 1000 -background none -resize ${SIZE}x${SIZE} $SVG \) \
