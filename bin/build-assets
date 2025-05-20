@@ -1,0 +1,64 @@
+#!/bin/bash
+set -euo pipefail
+ASSETS=$( realpath $(dirname $0)/../assets )
+UNDERBAR=the_underbar
+LOGO_SVG=$ASSETS/$UNDERBAR.svg
+SIZES="80 120 800"
+
+# FAVICON
+
+if ! [ -e $ASSETS/../favicon.ico ] ; then
+    TMPDIR=$( mktemp -d )
+    #
+    # main icon in various sizes
+    for SIZE in 16 32 48 64 ; do
+        convert \
+            -background none \
+            -density 1000 \
+            -resize ${SIZE}x${SIZE} \
+            $LOGO_SVG \
+            $TMPDIR/favicon-${SIZE}.png
+    done
+
+    # merge all in a single icon
+    convert \
+        $TMPDIR/favicon-*.png \
+        $ASSETS/../favicon.ico
+
+    rm -rf $TMPDIR
+fi
+
+# MAIN LOGO
+
+# define the base logo (takes 90% of the image, with 5% margin around it)
+for SIZE in $SIZES ; do
+    FILE=$ASSETS/$UNDERBAR-${SIZE}px.png
+    if ! [ -e $FILE ] ; then
+        echo Generating $FILE
+        LOGO_SIZE=$( convert xc: -format "%[fx:$SIZE*.90]" info: )
+        LOGO_MARGIN=$( convert xc: -format "%[fx:$SIZE*.05]" info: )
+        convert -size ${SIZE}x${SIZE} xc:white \
+            \( -density 1000 -background none -resize ${LOGO_SIZE}x${LOGO_SIZE} $LOGO_SVG \) \
+            -geometry +$LOGO_MARGIN+$LOGO_MARGIN -composite \
+            -flatten \
+            $ASSETS/$UNDERBAR-${SIZE}px.png
+    fi
+done
+
+# EPISODE LOGOS
+
+# these already exist as SVG files, just convert them
+for SVG in $ASSETS/episode-*.svg ; do
+    BASENAME=$( basename $SVG .svg )
+    for SIZE in $SIZES ; do
+        FILE=$ASSETS/$BASENAME-${SIZE}px.png
+        if ! [ -e $FILE ] ; then
+            echo Generating $FILE
+            convert -size ${SIZE}x${SIZE} xc:white \
+                \( -density 1000 -background none -resize ${SIZE}x${SIZE} $SVG \) \
+                -geometry +0+0 -composite \
+                -flatten \
+                $FILE
+       fi
+    done
+done
