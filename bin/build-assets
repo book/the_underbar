@@ -1,15 +1,31 @@
 #!/bin/bash
 set -euo pipefail
-ASSETS=$( realpath $(dirname $0)/../assets )
+
+# parameter validation
+if [ $# -ne 1 ]; then
+    echo "Single target directory expected, got: $@"
+    exit 1
+else
+    DEST="$1"
+fi
+
+# setup
+BINDIR=$( dirname $0 )
+ASSETS=$( realpath $BINDIR/../assets )
 UNDERBAR=the_underbar
 LOGO_SVG=$ASSETS/$UNDERBAR.svg
+IMG=$DEST/img
 SIZES="80 120 800"
+
 
 # FAVICON
 
-if [ $LOGO_SVG -nt $ASSETS/../favicon.ico ] ; then
+if [ $LOGO_SVG -nt $DEST/favicon.ico ] ; then
+    FILE=$DEST/favicon.ico
+    echo "Generating $FILE"
+
     TMPDIR=$( mktemp -d )
-    #
+
     # main icon in various sizes
     for SIZE in 16 32 48 64 ; do
         convert \
@@ -23,16 +39,21 @@ if [ $LOGO_SVG -nt $ASSETS/../favicon.ico ] ; then
     # merge all in a single icon
     convert \
         $TMPDIR/favicon-*.png \
-        $ASSETS/../favicon.ico
+        $FILE
 
     rm -rf $TMPDIR
 fi
+
+# prepare the output directory for images
+for SIZE in $SIZES ; do
+    mkdir -p $IMG/${SIZE}
+done
 
 # MAIN LOGO
 
 # define the base logo (takes 90% of the image, with 5% margin around it)
 for SIZE in $SIZES ; do
-    FILE=$ASSETS/$UNDERBAR-${SIZE}px.png
+    FILE=$IMG/$SIZE/$UNDERBAR.png
     if [ $LOGO_SVG -nt $FILE ] ; then
         echo Generating $FILE
         LOGO_SIZE=$( convert xc: -format "%[fx:$SIZE*.90]" info: )
@@ -41,17 +62,17 @@ for SIZE in $SIZES ; do
             \( -density 1000 -background none -resize ${LOGO_SIZE}x${LOGO_SIZE} $LOGO_SVG \) \
             -geometry +$LOGO_MARGIN+$LOGO_MARGIN -composite \
             -flatten \
-            $ASSETS/$UNDERBAR-${SIZE}px.png
+            $FILE
     fi
 done
 
 # EPISODE LOGOS
 
 # these already exist as SVG files, just convert them
-for SVG in $ASSETS/episode-*.svg ; do
+for SVG in $( ls $ASSETS/episode-*.svg | grep 'episode-[0-9]' ) ; do
     BASENAME=$( basename $SVG .svg )
     for SIZE in $SIZES ; do
-        FILE=$ASSETS/$BASENAME-${SIZE}px.png
+        FILE=$IMG/${SIZE}/$BASENAME.png
         if [ $SVG -nt $FILE ] ; then
             echo Generating $FILE
             convert -size ${SIZE}x${SIZE} xc:white \
