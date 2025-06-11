@@ -1,0 +1,62 @@
+body {
+    font-family: 'Varela Round', sans-serif;
+    color: #333;
+    font-size: 12pt;
+    margin: 20px;
+    background: #fcfcfc;
+}
+
+h1 {
+    font-size: 32pt;
+    margin-top: 20px;
+    white-space: nowrap;
+}
+
+h2 {
+    font-size: 18pt;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: 14pt;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+pre {
+    font-size: small;
+}
+
+blockquote {
+    padding: 0 1em;
+    border-left: .25em solid lightgray;
+}
+
+div.document {
+    margin: auto;
+    max-width: 80ex;
+    text-align: justify;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+#perl-ad-target {
+    border-style: dashed;
+    border-width: 1px;
+    border-radius: 1em;
+    text-align: center;
+    font-size: smaller;
+    padding: 0;
+}
+
+#perl-ad-legend {
+    float: left;
+    font-size: xx-small;
+    background: #fcfcfc;
+    margin-top: -1.25ex;
+    margin-left: 2em;
+}
