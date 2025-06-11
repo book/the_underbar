@@ -1,0 +1,244 @@
+#!/usr/bin/env perl
+use v5.32;
+use warnings;
+
+use Getopt::Long;
+use Pod::Usage;
+
+use Path::Tiny;
+use YAML::PP;
+use Text::Markdown;
+use Text::Xslate qw( mark_raw );
+use XML::RSS;
+use DateTime::Format::Strptime;
+
+# process options
+my %option = ( source => '.' );
+GetOptions(
+    \%option,
+    'source=s',    # where the site sources are
+    'verbose',
+) or pod2usage(2);
+
+# content and output directories
+my $base_dir = path( $option{source} );
+die unless -e $base_dir;
+my $content_dir = $base_dir->child('content');
+my $output_dir  = path(shift);
+
+# prepare the YAML parser
+my $ypp = YAML::PP->new;
+
+# prepare the template engine
+my $md = Text::Markdown->new( trust_list_start_value => 1 );
+my $tx = Text::Xslate->new(
+    path      => $base_dir->child('tmpl'),
+    cache_dir => $base_dir->child('.cache'),
+    header    => ['header.tx'],
+    footer    => ['footer.tx'],
+    function  => {
+        markdown => sub { mark_raw( $md->markdown(shift) ) },
+    },
+);
+
+# collect and sort all files in content/
+my %todo;
+$content_dir->visit(
+    sub {
+	return unless -f;
+        my $type =
+            /\.ya?ml\z/        ? 'yaml'
+          : /\.(?:md|html?)\z/ ? 'tmpl'
+          :                      'copy';
+        push $todo{$type}->@*, $_;
+    },
+    { recurse => 1 },
+);
+
+# compute the date of the most recently updated dependency
+# (templates and YAML files)
+my $latest_dep = 0;
+$base_dir->child($_)->visit(
+    sub {
+        return unless -f;
+	return unless /\.(?:ya?ml|tx)\z/;
+        $latest_dep = $_->stat->mtime
+          if $latest_dep < $_->stat->mtime;
+    },
+    { recurse => 1 },
+) for qw( tmpl content );
+
+# used to parse the dates
+my %strp = (
+    published => DateTime::Format::Strptime->new(
+        pattern   => "%Y-%m-%d %H:%M",
+        strict    => 1,
+        on_error  => 'croak',
+        time_zone => 'Europe/Paris'
+    ),
+    recorded => DateTime::Format::Strptime->new(
+        pattern   => "%Y-%m-%d",
+        strict    => 1,
+        on_error  => 'croak',
+        time_zone => 'Europe/Paris'
+    ),
+);
+
+# process all files in 'yaml'
+my %vars;
+for my $file ( $todo{yaml}->@* ) {
+    my $yaml = $ypp->load_file($file);
+    if ( $file =~ m{(?:/|\A)cast/([^/]+)\.ya?ml\z} ) {
+        $yaml->{fullname}  //= $yaml->{name};
+        $yaml->{shortname} //= ( split / /, $yaml->{name} )[0];
+        $vars{cast}{$1} = $yaml;
+    }
+    elsif ( $file =~ m{(?:/|\A)episodes/([1-9][0-9]*|0)/meta\.ya?ml\z} ) {
+        $yaml->{number} = $1;
+        $yaml->{$_} = $strp{$_}->parse_datetime( $yaml->{$_} )
+          for qw( published recorded );
+	$yaml->{file_url} = join '/', '/episodes', $yaml->{number}, $yaml->{file};
+	next if $yaml->{published} > DateTime->now;
+        $vars{episodes}[$1] = $yaml
+    }
+    elsif ( $file =~ m{(?:/|\A)episodes/meta\.ya?ml\z} ) {
+        $vars{podcast} = $yaml;
+    }
+    else {
+        warn "Unexpected YAML file: $file\n";
+	next;
+    }
+    warn "Merged $file in the tempate variables\n" if $option{verbose};
+}
+
+# process all files in 'tmpl'
+for my $src ( $todo{tmpl}->@* ) {
+
+    # output dir for the file: we keep the same structure as in content/
+    my $parent = $output_dir->child( $src->relative($content_dir) )->parent;
+    $parent->mkpath unless -e $parent;
+
+    # we could skip generating if the source is older than the destination,
+    # but we'd also need to take the templates and YAML files into account
+    # (basically, we'll rebuild everything if any dependency changes)
+    my $dst = $parent->child( $src->basename =~ s/\.md\z/.html/r );
+    next
+      if -e $dst
+      && $src->stat->mtime < $dst->stat->mtime
+      && $latest_dep < $dst->stat->mtime;
+
+    # grab the file metadata (optional YAML front matter)
+    my ( $meta, $content ) = split /^---$/m, $src->slurp;
+    ( $meta, $content ) = ( '{}', $meta ) unless defined $content;
+    $meta = $ypp->load_string($meta);
+
+    # render and save the file
+    warn "Rendering $src -> $dst\n";
+    $dst->spew_utf8(
+        $tx->render(
+            $meta->{template} // 'basic.tx',
+            {
+                %vars,
+		%$meta,
+                content => mark_raw(
+                    $src =~ /\.md\z/    # markdown?
+                    ? $md->markdown($content)
+                    : $content
+                ),
+            }
+        )
+    );
+}
+
+# process all files in 'copy'
+for my $src ( $todo{copy}->@* ) {
+
+    # output dir for the file: we keep the same structure as in content/
+    my $parent = $output_dir->child( $src->relative($content_dir) )->parent;
+    $parent->mkpath unless -e $parent;
+
+    # only copy if the source is more recent than the destination
+    my $dst = $parent->child( $src->basename =~ s/\.md\z/.html/r );
+    next
+      if -e $dst && $src->stat->mtime < $dst->stat->mtime;
+
+    # copy the file
+    $src->copy( $parent->child( $src->basename ) );
+}
+
+# build the feed
+my $dst = $output_dir->child('feed.rss');
+if ( !-e $dst || $dst->stat->mtime < $latest_dep ) {
+    my $podcast = $vars{podcast};
+    my $feed    = XML::RSS->new( version => '2.0', encoding => 'UTF-8' );
+    $feed->add_module(
+        prefix => 'atom',
+        uri    => 'http://www.w3.org/2005/Atom',
+    );
+    $feed->add_module(
+        prefix => 'itunes',
+        uri    => 'http://www.itunes.com/dtds/podcast-1.0.dtd',
+    );
+    $feed->add_module(
+        prefix => 'podcast',
+        uri    => 'https://podcastindex.org/namespace/1.0',
+    );
+    $feed->channel(
+        title       => $podcast->{title},
+        language    => 'en',
+        publisher   => $podcast->{publisher},
+        link        => "$podcast->{base_url}/",
+        description => $podcast->{description},
+        atom        => {
+            link => {
+                href => "$podcast->{base_url}/feed.rss",
+                rel  => 'self',
+                type => 'application/rss+xml'
+            }
+        },
+        itunes => {
+            author => $podcast->{publisher},
+            image =>
+              { href => "$podcast->{base_url}/img/800/the_underbar.png" },
+            explicit => 'False',
+            category => { text => 'Technology' },
+        },
+        podcast => {
+            license => 'CC-BY-NC-SA-4.0',
+        },
+    );
+    $feed->image(
+        title       => $podcast->{title},
+        link        => "$podcast->{base_url}/img/800/the_underbar.png",
+        description => $podcast->{description},
+    );
+
+    # add the episodes
+    for my $episode ( $vars{episodes}->@* ) {
+        my $link = join( '/',
+            $podcast->{base_url},
+            episodes => $episode->{number} => $episode->{file} // '' );
+        $feed->add_item(
+            title => "The Underbar, episode $episode->{number}: $episode->{title}",
+            link  => join( '/', $podcast->{base_url}, episodes => $episode->{number} ),
+            permaLink => $link,    # guid with permaLink=true
+            enclosure => {
+                url    => $link,
+		#length => $episode->{length} // 0,
+                type   => 'audio/mpeg'
+            },
+            pubDate     => $episode->{published}->strftime("%a, %e %b %Y %T %z"),
+            description => "<![CDATA[$episode->{description}]]>",
+            itunes      => {
+                image => {
+                    href => join( '/',
+                        $podcast->{base_url},
+                        img => 800 => "episode-$episode->{number}.png" )
+                }
+            },
+        );
+    }
+
+    $dst->spew( $feed->as_string );
+}
+

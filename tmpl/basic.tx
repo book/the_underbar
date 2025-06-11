@@ -1,0 +1,4 @@
+<div class="document">
+: include logo_title
+<: $content :>
+</div>
