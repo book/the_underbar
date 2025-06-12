@@ -12,9 +12,9 @@
   </div>
 </h2>
 
-(Latest episode)
+(Latest episodes)
 
-:  for [ $episodes[-1] ] -> $episode {
+:  for [ $episodes[-1], $episodes[-2] ] -> $episode {
 :     include episode { episode => $episode, player => true }
 :   }
 
