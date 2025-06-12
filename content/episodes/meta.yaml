@@ -1,0 +1,13 @@
+title: The Underbar
+base_url: https://underbar.cpan.io
+description: The Underbar
+publisher: Philippe Bruhat (BooK)
+image: /img/800/the_underbar-white.png
+thanks:
+  TPRF-Zoom: >
+    Thanks to [The Perl and Raku Foundation](https://www.perlfoundation.org/)
+    for letting us use their Zoom license to record the episode.
+  SJN-PTS: >
+    Thanks to [Salve J. Nilsen](https://metacpan.org/author/SJN) for
+    lending his microphones and camera, and recording this episode
+    during the Perl Toolchain Summit 2025 in Leipzig.
