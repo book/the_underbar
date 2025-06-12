@@ -54,17 +54,19 @@ done
 
 # define the base logo (takes 90% of the image, with 5% margin around it)
 for SIZE in $SIZES ; do
-    FILE=$IMG/$SIZE/$UNDERBAR.png
-    if [ $LOGO_SVG -nt $FILE ] ; then
-        echo Generating $FILE
-        LOGO_SIZE=$( convert xc: -format "%[fx:$SIZE*.90]" info: )
-        LOGO_MARGIN=$( convert xc: -format "%[fx:$SIZE*.05]" info: )
-        convert -size ${SIZE}x${SIZE} xc:white \
-            \( -density 1000 -background none -resize ${LOGO_SIZE}x${LOGO_SIZE} $LOGO_SVG \) \
-            -geometry +$LOGO_MARGIN+$LOGO_MARGIN \
-            -composite -flatten \
-            $FILE
-    fi
+    for COLOR in none white ; do
+        FILE=$IMG/$SIZE/$UNDERBAR-$COLOR.png
+        if [ $LOGO_SVG -nt $FILE ] ; then
+            echo Generating $FILE
+            LOGO_SIZE=$( convert xc: -format "%[fx:$SIZE*.90]" info: )
+            LOGO_MARGIN=$( convert xc: -format "%[fx:$SIZE*.05]" info: )
+            convert -size ${SIZE}x${SIZE} xc:$COLOR \
+                \( -background none -density 1000 -resize ${LOGO_SIZE}x${LOGO_SIZE} $LOGO_SVG \) \
+                -geometry +$LOGO_MARGIN+$LOGO_MARGIN \
+                -composite -flatten \
+                $FILE
+        fi
+    done
 done
 
 # EPISODE LOGOS
@@ -73,15 +75,17 @@ done
 for SVG in $( ls $ASSETS/episode-*.svg | grep 'episode-[0-9]' ) ; do
     BASENAME=$( basename $SVG .svg )
     for SIZE in $SIZES ; do
-        FILE=$IMG/${SIZE}/$BASENAME.png
-        if [ $SVG -nt $FILE ] ; then
-            echo Generating $FILE
-            convert \
-                -background none \
-                -density 1000 -resize ${SIZE}x${SIZE} \
-                $SVG \
-                -geometry +0+0 \
-                $FILE
-       fi
+        for COLOR in none white ; do
+            FILE=$IMG/${SIZE}/$BASENAME-$COLOR.png
+            if [ $SVG -nt $FILE ] ; then
+                echo Generating $FILE
+                convert \
+                    -background $COLOR \
+                    -density 1000 -resize ${SIZE}x${SIZE} \
+                    $SVG \
+                    -geometry +0+0 \
+                    $FILE
+            fi
+        done
     done
 done

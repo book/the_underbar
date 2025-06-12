@@ -199,7 +199,7 @@ if ( !-e $dst || $dst->stat->mtime < $latest_dep ) {
         itunes => {
             author => $podcast->{publisher},
             image =>
-              { href => "$podcast->{base_url}/img/800/the_underbar.png" },
+              { href => "$podcast->{base_url}/img/800/the_underbar-white.png" },
             explicit => 'False',
             category => { text => 'Technology' },
         },
@@ -209,7 +209,7 @@ if ( !-e $dst || $dst->stat->mtime < $latest_dep ) {
     );
     $feed->image(
         title       => $podcast->{title},
-        link        => "$podcast->{base_url}/img/800/the_underbar.png",
+        link        => "$podcast->{base_url}/img/800/the_underbar-white.png",
         description => $podcast->{description},
     );
 
@@ -233,7 +233,7 @@ if ( !-e $dst || $dst->stat->mtime < $latest_dep ) {
                 image => {
                     href => join( '/',
                         $podcast->{base_url},
-                        img => 800 => "episode-$episode->{number}.png" )
+                        img => 800 => "episode-$episode->{number}-white.png" )
                 }
             },
         );
