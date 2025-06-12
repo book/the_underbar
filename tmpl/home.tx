@@ -4,6 +4,8 @@
 
 <: $content :>
 
+: include perl_ad
+
 <h2>The Podcast
   <div style="float: right; font-weight: normal; font-size: small; margin-top: 1ex;">
     <a href="/feed.rss">RSS Feed</a>
