@@ -4,4 +4,16 @@
 
 <: $content :>
 
+<h2>The Podcast
+  <div style="float: right; font-weight: normal; font-size: small; margin-top: 1ex;">
+    <a href="/feed.rss">RSS Feed</a>
+  </div>
+</h2>
+
+(Latest episode)
+
+:  for [ $episodes[-1] ] -> $episode {
+:     include episode { episode => $episode, player => true }
+:   }
+
 </div>

@@ -1,0 +1,36 @@
+<h3>
+  <img src="/img/80/episode-<: $episode.number :>-none.png" alt="The Underbar, episode <: $episode.number :> logo" style="float:right;margin-left:1em;" />
+  Episode <: $episode.number :> - <: $episode.title :>
+</h3>
+
+: block episode | markdown -> {
+
+<:- $episode.description -:>
+
+<small>
+
+Cast (in order of appearance): <:
+  for $episode.cast -> $who {
+    "["; $cast[$who].name; "](https://metacpan.org/author/"; $cast[$who].profile.pause; ")";
+    if ( $~who.is_last ) { ". " } else { ", " }
+  }
+:>
+
+Recorded on <: $episode.recorded.strftime( "%A, %B %e, %Y" ) :>.
+Edited by <:
+  for $episode.editors -> $who {
+    $cast[$who].name;
+    if ( $~who.is_last ) { ". " }
+    else if ( $~who.count == $~who.max_index ) { " and " }
+    else { ", " }
+  }
+:>
+<: for $episode.thanks -> $who { $podcast.thanks[$who]; " " } :>
+
+</small>
+
+: }
+
+: if $player {
+<audio controls><source src="<: $episode.file_url :>" type="audio/mpeg"></audio>
+: }
