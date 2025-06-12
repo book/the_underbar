@@ -1,0 +1,11 @@
+#!/bin/bash
+set -euo pipefail
+
+BINDIR=$( dirname $0 )
+
+# generate the assets
+$BINDIR/build-assets "$@"
+
+# generate the static pages
+# index, about, etc
+$BINDIR/build-pages "$@"
