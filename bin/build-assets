@@ -72,7 +72,10 @@ done
 # EPISODE LOGOS
 
 # these already exist as SVG files, just convert them
-for SVG in $( ls $ASSETS/episode-*.svg | grep 'episode-[0-9]' ) ; do
+for SVG in $(
+        ls $ASSETS/episode-*.svg | grep 'episode-[0-9]' ;
+        ls $ASSETS/the_underbar-*.svg ;
+    ) ; do
     BASENAME=$( basename $SVG .svg )
     for SIZE in $SIZES ; do
         for COLOR in none white ; do

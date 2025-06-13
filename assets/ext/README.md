@@ -7,6 +7,7 @@ The emojis come from [OpenMoji](https://openmoji.org/) – the open-source emoji
 
 * `1F37A.svg` - [beer mug](https://openmoji.org/library/emoji-1F37A/)
 * `1F383.svg` - [jack-o-lantern](https://openmoji.org/library/emoji-1F383/)
+* `1F4FB.svg` - [radio](https://openmoji.org/library/emoji-1F4FB/)
 
 The others come from various sources:
 
