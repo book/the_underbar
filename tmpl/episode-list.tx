@@ -1,0 +1,13 @@
+<div class="document">
+
+: include logo_title
+
+<: $content :>
+
+: for $episodes.reverse() -> $episode {
+:   include episode { episode => $episode };
+:   if $~episode.index == 1 { include perl_ad }
+: }
+
+</div>
+
