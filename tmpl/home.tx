@@ -1,7 +1,3 @@
-<div class="document">
-
-:include logo_title
-
 <: $content :>
 
 : include perl_ad
@@ -17,5 +13,3 @@
 :  for [ $episodes[-1], $episodes[-2] ] -> $episode {
 :     include episode { episode => $episode, player => true }
 :   }
-
-</div>
