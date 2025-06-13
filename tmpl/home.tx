@@ -6,15 +6,15 @@
 
 : include perl_ad
 
-<h2>The Podcast
+<h2><a href="/episode/">The Podcast</a>
   <div style="float: right; font-weight: normal; font-size: small; margin-top: 1ex;">
     <a href="podcast/feed.rss">RSS Feed</a>
   </div>
 </h2>
 
-(Latest episode)
+(Latest episodes)
 
-:  for [ $episodes[-1] ] -> $episode {
+:  for [ $episodes[-1], $episodes[-2] ] -> $episode {
 :     include episode { episode => $episode, player => true }
 :   }
 
