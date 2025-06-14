@@ -44,6 +44,11 @@ a:hover {
     color: #333;
 }
 
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 #perl-ad-target {
     border-style: dashed;
     border-width: 1px;

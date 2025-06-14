@@ -1,3 +1,11 @@
-    </div>
+    <hr style="border: 0; border-top: 1px solid" />
+    <footer>
+      <small>
+      <div class="flex-container">
+        <div><a href="/">Home</a></div>
+        <div><a href="/episodes/">Episodes</a></div>
+      </div>
+      </small>
+    </footer>
   </body>
 </html>
