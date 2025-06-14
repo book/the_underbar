@@ -1,5 +1,5 @@
 title: The Underbar Cellar
-template: episode-list.tx
+template: episode_list.tx
 logo: the_underbar-cellar-none.png
 og_logo: the_underbar-cellar-white.png
 ---
