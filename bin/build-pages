@@ -170,6 +170,42 @@ for my $src ( $todo{copy}->@* ) {
     $src->copy( $dst );
 }
 
+# build the individual episode pages
+for my $number ( 0 .. $vars{episodes}->$#* ) {
+    my $episode = $vars{episodes}[$number];
+    my $dst     = $output_dir->child( episodes => $episode->{number}, 'index.html' );
+    warn "Rendering $dst\n";
+    my $subtitle =
+      join "  \n", "_The Underbar_, episode $number",
+      map ( "\u$_: " . $episode->{$_}->strftime("%A, %B %e, %Y"),
+        qw( recorded published ) ),
+      $number == 0 ? ()
+      : sprintf(
+        "Previous: [%s](/episodes/%d/)",
+        $vars{episodes}[ $number - 1 ]{title},
+        $number - 1
+      ),
+      $number == $vars{episodes}->$#* ? ()
+      : sprintf(
+        "Next: [%s](/episodes/%d/)",
+        $vars{episodes}[ $number + 1 ]{title},
+        $number + 1
+      ),
+      ;
+    $dst->spew_utf8(
+        $tx->render(
+            'episode_full.tx',
+            {
+                %vars,
+                episode  => $episode,
+                title    => $episode->{title},
+                subtitle => $subtitle,
+                logo     => "episode-$episode->{number}-none.png",
+            }
+        )
+    );
+}
+
 # build the feed
 my $dst = $output_dir->child('feed.rss');
 if ( !-e $dst || $dst->stat->mtime < $latest_dep ) {
