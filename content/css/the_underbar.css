@@ -8,29 +8,29 @@ body {
 
 h1 {
     font-size: 32pt;
-    margin-top: 20px;
+    margin: 0;
+    margin-bottom: .5ex;
     white-space: nowrap;
 }
 
 h2 {
     font-size: 18pt;
+    margin: 0;
     margin-top: 1em;
-    margin-bottom: 0;
+    margin-bottom: 1ex;
 }
 
 h3 {
     font-size: 14pt;
+    margin: 0;
     margin-top: 1em;
-    margin-bottom: 0;
-}
-
-pre {
-    font-size: small;
+    margin-bottom: 1ex;
 }
 
 blockquote {
-    padding: 0 1em;
-    border-left: .25em solid lightgray;
+    margin: 0;
+    padding: 0 1ex;
+    border-left: .25ex solid lightgray;
 }
 
 div.document {
