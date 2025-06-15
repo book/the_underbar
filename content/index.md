@@ -1,9 +1,7 @@
 title: The Underbar
+subtitle: A Perl-adjacent maybe-podcast, hosted by Philippe Bruhat (BooK).
 template: home.tx
 ---
-
-A Perl-adjacent maybe-podcast, hosted by Philippe Bruhat (BooK).
-
 ## The concept
 
 If there's one thing I like more than writing code, it's *talking*

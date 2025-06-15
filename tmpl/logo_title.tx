@@ -1,4 +1,10 @@
+<div style="display: flex; flex-wrap: nowrap;">
+  <a href="/"><img src="/img/120/<: $logo // "the_underbar-none.png" :>" alt="The Underbar logo" style="float: left; margin-right:2em;" /></a>
+<div>
 <h1>
-  <a href="/"><img src="/img/120/<: $logo // "the_underbar-none.png" :>" alt="The Underbar logo" style="float:left;margin-right:1ex;" /></a>
   <: $title :>
 </h1>
+
+<: ( $subtitle // '' ) | markdown :>
+</div>
+</div>
