@@ -93,20 +93,23 @@ for my $file ( $todo{yaml}->@* ) {
         $yaml->{shortname} //= ( split / /, $yaml->{name} )[0];
         $vars{cast}{$1} = $yaml;
     }
-    elsif ( $file =~ m{(?:/|\A)episodes/([1-9][0-9]*|0)/meta\.ya?ml\z} ) {
+    elsif ( $file =~ m{(?:/|\A)episodes/([0-9]+)/meta\.ya?ml\z} ) {
         $yaml->{number} = $1;
         $yaml->{$_} = $strp{$_}->parse_datetime( $yaml->{$_} )
           for qw( published recorded );
-	$yaml->{file_url} = join '/', '/episodes', $yaml->{number}, $yaml->{file};
-	next if $yaml->{published} > DateTime->now;
-        $vars{episodes}[$1] = $yaml
+        $yaml->{file_url} = join '/', '/episodes', $yaml->{number}, $yaml->{file};
+        if ( -e ( my $transcript = $file->parent->child('transcript.md') ) ) {
+            $yaml->{transcript} = $md->markdown( $transcript->slurp_utf8 );
+        }
+        next if $yaml->{published} > DateTime->now;
+        $vars{episodes}[$1] = $yaml;
     }
     elsif ( $file =~ m{(?:/|\A)episodes/meta\.ya?ml\z} ) {
         $vars{podcast} = $yaml;
     }
     else {
         warn "Unexpected YAML file: $file\n";
-	next;
+        next;
     }
     warn "Merged $file in the tempate variables\n" if $option{verbose};
 }
@@ -163,7 +166,8 @@ for my $src ( $todo{copy}->@* ) {
       if -e $dst && $src->stat->mtime < $dst->stat->mtime;
 
     # copy the file
-    $src->copy( $parent->child( $src->basename ) );
+    warn "Copying $src -> $dst\n";
+    $src->copy( $dst );
 }
 
 # build the feed
