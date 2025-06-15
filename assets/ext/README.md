@@ -9,6 +9,7 @@ The emojis come from [OpenMoji](https://openmoji.org/) – the open-source emoji
 * `1F383.svg` - [jack-o-lantern](https://openmoji.org/library/emoji-1F383/)
 * `1F4FB.svg` - [radio](https://openmoji.org/library/emoji-1F4FB/)
 * `1F399.svg` - [studio microphone](https://openmoji.org/library/emoji-1F399/)
+* `1F9FE.svg` - [receipt](https://openmoji.org/library/emoji-1F9FE/)
 
 The others come from various sources:
 
