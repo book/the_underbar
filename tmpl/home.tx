@@ -11,5 +11,5 @@
 (Latest episodes)
 
 :  for [ $episodes[-1], $episodes[-2] ] -> $episode {
-:     include episode_summary { episode => $episode, player => true }
+:     include episode::summary { episode => $episode, player => true }
 :   }

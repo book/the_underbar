@@ -1,6 +1,6 @@
 <: $content :>
 
 : for $episodes.reverse() -> $episode {
-:   include episode_summary { episode => $episode };
+:   include episode::summary { episode => $episode };
 :   if $~episode.index == 1 { include perl_ad }
 : }

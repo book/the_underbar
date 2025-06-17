@@ -194,7 +194,7 @@ for my $number ( 0 .. $vars{episodes}->$#* ) {
       ;
     $dst->spew_utf8(
         $tx->render(
-            'episode_full.tx',
+            'episode/full.tx',
             {
                 %vars,
                 episode  => $episode,
