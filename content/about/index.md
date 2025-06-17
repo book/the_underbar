@@ -124,7 +124,7 @@ about, but I definitely like what I hear.
 
 Bryan Cantrill of [0xide](https://oxide.computer) has strong opinions about
 sharing engineering knowledge, which [he presented](https://www.youtube.com/watch?v=W8qiDhlFVCE)
-at [GOTO Chicao 2023](https://gotopia.tech/conferences/66/goto-chicago-2023).
+at [GOTO Chicago 2023](https://gotopia.tech/conferences/66/goto-chicago-2023).
 
 <center>
   <img src="social-audio-slide.png" style="width: 100%" /><br/>
