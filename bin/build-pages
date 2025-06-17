@@ -17,6 +17,7 @@ my %option = ( source => '.' );
 GetOptions(
     \%option,
     'source=s',    # where the site sources are
+    'force',       # force regeneration
     'verbose',
 ) or pod2usage(2);
 
@@ -129,7 +130,8 @@ for my $src ( $todo{tmpl}->@* ) {
     next
       if -e $dst
       && $src->stat->mtime < $dst->stat->mtime
-      && $latest_dep < $dst->stat->mtime;
+      && $latest_dep < $dst->stat->mtime
+      && !$option{force};
 
     # grab the file metadata (optional YAML front matter)
     my ( $meta, $content ) = split /^---$/m, $src->slurp;
@@ -164,7 +166,9 @@ for my $src ( $todo{copy}->@* ) {
     # only copy if the source is more recent than the destination
     my $dst = $parent->child( $src->basename =~ s/\.md\z/.html/r );
     next
-      if -e $dst && $src->stat->mtime < $dst->stat->mtime;
+      if -e $dst && $src->stat->mtime < $dst->stat->mtime
+      && $latest_dep < $dst->stat->mtime
+      && !$option{force};
 
     # copy the file
     warn "Copying $src -> $dst\n";
@@ -177,7 +181,7 @@ for my $number ( 0 .. $vars{episodes}->$#* ) {
     my $dst     = $output_dir->child( episodes => $episode->{number}, 'index.html' );
     next
       if -e $dst && $episode->{yaml}->stat->mtime < $dst->stat->mtime
-      && $latest_dep < $dst->stat->mtime;
+      && !$option{force};
     warn "Rendering $dst\n";
     my $subtitle =
       join "  \n", "_The Underbar_, episode $number",
@@ -212,7 +216,8 @@ for my $number ( 0 .. $vars{episodes}->$#* ) {
 
 # build the feed
 my $dst = $output_dir->child('feed.rss');
-if ( !-e $dst || $dst->stat->mtime < $latest_dep ) {
+if ( !-e $dst || $dst->stat->mtime < $latest_dep || $option{force} ) {
+    warn "Generatring feed $dst\n";
     my $podcast = $vars{podcast};
     my $feed    = XML::RSS->new( version => '2.0', encoding => 'UTF-8' );
     $feed->add_module(
