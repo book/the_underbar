@@ -247,8 +247,10 @@ if ( !-e $dst || $dst->stat->mtime < $latest_dep || $option{force} ) {
         },
         itunes => {
             author => $podcast->{publisher},
-            image =>
-              { href => "$podcast->{base_url}/img/1400/the_underbar-white.png" },
+            owner  => $podcast->{email},       # will be post-processed
+            image  => {
+                href => "$podcast->{base_url}/img/1400/the_underbar-white.png"
+            },
             explicit => 'False',
             category => { text => 'Technology' },
         },
@@ -288,6 +290,10 @@ if ( !-e $dst || $dst->stat->mtime < $latest_dep || $option{force} ) {
         );
     }
 
-    $dst->spew( $feed->as_string );
+    $dst->spew(
+        # fix itunes:email, as XML::RSS doesn't seem to support nesting
+        $feed->as_string =~
+          s{(?<=<itunes:owner>)([^<]*)}{<itunes:email>$1</itunes:email>}r
+    );
 }
 
