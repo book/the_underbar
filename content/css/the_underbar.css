@@ -49,6 +49,10 @@ hr {
     border-top: 1px solid;
 }
 
+pre, code {
+    background: #ddd;
+}
+
 audio {
     filter: sepia(20%) saturate(70%) grayscale(1) contrast(80%) invert(12%);
     width: 100%;
