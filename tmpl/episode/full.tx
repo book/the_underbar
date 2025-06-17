@@ -23,5 +23,5 @@ Edited by <:
 <h2>Abstract</h2>
 <p><: $episode.description :></p>
 
-<audio controls><source src="<: $episode.file_url :>" type="audio/mpeg"></audio>
+: include "episode/audio.tx" { file => $episode.file_url }
 

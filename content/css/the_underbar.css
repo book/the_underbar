@@ -49,6 +49,12 @@ hr {
     border-top: 1px solid;
 }
 
+audio {
+    filter: sepia(20%) saturate(70%) grayscale(1) contrast(80%) invert(12%);
+    width: 100%;
+    height: 2em;
+}
+
 .flex-container {
   display: flex;
   justify-content: space-between;

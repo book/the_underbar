@@ -33,5 +33,5 @@ Edited by <:
 : }
 
 : if $player {
-<audio controls><source src="<: $episode.file_url :>" type="audio/mpeg"></audio>
+:     include "episode/audio.tx" { file => $episode.file_url }
 : }
