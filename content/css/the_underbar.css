@@ -29,7 +29,7 @@ h3 {
 
 blockquote {
     margin: 0;
-    padding: 0 1ex;
+    padding: 0 1em 0 1em;
     border-left: .25ex solid lightgray;
 }
 
