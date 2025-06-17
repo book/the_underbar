@@ -174,9 +174,10 @@ My long-term goal for this podcast is that it can serve as a "primary
 source" (as Sean Haas from [Advent of Computing](https://adventofcomputing.com/)
 calls them) for historians of computing (and the bit I know the best: Perl).
 
+<img src="https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png" style="float: right; margin: 1ex;" />
+
 ## The License
 
-<img src="https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png" style="float: left; margin: 1ex;" />
 This work is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
