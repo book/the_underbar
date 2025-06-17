@@ -53,7 +53,7 @@ logo (in French):
 
 >     <BooK> Logo pour the underbar: un $_
 >     <BooK> Le _ représente le zinc, et le $ la tireuse à bière.
->            On pose une choppe entre les deux, et boum.
+>            On pose une chope entre les deux, et boum.
 >     <BooK> Trois caractères Unicode.
 >     <tib> OK bonne idée pour le logo
 
