@@ -248,7 +248,7 @@ if ( !-e $dst || $dst->stat->mtime < $latest_dep || $option{force} ) {
         itunes => {
             author => $podcast->{publisher},
             image =>
-              { href => "$podcast->{base_url}/img/800/the_underbar-white.png" },
+              { href => "$podcast->{base_url}/img/1400/the_underbar-white.png" },
             explicit => 'False',
             category => { text => 'Technology' },
         },

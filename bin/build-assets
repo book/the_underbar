@@ -16,7 +16,7 @@ ASSETS=$( realpath $BINDIR/../assets )
 UNDERBAR=the_underbar
 LOGO_SVG=$ASSETS/$UNDERBAR.svg
 IMG=$DEST/img
-SIZES="80 120 800"
+SIZES="80 120 800 1400"
 
 
 # FAVICON
