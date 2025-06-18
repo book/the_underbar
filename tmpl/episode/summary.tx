@@ -1,5 +1,5 @@
 <h3>
-  <img src="/img/80/episode-<: $episode.number :>-none.png" alt="The Underbar, episode <: $episode.number :> logo" style="float:right;margin-left:1em;" />
+  <a href="/episodes/<: $episode.number :>"><img src="/img/80/episode-<: $episode.number :>-none.png" alt="The Underbar, episode <: $episode.number :> logo" style="float:right;margin-left:1em;" /></a>
   Episode <: $episode.number :> -
   <a href="/episodes/<: $episode.number :>"><: $episode.title :></a>
 </h3>
