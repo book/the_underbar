@@ -39,9 +39,18 @@ div.document {
     text-align: justify;
 }
 
-a:hover {
+a {
     text-decoration: underline;
+    text-underline-offset: 0.33ex;
+}
+a:link, a:visited {
     color: #333;
+}
+a:visited {
+    text-decoration-color: #aaa;
+}
+a:hover, a:active {
+    color: #c33;
 }
 
 hr {
