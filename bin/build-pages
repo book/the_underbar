@@ -260,7 +260,7 @@ if ( !-e $dst || $dst->stat->mtime < $latest_dep || $option{force} ) {
     );
     $feed->image(
         title       => $podcast->{title},
-        link        => "$podcast->{base_url}/img/800/the_underbar-white.png",
+        link        => "$podcast->{base_url}/img/1400/the_underbar-white.png",
         description => $podcast->{description},
     );
 
@@ -284,7 +284,7 @@ if ( !-e $dst || $dst->stat->mtime < $latest_dep || $option{force} ) {
                 image => {
                     href => join( '/',
                         $podcast->{base_url},
-                        img => 800 => "episode-$episode->{number}-white.png" )
+                        img => 1400 => "episode-$episode->{number}-white.png" )
                 }
             },
         );

@@ -3,7 +3,6 @@ base_url: https://underbar.cpan.io
 description: The Underbar
 publisher: Philippe Bruhat (BooK)
 email: underbar@cpan.io
-image: /img/800/the_underbar-white.png
 thanks:
   TPRF-Zoom: >
     Thanks to [The Perl and Raku Foundation](https://www.perlfoundation.org/)
