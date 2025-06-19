@@ -20,7 +20,7 @@ Cast (in order of appearance): <:
 Recorded on <: $episode.recorded.strftime( "%A, %B %e, %Y" ) :>.
 Edited by <:
   for $episode.editors -> $who {
-    $cast[$who].name;
+    "["; $cast[$who].name; "](https://metacpan.org/author/"; $cast[$who].profile.pause; ")";
     if ( $~who.is_last ) { ". " }
     else if ( $~who.count == $~who.max_index ) { " and " }
     else { ", " }
