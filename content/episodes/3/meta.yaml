@@ -1,0 +1,18 @@
+title: MetaCPAN
+description: >
+  During the Perl Toolchain Summit 2025 in Leipzig, we interviewed
+  the MetaCPAN team.
+file: ...
+cast:
+- BOOK
+- OALDERS
+- MICKEY
+- SSORICHE
+- HAARG
+recorded: 2025-05-04
+published: 2025-07-11 14:00
+editors:
+- CONTRA
+- BOOK
+thanks:
+- SJN-PTS
