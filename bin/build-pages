@@ -50,6 +50,7 @@ $content_dir->visit(
         my $type =
             /\.ya?ml\z/        ? 'yaml'
           : /\.(?:md|html?)\z/ ? 'tmpl'
+	  : /\.(?:swp)\z/      ? 'skip'
           :                      'copy';
         push $todo{$type}->@*, $_;
     },
