@@ -1,0 +1,1267 @@
+WEBVTT
+
+00:00:00.060 --> 00:00:02.020
+<v SPEAKER_1>This is the first episode, great.
+
+00:00:02.020 --> 00:00:04.780
+<v SPEAKER_1>It's happening, doing this more than once.
+
+00:00:04.780 --> 00:00:12.360
+<v SPEAKER_1>So yeah, today we have quite the lineup, because almost everybody in the room has been a project manager for Perl.
+
+00:00:12.360 --> 00:00:26.900
+<v SPEAKER_1>We have Jesse, who was the pumpkin from 2009 to 2011, and in charge of releases of 5.12 and 5.14, and possibly the great achievement of ensuring we have yearly releases of Perl.
+
+00:00:26.900 --> 00:00:28.080
+<v SPEAKER_1>Then we have Ricardo.
+
+00:00:28.600 --> 00:00:30.560
+<v SPEAKER_1>Okay, should I put first name and last name?
+
+00:00:30.560 --> 00:00:42.800
+<v SPEAKER_1>So Jesse Vincent, Ricardo Signes, who was the pumpkin from 2012 to 2016, and released Perl 5.16 up to Perl 5.24.
+
+00:00:42.800 --> 00:00:53.640
+<v SPEAKER_1>And after that was a member of the Perl Steering Council from 2020 to 2023, and therefore released 5.34, 5.36, and 5.38.
+
+00:00:54.320 --> 00:01:03.780
+<v SPEAKER_1>We have Neil Bowers, who also was on the Perl Steering Council from 2020 to 2022, and so also 5.34 and 5.36.
+
+00:01:03.780 --> 00:01:06.920
+<v SPEAKER_1>Since I'm going in a chronological order, I'm next.
+
+00:01:07.120 --> 00:01:15.740
+<v SPEAKER_1>I've been a PSC member from 2022 up to 2025, and there's another election in later this year.
+
+00:01:15.740 --> 00:01:24.060
+<v SPEAKER_1>And so I've been helping shipping 5.38, 5.40, and the next version of Perl.
+
+00:01:24.060 --> 00:01:34.980
+<v SPEAKER_1>Then we have Aristotle Pagaltis, who is on the PSC since 2024, so it's your first year, and also very interested in what the next version of Perl is going to be.
+
+00:01:34.980 --> 00:01:44.120
+<v SPEAKER_1>And we have Olaf, who is the MedaSipan project leader, and I guess that means maybe we know what's in your future.
+
+00:01:44.120 --> 00:01:44.880
+<v SPEAKER_2>I don't think so.
+
+00:01:46.640 --> 00:01:48.140
+<v SPEAKER_3>I don't even know why I'm here.
+
+00:01:48.140 --> 00:01:50.360
+<v SPEAKER_1>You were there the first time, and you stuck around, I guess?
+
+00:01:50.400 --> 00:01:51.620
+<v SPEAKER_3>Yeah, pretty much, yeah.
+
+00:01:51.680 --> 00:01:52.980
+<v SPEAKER_3>It's the legacy.
+
+00:01:52.980 --> 00:01:54.260
+<v SPEAKER_2>Yeah, Perl, that's how it works.
+
+00:01:54.260 --> 00:01:56.880
+<v SPEAKER_1>Yeah, yeah.
+
+00:01:56.880 --> 00:02:03.900
+<v SPEAKER_1>So I was thinking, maybe just reading Perl HIST and get a feel of Perl versions.
+
+00:02:03.900 --> 00:02:20.480
+<v SPEAKER_1>Larry said Perl 0 would introduce to his office mates Perl 1, which was December 1987, introduced Perl to the world, and removed the backslashes for parentheses in regular expressions.
+
+00:02:20.480 --> 00:02:27.560
+<v SPEAKER_1>Perl 2 introduced Henry Spencer's regular expressions, so that's better regular expressions.
+
+00:02:27.560 --> 00:02:31.940
+<v SPEAKER_1>Perl 3 introduced the ability to handle binary data.
+
+00:02:31.940 --> 00:02:37.940
+<v SPEAKER_1>And as we said last time, Perl 4 introduced the camel book, because there is no functional changes.
+
+00:02:37.940 --> 00:02:44.880
+<v SPEAKER_1>It was just a marketing trick to let people think that the brand new Perl had a book attached to it.
+
+00:02:44.880 --> 00:02:51.580
+<v SPEAKER_1>And in Larry's words, Perl 5 introduced everything else, including the ability to introduce everything else.
+
+00:02:51.580 --> 00:02:56.800
+<v SPEAKER_1>And so yeah, the timeline is, in the beginning, very quick, right?
+
+00:02:56.800 --> 00:03:11.900
+<v SPEAKER_1>Perl 1 is in December 87, Perl 2 in June 88, Perl 3 in October 89, Perl 4 in March 1991, and Perl 5 in October 1994.
+
+00:03:11.900 --> 00:03:14.160
+<v SPEAKER_1>So I started doing Perl.
+
+00:03:14.160 --> 00:03:20.940
+<v SPEAKER_1>I think Perl 5 was already out, and most of the tutorials said, this is 5 and not 4, so there are differences.
+
+00:03:20.940 --> 00:03:22.100
+<v SPEAKER_1>Let's not look in the past.
+
+00:03:22.540 --> 00:03:24.820
+<v SPEAKER_1>This is how you do Perl now.
+
+00:03:24.820 --> 00:03:34.320
+<v SPEAKER_1>My big memory of Perl versions was Perl 5.6, which felt like a big release with lots of features.
+
+00:03:34.320 --> 00:03:36.620
+<v SPEAKER_1>It introduced use warnings.
+
+00:03:36.840 --> 00:03:38.640
+<v SPEAKER_1>It used Unicode internally.
+
+00:03:38.640 --> 00:03:44.440
+<v SPEAKER_1>It had the hour keyword, which I was reminded recently what it actually meant.
+
+00:03:44.900 --> 00:03:57.260
+<v SPEAKER_1>The column attributes, the dotted version numbers, and that's also when the number scheme of using even numbers for stable releases and odd numbers for dev releases started.
+
+00:03:57.700 --> 00:04:00.720
+<v SPEAKER_1>I think, or at least that's my recollection of it.
+
+00:04:01.000 --> 00:04:03.140
+<v SPEAKER_1>That's what the Linux kernel was doing.
+
+00:04:03.140 --> 00:04:06.480
+<v SPEAKER_1>So we followed the cool kids or something.
+
+00:04:06.480 --> 00:04:15.900
+<v SPEAKER_1>It also had the open my$fh, so the ability to use lexical variables.
+
+00:04:15.900 --> 00:04:16.720
+<v SPEAKER_1>And the three args.
+
+00:04:18.120 --> 00:04:32.080
+<v SPEAKER_1>Yeah, and rereading the deltas, I also understood, okay, it's doing auto-vifification of the final handles, and that's why it works, because when you say my$fh, you have just an ndef variable.
+
+00:04:32.080 --> 00:04:37.540
+<v SPEAKER_1>But because it's used in an open, then it knows, okay, so you're talking about the final handle.
+
+00:04:37.540 --> 00:04:41.820
+<v SPEAKER_1>So the thing that triggers this discussion, I don't know.
+
+00:04:41.820 --> 00:04:44.580
+<v SPEAKER_1>So that's all the preparation I had, right?
+
+00:04:44.580 --> 00:04:47.620
+<v SPEAKER_1>Right now, I'm going to be stumbling a lot more.
+
+00:04:47.620 --> 00:04:54.680
+<v SPEAKER_1>So the topic I want to get to is Aristotle's plan and the kind of the future of proversions.
+
+00:04:55.120 --> 00:04:58.700
+<v SPEAKER_4>Now, it's Aristotle's plan, it's not his plan.
+
+00:04:59.200 --> 00:05:07.240
+<v SPEAKER_1>I am fully on board with this plan, but I want to, you know, it's his idea, and I like it, right?
+
+00:05:07.240 --> 00:05:11.680
+<v SPEAKER_5>In some ways, Philip was more gung-ho about it than I was.
+
+00:05:11.680 --> 00:05:12.520
+<v SPEAKER_5>So, yeah.
+
+00:05:12.960 --> 00:05:15.940
+<v SPEAKER_4>So you're both distancing yourself from it.
+
+00:05:15.940 --> 00:05:17.960
+<v SPEAKER_2>I mean, I think that...
+
+00:05:17.960 --> 00:05:20.260
+<v SPEAKER_5>Not at all, actually.
+
+00:05:20.260 --> 00:05:21.020
+<v SPEAKER_4>Is that Graham?
+
+00:05:21.860 --> 00:05:23.120
+<v SPEAKER_5>Just, yeah, just...
+
+00:05:23.120 --> 00:05:25.960
+<v SPEAKER_1>Oh, yeah, that's for Graham and the boss.
+
+00:05:25.960 --> 00:05:35.200
+<v SPEAKER_5>Yeah, just putting a qualifier on Bookies and actually distancing himself.
+
+00:05:35.200 --> 00:05:40.200
+<v SPEAKER_2>I kind of thought that at one point, this plant had been my fault just a very long time ago, and I didn't get it anywhere.
+
+00:05:40.360 --> 00:05:42.480
+<v SPEAKER_2>I started thinking about the fact that it was...
+
+00:05:42.480 --> 00:05:49.160
+<v SPEAKER_2>that when I thought it was my fault, if I typed pearl-v, it said, this is pearl 5 version 8 or something along those lines.
+
+00:05:49.800 --> 00:06:02.660
+<v SPEAKER_1>Yeah, so I did look at that, and that commit is from 2009, and indeed, pearl 512 is the first one that says, this is pearl version 512.
+
+00:06:02.660 --> 00:06:03.860
+<v SPEAKER_5>Pearl 5.
+
+00:06:03.860 --> 00:06:04.500
+<v SPEAKER_2>Pearl 5.
+
+00:06:04.500 --> 00:06:06.140
+<v SPEAKER_2>Okay, so it really wasn't...
+
+00:06:06.140 --> 00:06:08.860
+<v SPEAKER_2>Then that really was my fault, and that was probably...
+
+00:06:08.860 --> 00:06:09.780
+<v SPEAKER_2>Who made that commit?
+
+00:06:10.080 --> 00:06:11.400
+<v SPEAKER_2>Do you remember?
+
+00:06:11.860 --> 00:06:13.000
+<v SPEAKER_1>Dave Golden.
+
+00:06:13.000 --> 00:06:14.280
+<v SPEAKER_2>Okay.
+
+00:06:14.280 --> 00:06:15.040
+<v SPEAKER_2>Yeah, I mean...
+
+00:06:15.040 --> 00:06:15.540
+<v SPEAKER_1>And I...
+
+00:06:15.540 --> 00:06:16.560
+<v SPEAKER_2>Yeah, go ahead.
+
+00:06:16.560 --> 00:06:18.000
+<v SPEAKER_1>I realized I had notes and links.
+
+00:06:18.440 --> 00:06:20.520
+<v SPEAKER_2>They can go in the show notes, it's fine.
+
+00:06:20.520 --> 00:06:22.940
+<v SPEAKER_1>No, but yeah, it is definitely David Golden.
+
+00:06:24.040 --> 00:06:29.620
+<v SPEAKER_1>And I was looking for the actual commit message because I find it's very interesting.
+
+00:06:29.620 --> 00:06:30.320
+<v SPEAKER_2>Yeah.
+
+00:06:30.320 --> 00:06:32.220
+<v SPEAKER_6>I mean, I remember that occurrence.
+
+00:06:32.220 --> 00:06:40.300
+<v SPEAKER_6>I mean, I'm gonna say I remember it well, which doesn't mean that I remember it correctly, but there had been discussion about the future of the Pearl version, what does this all mean?
+
+00:06:40.300 --> 00:06:50.820
+<v SPEAKER_6>And somebody pointed out, well, you know, if you actually look at the constants in the Pearl source code, the thing that is called version is the 16 or is the 12, it's not the first thing.
+
+00:06:50.820 --> 00:06:58.040
+<v SPEAKER_6>And surfacing that was sort of the lowest effort asked to say, track the version, not the release.
+
+00:06:58.240 --> 00:06:58.900
+<v SPEAKER_2>Yeah.
+
+00:06:59.780 --> 00:07:12.020
+<v SPEAKER_1>And I looked in the history, and patchlevel.h did that since 5.005 underscore 55 by Gurusamy Sarati.
+
+00:07:12.020 --> 00:07:15.960
+<v SPEAKER_1>And before that, it was just patchlevel and subversion.
+
+00:07:16.300 --> 00:07:20.320
+<v SPEAKER_1>And then it became pearl version, pearl subversion, and pearl revision.
+
+00:07:20.320 --> 00:07:23.660
+<v SPEAKER_1>So revision, version, subversion.
+
+00:07:23.660 --> 00:07:24.160
+<v SPEAKER_2>Yeah.
+
+00:07:24.160 --> 00:07:36.160
+<v SPEAKER_2>I mean, and the reason that I was pushing this in the 5.12 era had a lot to do with pearl six, but it had a lot more to do with pearl five being a language.
+
+00:07:36.600 --> 00:07:40.460
+<v SPEAKER_2>And that like, it's not that pearl was a language.
+
+00:07:40.460 --> 00:07:52.880
+<v SPEAKER_2>It was sort of a way of, and I remember I was sitting in an airport in Boston, writing this long post, the thing that ended up being the, that post to P5P that you referenced in your email to me book.
+
+00:07:52.880 --> 00:08:09.680
+<v SPEAKER_2>It was, we need to try to make as clear to people as possible that pearl five is a language, and that five isn't a thing that is ever going to get incremented, and that any other language that might or might have a name that includes pearl is just a different programming language.
+
+00:08:09.680 --> 00:08:15.720
+<v SPEAKER_2>That was the point when I tried to start advocating for, this is pearl five version something.
+
+00:08:15.720 --> 00:08:23.400
+<v SPEAKER_2>And I don't think I had thought through how high that number might get at the time that I would end up on a podcast talking about it.
+
+00:08:25.480 --> 00:08:28.820
+<v SPEAKER_5>Did the concept of a podcast even exist at the time?
+
+00:08:29.040 --> 00:08:33.480
+<v SPEAKER_2>Yes, because Ben Hammersley made a podcast.
+
+00:08:33.480 --> 00:08:38.780
+<v SPEAKER_2>I remember because that was before, like in the in the Oskon era, that was when Ben Hammersley coined it.
+
+00:08:38.780 --> 00:08:41.120
+<v SPEAKER_2>But that's a whole, that's a different podcast.
+
+00:08:41.120 --> 00:08:42.280
+<v SPEAKER_5>Yeah.
+
+00:08:42.280 --> 00:08:49.620
+<v SPEAKER_1>So I finally found the David Golden's commit, which was on the 5.11.1 branch.
+
+00:08:49.620 --> 00:08:53.660
+<v SPEAKER_1>So it's really early in the Dev branch.
+
+00:08:53.700 --> 00:08:54.140
+<v SPEAKER_1>Yeah.
+
+00:08:54.140 --> 00:09:01.960
+<v SPEAKER_1>And it says, the rationale for this change is that the Perl 5 interpreter will never increment Perl revision from 5 to 6.
+
+00:09:01.960 --> 00:09:09.480
+<v SPEAKER_1>So we want people to start focusing on the Perl version number as most significant and Perl subversion as equivalent to a release number.
+
+00:09:09.480 --> 00:09:11.540
+<v SPEAKER_1>In other words, Perl 5 is a language.
+
+00:09:11.540 --> 00:09:16.540
+<v SPEAKER_1>This is the 11th version of it, and the second release of that version counting from zero.
+
+00:09:16.540 --> 00:09:18.620
+<v SPEAKER_1>So Perl 5 is Perl.
+
+00:09:18.620 --> 00:09:18.760
+<v SPEAKER_2>Yeah.
+
+00:09:19.320 --> 00:09:24.060
+<v SPEAKER_1>Even though Perl 6 only changed its name in 2019.
+
+00:09:24.060 --> 00:09:31.940
+<v SPEAKER_2>I mean, so before I was the pump king for 5.12 and 5.14, I had been the Perl 6 project manager.
+
+00:09:31.940 --> 00:09:45.220
+<v SPEAKER_2>And that happened because I was pissed off about a whole bunch of things about how Perl 6 development was going, and started throwing stones, and realized that if I was going to throw stones, I probably needed to be part of the solution, which it's a weird responsibility complex.
+
+00:09:45.520 --> 00:10:00.580
+<v SPEAKER_2>But a lot of my time as Perl 6 project manager was shouting the same thing, that Perl 6 is a different language, that we are Perl 5's kid sister, and a very precocious kid sister, but it's a different language, and it's a different project.
+
+00:10:00.580 --> 00:10:06.180
+<v SPEAKER_1>Adjacent to the version number is also use version.
+
+00:10:06.180 --> 00:10:09.620
+<v SPEAKER_1>And this is again coming from you, Jesse.
+
+00:10:09.620 --> 00:10:12.460
+<v SPEAKER_1>So I found the slides on a terrible website.
+
+00:10:12.960 --> 00:10:22.700
+<v SPEAKER_1>And basically, what it says is, I think something we still value to this day, which is new versions of Perl 5 should not break your existing software.
+
+00:10:22.700 --> 00:10:27.200
+<v SPEAKER_1>Old syntax and semantics must not stop Perl 5 from evolving.
+
+00:10:27.200 --> 00:10:29.180
+<v SPEAKER_1>We need to be able to make mistakes.
+
+00:10:29.180 --> 00:10:30.800
+<v SPEAKER_1>We will make mistakes.
+
+00:10:30.800 --> 00:10:35.520
+<v SPEAKER_1>We have made mistakes, but we need to be able to recover from those mistakes.
+
+00:10:35.520 --> 00:10:46.780
+<v SPEAKER_1>It should be, yeah, like the other thing is, we need to be able to recover from last year's same defaults, and it should be possible to build more of Perl 5 in Perl 5.
+
+00:10:46.780 --> 00:10:53.620
+<v SPEAKER_1>I really loved reading this because it is, I find, really aligned with what we're still doing today.
+
+00:10:53.620 --> 00:11:12.080
+<v SPEAKER_1>And I think that was in the, what happened to Perl 7 blog post that the PSC posted, I think in 2022, when announcing Perl 5.36 and saying the new Perl won't break your old Perl code, but it will also, I need to find this.
+
+00:11:12.340 --> 00:11:17.000
+<v SPEAKER_1>I'm now badly paraphrasing the blog post, so I should just...
+
+00:11:17.060 --> 00:11:21.000
+<v SPEAKER_2>Am I remembering that there have been a couple of Perl 7s in the, over the years?
+
+00:11:21.000 --> 00:11:22.460
+<v SPEAKER_5>Yeah.
+
+00:11:22.460 --> 00:11:23.320
+<v SPEAKER_6>Yes.
+
+00:11:23.320 --> 00:11:25.520
+<v SPEAKER_6>Yeah, it's come up from time to time.
+
+00:11:25.520 --> 00:11:27.780
+<v SPEAKER_2>Yeah.
+
+00:11:27.780 --> 00:11:29.100
+<v SPEAKER_1>And in different ways, right?
+
+00:11:29.100 --> 00:11:34.100
+<v SPEAKER_1>There was one attempt in 2013 to basically jump over Perl 6.
+
+00:11:34.100 --> 00:11:42.320
+<v SPEAKER_1>Another attempt in 2020, which was, let's make a clean break, and move in the, jump in the future.
+
+00:11:42.320 --> 00:11:44.680
+<v SPEAKER_1>Neither of those worked.
+
+00:11:44.680 --> 00:11:45.300
+<v SPEAKER_2>And I feel like-
+
+00:11:45.300 --> 00:11:51.400
+<v SPEAKER_5>Was the attempt in 2013 an actual attempt, or was it just discussion?
+
+00:11:51.400 --> 00:12:01.380
+<v SPEAKER_2>I thought there was at least a fork of code, but I also thought that there was an Ingi, that Ingi had done a Perl 7 maybe five years before that, but I don't remember for sure.
+
+00:12:01.380 --> 00:12:02.000
+<v SPEAKER_6>I'm not sure.
+
+00:12:02.000 --> 00:12:05.820
+<v SPEAKER_6>I think what you might be thinking about is Ingi had Perl 11, which was-
+
+00:12:07.240 --> 00:12:08.320
+<v SPEAKER_6>Five plus six.
+
+00:12:08.320 --> 00:12:15.200
+<v SPEAKER_1>Yeah, but there is also another Perl 11 from, I think if you go on perl11.org, maybe that still exists.
+
+00:12:15.200 --> 00:12:21.520
+<v SPEAKER_6>I think Perl 11, we're going to get in the weeds here, but I think Perl 11 was Ingi and Rainy are been working together.
+
+00:12:21.520 --> 00:12:21.860
+<v SPEAKER_1>Right.
+
+00:12:21.860 --> 00:12:22.840
+<v SPEAKER_1>Yeah, I remember Rainy.
+
+00:12:22.840 --> 00:12:25.700
+<v SPEAKER_1>I didn't remember Ingi was involved.
+
+00:12:25.700 --> 00:12:27.220
+<v SPEAKER_6>And now they're swatted.
+
+00:12:29.100 --> 00:12:40.300
+<v SPEAKER_2>So these slides you're reading from, this was my grand vision for the future of Perl as Pumpking, and I was the first Pumpking who wasn't our hardest core C hacker.
+
+00:12:40.800 --> 00:12:46.220
+<v SPEAKER_2>Before me, the way we had always chosen the Pumpking was the individual and it was always a dude.
+
+00:12:46.220 --> 00:12:55.720
+<v SPEAKER_2>So it was the guy who knew the ins and outs of every compiler on every weird platform and really understood the guts of Perl the best.
+
+00:12:55.720 --> 00:13:03.360
+<v SPEAKER_2>And we would elevate that person to be in charge of managing interpersonal disputes, applying patches, and rolling releases.
+
+00:13:04.140 --> 00:13:07.880
+<v SPEAKER_1>And when they burnt out, which found a new one.
+
+00:13:08.220 --> 00:13:14.720
+<v SPEAKER_2>And we ran through all of the hardcore C hackers who were able to be tricked into becoming Pumpking.
+
+00:13:15.700 --> 00:13:27.640
+<v SPEAKER_2>And after Rafael got flamed really badly on somebody's blog and he realized that it just wasn't worth his time to be fighting that, he abdicated and there was no one else to replace him.
+
+00:13:27.640 --> 00:13:39.220
+<v SPEAKER_2>And I suckered myself into doing monthly dev releases as a kind of backdoor into getting Pearl moving again, hoping that somebody else would step up as Pumpking.
+
+00:13:39.220 --> 00:13:41.840
+<v SPEAKER_2>Apparently, managed to nerd snipe myself.
+
+00:13:41.840 --> 00:13:49.980
+<v SPEAKER_2>But this is all going to, this vision I had for Pearl was not a vision that I had the technical ability to implement.
+
+00:13:49.980 --> 00:14:13.700
+<v SPEAKER_2>And that, I think, was sort of the difference in where I was coming from, I was essentially more traditional leadership and management where I was technically incompetent, but had an idea, and so could go talk about the idea without having to worry about whether we could do it in a release, two releases, ten releases, or whether we actually had the engineering talent that was capable of doing it ever.
+
+00:14:13.700 --> 00:14:16.320
+<v SPEAKER_1>So you volunteered to become the Pumpkin?
+
+00:14:16.320 --> 00:14:17.240
+<v SPEAKER_2>I did.
+
+00:14:18.160 --> 00:14:27.600
+<v SPEAKER_2>It's, my post to P5P, it was on a Halloween, and it was titled The Great Pumpkin, which is a stupid peanuts reference.
+
+00:14:27.600 --> 00:14:31.020
+<v SPEAKER_2>But I, yeah.
+
+00:14:31.020 --> 00:14:39.560
+<v SPEAKER_2>And it, like, I thought I, like, I thought I was being, you know, like, I was a little concerned that people were going to say, no, you can't be Pumpkin.
+
+00:14:39.560 --> 00:15:11.920
+<v SPEAKER_2>And everybody else was smarter than me and was very happy to let me roll releases, and essentially made, you know, I was, a lot of what I was doing in the beginning was taking the stuff that had been in the heads of previous Pumpkings and in the heads of core committers, and just committing that to documents, so that rather than having one person who knew the current state, essentially a mental patch Pumpkin, we had everything written down in a place, and no one person was actually going to be indispensable again.
+
+00:15:11.920 --> 00:15:14.200
+<v SPEAKER_1>Five Pearl was older than this.
+
+00:15:14.200 --> 00:15:19.860
+<v SPEAKER_2>Yeah, Five Pearl was the, at the time, the secret cabal of former Pumpkings.
+
+00:15:19.860 --> 00:15:22.220
+<v SPEAKER_2>And it was, I mean, it was really the brain trust.
+
+00:15:22.780 --> 00:15:35.040
+<v SPEAKER_2>It was, it was a mailing list that some people thought was totally secret, and some people just didn't talk about much, but it was a place where the Pumpkin could write in and sort of say, hey, this is what I'm thinking about.
+
+00:15:35.040 --> 00:15:35.940
+<v SPEAKER_2>What do you all think?
+
+00:15:35.940 --> 00:16:02.140
+<v SPEAKER_2>And it was a place where there wasn't, you know, because it wasn't public, people were, the people who had the most experience were very happy to talk openly, rather than having to worry about the kinds of flame wars that we would sometimes see in public, and that we, I think, P5P managed to reign in a fair bit as we realized that the old internet way of everybody is, if everybody is an asshole, then everybody is safe.
+
+00:16:02.140 --> 00:16:07.200
+<v SPEAKER_2>And that is not a good way to run a project, or life, or an organization, or anything.
+
+00:16:07.360 --> 00:16:25.660
+<v SPEAKER_1>I remember I heard about the Cabal and didn't know what it was until I accidentally got invited on 5Pearl, and stayed very, very quiet, because I could finally be a fly on the wall, listening to all those interesting conversations.
+
+00:16:25.660 --> 00:16:26.800
+<v SPEAKER_2>Yeah.
+
+00:16:26.800 --> 00:16:33.620
+<v SPEAKER_4>I'm curious, I know this is slightly off a tangent from Philippe's proposed subject.
+
+00:16:33.620 --> 00:16:36.820
+<v SPEAKER_4>When did 5Pearl start?
+
+00:16:37.060 --> 00:16:41.080
+<v SPEAKER_4>So at one point, there was Larry, and Larry was kind of driving things.
+
+00:16:41.080 --> 00:16:45.420
+<v SPEAKER_4>Then gradually, other people started doing releases, or whatever.
+
+00:16:45.420 --> 00:16:48.820
+<v SPEAKER_4>So where along that line did 5Pearl start?
+
+00:16:48.820 --> 00:17:04.420
+<v SPEAKER_2>So I don't know how easy it will be for any of us to answer this, because when I got invited to 5Pearl, somebody, and it might have been Nicholas Clark, handed me a tarball of old email messages to 5Pearl, because I don't believe it was a proper mailing list.
+
+00:17:04.420 --> 00:17:04.840
+<v SPEAKER_6>That's right.
+
+00:17:05.060 --> 00:17:05.880
+<v SPEAKER_1>Wow.
+
+00:17:05.880 --> 00:17:08.460
+<v SPEAKER_1>So you have the history of 5Pearl.
+
+00:17:08.460 --> 00:17:10.740
+<v SPEAKER_2>I had the history of 5Pearl.
+
+00:17:10.740 --> 00:17:12.260
+<v SPEAKER_2>What?
+
+00:17:12.260 --> 00:17:16.800
+<v SPEAKER_2>And I don't know if I still do, and I haven't gone looking in a while.
+
+00:17:16.800 --> 00:17:20.920
+<v SPEAKER_2>I don't tend to throw things away, but there was-
+
+00:17:20.920 --> 00:17:23.860
+<v SPEAKER_1>Hard drives crush sometimes.
+
+00:17:23.860 --> 00:17:26.000
+<v SPEAKER_2>And email migration tools break.
+
+00:17:26.500 --> 00:17:30.480
+<v SPEAKER_2>I will have to go digging and see, trying to figure out where it would be.
+
+00:17:31.580 --> 00:17:37.720
+<v SPEAKER_1>The history of Perl is something I am so interested in that I will provide a safe home for this tarble.
+
+00:17:37.720 --> 00:17:38.100
+<v SPEAKER_2>Yeah.
+
+00:17:38.100 --> 00:17:40.000
+<v SPEAKER_2>I won't publish it, but-
+
+00:17:40.000 --> 00:17:40.860
+<v SPEAKER_2>I understand.
+
+00:17:40.860 --> 00:17:41.260
+<v SPEAKER_2>All right.
+
+00:17:41.260 --> 00:17:42.100
+<v SPEAKER_2>So let's see.
+
+00:17:42.100 --> 00:17:43.300
+<v SPEAKER_2>So-
+
+00:17:43.300 --> 00:17:55.640
+<v SPEAKER_1>Going back to the notion of the pumpkin as a project manager, I remember clearly, and I was inebriated at the time, in Yapsi Europe, 2004, in Dublin.
+
+00:17:55.640 --> 00:18:00.580
+<v SPEAKER_1>Jos Boumans came to me and said, we think-
+
+00:18:00.580 --> 00:18:10.500
+<v SPEAKER_1>so the we was nebulous, but talk to me about, we think that the pumpkin should be a project manager and not a technical person.
+
+00:18:10.500 --> 00:18:17.880
+<v SPEAKER_1>So that's my memory of 20 years ago, that maybe was prodding me about, would you be interested?
+
+00:18:17.880 --> 00:18:21.200
+<v SPEAKER_1>Of course, I said, what the fuck are you thinking?
+
+00:18:21.200 --> 00:18:30.400
+<v SPEAKER_1>But that's my oldest memory of the pumpkin as a project manager, as an ID instead of the technical guru that can do everything.
+
+00:18:30.400 --> 00:18:38.880
+<v SPEAKER_6>I think there was always a difficulty with that being successful, which is until a certain point, which I would probably call around when Jesse took over.
+
+00:18:38.880 --> 00:18:47.040
+<v SPEAKER_6>You are always going to have this friction between bringing in a manager for a project where previously the software developers got to run the show.
+
+00:18:47.040 --> 00:18:51.100
+<v SPEAKER_6>You're giving up some amount of power, and the question is, what's being gotten out of it?
+
+00:18:51.100 --> 00:18:57.700
+<v SPEAKER_6>And as each software developer took over in turn, I was like, well, I can take over, and I can make sure that we run this in the correct way, and then they would burn out.
+
+00:18:57.700 --> 00:19:08.240
+<v SPEAKER_6>And as Jesse said, by the time Jesse was stepping in and picking up the pieces, everybody had seen, they had a good 10 years of seeing this process happen over and over.
+
+00:19:08.240 --> 00:19:15.220
+<v SPEAKER_6>And I think then we finally reached the point where people were willing to say, all right, let's listen to somebody who doesn't just want to write C code.
+
+00:19:15.220 --> 00:19:27.880
+<v SPEAKER_2>So just digging through my mail archives, I have the note from Ask in February of 2004, when FivePearl got, when he listed off the subscribers for FivePearl.
+
+00:19:27.880 --> 00:19:35.100
+<v SPEAKER_2>And so I have that, I'm not going to read it in public, but it was before I was on it, because there were about 15 or 16 people.
+
+00:19:35.100 --> 00:19:39.480
+<v SPEAKER_2>And this is on the Pearl Six Project Management List.
+
+00:19:39.480 --> 00:19:43.860
+<v SPEAKER_2>And I see a reply to this from Larry saying, I should probably be on that list.
+
+00:19:46.580 --> 00:19:47.720
+<v SPEAKER_6>Very good.
+
+00:19:47.720 --> 00:19:52.040
+<v SPEAKER_3>So this was literally just people emailing each other on a list?
+
+00:19:52.040 --> 00:19:54.900
+<v SPEAKER_3>Like, does it still exist?
+
+00:19:54.900 --> 00:19:56.440
+<v SPEAKER_2>So I know it does not.
+
+00:19:56.440 --> 00:19:59.260
+<v SPEAKER_2>It got shut down when the PSC got real.
+
+00:19:59.260 --> 00:20:01.940
+<v SPEAKER_2>But now I'm wondering what's really going.
+
+00:20:01.940 --> 00:20:08.660
+<v SPEAKER_2>All right, so in December 19th, 2003, email from Allison Randall to sixpearl.org.
+
+00:20:08.660 --> 00:20:14.400
+<v SPEAKER_2>It's a quoting, something that says, at least I'm forwarding the link to Nick Clark, from, Yarko said that.
+
+00:20:14.400 --> 00:20:19.500
+<v SPEAKER_2>And it says, Foo, that reminds me, unless anyone objects, I'll subscribe Nick and Rafael to Sixpearl today.
+
+00:20:19.500 --> 00:20:21.220
+<v SPEAKER_2>The alternative is to start FivePearl.
+
+00:20:21.220 --> 00:20:25.040
+<v SPEAKER_2>But that seems a bit silly, since everyone here would be subscribed to that anyway.
+
+00:20:25.040 --> 00:20:28.280
+<v SPEAKER_2>I now wonder if FivePearl did not exist before...
+
+00:20:28.280 --> 00:20:29.400
+<v SPEAKER_6>Before SixPearl.
+
+00:20:29.400 --> 00:20:31.000
+<v SPEAKER_2>Before SixPearl.
+
+00:20:31.000 --> 00:20:33.760
+<v SPEAKER_1>And before that, it was just a long email chain.
+
+00:20:34.080 --> 00:20:40.360
+<v SPEAKER_2>Or individual email chains on individual topics, where like, you know, Rafael would mail Yarko and CC Nick.
+
+00:20:40.400 --> 00:20:43.140
+<v SPEAKER_6>But to answer your question, Rafael, it was just a mailing list.
+
+00:20:43.140 --> 00:20:55.200
+<v SPEAKER_6>And I think the way I characterized it at some point was if you, The Pumpking, or some long time contributor had an idea, you might post it there and say, I thought I might propose this.
+
+00:20:55.200 --> 00:20:56.240
+<v SPEAKER_6>What would happen?
+
+00:20:56.240 --> 00:21:00.560
+<v SPEAKER_6>And then you could, you know, then someone could say, if you do this, I will be infuriated.
+
+00:21:00.560 --> 00:21:02.100
+<v SPEAKER_6>And you're like, great, I don't need to take this.
+
+00:21:02.100 --> 00:21:04.700
+<v SPEAKER_6>You can tell me that in private, and I don't need to take this anywhere.
+
+00:21:04.700 --> 00:21:07.100
+<v SPEAKER_6>Or they could say, that's a really bad idea, and you shouldn't do it.
+
+00:21:07.100 --> 00:21:08.940
+<v SPEAKER_6>And they're not saying something bad in public.
+
+00:21:09.100 --> 00:21:10.780
+<v SPEAKER_6>Or they can say, that's a really good idea.
+
+00:21:10.780 --> 00:21:13.900
+<v SPEAKER_6>And that, from my experience, that's how a lot of that tended to go.
+
+00:21:13.900 --> 00:21:20.200
+<v SPEAKER_6>What if we did this, and then there'd be a very quick, you will not have support from the people with all the juice.
+
+00:21:20.200 --> 00:21:28.760
+<v SPEAKER_6>Or if you do this, pretty much everybody's on board, and then it would get taken into discussion, into the public, to be discussed, and the decision would happen there.
+
+00:21:28.760 --> 00:21:34.080
+<v SPEAKER_6>But you'd know kind of what kind of support from the biggest contributors you tended to have.
+
+00:21:34.080 --> 00:21:36.920
+<v SPEAKER_3>There's like kind of a safe space to bounce your ideas around?
+
+00:21:36.920 --> 00:21:37.100
+<v SPEAKER_2>Yeah.
+
+00:21:37.160 --> 00:21:39.980
+<v SPEAKER_3>Yeah, and sorry, in it, but it no longer exists?
+
+00:21:39.980 --> 00:21:41.760
+<v SPEAKER_3>Like it just got shut?
+
+00:21:41.760 --> 00:21:43.480
+<v SPEAKER_2>It got shut down, if I remember right.
+
+00:21:43.480 --> 00:21:47.200
+<v SPEAKER_6>Yeah, if it wasn't shut down, there hasn't been a post in years and years and years.
+
+00:21:47.200 --> 00:21:47.920
+<v SPEAKER_2>Okay.
+
+00:21:47.920 --> 00:21:50.000
+<v SPEAKER_6>Last post I see is from 2022.
+
+00:21:50.000 --> 00:21:52.380
+<v SPEAKER_4>Rick is now typing an email.
+
+00:21:54.860 --> 00:22:08.900
+<v SPEAKER_6>No, I found, actually, there's a post from me in December 29th, 2020, saying now that there's a mailing list for the core team, and the core team is a defined body in Perl policy.
+
+00:22:08.900 --> 00:22:10.600
+<v SPEAKER_6>Why don't we shut this down?
+
+00:22:10.600 --> 00:22:15.100
+<v SPEAKER_6>And then January 8th, Robert Spear says, shut down.
+
+00:22:15.100 --> 00:22:17.260
+<v SPEAKER_6>So that's it, RIP.
+
+00:22:17.260 --> 00:22:24.920
+<v SPEAKER_1>Yeah, and I think the private space nowadays is, well, no, it's not exactly the same thing, right?
+
+00:22:24.920 --> 00:22:35.740
+<v SPEAKER_1>But the PSC meetings are these private meetings where we discuss, but it's more about the current discussions on the list and maybe ideas about the future.
+
+00:22:35.740 --> 00:22:38.340
+<v SPEAKER_1>Yeah, I mean, it's a different thing.
+
+00:22:38.340 --> 00:22:47.860
+<v SPEAKER_6>I would also say that the general, the nature of Perl 5 development in 2025 is very different than it was in 2005.
+
+00:22:47.860 --> 00:23:09.140
+<v SPEAKER_6>The number of active people, the amount of churn, the amount of discussion, the amount of people who are commenting from the wings, it's all turned so far down that having, not that having a safe space is not useful, but having a well-defined, carefully curated space that you can put people in is not so necessary because for the most part, Perl 5 porters itself is pretty low volume and pretty low key.
+
+00:23:09.700 --> 00:23:18.620
+<v SPEAKER_4>I can really see the value of it from just thinking about the version of the PSC we had.
+
+00:23:18.620 --> 00:23:19.920
+<v SPEAKER_4>I can't remember how long it lasted.
+
+00:23:19.920 --> 00:23:25.200
+<v SPEAKER_4>It felt like a long time, but that was me, Rick and Nick Clark.
+
+00:23:25.200 --> 00:23:33.180
+<v SPEAKER_1>That was short because Nick was only between Sawyer's quitting and Paul being voted in.
+
+00:23:33.180 --> 00:23:45.200
+<v SPEAKER_4>But so, one, it was very entertaining, certainly for me, but the other thing was how encyclopedic Nick's knowledge of the internals was.
+
+00:23:45.200 --> 00:23:48.740
+<v SPEAKER_4>So we could have a discussion and say, what about this?
+
+00:23:48.740 --> 00:23:50.520
+<v SPEAKER_4>And he would say, you can't do that for this reason.
+
+00:23:50.720 --> 00:23:51.560
+<v SPEAKER_4>Oh, okay.
+
+00:23:51.560 --> 00:23:54.780
+<v SPEAKER_4>Or, oh, that would make it really hard.
+
+00:23:54.780 --> 00:23:58.380
+<v SPEAKER_4>More likely, though, he'd go, oh, hold on, and it'd be off.
+
+00:23:58.380 --> 00:24:03.460
+<v SPEAKER_4>And then 16 times later, we'd be thinking, what were we talking about again?
+
+00:24:03.460 --> 00:24:18.240
+<v SPEAKER_4>So, but I can really see the power of, as someone who kind of came in as a, I don't have the deep knowledge of the internals, having someone who in private things could be bounced around with was very powerful.
+
+00:24:18.560 --> 00:24:27.320
+<v SPEAKER_2>Yeah, and Nick was always the one I would go to first with anything technical or even most of my crazy design ideas.
+
+00:24:27.320 --> 00:24:31.220
+<v SPEAKER_5>I mean, there's the famous Larry quote, how did he put it?
+
+00:24:31.220 --> 00:24:35.280
+<v SPEAKER_5>Someone left the Nick Clarkulator running overnight again or something?
+
+00:24:38.340 --> 00:24:49.840
+<v SPEAKER_1>Yeah, I was thinking, so I've been in several different PSCs, and the one thing I liked is that, so three people is nice, because it's not too many people.
+
+00:24:49.840 --> 00:25:09.500
+<v SPEAKER_1>And also the ones I've been in, I've always had a mix of, so the first one was Rick, Paul, and me, and Rick had the knowledge of Pearl as a language, Paul had the knowledge of the internals, and I was like the Pearl user, right?
+
+00:25:09.700 --> 00:25:19.020
+<v SPEAKER_1>Who'd been using Pearl for a while, but I was kind of the candid, no, candid is a French word, the innocent voice in the room, right?
+
+00:25:19.020 --> 00:25:43.080
+<v SPEAKER_1>And as the composition of the PSC changed, that kind of remained with technical people, which would be Graham nowadays, and people who are more into the history of the list and the language, which would be Aristotle, and I'm still the idiot in the room, even though I've been touching the internals a little bit since.
+
+00:25:44.360 --> 00:25:48.480
+<v SPEAKER_1>But that mix of, like, you don't have three like-minded people.
+
+00:25:48.480 --> 00:25:52.920
+<v SPEAKER_1>You have people who come from different perspectives.
+
+00:25:52.920 --> 00:26:01.200
+<v SPEAKER_1>That makes the discussions very interesting, and we don't always agree, and I think that's important in the mix.
+
+00:26:01.200 --> 00:26:09.180
+<v SPEAKER_1>Going back to your vision, Jesse, there was this used version, and you also made that...
+
+00:26:09.180 --> 00:26:13.140
+<v SPEAKER_1>I don't know, it feels to me when I don't have the...
+
+00:26:13.140 --> 00:26:18.700
+<v SPEAKER_1>So I didn't prepare that well because I don't have the slides in front of me.
+
+00:26:18.700 --> 00:26:27.860
+<v SPEAKER_1>But there was this idea that when you say, it used to be that you say use version something, you're saying, I need at least this pearl.
+
+00:26:27.860 --> 00:26:37.180
+<v SPEAKER_1>And you presented it as, I expect pearl to behave as if I was this version.
+
+00:26:37.180 --> 00:26:41.680
+<v SPEAKER_1>And so kind of the version of the language versus the version of the binary.
+
+00:26:41.680 --> 00:26:47.300
+<v SPEAKER_1>I find this extremely powerful, and this is how...
+
+00:26:47.300 --> 00:26:48.780
+<v SPEAKER_1>I would like everyone...
+
+00:26:48.840 --> 00:26:53.960
+<v SPEAKER_1>And that was already what happened to pearl 7 blog post from the PSC.
+
+00:26:53.960 --> 00:27:09.380
+<v SPEAKER_1>The idea that, okay, you start pearl from line one, where you say, this is the version of the language that I'm using, and that implies the old craft doesn't work anymore, and the new useful features are enabled.
+
+00:27:09.380 --> 00:27:16.020
+<v SPEAKER_1>And so in one line of text at the beginning of your file, you set the stage for your program.
+
+00:27:16.480 --> 00:27:26.080
+<v SPEAKER_1>And the magical thing with pearl is that you can load a module that says, oh, use V514, and it will work, even though you're running it on 540.
+
+00:27:26.080 --> 00:27:36.200
+<v SPEAKER_1>And so you can have a mix of a bunch of files, all claiming to be written in a different dialect of pearl five, and they will all work together perfectly well.
+
+00:27:36.200 --> 00:27:37.400
+<v SPEAKER_2>That was the vision.
+
+00:27:37.400 --> 00:27:43.440
+<v SPEAKER_2>And there's a big difference between vision and the possibility of a performant implementation.
+
+00:27:43.440 --> 00:27:48.240
+<v SPEAKER_2>And at the vision stage, I was not worrying about whether it was plausible.
+
+00:27:48.460 --> 00:27:59.500
+<v SPEAKER_6>We had lucked out, if not lucked out, this was sort of this followed up on pearl 510, which actually introduced use V as a feature guard.
+
+00:27:59.500 --> 00:28:05.120
+<v SPEAKER_6>Saying use V 510 turned on a bunch of the 510 features, the good and the bad.
+
+00:28:05.120 --> 00:28:10.040
+<v SPEAKER_6>So if you say use 510, say hello, you get that new line.
+
+00:28:11.440 --> 00:28:28.240
+<v SPEAKER_6>And when we started talking about the future of pearl as a language that could have regular annual releases and continuous forward movement, it was sort of like, hey, you know, we've just got this tool that someone built for managing the features and scopes.
+
+00:28:28.240 --> 00:28:30.420
+<v SPEAKER_6>What if we use that as a tent pole?
+
+00:28:30.420 --> 00:28:37.200
+<v SPEAKER_6>And that was sort of the first bit, like great, 512 can turn strict on, as long as use V turns stuff on, let's throw strict in there.
+
+00:28:37.200 --> 00:28:43.460
+<v SPEAKER_6>And anybody who wants to argue with that is clearly going to get yelled out of the room, because you got to turn on strict.
+
+00:28:43.460 --> 00:28:56.640
+<v SPEAKER_6>And it built from there until later, I guess around 518, as my memory says, we started having discussions about formalizing this even a bit further, which is when we start getting to use experimental, which I think was kind of the next phase.
+
+00:28:56.640 --> 00:28:59.260
+<v SPEAKER_6>What does it look like before you make it into that bundle?
+
+00:28:59.260 --> 00:29:09.340
+<v SPEAKER_6>And whatever could be guarded by features, because we started to realize that we had put things into the feature bundle that were invisible.
+
+00:29:09.340 --> 00:29:11.000
+<v SPEAKER_6>Unicode strings, for example.
+
+00:29:11.000 --> 00:29:16.940
+<v SPEAKER_6>The compiler couldn't say, oh, I see you're using this feature, but it's not turned on because of unicode strings.
+
+00:29:16.940 --> 00:29:32.060
+<v SPEAKER_6>It was entirely a silent feature, and we kind of realized these are really dangerous to put into the version bundles, because you can't tell if you screwed up, whereas saying you didn't use say, much, much simpler.
+
+00:29:32.520 --> 00:29:41.480
+<v SPEAKER_6>So I think that we had a really, we had a good peg driven for us by, I'm going to say Raphael, although I don't know if it was his decision to put these 510 in there.
+
+00:29:41.480 --> 00:29:43.040
+<v SPEAKER_6>No, Jesse's shaking his head.
+
+00:29:43.040 --> 00:29:47.000
+<v SPEAKER_2>No, no, no, that is a very reason.
+
+00:29:47.000 --> 00:29:47.720
+<v SPEAKER_6>Yeah, right.
+
+00:29:48.240 --> 00:29:52.340
+<v SPEAKER_6>Anyway, 510 started this for us, and we kind of realized we had a great thing to build on.
+
+00:29:52.920 --> 00:29:55.480
+<v SPEAKER_6>I think it was actually a really big success.
+
+00:29:55.540 --> 00:30:09.380
+<v SPEAKER_6>Jesse started this process that it led to the language being able to get changes made, and very importantly, have changes thrown away that we realized were not the right path, which is huge.
+
+00:30:09.380 --> 00:30:21.320
+<v SPEAKER_1>We had this conversation, I think, at the last meeting or the one before the BSC, about experimental features not really working because you can take anything away.
+
+00:30:21.320 --> 00:30:29.720
+<v SPEAKER_1>Like if it's been part of a bundle, like even if not, like, maybe, Aristotle, you can make this argument better than me.
+
+00:30:29.720 --> 00:30:36.980
+<v SPEAKER_1>But I think the idea was, okay, so you introduce this experimental feature, and now people who want to use it will use it on CPAN.
+
+00:30:36.980 --> 00:30:43.600
+<v SPEAKER_1>And so you're stuck with having to support CPAN forever doing use feature something that sucks.
+
+00:30:43.600 --> 00:30:44.260
+<v SPEAKER_6>No, you're not.
+
+00:30:44.260 --> 00:30:45.940
+<v SPEAKER_1>That we found out that sucks.
+
+00:30:46.220 --> 00:30:47.980
+<v SPEAKER_6>Let me jump in here.
+
+00:30:47.980 --> 00:30:49.040
+<v SPEAKER_6>No, you're not.
+
+00:30:49.040 --> 00:30:53.320
+<v SPEAKER_6>At some point, a project manager has to have the courage of their convictions.
+
+00:30:53.940 --> 00:30:59.140
+<v SPEAKER_6>And you have to say, this was marked experimental, and you put it in your mouth.
+
+00:30:59.140 --> 00:30:59.680
+<v SPEAKER_6>Right?
+
+00:30:59.700 --> 00:31:02.660
+<v SPEAKER_6>You are going to get what's coming to you.
+
+00:31:02.680 --> 00:31:05.820
+<v SPEAKER_6>Using experimental features has to be throw away-able.
+
+00:31:05.820 --> 00:31:13.620
+<v SPEAKER_6>Experimental features, apart from switch, which predates the whole idea of experimentation, we have to put that aside.
+
+00:31:13.620 --> 00:31:16.280
+<v SPEAKER_6>No experimental feature has ever gone into a feature bundle.
+
+00:31:16.280 --> 00:31:21.380
+<v SPEAKER_6>You've always had to turn the feature on, or at least disable warnings.
+
+00:31:22.780 --> 00:31:28.760
+<v SPEAKER_6>And if you can't take away a feature that keeps warning you, this is experimental and might go away, what are you doing?
+
+00:31:28.760 --> 00:31:33.320
+<v SPEAKER_6>Those have to be removable, and I feel very strongly about that.
+
+00:31:33.320 --> 00:31:37.940
+<v SPEAKER_5>Well, let me jump back in there, because I feel very strongly the other way.
+
+00:31:37.940 --> 00:31:48.760
+<v SPEAKER_5>Because the thing is, yes, the project manager may have to have that courage of his convictions, but the problem is we're not the project managers for all the pro code in the world.
+
+00:31:48.840 --> 00:31:51.720
+<v SPEAKER_5>We're just the project managers for the pro interpreter.
+
+00:31:51.720 --> 00:32:07.900
+<v SPEAKER_5>The thing is, you may say, you put this experimental thing in your codes, but the person running pro code isn't necessarily, and in 99, hopefully 99% of the cases, isn't the person who wrote that code.
+
+00:32:07.960 --> 00:32:26.800
+<v SPEAKER_5>And more especially, if experimental features escape to get used in code on CPAN, are you, well, okay, I do, some people are crazy enough, but most people don't follow every change in everything that happens across their entire dependency chain.
+
+00:32:26.800 --> 00:32:38.820
+<v SPEAKER_5>So you can't, you are, if we don't have a mechanism to prevent that, then essentially anyone might be using any experimental feature at any point without realizing.
+
+00:32:38.820 --> 00:32:46.960
+<v SPEAKER_5>And we've gone even further since with this experimental pragma, which disables the warnings.
+
+00:32:46.960 --> 00:32:54.260
+<v SPEAKER_5>So you don't, you say use experimental, you take the walk of shame, so to say, but you had to do that previously anyway.
+
+00:32:54.560 --> 00:33:04.180
+<v SPEAKER_5>The warning is turned off though, and the use experimental keeps working after the feature is taken out of experimental status because it has to.
+
+00:33:04.180 --> 00:33:13.340
+<v SPEAKER_5>So that means even this fig leaf of, you just write use experimental instead of use feature, and there's no difference left anymore.
+
+00:33:13.340 --> 00:33:18.560
+<v SPEAKER_2>We can't protect against CPAN authors doing insane things.
+
+00:33:18.560 --> 00:33:37.780
+<v SPEAKER_2>Like, there is nothing, there is no possible, I don't think that I could mentally justify needing to make sure that anything somebody uploads to CPAN that worked once on one specific Pearl version with an experimental feature works forever?
+
+00:33:37.780 --> 00:33:39.880
+<v SPEAKER_2>Like, if somebody does something...
+
+00:33:39.880 --> 00:33:42.560
+<v SPEAKER_5>We need experimental features, that's correct.
+
+00:33:42.680 --> 00:33:44.260
+<v SPEAKER_5>I don't disagree with that at all.
+
+00:33:44.260 --> 00:33:52.320
+<v SPEAKER_5>It's just that the mechanism we have doesn't provide that, is my argument, because we have no control over that.
+
+00:33:52.320 --> 00:34:02.580
+<v SPEAKER_5>And the thing that I am thinking of is the long, hard lessons that they learned in the CSS, in the browser space.
+
+00:34:03.060 --> 00:34:20.580
+<v SPEAKER_2>I do wonder if there's a tooling solution here, where the CPAN and CPAN clients can introspect for places where experimental code is being used, so that your tool chain can warn you that your dependencies are doing unsafe things.
+
+00:34:20.580 --> 00:34:32.600
+<v SPEAKER_1>And yeah, and I think that's the argument that Aristotle was making, is that you may not be using experimental features, but you don't know if any of your dependency, or your dependencies' dependency, is using one.
+
+00:34:32.600 --> 00:34:47.500
+<v SPEAKER_1>And if that's become invisible because of use experimental, or just removing the warning, then you as a responsible user are not safe against experimental features, and when Perl takes them away, then your code breaks because you upgraded Perl.
+
+00:34:47.500 --> 00:34:58.040
+<v SPEAKER_6>Yeah, look, that when we talk about what does it mean to responsibly use an upstream library, it's, we have this idea that we can all sort of close our eyes and say, la, la, la.
+
+00:34:58.060 --> 00:35:07.660
+<v SPEAKER_6>And, you know, it's like, well, you know, we just, we trust that the upstream code is okay, because the alternative is we say, we read the upstream code, and God knows we're not all going to do that.
+
+00:35:07.660 --> 00:35:17.300
+<v SPEAKER_6>But in reality, the threat of somebody upstream using experimental is no different than someone upstream having a branch that does RMRF slash, right?
+
+00:35:17.300 --> 00:35:20.520
+<v SPEAKER_6>The code that you're installing, uninspected can do anything.
+
+00:35:20.520 --> 00:35:23.040
+<v SPEAKER_6>And so we have to decide what our social contract is.
+
+00:35:23.040 --> 00:35:47.040
+<v SPEAKER_6>And if the social contract is when you upload CPAN code, you are not going to publish code as not experimental, that relies on experimental code, which I would suggest is an implicitly understood part of the social contract, then people should not be expected, then it should be safe for people to say, I installed this thing that is published as a reasonably standard library on CPAN, and I use it, and I don't expect it's going to break.
+
+00:35:47.040 --> 00:35:49.500
+<v SPEAKER_6>And if it does break, there's going to be fallout to pick up.
+
+00:35:49.500 --> 00:36:09.880
+<v SPEAKER_6>But if they really, really don't want there to be fallout, the onus on that needs, yeah, it does need, I would say, to be on the people downstream, carefully inspecting the code they use, and not on every single user of Perl, or more importantly, the developers of Perl itself, to never, ever take away something, which doesn't mean you're going to leave it there forever.
+
+00:36:09.880 --> 00:36:12.380
+<v SPEAKER_6>It means you're never going to add anything new.
+
+00:36:12.380 --> 00:36:15.480
+<v SPEAKER_6>And that is the death knell of progress.
+
+00:36:15.480 --> 00:36:17.040
+<v SPEAKER_5>Obviously, yes.
+
+00:36:17.040 --> 00:36:22.240
+<v SPEAKER_5>And like I said, we need some form of mechanism for experimental features.
+
+00:36:22.800 --> 00:36:25.700
+<v SPEAKER_6>Yeah, but we have one, is my point.
+
+00:36:25.700 --> 00:36:32.860
+<v SPEAKER_5>Yeah, I guess that's the disagreement, is that I don't think that the mechanism we have provides what we actually need.
+
+00:36:32.860 --> 00:37:01.260
+<v SPEAKER_5>And the thing I'm thinking of is, which I don't know, however, if in Perl space is necessary, but I want to outline what happened in CSS space, is that they have this mechanism where they would introduce experimental features for CSS that individual browser vendors could propose and implement as sort of a proof of concept.
+
+00:37:01.260 --> 00:37:07.200
+<v SPEAKER_5>And those would be hidden, so to say, behind the prefix.
+
+00:37:07.200 --> 00:37:25.540
+<v SPEAKER_5>So that instead of the property that you wanted, you wrote the property with a, I don't know, dash O for opera or a dash WebKit for what for a long time and was a joint engine between Apple and Google.
+
+00:37:25.540 --> 00:37:30.260
+<v SPEAKER_5>Dash Moz, exactly, for the Mozilla browsers.
+
+00:37:30.260 --> 00:37:39.980
+<v SPEAKER_5>And what happened was that the features would get used on the Web to an extent that they couldn't get rid of them anymore.
+
+00:37:39.980 --> 00:37:55.540
+<v SPEAKER_5>And to the point where eventually Firefox started to implement things under the Dash WebKit prefix, like, not their own prefix, because they had to, because sites relied on it.
+
+00:37:55.540 --> 00:37:58.500
+<v SPEAKER_5>It was a huge mess in that space.
+
+00:37:58.500 --> 00:38:15.320
+<v SPEAKER_5>And what eventually happened, and the solution that actually turned out to work, that is what is done to this day, is that experimental features are enabled in the browser by the user by going into some UI and turning on a flag.
+
+00:38:15.320 --> 00:38:31.060
+<v SPEAKER_5>And until the user does that, the feature does not work, which means that you can expect as a web developer, if you ship a site that relies on such an experimental feature, you can expect that it isn't going to work.
+
+00:38:31.060 --> 00:38:43.700
+<v SPEAKER_5>It doesn't exist in the public web, which means that you are then free to say, okay, the designers can experiment it with it, but it doesn't escape to the public web.
+
+00:38:43.700 --> 00:38:56.900
+<v SPEAKER_5>The mechanism that makes all this work, which is I'm not entirely sure we can do this in Pro, is that there is no way from within the browser to turn those flags on.
+
+00:38:56.900 --> 00:38:58.520
+<v SPEAKER_5>Only the user can do that.
+
+00:38:58.520 --> 00:39:08.180
+<v SPEAKER_5>And because you can't ask the visitor to go into their browser settings to turn something on, to make your site work, that's basically what holds the whole thing together.
+
+00:39:08.180 --> 00:39:33.180
+<v SPEAKER_5>Now, I'm not sure we can replicate this exact setup in Pro, but something in this sort of, that it has to be in this triangle of the browser renderer, the web developer, and the end user, is a relationship that basically all of them need to come together to use an experimental feature to make it work.
+
+00:39:33.720 --> 00:39:37.900
+<v SPEAKER_5>And that is how they got out of the mess that they got themselves in.
+
+00:39:37.900 --> 00:39:41.900
+<v SPEAKER_5>And something in that direction, I think, we need in Perl also.
+
+00:39:41.900 --> 00:39:47.860
+<v SPEAKER_6>I mean, the technical solution that you use for this in Perl is a command line switch that can't be passed on the shebang line, right?
+
+00:39:47.860 --> 00:39:56.240
+<v SPEAKER_6>And that's how Dash Big C works for turning on implicit Unicode, and we also know that 0.0% of people in the world use Dash Big C.
+
+00:39:56.240 --> 00:40:02.260
+<v SPEAKER_6>I think what this effectively turns into is experiments become something barely ever used.
+
+00:40:02.420 --> 00:40:05.540
+<v SPEAKER_6>They're already very close to never used.
+
+00:40:05.540 --> 00:40:17.700
+<v SPEAKER_6>I agree, if we had done this in 2007 as a way to introduce experiments, it would have made it much harder for people to accidentally find themselves relying on experimental code.
+
+00:40:17.700 --> 00:40:24.540
+<v SPEAKER_6>To me, at this point, it feels like locking the barn after the horse has already left.
+
+00:40:24.540 --> 00:40:31.000
+<v SPEAKER_5>Well, for existing features, I definitely agree, but we still hope to introduce new ones.
+
+00:40:31.660 --> 00:40:36.300
+<v SPEAKER_5>I think there's still value in doing that now from going forward.
+
+00:40:36.300 --> 00:40:41.660
+<v SPEAKER_3>Aristotle, do we have a concept of how many modules on CPAN are even using experimental features?
+
+00:40:42.060 --> 00:40:48.500
+<v SPEAKER_5>I don't have a number off the top of my head, but you can use rep.meta-supan.
+
+00:40:50.060 --> 00:40:53.400
+<v SPEAKER_5>And there's quite a number, actually.
+
+00:40:53.400 --> 00:40:55.000
+<v SPEAKER_2>What would happen if there...
+
+00:40:55.540 --> 00:41:04.620
+<v SPEAKER_2>So, does the no-experimental pragma currently cause the interpreter to reject all experimental features?
+
+00:41:04.620 --> 00:41:06.820
+<v SPEAKER_1>I think the issue is this is lexical.
+
+00:41:06.820 --> 00:41:28.060
+<v SPEAKER_2>But what I'm wondering about is whether there is an opportunity for a non-lexical no-experimental that would allow a developer who is not willing to accept the risk of experimental code to declare at an interpreter level that no experimental features should currently be enabled.
+
+00:41:28.060 --> 00:41:37.900
+<v SPEAKER_2>Because then it would be possible for someone writing code to declare that in the scope of this running program, all experimental features should be disabled.
+
+00:41:37.900 --> 00:41:44.080
+<v SPEAKER_2>And then that could conceivably be built in as a default for a use v something if we wanted.
+
+00:41:44.360 --> 00:41:46.520
+<v SPEAKER_5>I think the only...
+
+00:41:46.520 --> 00:41:51.100
+<v SPEAKER_5>That sounds like a not terrible idea necessarily.
+
+00:41:51.100 --> 00:42:02.780
+<v SPEAKER_5>I'm not sure how feasible it is, how well it intersects with the idea of you, of the end user has to turn it on.
+
+00:42:02.780 --> 00:42:12.920
+<v SPEAKER_5>The only thing I would say about that is I would want it to go the other way that you have to opt in to letting modules or whatever use experimental features.
+
+00:42:13.240 --> 00:42:16.080
+<v SPEAKER_5>But other than that, that might be an option of going about it.
+
+00:42:16.080 --> 00:42:17.280
+<v SPEAKER_5>I'm not sure.
+
+00:42:17.580 --> 00:42:20.540
+<v SPEAKER_3>If I could suggest a couple of things that don't fix this.
+
+00:42:20.540 --> 00:42:28.080
+<v SPEAKER_3>One thing is we could on MetaCPen add a flag that says, this module contains experimental features.
+
+00:42:28.080 --> 00:42:51.820
+<v SPEAKER_3>And then there's a second thing to touch on what Jesse was talking about is like the tooling that we have for CPen is like, there has been some talk about having a CPen client that can do like policy based installations where you could say, install this but don't install any modules that would have experimental features, don't install modules from this author, don't install modules that require excess code or something like that.
+
+00:42:51.820 --> 00:42:53.820
+<v SPEAKER_3>So I mean, that's something that doesn't exist.
+
+00:42:53.820 --> 00:43:01.040
+<v SPEAKER_3>But like sort of from the standpoint of trying to keep your tool chain secure, that is something that could help there as well.
+
+00:43:01.040 --> 00:43:02.340
+<v SPEAKER_5>Yeah, maybe.
+
+00:43:02.340 --> 00:43:13.000
+<v SPEAKER_1>I realize we have, like, this was meant to be one hour, and we're five minutes before the end, and we haven't talked about the big topic I wanted to talk about.
+
+00:43:13.000 --> 00:43:17.300
+<v SPEAKER_1>So, okay, let's meet again and talk about Perl 42.
+
+00:43:17.380 --> 00:43:18.060
+<v SPEAKER_6>Yes, folks.
+
+00:43:18.060 --> 00:43:18.900
+<v SPEAKER_2>Thanks so much.
+
+00:43:18.900 --> 00:43:19.380
+<v SPEAKER_2>Take care.
+
+00:43:19.380 --> 00:43:20.260
+<v SPEAKER_1>Bye.
+
+00:43:20.260 --> 00:43:20.400
+<v SPEAKER_1>Bye.
