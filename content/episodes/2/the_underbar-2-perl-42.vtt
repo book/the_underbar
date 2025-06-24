@@ -1,0 +1,1489 @@
+WEBVTT
+
+00:00:00.080 --> 00:00:03.180
+<v SPEAKER_1>Okay, let's talk about Perl 42.
+
+00:00:03.180 --> 00:00:04.940
+<v SPEAKER_1>Aristotle, do present your ID.
+
+00:00:04.940 --> 00:00:06.140
+<v SPEAKER_1>I think it's better.
+
+00:00:06.140 --> 00:00:12.940
+<v SPEAKER_2>Essentially, I'm not entirely sure how to pad this out, because the basic idea is to just drop the five from the version.
+
+00:00:12.940 --> 00:00:28.300
+<v SPEAKER_2>And in future, just present it as, it's just Perl version 42, or we're not sure actually where we might have missed the boat in this dev cycle, so it might be the next, and it would come out as Perl version 44.
+
+00:00:29.100 --> 00:00:47.680
+<v SPEAKER_2>But it's basically just that, to essentially, I wasn't quite aware of some of the things that Philip dug out in preparation for this podcast, essentially complete the vision that you proposed all the way back at the time.
+
+00:00:47.680 --> 00:00:51.540
+<v SPEAKER_3>I guess, where is the five being dropped from?
+
+00:00:51.580 --> 00:00:55.800
+<v SPEAKER_2>The dollar bracket, basically, and dollar caret V.
+
+00:00:55.800 --> 00:01:06.580
+<v SPEAKER_2>It's sticking around in the excess symbols, so Perl revision stays around and remains at five forever.
+
+00:01:06.580 --> 00:01:13.400
+<v SPEAKER_2>But we skip, essentially, the first component of that when we translate it to dollar brackets.
+
+00:01:13.440 --> 00:01:17.380
+<v SPEAKER_2>And then we realized that we...
+
+00:01:17.380 --> 00:01:20.000
+<v SPEAKER_2>That was originally the only part of the proposal.
+
+00:01:20.000 --> 00:01:32.800
+<v SPEAKER_2>We have since realized that we need to keep the version a triplet, so we stick a notional, just constant, dot zero at the end.
+
+00:01:32.800 --> 00:01:39.840
+<v SPEAKER_2>But it's really just Perl version and the Perl subversion symbols that map to dollar bracket in the future.
+
+00:01:39.840 --> 00:01:42.420
+<v SPEAKER_2>And that's more or less all there is to it.
+
+00:01:43.040 --> 00:01:49.120
+<v SPEAKER_3>I understand the desire to change, essentially, the marketing name of the language.
+
+00:01:49.120 --> 00:01:57.100
+<v SPEAKER_3>Is there a technical reason why changing the symbols is a win?
+
+00:01:57.100 --> 00:02:03.800
+<v SPEAKER_2>Essentially, it's not really going to make sense to people.
+
+00:02:03.880 --> 00:02:07.840
+<v SPEAKER_2>Marketing side also, if the...
+
+00:02:07.840 --> 00:02:18.480
+<v SPEAKER_2>Maybe I should backtrack a moment, and the thing that we want to convey basically to outsiders is the whole excursion with Perl 6.
+
+00:02:18.480 --> 00:02:29.680
+<v SPEAKER_2>And the outside perception right now is that Perl is still five, and is sort of stuck in this before the next version comes out.
+
+00:02:29.680 --> 00:02:31.100
+<v SPEAKER_2>It's still the old version.
+
+00:02:31.360 --> 00:02:35.000
+<v SPEAKER_2>That's the perception that has been established.
+
+00:02:35.000 --> 00:02:46.740
+<v SPEAKER_2>And the reason to go with dropping the five is to openly say that essentially we're not changing anything, actually.
+
+00:02:46.740 --> 00:02:54.640
+<v SPEAKER_2>But to also call attention to the fact that actually there are new versions of Perl still coming out every year at the same time.
+
+00:02:54.640 --> 00:02:59.900
+<v SPEAKER_2>And I don't think that that is going to stick from an outside perception point of view.
+
+00:03:00.280 --> 00:03:06.580
+<v SPEAKER_2>If at least the tarball isn't called Perl 44 rather than Perl 5.44.
+
+00:03:06.580 --> 00:03:14.900
+<v SPEAKER_2>If you try to do that, then it gets kind of weird if the versions don't line up internally also.
+
+00:03:14.900 --> 00:03:24.020
+<v SPEAKER_2>And that's pretty much like we're trying to change the version number in a way that changes it as little as possible, if that makes any sense.
+
+00:03:24.020 --> 00:03:29.640
+<v SPEAKER_2>Like make it a real change, but the smallest possible real change to the version number.
+
+00:03:29.940 --> 00:03:30.720
+<v SPEAKER_2>Real bump.
+
+00:03:30.720 --> 00:03:32.100
+<v SPEAKER_2>And that's that.
+
+00:03:32.100 --> 00:03:38.000
+<v SPEAKER_4>To me, it sounds like there's a pub, and they put up a big sign that says Grand Reopening.
+
+00:03:38.000 --> 00:03:39.940
+<v SPEAKER_4>And you're like, oh, were they closed for a while?
+
+00:03:39.960 --> 00:03:41.200
+<v SPEAKER_4>They were never closed.
+
+00:03:41.200 --> 00:03:42.280
+<v SPEAKER_4>Well, what's changed?
+
+00:03:42.280 --> 00:03:43.300
+<v SPEAKER_4>Nothing has changed.
+
+00:03:43.300 --> 00:03:44.880
+<v SPEAKER_4>How much do they spend on that sign?
+
+00:03:44.880 --> 00:03:46.260
+<v SPEAKER_1>We have new beers.
+
+00:03:46.260 --> 00:03:46.640
+<v SPEAKER_4>And if the-
+
+00:03:46.640 --> 00:03:47.320
+<v SPEAKER_1>We have new beers.
+
+00:03:47.320 --> 00:03:49.340
+<v SPEAKER_4>But there's no new beers.
+
+00:03:49.340 --> 00:03:50.140
+<v SPEAKER_4>There's no new beers.
+
+00:03:50.980 --> 00:03:51.680
+<v SPEAKER_2>There are.
+
+00:03:51.680 --> 00:03:52.280
+<v SPEAKER_2>Every year there are.
+
+00:03:52.280 --> 00:03:54.380
+<v SPEAKER_3>We have the class beer.
+
+00:03:55.120 --> 00:03:59.660
+<v SPEAKER_3>They've had a new monthly beer every month for the last 15 years, but-
+
+00:03:59.660 --> 00:04:00.180
+<v SPEAKER_1>Yes.
+
+00:04:00.180 --> 00:04:06.920
+<v SPEAKER_2>Yeah, but nobody was paying attention because they were waiting for the new bigger bar to open up next door.
+
+00:04:06.920 --> 00:04:08.400
+<v SPEAKER_4>And it did.
+
+00:04:08.400 --> 00:04:10.520
+<v SPEAKER_4>And it's called Go, right?
+
+00:04:10.520 --> 00:04:11.740
+<v SPEAKER_2>And it's a whole other place.
+
+00:04:11.740 --> 00:04:13.040
+<v SPEAKER_3>Or it's called Rust.
+
+00:04:13.040 --> 00:04:13.440
+<v SPEAKER_2>Yeah.
+
+00:04:13.440 --> 00:04:15.040
+<v SPEAKER_2>It's a whole other place.
+
+00:04:15.040 --> 00:04:17.420
+<v SPEAKER_4>Neil, you were going to talk before you had a bail.
+
+00:04:17.420 --> 00:04:18.000
+<v SPEAKER_3>Yeah.
+
+00:04:18.000 --> 00:04:23.900
+<v SPEAKER_5>So I prepared notes on my thoughts of all this.
+
+00:04:23.900 --> 00:04:27.420
+<v SPEAKER_5>So how about I just go through this super fast?
+
+00:04:27.620 --> 00:04:28.860
+<v SPEAKER_5>You can ask me any questions.
+
+00:04:28.860 --> 00:04:34.840
+<v SPEAKER_5>If there's anything you don't understand in what I say, and then at some point soon after that, I'll probably have to bail.
+
+00:04:34.840 --> 00:04:39.900
+<v SPEAKER_5>So what are the things that are overloaded on discussion of Perl version numbers?
+
+00:04:39.900 --> 00:04:41.580
+<v SPEAKER_5>There's people's expectations.
+
+00:04:41.660 --> 00:04:43.840
+<v SPEAKER_5>I don't mean just in the Perl community.
+
+00:04:43.840 --> 00:04:54.320
+<v SPEAKER_5>I mean, general people's expectations and understanding of how version numbers work, what they mean, and what the difference between one version number and the next means.
+
+00:04:54.380 --> 00:05:01.120
+<v SPEAKER_5>Perl 135 and what people might have thought about, what those mean, that was covered by Philippe earlier.
+
+00:05:01.120 --> 00:05:07.260
+<v SPEAKER_5>Perl 6, the perception and the hope that it was a successor, followed by the source of separation of Raku.
+
+00:05:07.260 --> 00:05:12.500
+<v SPEAKER_5>You know, there's that history that we're trying to resolve in some way here.
+
+00:05:12.500 --> 00:05:24.620
+<v SPEAKER_5>The Perl 7 proposal that was announced in 2020, the language evolution strategy that the second PSC configuration did, which included a possible future Perl 7 as well.
+
+00:05:24.620 --> 00:05:41.520
+<v SPEAKER_5>But the definition of that being different from the Sawyer one, was that when we reached a certain point where there's like, actually, there's a whole load of new stuff, then you call it Perl 7, and you've got something to back up the fact that you've changed the name, so that when people look, it feels like, oh, yeah, this is a new Perl.
+
+00:05:41.520 --> 00:05:53.300
+<v SPEAKER_5>But a key point of the language strategy was, we are always going to maintain backwards compatibility with 5, and the maybe drop the 5, which turns out has some historical precedence as well.
+
+00:05:53.300 --> 00:05:56.400
+<v SPEAKER_5>So all of these things are getting kind of factored in here.
+
+00:05:56.400 --> 00:05:59.420
+<v SPEAKER_5>So, and then, what's the point of version numbers?
+
+00:05:59.420 --> 00:06:00.760
+<v SPEAKER_5>Am I on the latest version?
+
+00:06:00.760 --> 00:06:02.100
+<v SPEAKER_5>What is the latest version?
+
+00:06:02.100 --> 00:06:04.720
+<v SPEAKER_5>How far am I from the latest version?
+
+00:06:04.720 --> 00:06:07.480
+<v SPEAKER_5>What's the version delta between mine and the latest?
+
+00:06:07.480 --> 00:06:11.580
+<v SPEAKER_5>5.0.0 to 5.0.1 feels pretty small.
+
+00:06:11.620 --> 00:06:14.600
+<v SPEAKER_5>5.40 to 44, massive.
+
+00:06:14.600 --> 00:06:16.420
+<v SPEAKER_5>There must be tons of shit in that release.
+
+00:06:16.780 --> 00:06:19.780
+<v SPEAKER_5>What's really being proposed by the PSC?
+
+00:06:19.780 --> 00:06:20.800
+<v SPEAKER_5>Just don't...
+
+00:06:20.800 --> 00:06:23.780
+<v SPEAKER_5>My perception of it is, yeah, just don't report the revision.
+
+00:06:23.780 --> 00:06:31.300
+<v SPEAKER_5>Under the hood, it's still 5.40.4.1, but it will be reported as Perl version 44, subversion 1.
+
+00:06:31.300 --> 00:06:34.600
+<v SPEAKER_5>What do I interpret from version numbers?
+
+00:06:34.600 --> 00:06:39.560
+<v SPEAKER_5>Change in the revision should either means big shiny or breaking changes.
+
+00:06:39.560 --> 00:06:42.200
+<v SPEAKER_5>Change in version is just stuff.
+
+00:06:42.200 --> 00:06:44.320
+<v SPEAKER_5>Yeah, nothing like too exciting.
+
+00:06:44.320 --> 00:06:44.980
+<v SPEAKER_5>It's just stuff.
+
+00:06:45.320 --> 00:06:49.120
+<v SPEAKER_5>Same old, same old and backwards compatible, usually.
+
+00:06:49.120 --> 00:06:52.060
+<v SPEAKER_5>Changes in the smallest number, oops.
+
+00:06:52.060 --> 00:06:56.440
+<v SPEAKER_5>So why change from the 5.x.y scheme?
+
+00:06:56.440 --> 00:07:04.580
+<v SPEAKER_5>The perception that 5.x means that Perl hasn't really changed since the dot-com boom, particularly outside the Perl bubble.
+
+00:07:04.580 --> 00:07:09.520
+<v SPEAKER_5>Just maybe the reason is just to stop discussions about Perl versions.
+
+00:07:09.520 --> 00:07:16.980
+<v SPEAKER_5>Move past the whole Perl 6 mess and get people to take another look or a look at Perl.
+
+00:07:16.980 --> 00:07:22.840
+<v SPEAKER_5>Perhaps people, newer generations who've never looked at it, people who've previously tried it, written it off.
+
+00:07:22.840 --> 00:07:29.540
+<v SPEAKER_5>So with all that context, I then thought, okay, so why don't I like the 44 thing?
+
+00:07:29.540 --> 00:07:35.760
+<v SPEAKER_5>First thing is, massive jumps in version numbers always feel like bonkers or marketing bullshit to me.
+
+00:07:35.760 --> 00:07:39.060
+<v SPEAKER_5>So, and there will be some of that perception.
+
+00:07:39.280 --> 00:07:40.720
+<v SPEAKER_1>And it's kind of true, right?
+
+00:07:40.720 --> 00:07:41.520
+<v SPEAKER_1>It's marketing.
+
+00:07:42.140 --> 00:07:42.780
+<v SPEAKER_5>Yeah.
+
+00:07:42.780 --> 00:07:48.860
+<v SPEAKER_5>So it's still 5.44.0, but with a piece of sticky tape over the 5.0.
+
+00:07:48.860 --> 00:07:57.700
+<v SPEAKER_5>And at some point, various people are going to have to admit, oh, it is still 5.44, and then it will feel like, oh, okay, so it's like a pretend thing.
+
+00:07:57.700 --> 00:08:02.160
+<v SPEAKER_5>We lose the chance for a marketing bump of, hey, Perl has changed.
+
+00:08:02.160 --> 00:08:03.480
+<v SPEAKER_5>This is a new language.
+
+00:08:03.480 --> 00:08:10.840
+<v SPEAKER_5>It's just, as Rick kind of said, it's, well, you're making it sound like there's a big thing, and now is the time to look at it.
+
+00:08:11.080 --> 00:08:15.680
+<v SPEAKER_5>But probably it's like, yeah, no, but actually in a few more releases, there'll be even more cooler stuff.
+
+00:08:15.680 --> 00:08:25.180
+<v SPEAKER_5>So it feels like we lose the one chance for people to get people to pay attention, because there'll be some noise made about it.
+
+00:08:25.180 --> 00:08:32.060
+<v SPEAKER_5>But if the noise is, well, actually nothing's really changed from how it's always been, you've just blown your one chance.
+
+00:08:32.420 --> 00:08:42.260
+<v SPEAKER_5>You could say, well, let's wait to drop the five point whatever, until the point in terms of the feature set matches what I think should be called Perl 7.
+
+00:08:42.260 --> 00:08:45.300
+<v SPEAKER_5>And so then you do make the noise.
+
+00:08:45.300 --> 00:08:52.200
+<v SPEAKER_5>You still have the point that I think jump into a 44 and having a 44, 46, I don't like.
+
+00:08:52.200 --> 00:08:56.900
+<v SPEAKER_5>Chrome and various other things have a high version number that just keeps ticking over.
+
+00:08:56.900 --> 00:09:03.320
+<v SPEAKER_5>And part of the reason behind that, I think, is don't pay attention to the version number.
+
+00:09:03.320 --> 00:09:08.020
+<v SPEAKER_5>And is that really the message you want to send of don't pay attention to the version number?
+
+00:09:08.020 --> 00:09:08.600
+<v SPEAKER_5>I don't think so.
+
+00:09:08.720 --> 00:09:09.880
+<v SPEAKER_5>This is a programming language.
+
+00:09:09.880 --> 00:09:19.100
+<v SPEAKER_5>It's not an application, particularly a mass adoption application like Chrome where they would just want people to turn on auto updates and just forget about it.
+
+00:09:19.100 --> 00:09:20.960
+<v SPEAKER_5>It doesn't matter what version you're running.
+
+00:09:20.960 --> 00:09:24.900
+<v SPEAKER_5>So that was in a quick brain dump, my thinking on it.
+
+00:09:24.900 --> 00:09:27.400
+<v SPEAKER_1>I have a bunch of points.
+
+00:09:27.400 --> 00:09:40.180
+<v SPEAKER_1>So one of them is, we Perl, the latest version of Perl, if you say nothing works and you pick code that was written in 2002, 4, 5, 8, we'll work on it with a very high chance.
+
+00:09:40.180 --> 00:09:57.080
+<v SPEAKER_1>And the point of saying we jump from 540 to 42 or 542 to 44 is to say, yes, it's a massive jump and we can make noise about everything, all of the new beers we added every month for so many years.
+
+00:09:57.080 --> 00:09:58.700
+<v SPEAKER_1>We can talk about signatures.
+
+00:09:59.000 --> 00:10:01.700
+<v SPEAKER_1>We have the bitwise operators.
+
+00:10:01.700 --> 00:10:06.880
+<v SPEAKER_1>We have a bunch of things that have been added, and it's not the Perl you knew in 2002.
+
+00:10:06.880 --> 00:10:10.600
+<v SPEAKER_1>So that's one way to explain the marketing thing.
+
+00:10:10.600 --> 00:10:19.660
+<v SPEAKER_5>Before Jesse jumps in, can I just respond to that specific thing, which is one example of this is the new OO framework, which is coming in a number of releases.
+
+00:10:19.660 --> 00:10:23.980
+<v SPEAKER_5>Right now, you've got the basics of a new OO framework.
+
+00:10:23.980 --> 00:10:29.800
+<v SPEAKER_5>And when it gets released, if that's not the finished version, it's going to be, hey, there's this all great stuff.
+
+00:10:29.800 --> 00:10:31.880
+<v SPEAKER_5>And people go, this is your OO framework?
+
+00:10:32.280 --> 00:10:32.900
+<v SPEAKER_5>Yeah, yeah, don't worry.
+
+00:10:32.900 --> 00:10:36.120
+<v SPEAKER_5>In a few more releases, it'll be the OO framework you want to use.
+
+00:10:36.120 --> 00:10:39.200
+<v SPEAKER_5>Well, why did you make a big noise about it now then?
+
+00:10:39.400 --> 00:10:41.880
+<v SPEAKER_1>It's still experimental at the moment.
+
+00:10:42.400 --> 00:10:46.360
+<v SPEAKER_5>So we shouldn't be making a big noise about something that's experimental, I guess is my point.
+
+00:10:46.540 --> 00:10:49.900
+<v SPEAKER_1>It's making a big noise about all of the changes unpotential now.
+
+00:10:49.900 --> 00:10:50.880
+<v SPEAKER_5>Yeah, I get that.
+
+00:10:50.880 --> 00:10:54.960
+<v SPEAKER_5>But I think you're blowing the one chance, is my point.
+
+00:10:55.000 --> 00:10:56.320
+<v SPEAKER_5>Jesse.
+
+00:10:56.320 --> 00:10:59.260
+<v SPEAKER_3>The thing that, I mean, these points make sense to me.
+
+00:10:59.260 --> 00:11:20.820
+<v SPEAKER_3>The thing that I would ponder to try to avoid the, it's a big marketing bump for no value, is if what happened now was that it's Perl 5 version 42, and not worrying about what variables say when you query them, and we do that for 42.
+
+00:11:21.900 --> 00:11:29.980
+<v SPEAKER_3>And I say we, even though I know that I'm not actually, I have no formal role anymore, and that's great.
+
+00:11:29.980 --> 00:11:31.120
+<v SPEAKER_4>It's time to surprise you, Jesse.
+
+00:11:31.120 --> 00:11:33.180
+<v SPEAKER_4>We've elected you to the PSC just before this.
+
+00:11:33.180 --> 00:11:35.280
+<v SPEAKER_4>Whoo!
+
+00:11:35.280 --> 00:11:36.000
+<v SPEAKER_3>I've got a plan.
+
+00:11:36.000 --> 00:11:39.000
+<v SPEAKER_3>You're gonna love it.
+
+00:11:39.000 --> 00:11:51.820
+<v SPEAKER_3>Is if it's Perl 5 42, and Perl 5 44, and Perl 5 46, and then in two years, we simply acknowledge the fact that, look, we've been calling it Perl 5 version, whatever.
+
+00:11:51.820 --> 00:11:57.800
+<v SPEAKER_3>The 5 really is just a legacy thing, and there's no reason to have it anymore.
+
+00:11:57.800 --> 00:12:04.220
+<v SPEAKER_3>And so we drop the 5 from the language name after we separate it from the version.
+
+00:12:04.220 --> 00:12:14.660
+<v SPEAKER_3>And so what people who are not paying close attention, they see the releases, and it's Perl 5 version 44, Perl 5 version 46, Perl version 48.
+
+00:12:14.660 --> 00:12:20.540
+<v SPEAKER_3>And it's not a, hey, look, we're making a big deal out of nothing right now, just so that you pay attention to us.
+
+00:12:20.540 --> 00:12:28.220
+<v SPEAKER_2>But isn't that one has already happened in 5.12, and we're just taking it to completion now?
+
+00:12:28.220 --> 00:12:34.780
+<v SPEAKER_3>I mean, I haven't read what release announcements and documentation say in a while, so I don't know.
+
+00:12:34.780 --> 00:12:35.620
+<v SPEAKER_3>I don't...
+
+00:12:35.620 --> 00:12:36.660
+<v SPEAKER_2>Ah, okay.
+
+00:12:36.660 --> 00:12:37.340
+<v SPEAKER_3>You mean the marketing?
+
+00:12:37.340 --> 00:12:39.000
+<v SPEAKER_3>I don't know what the actual text of what...
+
+00:12:39.000 --> 00:12:46.760
+<v SPEAKER_3>I mean, this is a marketing chain, and so we should be being cognizant of what the marketing has been saying.
+
+00:12:46.760 --> 00:12:58.980
+<v SPEAKER_3>And certainly when I wrote the boilerplate for a new Perl announcement, for a new major version announcement, I was thinking about that at the time, but I don't know what it's been saying for the last n years.
+
+00:12:58.980 --> 00:13:02.340
+<v SPEAKER_1>I think it says, this is Perl version 42.
+
+00:13:03.240 --> 00:13:05.460
+<v SPEAKER_2>Perl 5 version 40.
+
+00:13:05.500 --> 00:13:06.440
+<v SPEAKER_1>Oh yeah, yeah, Perl 5.
+
+00:13:06.440 --> 00:13:07.380
+<v SPEAKER_1>Yeah, of course.
+
+00:13:07.380 --> 00:13:08.740
+<v SPEAKER_1>Yeah, sorry.
+
+00:13:08.980 --> 00:13:13.900
+<v SPEAKER_4>It actually, the release, let me make sure I'm not checked out a really ancient version.
+
+00:13:13.900 --> 00:13:19.960
+<v SPEAKER_4>Looking at Bleed, not that I think this is really how we need to decide how the universe works.
+
+00:13:19.960 --> 00:13:27.020
+<v SPEAKER_4>If you look at the release announcement template, it says, please to announce version 5.x.y.
+
+00:13:28.140 --> 00:13:28.540
+<v SPEAKER_2>Right.
+
+00:13:28.540 --> 00:13:31.360
+<v SPEAKER_1>And so we've been doing that for a long time.
+
+00:13:31.360 --> 00:13:43.660
+<v SPEAKER_3>And I think that, is there, Neil, if the release announcement were to change to say, this is, you know, Perl 5 version 42, does that twig your, this feels wrong?
+
+00:13:43.660 --> 00:13:45.600
+<v SPEAKER_5>Yes, big time.
+
+00:13:45.600 --> 00:13:51.000
+<v SPEAKER_5>So right now, people think Perl and Perl 5 are the same thing.
+
+00:13:51.000 --> 00:13:57.360
+<v SPEAKER_5>And so, and at one point it's like, ah, Perl 5 and Perl 6, they're different languages.
+
+00:13:57.360 --> 00:13:58.480
+<v SPEAKER_5>Okay.
+
+00:13:58.480 --> 00:14:03.160
+<v SPEAKER_5>It may sound like it's Perl with a version number after it, but it's not.
+
+00:14:03.160 --> 00:14:04.540
+<v SPEAKER_5>The 5 is part of the name.
+
+00:14:04.540 --> 00:14:05.900
+<v SPEAKER_5>It's not a version number.
+
+00:14:05.900 --> 00:14:07.200
+<v SPEAKER_1>Yep.
+
+00:14:07.700 --> 00:14:21.620
+<v SPEAKER_5>But we can play those kind of semantic games with ourselves, but most of the world who aren't deeply involved in P5P, if you say Perl 5 point something or Perl 5, whatever, 5 is part of the version number.
+
+00:14:21.620 --> 00:14:32.160
+<v SPEAKER_5>So in terms of like, if you like, my preferences would be, I think I liked the idea of at some point, it becomes Perl 7.
+
+00:14:32.500 --> 00:14:35.260
+<v SPEAKER_5>It jumps past 6, it resolves the stuff.
+
+00:14:35.900 --> 00:14:38.620
+<v SPEAKER_5>You can have the bump if we want to try and get it.
+
+00:14:38.620 --> 00:14:40.220
+<v SPEAKER_5>It does send the message.
+
+00:14:40.440 --> 00:14:45.420
+<v SPEAKER_5>You've bumped the first number, which is this big shiny stuff.
+
+00:14:45.420 --> 00:14:48.920
+<v SPEAKER_5>So you're taking advantage of people's existing mental models.
+
+00:14:48.920 --> 00:14:50.360
+<v SPEAKER_5>So that's my first one.
+
+00:14:50.360 --> 00:14:54.600
+<v SPEAKER_5>The second one, it would be, just keep it as 5 point something.
+
+00:14:54.600 --> 00:15:05.220
+<v SPEAKER_5>If that's what it really is, and we're saying, the big thing is, we're always compatible with Perl 5, then make a positive out of that and just stick with that.
+
+00:15:05.220 --> 00:15:12.940
+<v SPEAKER_5>So of the three different options there, the switch to a 44 numbering just feels wrong to me in various ways.
+
+00:15:12.940 --> 00:15:21.380
+<v SPEAKER_5>And I figure, well, if we're not going to bump 7, because there's internal reasons why it's painful to bump the first number, then just stick with the 5 dot something.
+
+00:15:21.380 --> 00:15:24.060
+<v SPEAKER_4>Just to jump in a bit of bookkeeping here.
+
+00:15:24.060 --> 00:15:42.760
+<v SPEAKER_4>If the question earlier was about whether we say Perl 5 version X in the release document, we actually moved backwards on this in 2023, when we stopped saying version 20.1 of Perl 5 and started saying version 5.20 of Perl.
+
+00:15:42.760 --> 00:15:43.320
+<v SPEAKER_2>Weird.
+
+00:15:43.320 --> 00:15:44.720
+<v SPEAKER_2>Who did that?
+
+00:15:44.720 --> 00:15:45.440
+<v SPEAKER_4>Graham.
+
+00:15:45.440 --> 00:15:46.860
+<v SPEAKER_5>Okay.
+
+00:15:46.860 --> 00:16:02.940
+<v SPEAKER_2>Well, the thing, I mean, the idea sounds maybe tempting, but what I'm thinking when I'm thinking about that is it opens up the question of when does Perl 8 come out, and what's going to be in that one, and when do we go to Perl 9?
+
+00:16:02.940 --> 00:16:08.700
+<v SPEAKER_2>So yes, we can make noise, basically just capture the excitement.
+
+00:16:08.700 --> 00:16:14.000
+<v SPEAKER_2>No, but it's essentially leaves us in the same position that we were in before.
+
+00:16:14.000 --> 00:16:18.640
+<v SPEAKER_1>And also the big number changes, but we never break anything.
+
+00:16:18.640 --> 00:16:18.800
+<v SPEAKER_5>Yeah.
+
+00:16:18.800 --> 00:16:23.800
+<v SPEAKER_1>Which is also counterintuitive to other people, to what everybody else thinks.
+
+00:16:23.800 --> 00:16:24.820
+<v SPEAKER_5>Not necessarily.
+
+00:16:24.860 --> 00:16:33.680
+<v SPEAKER_5>Normally, the big number bumping, have you seen the pride versioning thing, where, you know, the semantic versioning, if you bump the first number, you're proud of it.
+
+00:16:33.680 --> 00:16:37.200
+<v SPEAKER_5>If you bump the middle number, it's like, yeah, neither here nor there.
+
+00:16:37.240 --> 00:16:41.220
+<v SPEAKER_5>And if you bump the small number, it's the shame version increment.
+
+00:16:43.020 --> 00:16:54.880
+<v SPEAKER_5>So in the post that we did in 2022, what's happened to the one where we said, okay, this is the language strategy now, is we're going to stay backwards compatible.
+
+00:16:54.880 --> 00:17:12.560
+<v SPEAKER_5>In that one, we said, at some point, oh, and the doubling down on the use feature and use experimental as a mechanism, and that line zero is always backwards compatible, and line one, and future.
+
+00:17:12.560 --> 00:17:15.780
+<v SPEAKER_5>Changing it at line one, you specify the version of the language.
+
+00:17:15.780 --> 00:17:19.020
+<v SPEAKER_5>That was my office mate trying to get a reaction out, and you could see it worked.
+
+00:17:20.460 --> 00:17:28.140
+<v SPEAKER_5>And we said that at some point, that there's a whole bunch of good new features, still evolving and still experimental.
+
+00:17:28.140 --> 00:17:33.720
+<v SPEAKER_5>And at some point, when all those have landed, that becomes, hey, this is a very different language.
+
+00:17:33.720 --> 00:17:45.380
+<v SPEAKER_5>That's a good time to say, take a look, and we say, right, okay, that is version seven, and you get the bump on the proud version, but it's still backwards compatible for five.
+
+00:17:45.380 --> 00:17:48.540
+<v SPEAKER_5>And to me, those aren't exclusive.
+
+00:17:48.960 --> 00:17:54.940
+<v SPEAKER_5>And then at some point, then you do 7.2, 7.4, 7.8, and that might go on for a long time.
+
+00:17:54.940 --> 00:17:59.480
+<v SPEAKER_5>And if there's a whole bunch of amazing new features that come, well, then you bump eight.
+
+00:17:59.480 --> 00:18:08.560
+<v SPEAKER_5>And so it's just a decision point to bump eight, because then most Perl programmers would then just say, oh, I'm using V8, or I'm using V7.
+
+00:18:08.560 --> 00:18:17.340
+<v SPEAKER_5>They don't care about the incremental changes that come in 7.2, 7.4, but hey, I'm definitely using that package of good stuff that came out in Perl seven.
+
+00:18:17.760 --> 00:18:25.540
+<v SPEAKER_5>And that makes it easier for people to decide which of the many versions of Perl out there is the one that they're targeting with their code.
+
+00:18:25.540 --> 00:18:31.960
+<v SPEAKER_5>Most people don't care about and don't follow all the changes in the different versions from year to year.
+
+00:18:31.960 --> 00:18:44.600
+<v SPEAKER_5>But if there's a very visible kind of flag in the sand, which is this is a good baseline to base your code on, that's an additional kind of reason to have this bumping the big one.
+
+00:18:44.900 --> 00:18:52.040
+<v SPEAKER_4>On the other hand, I think this is the place where I would usually jump in and say, what you're describing is a roadmap.
+
+00:18:52.040 --> 00:18:59.860
+<v SPEAKER_4>And Perl has never been good, at least for a long time at having a roadmap, because the people who draw the map are not the people who fuel the car.
+
+00:18:59.860 --> 00:19:11.040
+<v SPEAKER_4>And saying we're gonna call it version eight when these 10 features are done, makes you look like a real idiot when the people who are working on four of those features retire, move to Aruba, whatever.
+
+00:19:11.040 --> 00:19:14.840
+<v SPEAKER_4>It makes those goals, by definition, have to be shifting goalposts.
+
+00:19:14.840 --> 00:19:18.980
+<v SPEAKER_4>And it just seems to me like a way to set ourselves up for failure by saying we have a roadmap.
+
+00:19:18.980 --> 00:19:25.080
+<v SPEAKER_1>Yeah, I was about to say the new features, we don't have people to make them.
+
+00:19:25.480 --> 00:19:35.940
+<v SPEAKER_1>And the other thing I wanted to say is, so you said Chrome and Firefox, you're having big version numbers that increment all the time, give the message that version numbers are not important.
+
+00:19:35.940 --> 00:19:48.460
+<v SPEAKER_1>But actually, I think version numbers are important because if you use version, like the one thing I want more than 42 or 44 is everybody writes their code starting with use version.
+
+00:19:48.460 --> 00:20:00.340
+<v SPEAKER_1>And so they tell themselves, the maintainers and the Perl interpreter itself, this is the version of the language this was written against.
+
+00:20:00.340 --> 00:20:20.820
+<v SPEAKER_1>And especially in a company like mine, where we have 40,000 Perl modules with use version going from 5.001 because someone made a typo on 5010, up to 536, which sometimes cause trouble because we do have some machines running 528.
+
+00:20:20.820 --> 00:20:32.940
+<v SPEAKER_1>I would love our code base to have a Perl critical that says you have to have a use version in your code, and it has to be at least 528 or whatever binary we run right now.
+
+00:20:33.240 --> 00:20:39.840
+<v SPEAKER_1>And that way, like one way people write code is by looking at other people's code.
+
+00:20:39.840 --> 00:20:44.640
+<v SPEAKER_1>And there is a lot of cargo culting in, especially in a large company's code base.
+
+00:20:44.640 --> 00:20:49.820
+<v SPEAKER_1>And if you code against a recent version of Perl, you're going to be using signatures.
+
+00:20:49.820 --> 00:20:53.980
+<v SPEAKER_1>You're going to be using the good stuff that was added.
+
+00:20:53.980 --> 00:21:04.680
+<v SPEAKER_1>We have people already, even though we don't have 538, for their personal project in the company, doing use v538, use feature class, because they want this.
+
+00:21:04.680 --> 00:21:12.580
+<v SPEAKER_1>And when we start having code that does this, we can start using the good stuff and have better Perl code over time.
+
+00:21:12.580 --> 00:21:19.620
+<v SPEAKER_1>So to me, the most important thing is, I want use version to be the new use strict and warnings.
+
+00:21:19.620 --> 00:21:25.460
+<v SPEAKER_1>For 20 years, people have been saying, you know, on forums, you write Perl code, and people say, you didn't put use strict and warnings.
+
+00:21:25.460 --> 00:21:28.900
+<v SPEAKER_1>How do you expect me to help you if you don't even let Perl help you?
+
+00:21:29.220 --> 00:21:53.480
+<v SPEAKER_1>And now that use v contains strict and warnings, the next step is just start your any Perl code with use version, and it's now the magic number for, you know, like the file command line utility could look at the first six bytes of your file and say, oh, it starts with u s e space v five dot a number, and that's a Perl five whatever program.
+
+00:21:54.140 --> 00:22:01.500
+<v SPEAKER_1>And so five, like the x in five dot x is more important than the letter before the five.
+
+00:22:01.500 --> 00:22:10.560
+<v SPEAKER_1>And if we start doing, oh, I'm using, I'm doing use v seven, then we lose all the good stuff in the intermediate versions.
+
+00:22:10.560 --> 00:22:16.500
+<v SPEAKER_1>Because as Rick said, new features happen, but they're really, you know, it's a trickle.
+
+00:22:16.500 --> 00:22:22.880
+<v SPEAKER_1>It's like you get one from time to time, and if you're lucky and people get busy and stuff comes together, you get a few of them.
+
+00:22:23.300 --> 00:22:24.760
+<v SPEAKER_1>But not always.
+
+00:22:24.760 --> 00:22:42.240
+<v SPEAKER_2>One thing I want to add for that is one reason that we want to put more emphasis on that is that we realize that this is the way really that we can take the language forward while still honoring our promise not to break backward compatibility.
+
+00:22:43.420 --> 00:23:12.720
+<v SPEAKER_2>In the sense of making the language nicer for someone who comes to it, newly comes to it in the future, is we in recent releases, what started to happen is that we have retroactively added feature flags for things in the language that we realized were misfeatures that have been part of the language forever, and then making the feature bundle for a new version of Perl disabled those.
+
+00:23:12.720 --> 00:23:14.380
+<v SPEAKER_2>So they're still there.
+
+00:23:14.440 --> 00:23:30.460
+<v SPEAKER_2>We had this whole decision to make in this dev cycle that I'm part of about the apostrophe as a package separator and about the smart match operator, which originally the plan was to just remove entirely.
+
+00:23:30.460 --> 00:23:38.840
+<v SPEAKER_2>But we've found that both of them broke enough things that we didn't want to go there, particularly with the discussion.
+
+00:23:38.840 --> 00:23:49.500
+<v SPEAKER_2>That's always the thing to always keep in mind, that what breaks on CPAN is just an indication of how much code will break off of CPAN, where we can't see and can't fix it.
+
+00:23:49.500 --> 00:24:06.540
+<v SPEAKER_2>And so we think the way forward is in this way to, if we think that the language would be better without some old feature that it used to have, that we put it behind feature flags and disable that feature flag in future feature bundles.
+
+00:24:07.020 --> 00:24:17.580
+<v SPEAKER_2>And to make that work, we're going to need people to start to get into the habit of saying use version to get whatever the latest version at the time they're writing is.
+
+00:24:17.580 --> 00:24:20.940
+<v SPEAKER_2>Or of course, this was also a point that we discussed.
+
+00:24:20.940 --> 00:24:30.500
+<v SPEAKER_2>Or of course, if they want to publish code, they may want specifically to choose an older dialect of the language to go.
+
+00:24:30.980 --> 00:24:38.440
+<v SPEAKER_2>And for like the most conservative choices would be for people putting stuff on CPUN.
+
+00:24:38.440 --> 00:24:43.200
+<v SPEAKER_2>And this way we can both resolve the conflict that we had.
+
+00:24:43.200 --> 00:24:54.640
+<v SPEAKER_2>Essentially the plan, the what Jesse essentially started the discussion of, if you want to call it that way, of how do we handle this?
+
+00:24:54.640 --> 00:25:02.460
+<v SPEAKER_2>Like what happens when somebody runs code written for 5.0 on 5.60 or something?
+
+00:25:02.460 --> 00:25:28.980
+<v SPEAKER_3>So a thing that Book was talking about, about why internally they really like people to use specific version numbers, got me wondering, given that there are annual releases, it almost feels like the thing that would make the most useful difference for the world and is a rational thing to change the versioning system would be that the next release of Perl is Perl 2026.
+
+00:25:30.860 --> 00:25:39.180
+<v SPEAKER_3>And that you are literally going to the Software Model Year where you are saying, I am declaring that I am using 2026 Perl for this code.
+
+00:25:39.180 --> 00:25:44.920
+<v SPEAKER_3>And that the next year, yes, we would no longer be using odd number versions as dev.
+
+00:25:44.920 --> 00:25:53.140
+<v SPEAKER_3>But basically, if we're jumping forward to some large number major version, just screw it and use the Software Model Year.
+
+00:25:54.620 --> 00:26:09.260
+<v SPEAKER_3>And from here on in, if you see code in 10 years that's used V2026, you know that it is essentially either it is pinned to something ancient, and the version numbers actually have a meaning.
+
+00:26:09.340 --> 00:26:12.860
+<v SPEAKER_2>I am curious what Neil thinks about that idea.
+
+00:26:12.860 --> 00:26:21.040
+<v SPEAKER_5>So I've got a couple of responses, and then to various points, I've been trying to keep notes as to who was saying anything, and then I'm going to have to go very soon.
+
+00:26:21.040 --> 00:26:30.040
+<v SPEAKER_5>So first, kind of Rick said something about, oh, we shouldn't, we might not be able to go to 7 if the people who were developing the features disappear.
+
+00:26:30.040 --> 00:26:33.800
+<v SPEAKER_5>What we said in that announcement was, there may be a version 7.
+
+00:26:33.800 --> 00:26:36.220
+<v SPEAKER_5>We may stay on version 5 forever.
+
+00:26:36.220 --> 00:26:49.740
+<v SPEAKER_5>When we reached, if we reach a feature set that we all feel proud of, and feel like this is the version of Perl, that if someone's going to give it a go, we think now is the point for them to come and have a play with Perl.
+
+00:26:49.740 --> 00:26:51.840
+<v SPEAKER_5>And so it might never get bumped.
+
+00:26:51.900 --> 00:26:54.200
+<v SPEAKER_5>It might stay at 5 points or something.
+
+00:26:54.200 --> 00:27:01.620
+<v SPEAKER_5>But that would be the time to bump it, is when we want to take advantage of the one bump that we've got.
+
+00:27:01.620 --> 00:27:14.740
+<v SPEAKER_5>Then in response to Book, but also Aristotle, somewhat in what Aristotle just said, I wonder, most Perl programmers, do they really know what version they should be putting in their use version line?
+
+00:27:14.840 --> 00:27:20.620
+<v SPEAKER_5>Or do they just put the one that's on the machine they're running, and they're not really making an informed version.
+
+00:27:20.740 --> 00:27:26.440
+<v SPEAKER_5>It's just, well, it says I'm running Perl 5.38, so I'll put use V38.
+
+00:27:26.440 --> 00:27:43.180
+<v SPEAKER_5>But actually, they might be writing code to 5.22, in which case, if all their code, they've agreed we're going to use these features in Perl, then you could possibly argue, particularly if they're releasing stuff on the CPAN, put use V522.
+
+00:27:43.180 --> 00:27:49.380
+<v SPEAKER_5>So most people who are developing in Perl, they're not tracking what features came in what versions of Perl.
+
+00:27:50.040 --> 00:27:51.820
+<v SPEAKER_5>They don't know how to go and find those out.
+
+00:27:51.820 --> 00:27:52.840
+<v SPEAKER_5>They don't know how to...
+
+00:27:52.840 --> 00:28:02.060
+<v SPEAKER_5>I could be completely wrong here, but I'm talking about me, and I'm assuming some percentage of Perl people like me in that I'm pretty informed on Perl.
+
+00:28:02.200 --> 00:28:05.680
+<v SPEAKER_5>I don't know what versions most features came in.
+
+00:28:06.700 --> 00:28:18.020
+<v SPEAKER_5>My mental model for the putting 7 is, if we want to try and invite people in, you just say put use V7, and you get a good set of features in the language.
+
+00:28:18.640 --> 00:28:21.200
+<v SPEAKER_5>Anything else just feels like a random number.
+
+00:28:21.200 --> 00:28:24.480
+<v SPEAKER_1>But wasn't that what 536 was?
+
+00:28:24.480 --> 00:28:34.920
+<v SPEAKER_1>Like what happened to Perl 7 to me gave the feeling that the way to get a good Perl when you write Perl code is to start your script with use V536.
+
+00:28:34.920 --> 00:28:38.940
+<v SPEAKER_1>And you get all the good stuff and a bunch of the not so good stuff removed.
+
+00:28:38.940 --> 00:28:40.640
+<v SPEAKER_1>And so that's a good starting point.
+
+00:28:40.640 --> 00:28:43.560
+<v SPEAKER_1>And it's a random number, but it's the one we had.
+
+00:28:43.980 --> 00:28:52.740
+<v SPEAKER_5>And that was the strategy of use features, use experimental, do the line 1 instead of line 0, so that you put a use V.
+
+00:28:52.740 --> 00:28:57.220
+<v SPEAKER_5>But then, okay, so we agreed, everyone agreed that's the right strategy.
+
+00:28:57.220 --> 00:29:00.680
+<v SPEAKER_5>But then what's the number that you put in that use V line?
+
+00:29:00.680 --> 00:29:03.220
+<v SPEAKER_5>And I'm just saying most people don't really know.
+
+00:29:03.220 --> 00:29:04.620
+<v SPEAKER_3>That's an education thing.
+
+00:29:04.620 --> 00:29:09.980
+<v SPEAKER_4>Yeah, I think really the answer is the one running on your computer, right?
+
+00:29:09.980 --> 00:29:11.620
+<v SPEAKER_4>Like I don't think that's a bad answer.
+
+00:29:12.000 --> 00:29:14.320
+<v SPEAKER_4>I think that's saying, you should put the one running on your computer.
+
+00:29:14.320 --> 00:29:16.720
+<v SPEAKER_4>That's going to get you the best available thing.
+
+00:29:16.720 --> 00:29:19.600
+<v SPEAKER_4>You don't put a newer version, because it's not available, right?
+
+00:29:19.600 --> 00:29:21.320
+<v SPEAKER_4>So you just stick that at the top of your program.
+
+00:29:21.320 --> 00:29:23.380
+<v SPEAKER_4>Now all your documentation is correct.
+
+00:29:23.380 --> 00:29:30.700
+<v SPEAKER_4>And if something does say you need to be at version, you know, X dot Y for this to work, every file you have written has that documented at the top.
+
+00:29:30.700 --> 00:29:32.040
+<v SPEAKER_4>So I think that works really well.
+
+00:29:32.040 --> 00:29:42.420
+<v SPEAKER_4>I think that saying that we should have version 7, because 7 is easier to remember than 536, which no one has expressly said, but I think it's sort of an undercurrent.
+
+00:29:42.420 --> 00:29:43.300
+<v SPEAKER_4>I don't...
+
+00:29:43.300 --> 00:29:44.800
+<v SPEAKER_2>Neil did.
+
+00:29:44.800 --> 00:29:45.240
+<v SPEAKER_4>Okay.
+
+00:29:45.240 --> 00:29:45.800
+<v SPEAKER_4>All right.
+
+00:29:45.800 --> 00:29:46.440
+<v SPEAKER_4>Great.
+
+00:29:47.140 --> 00:29:50.080
+<v SPEAKER_4>I don't think that that's really much of a win.
+
+00:29:50.080 --> 00:29:59.780
+<v SPEAKER_4>I think that V536, by getting rid of other boilerplate you need, and subsequent versions, I think, have done a great job of getting rid of more boilerplate that I...
+
+00:29:59.780 --> 00:30:03.320
+<v SPEAKER_4>Or boilerplate that didn't exist but should have, really put the current version at the top.
+
+00:30:03.320 --> 00:30:15.200
+<v SPEAKER_4>To me, feels like the right answer, it will always work, and doing more than that requires that you care about the version and you're thinking about the features you want, at which point you've got other things that are educating you about this.
+
+00:30:15.200 --> 00:30:21.800
+<v SPEAKER_4>I think lots and lots of things that got said about the value of starting your program with use v whatever are true.
+
+00:30:21.800 --> 00:30:24.000
+<v SPEAKER_4>They make it easier for people to know what features are there.
+
+00:30:24.000 --> 00:30:38.440
+<v SPEAKER_4>They make it easy for us to take things away on people who are writing new code or who are expressly editing the code to say, now I'm ready, there's a new version on my computer, I'm going to go edit all my files, right, and commit that as a thing that I'm taking responsibility for.
+
+00:30:38.440 --> 00:30:39.640
+<v SPEAKER_4>Those are great.
+
+00:30:39.640 --> 00:30:49.000
+<v SPEAKER_4>But to me, none of those have a penny to do with changing the version number beyond incrementing part of it every year.
+
+00:30:49.000 --> 00:30:50.680
+<v SPEAKER_4>That's entirely about optics.
+
+00:30:50.680 --> 00:31:03.120
+<v SPEAKER_4>I think the question of establishing it as a covenant with the user, the covenant with the user is done in Perl policy, and it's not implicit, it's not obvious from the kind of change to a version what covenant has been made with the user.
+
+00:31:03.180 --> 00:31:04.740
+<v SPEAKER_4>They still have to go read something.
+
+00:31:04.740 --> 00:31:07.400
+<v SPEAKER_4>So I think that there's a cost.
+
+00:31:07.400 --> 00:31:23.660
+<v SPEAKER_4>There's a cost to changing the big number, and I think that there's very little benefit available to a very small number of people, and we should be catering to the existing uses of Perl and making their life easier and better as they reach the end of their careers and move on.
+
+00:31:23.660 --> 00:31:28.080
+<v SPEAKER_5>So all of that stuff, I completely agree with in terms of the...
+
+00:31:28.080 --> 00:31:33.220
+<v SPEAKER_5>Because that was the discussion we had many times around in the PSE, that the whole...
+
+00:31:33.220 --> 00:31:36.280
+<v SPEAKER_5>The value of training people to put the use V line.
+
+00:31:36.280 --> 00:31:39.980
+<v SPEAKER_5>So first line of your code is use V.
+
+00:31:39.980 --> 00:31:48.260
+<v SPEAKER_5>And if tutorials online say that, well, you know, so much Perl code out there online doesn't say what version it's being written to.
+
+00:31:48.260 --> 00:31:59.680
+<v SPEAKER_5>And if everyone started doing that, then you know, if you run this script that someone's given as an example that starts with the use V, if it doesn't run, because you've got an old version of Perl, it's going to tell you why.
+
+00:32:00.380 --> 00:32:02.420
+<v SPEAKER_5>So I completely agree with all that.
+
+00:32:02.420 --> 00:32:15.240
+<v SPEAKER_5>And then if then it never goes to 7, then that's why for me, the fallback is we'll just stay on 5 something, because the important piece is new features are coming and put the use V line is the message.
+
+00:32:15.240 --> 00:32:21.300
+<v SPEAKER_5>And so I just don't, I don't see the value in 44, I guess, is my point.
+
+00:32:21.300 --> 00:32:25.380
+<v SPEAKER_2>Yeah, so I wanted to address two points you made.
+
+00:32:25.440 --> 00:32:31.720
+<v SPEAKER_2>Maybe there is the same point, which is essentially the thing.
+
+00:32:31.720 --> 00:32:33.000
+<v SPEAKER_2>Well, it's a two part answer.
+
+00:32:33.000 --> 00:32:34.580
+<v SPEAKER_2>Let's put it this way.
+
+00:32:34.580 --> 00:32:38.180
+<v SPEAKER_2>The thing I think it's important to bump the version.
+
+00:32:38.180 --> 00:32:51.720
+<v SPEAKER_2>Because if you listen to what people report back from conferences about people outside the Perl space, their big question is basically, when's the next version coming?
+
+00:32:51.720 --> 00:33:00.260
+<v SPEAKER_2>And so while in terms of compatibility, of language evolution, I'm fully on board with, let's just never bump it.
+
+00:33:00.260 --> 00:33:11.100
+<v SPEAKER_2>The problem is, that's just gonna leave the perception that we just never made it out of the hole we got stuck in basically before Perl 6 started.
+
+00:33:11.100 --> 00:33:11.980
+<v SPEAKER_2>And...
+
+00:33:11.980 --> 00:33:15.440
+<v SPEAKER_1>The answer to when's the next version coming is next year.
+
+00:33:15.440 --> 00:33:19.840
+<v SPEAKER_2>Yes, that's the thing I want to establish here.
+
+00:33:19.840 --> 00:33:27.240
+<v SPEAKER_2>And also, I'm thinking of this in terms, not of the big publicity stunts, discussion, and so on and so forth.
+
+00:33:27.240 --> 00:33:31.560
+<v SPEAKER_2>That's obviously going to happen when we do the change.
+
+00:33:31.560 --> 00:33:36.980
+<v SPEAKER_2>Of course, and there will be people who say, oh, this is just a marketing ploy, and so on and so forth.
+
+00:33:36.980 --> 00:33:39.620
+<v SPEAKER_2>But think back a couple of years after that.
+
+00:33:39.620 --> 00:33:44.260
+<v SPEAKER_2>It's going to be a normal thing that a new version of Perl comes out every year.
+
+00:33:44.260 --> 00:33:46.400
+<v SPEAKER_2>And that's the place I want to get to.
+
+00:33:46.400 --> 00:33:47.720
+<v SPEAKER_2>Like, I'm...
+
+00:33:47.720 --> 00:34:02.200
+<v SPEAKER_2>I don't think it's a good idea to be stuck in this space where Perl is just this old language from whenever, when all the other languages that are hip today are just as old as Perl, but they don't have the same perception problem.
+
+00:34:02.200 --> 00:34:05.860
+<v SPEAKER_2>And we have some precedent in both directions.
+
+00:34:05.860 --> 00:34:07.980
+<v SPEAKER_2>Like Java did the...
+
+00:34:07.980 --> 00:34:12.880
+<v SPEAKER_2>where they dropped the one dot from in front of 1.5 and went to Java 5.
+
+00:34:12.880 --> 00:34:15.120
+<v SPEAKER_2>And we also have...
+
+00:34:15.120 --> 00:34:25.580
+<v SPEAKER_2>I recently saw the Go people, for example, have addressed this and said, there's been the question of when is Go 2.0 coming out?
+
+00:34:25.580 --> 00:34:31.920
+<v SPEAKER_2>And they said, well, in terms of the next version of the language that breaks things, that's never gonna happen.
+
+00:34:31.920 --> 00:34:34.580
+<v SPEAKER_2>That's basically the place I want us to get to.
+
+00:34:34.580 --> 00:34:37.340
+<v SPEAKER_2>And so I think it is important to bump the version.
+
+00:34:37.340 --> 00:34:55.160
+<v SPEAKER_2>And the question is, if that's what we want to do, how, is essentially the idea that we all have, like I said, we make a big splash with a whole bunch of new features and so on and so forth, isn't, like you said, which version should I use?
+
+00:34:55.160 --> 00:35:12.660
+<v SPEAKER_2>Like Rick said, the one that you have, basically, the most recent one that's available to you, most of the time, unless, of course, you're publishing code for other people, in which case you might be more conscious about it, but then you're also going to go and look at where you want to set your cutoff point.
+
+00:35:12.660 --> 00:35:14.300
+<v SPEAKER_2>Yeah, that's essentially the answer.
+
+00:35:14.300 --> 00:35:20.220
+<v SPEAKER_2>I want to get out of this place that Perl has gotten stuck in due to the whole history of all of that.
+
+00:35:20.220 --> 00:35:31.060
+<v SPEAKER_4>I think I would take issue with the idea that Perl is stuck in where it is because of history, and instead say Perl is stuck where it is because of technology.
+
+00:35:31.060 --> 00:35:34.320
+<v SPEAKER_4>I would say, if people say, when's the next version?
+
+00:35:35.100 --> 00:35:41.240
+<v SPEAKER_4>I have this misapprehension that you're stuck in the hole that you were in before 2008 or whatever.
+
+00:35:41.240 --> 00:35:43.320
+<v SPEAKER_4>I think that's not a misapprehension.
+
+00:35:43.320 --> 00:35:48.260
+<v SPEAKER_4>I think that Perl's growth as a language has been enjoyable.
+
+00:35:48.260 --> 00:35:49.800
+<v SPEAKER_4>I have liked using the new features.
+
+00:35:49.800 --> 00:36:05.100
+<v SPEAKER_4>I think they're nice new features, but I think that they are by and large bits of syntactic sugar on top of a underlying technical framework that has not significantly improved in the last, I don't want to give a number of years, but many years, and that I think is unlikely ever to.
+
+00:36:05.560 --> 00:36:17.500
+<v SPEAKER_4>I think that we need to be real honest about this, or at least I think I should be honest, and I am stating my honest opinion, that the future of Perl are competing with these languages that we say are just as old as Perl, but more successful.
+
+00:36:17.920 --> 00:36:23.420
+<v SPEAKER_4>It's not like if people looked at Perl differently, they'd realize it is up to the task of these other languages.
+
+00:36:23.420 --> 00:36:46.200
+<v SPEAKER_4>These other languages have remained successful, have remained funded, have remained staffed, have built ongoing tooling improvements and integration with development tools, and in part, they've been able to do those development tools because they've been highly staffed and funded, and it's part they've been able to do that kind of development and ongoing work because the underlying technical implementation was more amenable to it.
+
+00:36:46.200 --> 00:36:59.700
+<v SPEAKER_4>And I just don't think there's anything to be gained by saying, if we just convince people to give Perl another look, they'll come, they'll stick around, and they'll cause a second, third, whatever number we want, golden age.
+
+00:36:59.700 --> 00:37:01.480
+<v SPEAKER_4>I think that that ship has sailed.
+
+00:37:01.480 --> 00:37:07.060
+<v SPEAKER_4>And it's a little sad because I've built my career on Perl, and I like Perl, and I think it's a really nice programming language.
+
+00:37:07.060 --> 00:37:15.180
+<v SPEAKER_4>But I also think that its future for building new products has, it's not a lot of return on investment there compared to other languages.
+
+00:37:15.180 --> 00:37:19.760
+<v SPEAKER_4>And so optimizing for that kind of case, there's no percentage in it.
+
+00:37:19.760 --> 00:37:23.520
+<v SPEAKER_4>I think optimizing for the existing users is where all the return is.
+
+00:37:23.520 --> 00:37:31.860
+<v SPEAKER_4>And when we look at what's the nature of existing users, it's by definition a shrinking market that sort of establishes what are the kind of changes we should make.
+
+00:37:31.920 --> 00:37:40.860
+<v SPEAKER_4>This is why we don't want to make breaking changes to a large extent, because breaking changes are going to impact the existing users to make way in part for new software.
+
+00:37:40.860 --> 00:37:47.080
+<v SPEAKER_4>And without more new software that's going to be able to use the things enabled by breaking changes, the drive to make them is low.
+
+00:37:47.080 --> 00:38:03.280
+<v SPEAKER_4>And I would say similarly, the drive to announce a new beginning of a new era of Perl development is not going to benefit anyone unless there is a new era of Perl development, which can only be driven by money, by people, by people spending their time.
+
+00:38:03.280 --> 00:38:05.360
+<v SPEAKER_4>And I think that that's not going to happen.
+
+00:38:05.360 --> 00:38:20.260
+<v SPEAKER_4>And fundamentally, this is the whole question for me about the Perl version number, is that it feels like we're making a big effort to communicate something, but the thing that's there, if the communicated message is, there will be no further change of no breaking change.
+
+00:38:20.260 --> 00:38:26.220
+<v SPEAKER_4>That's been communicated for a long time, and it seems like we're spending money to buy and put up the decorations to announce nothing.
+
+00:38:27.440 --> 00:38:32.800
+<v SPEAKER_2>There won't be any breaking change, but there have been significant changes.
+
+00:38:33.080 --> 00:39:04.100
+<v SPEAKER_2>The thing I've come to think in the time since I've started thinking and talking, and we've been going over this, is really what should be thought of as Perl 6 in the terms of Perl, the language that's actually Perl, rather than the language that was later renamed Raku, was really 5.6, because there's essentially a step change in what code looks like between earlier versions of Perl and 5.6.
+
+00:39:04.100 --> 00:39:08.060
+<v SPEAKER_2>And basically, where was I going with this?
+
+00:39:08.060 --> 00:39:14.300
+<v SPEAKER_1>Yeah, you were saying 5.6 should have been called 6, and the 6 would have made sense.
+
+00:39:14.300 --> 00:39:22.600
+<v SPEAKER_2>But no, I'm trying to get back to Rick's point that the thing we're trying to communicate, right?
+
+00:39:22.600 --> 00:39:24.360
+<v SPEAKER_2>That's why I took this detour.
+
+00:39:24.880 --> 00:39:34.120
+<v SPEAKER_2>The thing we're trying to communicate is this isn't Perl 5 in the sense of what Perl 5 looked like when it came out as Perl 5 initially.
+
+00:39:34.120 --> 00:39:36.020
+<v SPEAKER_2>There have been a lot of changes.
+
+00:39:36.020 --> 00:39:41.400
+<v SPEAKER_2>We're not making breaking changes, but we are making changes all along.
+
+00:39:41.400 --> 00:40:00.660
+<v SPEAKER_2>And the Perl you write today is in certain, because it's incremental, of course, in certain limited areas, it looks different from what the Perl you would have written a couple of years ago would have looked like, which to me is basically what it means if there is a change, if the language changes.
+
+00:40:00.660 --> 00:40:05.680
+<v SPEAKER_2>So it hasn't stood still, which is the perception we've given, essentially.
+
+00:40:05.680 --> 00:40:06.260
+<v SPEAKER_2>I think that...
+
+00:40:07.020 --> 00:40:08.280
+<v SPEAKER_1>Go ahead.
+
+00:40:08.280 --> 00:40:08.660
+<v SPEAKER_2>Yeah.
+
+00:40:08.660 --> 00:40:15.680
+<v SPEAKER_2>And it's true that it has declined, but I don't think...
+
+00:40:16.400 --> 00:40:26.680
+<v SPEAKER_2>I'm convinced personally that Perl 6 has had a significant Osborn effect on Perl 5, and it's a big part of the reason why we are where we are.
+
+00:40:26.680 --> 00:40:29.300
+<v SPEAKER_2>So that's why I see it.
+
+00:40:29.300 --> 00:40:32.520
+<v SPEAKER_2>That's what I want to try to undo, of course.
+
+00:40:32.520 --> 00:40:42.860
+<v SPEAKER_2>And yes, it's very little and very late at this point, but the problem with that line of thinking, from my perspective, is we are where we are now.
+
+00:40:43.180 --> 00:40:59.600
+<v SPEAKER_2>If we don't do what should have been done a long time ago, which I think actually the time to do this change was sometime in the 2013-2015 bracket, where, by the way, the whole Perl 7 idea was first being discussed in a big way.
+
+00:40:59.600 --> 00:41:01.780
+<v SPEAKER_2>That was really when this should have happened.
+
+00:41:01.780 --> 00:41:09.000
+<v SPEAKER_2>Yeah, it didn't happen then, and it has had consequences in my way of thinking.
+
+00:41:09.000 --> 00:41:21.660
+<v SPEAKER_2>But we are where we are now, and we can only either not do anything and continue to basically go down the same trajectory, or we can change it now, do something about it now.
+
+00:41:21.660 --> 00:41:29.620
+<v SPEAKER_2>It's not gonna do as much good as it would have done back when it should have happened, like I said, but it's going, I think, to do something.
+
+00:41:29.620 --> 00:41:34.180
+<v SPEAKER_2>Not much anymore at this point, but definitely more than nothing.
+
+00:41:34.180 --> 00:41:42.820
+<v SPEAKER_2>I don't expect this to lead to another age of glory for Perl by itself, certainly not.
+
+00:41:42.820 --> 00:41:58.960
+<v SPEAKER_2>I don't know if it's going to happen again, but what I am personally convinced is an obstacle to any sort of arrest of the decline of Perl happening that we would be taking away by doing this.
+
+00:41:58.960 --> 00:42:13.120
+<v SPEAKER_1>Just one thing, going back to used version, maybe we need a short documentation that says, you know, here are the last four versions of Perl, and this is what each of them give you, and our recommendation is that.
+
+00:42:13.120 --> 00:42:27.200
+<v SPEAKER_1>And maybe even say, you know, we release Perl 542 in 2025, and we say, at this point in time, Red Hat releases ships with this version of Perl, and Debian stable that version of Perl and so on.
+
+00:42:27.200 --> 00:42:38.200
+<v SPEAKER_1>And then you list like the last four, and you say, this one gave you this, this one gave you that, and you shouldn't really go past 536, because that's strict and warnings.
+
+00:42:38.840 --> 00:42:59.540
+<v SPEAKER_1>And then maybe in that case, dollar year is better than 44, 46, and so on, because it gives you the immediate knowledge that this is old code, this is recent code, and we know, and maybe we need to shout it more, that when you bump the number, stuff is most likely going to work, right?
+
+00:42:59.540 --> 00:43:04.700
+<v SPEAKER_1>Yeah, and I was also thinking about something else, which is the middle number, we're limited, right?
+
+00:43:04.700 --> 00:43:06.260
+<v SPEAKER_1>Because we cannot go past 1000.
+
+00:43:06.940 --> 00:43:14.800
+<v SPEAKER_1>So Perl cannot exist after the year 2503 in its current state.
+
+00:43:14.800 --> 00:43:23.900
+<v SPEAKER_1>And moving to the year probably gets us at least up to year, you know, y10k.
+
+00:43:23.900 --> 00:43:27.740
+<v SPEAKER_1>So that's also a way to go to the future.
+
+00:43:27.740 --> 00:43:29.920
+<v SPEAKER_2>But that only quadruples our runway.
+
+00:43:29.920 --> 00:43:32.260
+<v SPEAKER_3>We can kick that thing down the road.
+
+00:43:32.260 --> 00:43:34.700
+<v SPEAKER_1>Yeah, but that's someone else's problem, right?
+
+00:43:34.700 --> 00:43:36.020
+<v SPEAKER_4>I want to live forever, right?
+
+00:43:36.060 --> 00:43:41.380
+<v SPEAKER_4>That should be the first goal of Perl should be, how does it make the developers of Perl live forever?
+
+00:43:41.380 --> 00:43:41.480
+<v SPEAKER_5>Yes.
+
+00:43:41.480 --> 00:43:44.820
+<v SPEAKER_4>Fundamentally, the basis of most programming languages.
+
+00:43:44.820 --> 00:43:51.460
+<v SPEAKER_4>Yeah, look, I think a lot of this comes down to when you say, Philippe, we should have this document that says, here's what's in the last four versions.
+
+00:43:51.460 --> 00:43:55.740
+<v SPEAKER_4>The question for me in technical writing is, who is the audience?
+
+00:43:55.740 --> 00:44:00.980
+<v SPEAKER_4>And presumably the audience for that is people who aren't really tracking Perl development, right?
+
+00:44:00.980 --> 00:44:03.160
+<v SPEAKER_4>It's like, well, somebody's going to be using this new Perl.
+
+00:44:03.460 --> 00:44:04.700
+<v SPEAKER_4>Here's this written for them.
+
+00:44:04.700 --> 00:44:05.640
+<v SPEAKER_4>And how do we get them to read it?
+
+00:44:05.900 --> 00:44:08.500
+<v SPEAKER_4>And how do we get them to care about the contents?
+
+00:44:08.500 --> 00:44:16.400
+<v SPEAKER_4>And I think that if we start analyzing that, we end up with, well, it's people who aren't really following Perl development, but we'll read this document if we get it in front of them.
+
+00:44:16.400 --> 00:44:22.840
+<v SPEAKER_4>We'll get it in front of them by making a release that is notable in some way other than being the annual release.
+
+00:44:22.840 --> 00:44:26.100
+<v SPEAKER_4>And then they need to actually find the document persuasive.
+
+00:44:26.100 --> 00:44:31.740
+<v SPEAKER_4>And if they're people who aren't tracking Perl, then we're talking about people who either are maintaining very old Perl, not actively writing Perl.
+
+00:44:31.740 --> 00:44:39.440
+<v SPEAKER_4>They have to be so persuaded that they not only find it interesting but want to write Perl or change the way they are doing Perl as a basis.
+
+00:44:39.440 --> 00:44:49.680
+<v SPEAKER_4>I think that we're really, every time I analyze the audience of these kind of things, I end up finding that I think that they are imaginary or extremely small.
+
+00:44:49.680 --> 00:44:57.460
+<v SPEAKER_4>But the potential people impacted by complications from changing the way $ v works, that's everybody, right?
+
+00:44:57.460 --> 00:45:01.260
+<v SPEAKER_4>That's a question of, that happens in the whole interpreter for everybody who uses it.
+
+00:45:01.260 --> 00:45:09.940
+<v SPEAKER_3>It sounds like the target for that document is people releasing code that other people incorporate into their programs, and that's CPAN authors.
+
+00:45:09.940 --> 00:45:12.200
+<v SPEAKER_3>And that's a very targeted set of people.
+
+00:45:12.200 --> 00:45:22.880
+<v SPEAKER_3>And the amount of code being released to CPAN is something that can, I mean, all the code being released to CPAN is something that can be looked at and audited and introspected.
+
+00:45:22.880 --> 00:45:54.540
+<v SPEAKER_3>And if the goal is to make sure that shared code, that code that is shared, is doing things in a standard modern way, it would not be very hard for someone who is motivated to have a CPAN critic that, just like you used to get mails saying that A, this didn't build on Sonos 5, you get mails saying, hey, this module you released is targeting a version of Perl that either A is not available in any distro yet, or why are you targeting Perl 5001M in newly released code today?
+
+00:45:54.920 --> 00:45:56.480
+<v SPEAKER_3>Maybe you want to do it different.
+
+00:45:56.480 --> 00:46:05.600
+<v SPEAKER_3>And engagement with that very limited subset of people should be much more straightforward than the notional audience of anyone who's writing Perl code.
+
+00:46:05.600 --> 00:46:08.280
+<v SPEAKER_1>CPAN, yeah, it is definitely a target.
+
+00:46:08.280 --> 00:46:17.480
+<v SPEAKER_1>And there are people who will write, use v510 and make sure their code works on 510, which, yeah, I don't know.
+
+00:46:17.480 --> 00:46:31.120
+<v SPEAKER_1>But also the company that has legacy code that they want to replace but can't because it's still making money, and now nobody knows how to make it work, and nobody wants to touch it.
+
+00:46:31.120 --> 00:46:32.460
+<v SPEAKER_1>And how do you do that?
+
+00:46:32.460 --> 00:46:50.580
+<v SPEAKER_1>I think having this ability to say, okay, so I am going to take this code, and the magical thing about use version is that every Perl file in your directory can use a different one, and it's going to work as long as they are less than or equal to the current Perl binary.
+
+00:46:51.200 --> 00:46:54.640
+<v SPEAKER_1>And so you can upgrade your code at your own pace.
+
+00:46:55.440 --> 00:47:01.220
+<v SPEAKER_1>And so you can start to look at the files that are still really maintained and that people use.
+
+00:47:01.220 --> 00:47:07.340
+<v SPEAKER_1>And so you make them a more bearable Perl than the one that was written in the first place.
+
+00:47:07.620 --> 00:47:18.520
+<v SPEAKER_1>And as you delete the code that is not used anymore, you can maintain your legacy application in a way that it's much more agreeable to the maintainers.
+
+00:47:18.520 --> 00:47:21.740
+<v SPEAKER_1>They don't have to love Perl, but it's not the Perl from 2000.
+
+00:47:22.200 --> 00:47:24.960
+<v SPEAKER_1>And so, yeah, I don't know where I'm going with that.
+
+00:47:24.960 --> 00:47:29.640
+<v SPEAKER_1>But I feel that very strongly at work, right?
+
+00:47:29.780 --> 00:47:30.280
+<v SPEAKER_1>I believe that.
+
+00:47:30.280 --> 00:47:32.500
+<v SPEAKER_1>That I want to use version.
+
+00:47:32.500 --> 00:47:42.520
+<v SPEAKER_2>This sounds maybe like something that should be available on some website somewhere, not necessarily some document that should be part of that documentation.
+
+00:47:42.520 --> 00:47:43.500
+<v SPEAKER_1>It can be both.
+
+00:47:44.100 --> 00:47:48.420
+<v SPEAKER_1>And the audience also is a very good point.
+
+00:47:48.940 --> 00:47:58.460
+<v SPEAKER_1>A CPAN author will think about this in a different way than a corporate legacy maintaining person, than someone who is making tools for themselves.
+
+00:47:58.460 --> 00:48:06.080
+<v SPEAKER_1>So there are definitely different audience for this, and they will stick to different version numbers depending on what they're doing.
+
+00:48:06.080 --> 00:48:07.260
+<v SPEAKER_2>Jesse, go ahead.
+
+00:48:07.260 --> 00:48:12.780
+<v SPEAKER_3>I mean, I was just going to say, who ultimately gets to make the decision on what happens here?
+
+00:48:13.460 --> 00:48:14.700
+<v SPEAKER_2>It will be the PSC.
+
+00:48:14.700 --> 00:48:15.960
+<v SPEAKER_2>Yeah.
+
+00:48:15.960 --> 00:48:28.820
+<v SPEAKER_1>But the PSC is trying to build consensus, so we're not going to make a decision that everybody hates, and it's also a decision that every future, the future P5P and PSC are going to have to live with.
+
+00:48:28.820 --> 00:48:30.840
+<v SPEAKER_1>So we don't want to force this on anyone.
+
+00:48:30.840 --> 00:48:39.280
+<v SPEAKER_3>Well, yes, you have to build consensus, but part of the hard thing about being in charge is that occasionally you have to make a call that is...
+
+00:48:39.280 --> 00:48:40.240
+<v SPEAKER_1>The unpopular decision.
+
+00:48:40.440 --> 00:48:45.980
+<v SPEAKER_3>Well, yeah, I mean, it should be the right decision, whether or not it's popular.
+
+00:48:45.980 --> 00:48:54.000
+<v SPEAKER_3>And it may be that in the future, we will discover that it was not right, but that happens.
+
+00:48:54.000 --> 00:48:55.800
+<v SPEAKER_2>Hopefully we'll discover the opposite.
+
+00:48:55.800 --> 00:48:57.000
+<v SPEAKER_3>Yeah, that'd be lovely.
+
+00:48:57.000 --> 00:48:59.800
+<v SPEAKER_3>It's always nice when it turns out you made the right call.
+
+00:48:59.800 --> 00:49:01.020
+<v SPEAKER_4>Someday I'll find out what that's like.
+
+00:49:01.020 --> 00:49:04.940
+<v SPEAKER_2>You made a lot of right calls, I have to say, so congratulations on that.
+
+00:49:05.880 --> 00:49:09.800
+<v SPEAKER_1>Okay, I think we have our conclusions, so yeah, freeing you all.
+
+00:49:09.800 --> 00:49:11.300
+<v SPEAKER_2>It was a pleasure to be on here.
+
+00:49:11.340 --> 00:49:12.040
+<v SPEAKER_4>Yes, folks.
+
+00:49:12.040 --> 00:49:12.880
+<v SPEAKER_3>Thanks so much.
+
+00:49:12.880 --> 00:49:13.360
+<v SPEAKER_3>Take care.
+
+00:49:13.360 --> 00:49:14.240
+<v SPEAKER_1>Bye.
+
+00:49:14.240 --> 00:49:14.380
+<v SPEAKER_3>Bye.
