@@ -1,0 +1,2077 @@
+WEBVTT
+
+00:00:00.180 --> 00:00:08.500
+<v Philippe> I've been listening to podcasts a lot recently, and I figured the one that I want to listen to doesn't exist yet.
+
+00:00:08.500 --> 00:00:14.900
+<v Philippe> And it looks very much like the bar conversations I have with people about code.
+
+00:00:14.900 --> 00:00:23.060
+<v Philippe> Because I find, you know, I like writing code, but it turns out I like talking about code much more than I like writing it.
+
+00:00:25.960 --> 00:00:45.460
+<v Philippe> So, yeah, my idea for this is let's invite, you know, people, technical people, who know about stuff, and we'll talk about it without censoring themselves for the hypothetical audience that doesn't know everything they know.
+
+00:00:45.460 --> 00:01:04.480
+<v Philippe> So it's really about we, people do interesting technical stuff, and I want to hear those conversation, I want to ask questions, and I like the way people think and work, so let's start with those.
+
+00:01:04.480 --> 00:01:06.120
+<v Philippe> That's also most of the people I know, right?
+
+00:01:09.460 --> 00:01:29.240
+<v Philippe> But I suppose instead of just rambling on topics, maybe it's easier to start with a topic, and as the year starts, we now have a new Perl Logo, and yeah, most of the people here were part of this or part of the conversation.
+
+00:01:29.240 --> 00:01:33.820
+<v Philippe> So I think that's a good topic to start with.
+
+00:01:33.820 --> 00:01:40.620
+<v SPEAKER_2>You know, actually, as you were, so actually, I can give some background on the logo.
+
+00:01:40.620 --> 00:01:50.360
+<v SPEAKER_2>Basically, actually, you know who should give background on the logo is Teeb, because I think he said a lot of this into motion.
+
+00:01:51.940 --> 00:01:56.780
+<v SPEAKER_3>Yeah, can he start the conversation on the logo?
+
+00:01:56.800 --> 00:02:00.200
+<v SPEAKER_3>It has always been a problem for Perl.
+
+00:02:00.200 --> 00:02:09.220
+<v SPEAKER_3>I mean, we inherited from O'Reilly this nice mascot, but it has always been legally a problem.
+
+00:02:09.220 --> 00:02:17.260
+<v SPEAKER_3>They did some usage, license delegated to Perlmonks, Perlmongers, TPF, et cetera.
+
+00:02:17.260 --> 00:02:32.920
+<v SPEAKER_3>But that was four years, numerous discussions on Reddit, on Perlmonks, et cetera, and especially a problem for people like me that wants to illustrate blog posts, prospectus, et cetera.
+
+00:02:32.920 --> 00:02:45.460
+<v SPEAKER_3>We can ask why a programming language need a logo, if they don't have really a logo, even if they produce something to be able to put on meme types.
+
+00:02:45.460 --> 00:02:51.480
+<v SPEAKER_3>Ten years ago, I think, Sebastian Riedel came with Velociaptor.
+
+00:02:51.480 --> 00:03:07.900
+<v SPEAKER_3>More recently, I started to speak about the complex topic of Perlogos, and aside from that, Neil contacted Tim Morelli for his position, and came with a cartoonish logo.
+
+00:03:07.900 --> 00:03:11.720
+<v SPEAKER_3>It did not work at that time.
+
+00:03:11.720 --> 00:03:20.220
+<v SPEAKER_3>And then more recently, we continuously hit the ground with blogs, discussions, me and others.
+
+00:03:20.220 --> 00:03:39.660
+<v SPEAKER_3>And two years ago, Bruno, who is here, kickstarted really the initiative that has succeeded, which is posting to Ubuntu an issue about their logo, that they designed it with something totally different from the O'Reilly camel.
+
+00:03:39.660 --> 00:03:42.400
+<v SPEAKER_3>Still a camel, for some, but totally different.
+
+00:03:42.400 --> 00:03:47.860
+<v SPEAKER_3>And from there, we have basically the core team, which is there, missing neighbors.
+
+00:03:47.860 --> 00:04:07.620
+<v SPEAKER_3>Just as a team, we tried to design, to move forward with ideas, at start with one thing, which was trying to standardize on a shadow camel, mainly with Bruno, but it was legally still a problem, being a derivative, and we were not all agreeing with that.
+
+00:04:07.620 --> 00:04:23.520
+<v SPEAKER_3>On my side, starting from the statement that we were not able in the past to standardize on any different design, I was more trying to, okay, we cannot come with a new logo, so try to free the current one.
+
+00:04:23.520 --> 00:04:43.700
+<v SPEAKER_3>So I started to dig the dirt and to post to Hacker News on Dev2 to try to ask Tim to free the camel, because the position he had about the camel 20 years ago, I know it well-versed in open source and free software, and for me, there is some discrepancy.
+
+00:04:43.700 --> 00:05:01.700
+<v SPEAKER_3>But they are still friends, and it was difficult for them to free the logo without taking risk for them, for their trademark dress in general, for all books, all services, because I think it's one cornerstone of their protection of trademark.
+
+00:05:01.700 --> 00:05:13.780
+<v SPEAKER_3>And then Olaf, which is there, I did most of the leading of the initiative, contacted the holders, presented to Pertusian Sumit, to Perlstirin Conceal, et cetera, et cetera.
+
+00:05:13.780 --> 00:05:17.580
+<v SPEAKER_3>Really the leadership part of the initiative.
+
+00:05:17.580 --> 00:05:25.280
+<v SPEAKER_3>And Sebastien, so after the Pertusian Sumit, they decided to move forward with an external design.
+
+00:05:25.280 --> 00:05:28.880
+<v SPEAKER_3>They sourced someone to design a new logo.
+
+00:05:28.880 --> 00:05:30.740
+<v SPEAKER_3>Olaf came back to us with the logo.
+
+00:05:30.740 --> 00:05:35.600
+<v SPEAKER_3>Sebastien started to work on the design to improve it and to make it ready to use for us.
+
+00:05:36.100 --> 00:05:46.740
+<v SPEAKER_3>And then, the end of the story is more recently about voting, including more stakeholders, Rally More, Olaf's side, and Sebastien.
+
+00:05:46.740 --> 00:05:58.400
+<v SPEAKER_3>We took the risk, actually, on the advent calendar, to present it and to face possibly some big pushback, as we have seen in the Perl community for other topics.
+
+00:05:59.980 --> 00:06:04.300
+<v SPEAKER_3>And no, it's going well.
+
+00:06:04.300 --> 00:06:05.380
+<v SPEAKER_3>It's going well.
+
+00:06:05.380 --> 00:06:07.420
+<v SPEAKER_3>We don't force people to use it.
+
+00:06:07.420 --> 00:06:11.660
+<v SPEAKER_3>We just provide, free to use, a nice logo.
+
+00:06:11.660 --> 00:06:14.000
+<v SPEAKER_3>Fall in love, take your time.
+
+00:06:14.000 --> 00:06:16.220
+<v SPEAKER_3>Use it if you want or don't.
+
+00:06:16.220 --> 00:06:20.760
+<v SPEAKER_3>And we see that infrastructure is slowly using it.
+
+00:06:20.760 --> 00:06:24.860
+<v SPEAKER_3>Bruno just posted for Ubuntu to use it for the icons.
+
+00:06:25.260 --> 00:06:29.980
+<v SPEAKER_3>So it seems to be a great success.
+
+00:06:29.980 --> 00:06:32.840
+<v SPEAKER_3>I think we are all proud to be part of it.
+
+00:06:32.840 --> 00:06:39.400
+<v SPEAKER_3>And I can leave the mic to maybe Olaf, which was leading most of the initiative.
+
+00:06:39.400 --> 00:06:40.140
+<v SPEAKER_2>Yeah, thanks, too.
+
+00:06:40.900 --> 00:06:43.460
+<v SPEAKER_2>I think that's a great summary.
+
+00:06:44.760 --> 00:06:58.420
+<v SPEAKER_2>Like, the backstory on the logo is basically that, right, so that we had this camel, and that there have been various attempts over the years to try and come up with some other design that people can unify on.
+
+00:06:58.420 --> 00:07:01.480
+<v SPEAKER_2>Like, the Pearl Foundation had the onion.
+
+00:07:01.480 --> 00:07:03.980
+<v SPEAKER_2>There was a velociraptor.
+
+00:07:03.980 --> 00:07:11.640
+<v SPEAKER_2>There's sort of been various camels, but we haven't had really just one thing that we can all agree on.
+
+00:07:11.640 --> 00:07:18.380
+<v SPEAKER_2>One example that I look to is Go, because I think, in our case, we're kind of conflating a logo and a mascot.
+
+00:07:18.380 --> 00:07:22.960
+<v SPEAKER_2>Like, if you look at Go, they have a kind of a boring logo that I was not familiar with it.
+
+00:07:22.960 --> 00:07:26.160
+<v SPEAKER_2>I'll have to go find it, because I just think that there's a gopher.
+
+00:07:26.160 --> 00:07:29.220
+<v SPEAKER_2>But the gopher is the mascot, and they make it sort of freely available.
+
+00:07:29.220 --> 00:07:37.500
+<v SPEAKER_2>And there are even tools to design your own gopher so that whenever somebody has a new go tool, it's got some customized gopher to go with it.
+
+00:07:37.500 --> 00:07:40.780
+<v SPEAKER_2>You know, people are crocheting and whatever, their own gopher.
+
+00:07:42.580 --> 00:07:46.960
+<v SPEAKER_2>And there's that neat thing where you get people something, and then you let them be creative.
+
+00:07:47.160 --> 00:07:52.800
+<v SPEAKER_2>So I thought it would be nice if we could have something like that for Perl as well.
+
+00:07:52.800 --> 00:07:58.100
+<v SPEAKER_2>There's, I mean, sort of the larger problem is that nobody's in charge of Perl.
+
+00:07:58.100 --> 00:08:03.600
+<v SPEAKER_2>So there's no one person who can say, we should get a new logo, and this is going to be it.
+
+00:08:03.600 --> 00:08:10.600
+<v SPEAKER_2>So one of the things we did talk about at the Perl tool change some of, like, there were a couple of ways that we could go with this.
+
+00:08:10.600 --> 00:08:28.600
+<v SPEAKER_2>We could just try and come up with a camel that everyone could use, or we could try and figure out who all the stakeholders are, get them all together, try and rethink the branding entirely, come up with a new logo, and then try and get community adoption for that.
+
+00:08:28.640 --> 00:08:30.680
+<v SPEAKER_2>But that's really hard, because...
+
+00:08:32.980 --> 00:08:38.280
+<v Philippe> It sounds like you were having to decide between top down and bottom up.
+
+00:08:38.280 --> 00:08:40.880
+<v SPEAKER_2>Yeah, yeah, I think that's a good way of putting it.
+
+00:08:40.880 --> 00:08:50.320
+<v SPEAKER_2>So I think really, like, the easy, to me, like, the easy course to chart would be what we did, and then just putting it out there, encouraging people to use it.
+
+00:08:50.320 --> 00:09:03.080
+<v SPEAKER_2>And because we had talked with enough people in advance who had agreed in principle to use the new logo if it wasn't terrible, then we feel like we had, like, enough sort of a mandate to move ahead with that.
+
+00:09:04.360 --> 00:09:13.860
+<v SPEAKER_2>I don't think that, like, I think if people felt strongly that they want to have a turtle or a box or whatever as a Perl logo, you could still do that in the future.
+
+00:09:13.860 --> 00:09:18.680
+<v SPEAKER_2>But I think it's easier if you get everybody to standardize on the same thing first.
+
+00:09:18.680 --> 00:09:22.400
+<v SPEAKER_2>And then if you needed to, you could move them to some other thing in the meantime.
+
+00:09:22.400 --> 00:09:30.180
+<v SPEAKER_2>And what we've done with the logo is, like, we have kind of an 80-20 solution where we kind of threw this one over the wall to see what happens with it.
+
+00:09:30.180 --> 00:09:36.620
+<v SPEAKER_2>And now we're finding that we need to iterate on it a bit because maybe it doesn't look great in this background.
+
+00:09:36.620 --> 00:09:40.220
+<v SPEAKER_2>Or I don't know if somebody decides to use it first, like, a print or on a t-shirt.
+
+00:09:40.220 --> 00:09:43.460
+<v SPEAKER_2>They might think there's some ways that they want to tweak it.
+
+00:09:44.360 --> 00:09:47.120
+<v SPEAKER_2>But basically, we have the camel artwork that anybody can use.
+
+00:09:47.180 --> 00:09:53.680
+<v SPEAKER_2>It's CCBY is the license, so you just need to give some attribution.
+
+00:09:55.360 --> 00:10:06.900
+<v SPEAKER_2>And then, yeah, I just hope that people will be creative with it, but that we'll have something that's sort of distinctive, that you can look at and go, okay, that's definitely the pearl camel.
+
+00:10:06.900 --> 00:10:10.080
+<v SPEAKER_2>So that's kind of the problem that we were trying to solve.
+
+00:10:10.080 --> 00:10:18.640
+<v SPEAKER_2>And then I feel like as far as real estate on the web goes, there's a few websites that is, if we get the logo moving on there, then we have a lot of it covered already.
+
+00:10:18.640 --> 00:10:24.080
+<v SPEAKER_2>And then there's some chatter about using it in some different places moving forward.
+
+00:10:24.080 --> 00:10:28.900
+<v SPEAKER_2>And so I feel good that it's, like we've got some momentum on this.
+
+00:10:28.900 --> 00:10:41.620
+<v SPEAKER_2>It's not gonna be used by everyone everywhere, but I feel like it's definitely an improvement over what we had, like because we had like kind of a Tim Tote situation with people doing logos.
+
+00:10:41.620 --> 00:10:43.720
+<v SPEAKER_2>The one thing I want to say is that...
+
+00:10:45.600 --> 00:10:48.240
+<v SPEAKER_2>Sorry, did you want to say something, Bruno?
+
+00:10:48.240 --> 00:10:48.820
+<v SPEAKER_4>No, no, no.
+
+00:10:49.020 --> 00:10:52.840
+<v SPEAKER_4>I'm just watching India with his Velociraptor.
+
+00:10:52.840 --> 00:10:54.000
+<v SPEAKER_4>Oh, okay.
+
+00:10:54.000 --> 00:11:04.060
+<v Philippe> So that's an interesting thing because the Raptor, when it was made available, I think there was some...
+
+00:11:04.060 --> 00:11:05.540
+<v Philippe> I'm not sure everybody liked it, right?
+
+00:11:05.800 --> 00:11:06.860
+<v Philippe> I don't remember.
+
+00:11:07.140 --> 00:11:13.180
+<v Philippe> That's a while ago, but I think there was more noise than with this one.
+
+00:11:13.180 --> 00:11:16.680
+<v Philippe> Noise in the sense of pushback, maybe.
+
+00:11:16.680 --> 00:11:25.140
+<v Philippe> But eventually, it was useful to separate between Pearl-5 and Pearl-6 and Pearl-6 as it had its Camellia logo.
+
+00:11:27.820 --> 00:11:40.380
+<v Philippe> And so what Ingy was showing is a T-shirt for Velociraptor, which is a fork, a not public fork of Pearl, focused on speed.
+
+00:11:40.380 --> 00:11:49.380
+<v Philippe> And it's funny to have this, like the point of the raptor was, you know, it's old, it's a dinosaur, but it's fast and scary.
+
+00:11:49.380 --> 00:11:52.840
+<v Philippe> And that was the message you wanted to do with this.
+
+00:11:54.640 --> 00:12:10.360
+<v SPEAKER_5>I want to explain about that shirt a little bit, because the people that were at the Pearl Toolchain Summit last year, I invited Ruben, who Olaf introduced me at the previous YAPC, or CPRC, in Toronto.
+
+00:12:10.360 --> 00:12:20.940
+<v SPEAKER_5>And he's like 28, 29, 30 years old, super smart kid, knows more about pearl than maybe Rick, and then, like, because he's rewritten the internals of it to be faster, right?
+
+00:12:20.940 --> 00:12:24.580
+<v SPEAKER_5>And he's a really cool kid, and we're good friends in Toronto now.
+
+00:12:24.580 --> 00:12:33.060
+<v SPEAKER_5>So I was hanging out with him last May, and I said, hey, I'm going to the Perl Conference in Vegas.
+
+00:12:33.060 --> 00:12:37.340
+<v SPEAKER_5>And he's like, oh, do you give a shout out to Velociperl, my thing?
+
+00:12:37.340 --> 00:12:39.520
+<v SPEAKER_5>And I'm like, yeah, do you have a t-shirt?
+
+00:12:39.520 --> 00:12:41.520
+<v SPEAKER_5>And he's like, give me 10 minutes.
+
+00:12:41.520 --> 00:12:54.980
+<v SPEAKER_5>And then so I think he just threw this up, and this is, it's a little dinosaur, for those of you in the audience who can't see it, that's about, looks like it took about three minutes to make, which the new Camel logo looks like it took about three minutes to make.
+
+00:12:55.040 --> 00:13:00.260
+<v SPEAKER_5>From my, you know, it's just like a line drawing of a Camel, a line drawing of a little Velociraptor.
+
+00:13:00.260 --> 00:13:02.680
+<v SPEAKER_5>So it's, maybe that's just the new thing.
+
+00:13:02.680 --> 00:13:06.800
+<v SPEAKER_5>Maybe this is, I mean, if it's coming from Ruben, it's got to be cool, right?
+
+00:13:06.800 --> 00:13:10.980
+<v SPEAKER_5>So I think that's a good sign for our new logo.
+
+00:13:12.620 --> 00:13:17.860
+<v Philippe> Olaf made an interesting point about Go and the difference between a mascot and a logo.
+
+00:13:17.860 --> 00:13:31.180
+<v Philippe> And why didn't, when working on this new logo, why didn't you try to make this distinction of saying, okay, so the camel is our mascot, and any plush camel will do.
+
+00:13:31.180 --> 00:14:02.620
+<v Philippe> And then we make a logo, and maybe in the logo, we emphasize, you know, $ at percent, for example, like the Dutch Perlmongers, their logo was, or not, rather, the Amsterdam Perlmonger, because the city of Amsterdam's, I don't know if it's a logo, the symbol is XXX, and the Amsterdam Perlmonger's logo is $X at X percent X with the Amsterdam X, which is a very specific shape.
+
+00:14:02.620 --> 00:14:14.340
+<v Philippe> And so I was wondering, now that since you knew about the difference between a mascot and a logo, why didn't you decide to not use the mascot on the logo?
+
+00:14:16.180 --> 00:14:20.220
+<v SPEAKER_2>Yeah, I mean, I just at some point, I talked to Neil about it when we were going back and forth.
+
+00:14:20.220 --> 00:14:22.300
+<v SPEAKER_2>I said, are we designing a mascot or a logo?
+
+00:14:22.300 --> 00:14:23.680
+<v SPEAKER_2>And he said, we're designing a logo.
+
+00:14:23.680 --> 00:14:25.920
+<v SPEAKER_2>So that's really kind of where we left it.
+
+00:14:25.920 --> 00:14:31.120
+<v SPEAKER_2>So I don't, I mean, yeah, there's kind of, the lines are blurred.
+
+00:14:31.120 --> 00:14:34.740
+<v SPEAKER_2>And I mean, really what Neil and I came up with was the camel.
+
+00:14:34.740 --> 00:14:41.000
+<v SPEAKER_2>And then Sebastian was the person who turned that, I guess, that mascot into a logo for us.
+
+00:14:41.000 --> 00:14:47.400
+<v SPEAKER_2>So I have to, because to be honest, I was not 100% happy with the camel until I saw it in a circle.
+
+00:14:47.640 --> 00:14:57.900
+<v SPEAKER_2>And then I thought, that is great, because there was, we were, I'll get back and forth on the hump and the belly and the legs and taking those out of the equation.
+
+00:14:57.900 --> 00:15:00.800
+<v SPEAKER_2>And then I was like, wow, this actually kind of, this...
+
+00:15:00.800 --> 00:15:02.900
+<v Philippe> It turns out you didn't need them.
+
+00:15:02.900 --> 00:15:04.400
+<v SPEAKER_4>Yeah, yeah, no, you don't.
+
+00:15:04.700 --> 00:15:15.480
+<v SPEAKER_2>So the one thing I didn't want to say was that when we started doing this, Neil and I spent some time looking at pictures of camels that we could find that were, you know, hopefully not AI generated.
+
+00:15:16.020 --> 00:15:20.700
+<v SPEAKER_2>And the one thing we could both agree on is that a camel does not look like a camel.
+
+00:15:20.700 --> 00:15:23.100
+<v SPEAKER_2>There are so many weird looking camels out there.
+
+00:15:23.100 --> 00:15:29.940
+<v SPEAKER_2>And what I think of when I think of a camel is maybe the O'Reilly camel, but there's a lot of camels that don't look like that.
+
+00:15:29.940 --> 00:15:37.940
+<v SPEAKER_2>And just seeing them like static or in motion or with their necks up or down, or it's actually really hard.
+
+00:15:37.940 --> 00:15:41.080
+<v SPEAKER_2>There's a lot of images you could pass off and say this is a camel.
+
+00:15:41.080 --> 00:15:50.200
+<v SPEAKER_2>So, you know, the line drawing itself, it may look simplistic, but there were a lot of iterations where we were saying, could you make the neck longer?
+
+00:15:50.660 --> 00:15:54.280
+<v SPEAKER_2>Could you maybe give it more of a hump?
+
+00:15:54.280 --> 00:15:57.180
+<v SPEAKER_2>There's something not right about the legs, like those kinds of things.
+
+00:15:57.180 --> 00:16:07.140
+<v SPEAKER_2>So we went through a lot of iterations with the original designer, and it sort of got to the point where we're going to leave this person alone now because we've asked for too many changes.
+
+00:16:07.140 --> 00:16:10.400
+<v SPEAKER_2>And it didn't seem like it was sort of appreciably getting better at that point.
+
+00:16:12.040 --> 00:16:21.800
+<v SPEAKER_2>But just taking just that one part of the body and focusing on it, to me, that kind of distilled it down to, I think, what we were looking for.
+
+00:16:21.800 --> 00:16:26.740
+<v SPEAKER_5>It feels kind of right that it's pearl and everything's complicated and weird.
+
+00:16:26.740 --> 00:16:28.920
+<v SPEAKER_5>And the logo doesn't match, though.
+
+00:16:28.920 --> 00:16:29.300
+<v SPEAKER_5>Whatever.
+
+00:16:29.300 --> 00:16:31.860
+<v SPEAKER_5>I mean, that's very pearl.
+
+00:16:31.860 --> 00:16:38.980
+<v SPEAKER_5>I kind of wanted to almost step back to say, like, how did we get from cobalt or sea or whatever to mascot-driven design, right?
+
+00:16:39.080 --> 00:16:48.600
+<v SPEAKER_5>So language design, because like Go, I mean, like, you know, well, Android had the Android immediately, and Go had the Gopher, and then Rust had its press.
+
+00:16:48.600 --> 00:16:57.140
+<v SPEAKER_5>You know, when you make a new language, you come up with the, at least the logo and the mascot and all of its animations immediately.
+
+00:16:57.140 --> 00:16:59.080
+<v SPEAKER_5>That's what kind of drives the market.
+
+00:16:59.080 --> 00:17:02.360
+<v SPEAKER_5>I guess, I mean, that's languages coming from big money.
+
+00:17:02.360 --> 00:17:06.120
+<v SPEAKER_5>But yeah, I like to hear from, does Rick have anything?
+
+00:17:06.120 --> 00:17:06.960
+<v SPEAKER_5>Did Rick leave?
+
+00:17:06.960 --> 00:17:07.280
+<v SPEAKER_5>Is he there?
+
+00:17:08.660 --> 00:17:09.200
+<v SPEAKER_5>Oh, okay.
+
+00:17:09.200 --> 00:17:12.080
+<v SPEAKER_5>I was just thinking like, because C doesn't have a logo, right?
+
+00:17:12.080 --> 00:17:14.240
+<v SPEAKER_5>And like...
+
+00:17:14.240 --> 00:17:18.500
+<v SPEAKER_6>Yeah, I was thinking as you asked that, what's the history of language mascots, right?
+
+00:17:18.500 --> 00:17:19.160
+<v SPEAKER_6>And...
+
+00:17:19.160 --> 00:17:20.040
+<v SPEAKER_5>Or logos.
+
+00:17:20.220 --> 00:17:21.840
+<v SPEAKER_6>Or logos.
+
+00:17:21.840 --> 00:17:24.280
+<v SPEAKER_6>And the Go Gopher, right?
+
+00:17:24.280 --> 00:17:27.740
+<v SPEAKER_6>That comes from the Plan 9 bunny, right?
+
+00:17:27.740 --> 00:17:28.960
+<v SPEAKER_5>Okay, didn't know that.
+
+00:17:28.960 --> 00:17:39.440
+<v SPEAKER_6>Yeah, yeah, the Go Gopher is, it seems very clearly to be a riff on Bob Pike's Plan 9, which had the Glenda.
+
+00:17:39.440 --> 00:17:40.520
+<v SPEAKER_6>Anyway, it's a bunny.
+
+00:17:40.520 --> 00:17:41.580
+<v SPEAKER_6>It's the logo.
+
+00:17:41.580 --> 00:17:47.740
+<v SPEAKER_6>But I think that's still younger than the BSD Beastie, but I'm not sure.
+
+00:17:48.460 --> 00:17:50.620
+<v SPEAKER_6>And I'm not sure I could think of a...
+
+00:17:50.620 --> 00:17:51.460
+<v SPEAKER_6>There's gotta be one.
+
+00:17:51.460 --> 00:17:55.940
+<v SPEAKER_6>I'm gonna pull up some computer programming language magazine from the 80s and see what we find out.
+
+00:17:55.940 --> 00:18:01.340
+<v SPEAKER_6>But, I mean, the Beastie feels like the most successful of all of these.
+
+00:18:01.340 --> 00:18:05.220
+<v SPEAKER_6>It's, you see a computer anything with a little happy devil on it.
+
+00:18:05.220 --> 00:18:07.160
+<v SPEAKER_6>And you're like, oh yeah, this is Beastie.
+
+00:18:08.820 --> 00:18:09.160
+<v SPEAKER_5>I don't know.
+
+00:18:09.160 --> 00:18:12.640
+<v SPEAKER_5>And C still doesn't have anything, does it?
+
+00:18:12.640 --> 00:18:14.520
+<v SPEAKER_5>Or C++, or?
+
+00:18:14.520 --> 00:18:16.520
+<v Philippe> Well, they don't have mascots, for sure.
+
+00:18:16.520 --> 00:18:17.200
+<v SPEAKER_5>They have logos?
+
+00:18:17.200 --> 00:18:18.780
+<v SPEAKER_5>Does C++ have a logo?
+
+00:18:18.780 --> 00:18:20.220
+<v SPEAKER_6>Yeah, but it's extremely boring.
+
+00:18:20.220 --> 00:18:23.800
+<v SPEAKER_6>It's like the letter C in a hexagon with two pluses.
+
+00:18:23.800 --> 00:18:24.700
+<v SPEAKER_5>Or JavaScript.
+
+00:18:24.700 --> 00:18:28.060
+<v SPEAKER_7>You can see it on Wikipedia or something like that.
+
+00:18:28.060 --> 00:18:31.240
+<v SPEAKER_7>They got just a C that is identified as a sort of logo, I think.
+
+00:18:32.280 --> 00:18:33.740
+<v SPEAKER_5>Is JavaScript in that camp?
+
+00:18:33.740 --> 00:18:34.800
+<v SPEAKER_5>Is it just JS?
+
+00:18:36.140 --> 00:18:37.240
+<v SPEAKER_6>Yeah.
+
+00:18:37.240 --> 00:18:41.560
+<v SPEAKER_4>It's the yellow square with JS in the middle, like in the corner.
+
+00:18:41.560 --> 00:18:41.800
+<v SPEAKER_4>Yeah.
+
+00:18:41.960 --> 00:18:47.760
+<v Philippe> I think JavaScript doesn't need a logo because all of the JavaScript frameworks have one.
+
+00:18:51.600 --> 00:19:20.980
+<v SPEAKER_4>But it's something that I feel like it's interesting to see on Perl, because I work at Red Hat, and there was a time where everyone knows, like you said about the BC on BSD, everyone that look at the shadow man, that like the guy in the shadows with the red hat, the red fedora, everyone like, okay, I know there is this red hat, and it was the logo at first, and it became the mascot later on.
+
+00:19:20.980 --> 00:19:27.700
+<v SPEAKER_4>And a few years ago, they removed the guy, like the shadow man, and it's just a boring red hat.
+
+00:19:27.700 --> 00:19:38.700
+<v SPEAKER_4>And no one actually knows about this red hat, because red hat, the company itself, has so like a baggage on the shadow man, when it was created.
+
+00:19:39.260 --> 00:19:47.260
+<v SPEAKER_4>Like throughout the whole mid-90s to beginning of 20s, it's pretty interesting to see how a logo became the mascot.
+
+00:19:47.260 --> 00:19:49.880
+<v SPEAKER_4>And with Perl, it's the contrary, in my opinion.
+
+00:19:50.120 --> 00:19:55.880
+<v SPEAKER_4>It's like how camel, how the mascot became the logo.
+
+00:19:55.880 --> 00:20:07.320
+<v SPEAKER_4>So I feel it is pretty nice, because everyone, like back when I was in college, everyone telling me about Perl, I just remembered about camels, period.
+
+00:20:07.320 --> 00:20:10.700
+<v SPEAKER_4>Whenever I saw like an onion, what the heck is an onion?
+
+00:20:10.700 --> 00:20:13.300
+<v SPEAKER_4>Why is that being spread as a Perl something?
+
+00:20:13.340 --> 00:20:15.060
+<v SPEAKER_4>Like, I was not aware of the...
+
+00:20:15.060 --> 00:20:22.180
+<v SPEAKER_4>I didn't have the distinction between the onion from the TPF, the Perl Foundation, and the camel itself.
+
+00:20:22.180 --> 00:20:23.180
+<v SPEAKER_4>So I...
+
+00:20:23.180 --> 00:20:30.860
+<v SPEAKER_4>Okay, now I realize that it's a licensing thing, and it's because of the books, and okay, but everyone...
+
+00:20:30.860 --> 00:20:36.260
+<v SPEAKER_4>Every time someone said something about Perl, it's camel.
+
+00:20:36.260 --> 00:20:38.340
+<v SPEAKER_4>So the mascot was Perl.
+
+00:20:38.340 --> 00:20:39.620
+<v SPEAKER_4>The Perl was the mascot.
+
+00:20:40.160 --> 00:20:48.920
+<v SPEAKER_4>And now, moving the mascot to the official logo, I think it's something everyone was expecting, in the sense of, I know Perl.
+
+00:20:48.920 --> 00:20:49.940
+<v SPEAKER_4>I know camels.
+
+00:20:49.940 --> 00:21:02.320
+<v SPEAKER_4>Even though we have old camel, the language, it's sort of like in my head, even though I knew about old camel, camel always remembered me about Perl.
+
+00:21:02.400 --> 00:21:07.460
+<v SPEAKER_4>I don't know, I think it's a close relation between the two.
+
+00:21:07.620 --> 00:21:12.600
+<v Philippe> I just want to interject about the onion, because to me, the onion is a symbol.
+
+00:21:14.100 --> 00:21:37.000
+<v Philippe> It represents the community, and that's why it's the perfect logo for the Perl Foundation, because the onion and the layers, it's a metaphor that Larry used like 25 years ago, to talk about the Perl community being shaped like an onion, and is devoid in the center of the community.
+
+00:21:37.000 --> 00:21:38.500
+<v SPEAKER_5>State of the onion.
+
+00:21:38.500 --> 00:21:39.620
+<v Philippe> Yeah, yeah.
+
+00:21:39.620 --> 00:21:41.780
+<v Philippe> It's like 1999 or something.
+
+00:21:41.780 --> 00:21:49.840
+<v Philippe> And so to me, when I saw the first time I saw this onion as the Perl Foundation logo, it made perfect sense, and I loved it.
+
+00:21:49.840 --> 00:21:54.060
+<v Philippe> But to me, it represents not the language, but the community.
+
+00:21:54.060 --> 00:21:56.660
+<v Philippe> And Neil would correct me and say the communities.
+
+00:21:58.480 --> 00:22:11.580
+<v SPEAKER_3>Yes, but the licensing and the restriction of the onion is not, are not good for us to use for blogs, prospectus.
+
+00:22:11.580 --> 00:22:17.280
+<v SPEAKER_3>It's okay when you are Perlmongers, when you are Perlmonks.
+
+00:22:17.280 --> 00:22:18.280
+<v Philippe> When you're making a conference?
+
+00:22:18.300 --> 00:22:19.460
+<v SPEAKER_3>It's okay.
+
+00:22:19.460 --> 00:22:20.660
+<v SPEAKER_3>Yeah, a conference.
+
+00:22:20.660 --> 00:22:26.540
+<v SPEAKER_3>But for me, they wasted an opportunity to make it free.
+
+00:22:26.540 --> 00:22:30.760
+<v SPEAKER_3>Maybe it would not have worked anyway.
+
+00:22:30.760 --> 00:22:36.720
+<v SPEAKER_3>But no, no, that's not an option because of that.
+
+00:22:36.720 --> 00:22:40.580
+<v SPEAKER_7>The onion and the camel thing created a lot of confusion, I think.
+
+00:22:40.600 --> 00:22:45.900
+<v SPEAKER_7>And even the camel, in fact, initially, it was not supposed to be a logo.
+
+00:22:46.200 --> 00:22:48.260
+<v SPEAKER_7>It was a book cover.
+
+00:22:50.680 --> 00:23:08.740
+<v SPEAKER_7>So when we tried to apply the initial O'Reilly camel to a logo, it didn't work because the thing was made to be printed on something a bit large, not tiny.
+
+00:23:08.740 --> 00:23:22.780
+<v SPEAKER_7>And I think it explains why we had to go from scratch, from something totally different, and commission a designer who had the history provided from one of us.
+
+00:23:22.780 --> 00:23:25.760
+<v SPEAKER_7>I think it was Neil who took care of it.
+
+00:23:25.760 --> 00:23:46.080
+<v SPEAKER_7>And yeah, I think in the end, we got the camel as both a logo and a mascot because of history, and we had to take all this history into account so that in the end, someone could make sense out of it because there were really a lot of confusion.
+
+00:23:46.100 --> 00:23:51.600
+<v SPEAKER_5>There's something special about O'Reilly, though, because I recall the story.
+
+00:23:51.600 --> 00:23:54.860
+<v SPEAKER_5>O'Reilly chooses your book cover for you.
+
+00:23:54.860 --> 00:24:02.780
+<v SPEAKER_5>You do not choose it, except in Perl's case, Larry was allowed to choose it, and he very purposefully chose the camel.
+
+00:24:02.780 --> 00:24:08.320
+<v SPEAKER_5>So it's not like it was just O'Reilly chose the camel for us.
+
+00:24:08.320 --> 00:24:10.020
+<v SPEAKER_5>It was Larry chose the camel for us.
+
+00:24:11.080 --> 00:24:17.120
+<v SPEAKER_5>And, Rick, was it something like, camel is a horse by committee?
+
+00:24:17.120 --> 00:24:18.100
+<v SPEAKER_6>Yeah, I don't know if that's...
+
+00:24:18.100 --> 00:24:19.640
+<v SPEAKER_5>Some story like that.
+
+00:24:19.640 --> 00:24:21.080
+<v SPEAKER_5>I don't know if that was from Larry.
+
+00:24:21.080 --> 00:24:22.440
+<v SPEAKER_6>It's got to be something like that.
+
+00:24:22.440 --> 00:24:24.820
+<v SPEAKER_6>I mean, I think that it's...
+
+00:24:24.820 --> 00:24:27.920
+<v SPEAKER_6>We should pull up the pink camel colophon and find out.
+
+00:24:27.920 --> 00:24:31.360
+<v Philippe> Yeah, somebody wrote down that history.
+
+00:24:31.360 --> 00:24:35.160
+<v Philippe> I think, Sebastien, you have the pink camel, right?
+
+00:24:35.200 --> 00:24:41.920
+<v Philippe> And in the Assets Pository, there are the mention of the camel.
+
+00:24:41.920 --> 00:24:47.160
+<v Philippe> So there is an index entry for the camel, and it points to a few code examples.
+
+00:24:47.160 --> 00:24:53.920
+<v Philippe> And there is actually a poetry about the Bible thing for...
+
+00:24:53.920 --> 00:25:02.040
+<v Philippe> It's easier for a camel to go through the chasm of a pin than, you know...
+
+00:25:02.320 --> 00:25:06.340
+<v Philippe> It's been a long time since I read my Bible, and it was in French, so...
+
+00:25:06.340 --> 00:25:10.380
+<v Philippe> But there is this thing in the Bible with a camel.
+
+00:25:10.380 --> 00:25:15.900
+<v SPEAKER_6>It's easier for a camel to pass through the eye of a needle than for a rich man to enter the kingdom of heaven.
+
+00:25:15.920 --> 00:25:17.180
+<v Philippe> Yes, exactly.
+
+00:25:17.320 --> 00:25:27.260
+<v Philippe> And there is a reference to this in the pink camel, as a poetry somewhere.
+
+00:25:27.520 --> 00:25:34.300
+<v Philippe> And indeed, the Colophon says that Larry insisted, you know, you have to blame Larry for the camel.
+
+00:25:34.300 --> 00:25:37.220
+<v Philippe> So, yeah, Perl is special.
+
+00:25:37.220 --> 00:25:38.540
+<v SPEAKER_5>I don't think it was the eye of the needle.
+
+00:25:38.540 --> 00:25:45.280
+<v SPEAKER_5>I think it was more that a camel just was like this jack of all trades that got everything done, and that was kind of Perl's spirit, right?
+
+00:25:45.280 --> 00:25:48.340
+<v Philippe> Yeah, because the committee thing doesn't make sense, right?
+
+00:25:48.340 --> 00:25:50.560
+<v Philippe> Perl was made by Larry first.
+
+00:25:50.560 --> 00:25:54.360
+<v Philippe> There wasn't a committee to make a horse, and that became a camel.
+
+00:25:55.620 --> 00:25:58.260
+<v Philippe> So I think that's where it was.
+
+00:25:59.020 --> 00:26:02.480
+<v SPEAKER_5>When did the camel book was like early 90s, right?
+
+00:26:02.480 --> 00:26:03.360
+<v SPEAKER_5>It was like around the 90s?
+
+00:26:05.340 --> 00:26:14.440
+<v SPEAKER_6>So I'm going to quote for you from Perl Monks, where someone claims to be quoting the pink camel, but my pink camel is at home, so I can't fact check it.
+
+00:26:14.440 --> 00:26:14.820
+<v SPEAKER_6>Where are you?
+
+00:26:14.820 --> 00:26:17.160
+<v SPEAKER_6>It says, I'm at the office.
+
+00:26:17.180 --> 00:26:18.540
+<v SPEAKER_6>Okay.
+
+00:26:18.540 --> 00:26:20.160
+<v SPEAKER_6>Oh, I've lost it.
+
+00:26:22.900 --> 00:26:28.360
+<v SPEAKER_6>We often joke that a camel is a horse designed by committee, but if you think about it, the camel is self-sufficient.
+
+00:26:28.360 --> 00:26:32.760
+<v SPEAKER_6>On the other hand, the camel has not evolved to smell good, and neither has Perl.
+
+00:26:32.760 --> 00:26:41.860
+<v SPEAKER_6>This is one of the many strange reasons we picked the camel to be Perl's mascot, but it doesn't have much to do with linguistics, which if nothing else for vibe, I'll believe that's from Larry.
+
+00:26:41.860 --> 00:26:42.600
+<v Philippe> Yeah, yeah.
+
+00:26:42.600 --> 00:26:43.040
+<v SPEAKER_5>That's Larry.
+
+00:26:43.040 --> 00:26:44.220
+<v Philippe> Sounds like it.
+
+00:26:44.220 --> 00:26:52.360
+<v SPEAKER_7>I think there's also something about, he said something like it's ugly, but useful or something like that in an interview.
+
+00:26:52.360 --> 00:26:54.880
+<v SPEAKER_3>It makes me think about Gnu.
+
+00:26:54.880 --> 00:26:57.820
+<v SPEAKER_3>It's exactly ugly and weird animal.
+
+00:26:57.820 --> 00:27:02.100
+<v SPEAKER_3>Gnu, we say that it's a mix of several different animals.
+
+00:27:02.100 --> 00:27:06.180
+<v SPEAKER_3>And camels, for me, it's like Gnu from Gnu Linux.
+
+00:27:06.180 --> 00:27:18.040
+<v Philippe> I was thinking also, so even the current logo has an interesting lineage because it's not just a mascot that became a logo, it's a book cover that became a mascot.
+
+00:27:18.040 --> 00:27:23.140
+<v Philippe> So we have this longer lineage than most other things.
+
+00:27:23.140 --> 00:27:42.400
+<v SPEAKER_3>Olaf, can you unveil a bit how it goes, how it was difficult to include stakeholders, convince them, they were some people which are, it's not like just random community member, top coders or top leaders that were strongly against the...
+
+00:27:43.760 --> 00:27:49.580
+<v SPEAKER_2>Yeah, you know what, actually, it was actually not that hard.
+
+00:27:49.580 --> 00:28:00.200
+<v SPEAKER_2>So we did talk about it in Lisbon, and we had a small group of us together, and there was one person who insisted what we were doing was maybe not a great idea.
+
+00:28:00.200 --> 00:28:05.920
+<v SPEAKER_2>But so we didn't get 100% consensus, but we had most of the people on the same page.
+
+00:28:05.920 --> 00:28:15.420
+<v SPEAKER_2>And there were enough people in the room there that we did get a good sense that we could move ahead with it.
+
+00:28:15.420 --> 00:28:21.520
+<v SPEAKER_2>The thing was like, people generally thought, yes, this is a good idea.
+
+00:28:22.660 --> 00:28:24.220
+<v SPEAKER_2>No, you don't need my input.
+
+00:28:24.220 --> 00:28:30.500
+<v SPEAKER_2>So people just kind of decided, we trust you to come up with something reasonable, and then we can just move ahead with it.
+
+00:28:30.500 --> 00:28:36.860
+<v SPEAKER_2>So I had a good feeling that there wasn't gonna be a lot of bike shedding when we came out with the logo.
+
+00:28:38.120 --> 00:28:41.340
+<v SPEAKER_2>So we did try to keep the group small to begin with.
+
+00:28:41.340 --> 00:28:44.580
+<v SPEAKER_2>So it was just, the only person who spoke with the designer was Neil.
+
+00:28:44.580 --> 00:28:48.480
+<v SPEAKER_2>So I didn't even know who the designer was until a few weeks ago.
+
+00:28:48.480 --> 00:28:55.620
+<v SPEAKER_2>And then Babs will also, we brought her in because she's got more experience with sort of like UX and then that kind of thing.
+
+00:28:55.620 --> 00:28:57.120
+<v SPEAKER_2>So to get some ideas about the logo.
+
+00:28:57.120 --> 00:29:01.220
+<v SPEAKER_2>So there were three of us kind of batting around ideas on the initial design.
+
+00:29:01.220 --> 00:29:07.640
+<v SPEAKER_2>And I think that actually just kind of helped not to keep us from going off in too many different directions, right?
+
+00:29:07.640 --> 00:29:14.380
+<v SPEAKER_2>And then we brought it into the bigger group with Bruno and Teeve and Sebastian.
+
+00:29:14.380 --> 00:29:20.860
+<v SPEAKER_2>And then we got sort of the, well, I really got most of the core designs that we ended up going with.
+
+00:29:20.860 --> 00:29:25.460
+<v SPEAKER_2>And then really like, so the deadline was to get it done for the Perl Advent calendar.
+
+00:29:25.460 --> 00:29:27.040
+<v SPEAKER_2>Cause I thought we'll have some eyeballs on it.
+
+00:29:27.040 --> 00:29:29.560
+<v SPEAKER_2>That would be like a fun Christmas gift.
+
+00:29:29.560 --> 00:29:36.540
+<v SPEAKER_2>And also that gives us a target date because without a target date, something like this, I think, could stretch on for a long time if you really wanted to.
+
+00:29:36.540 --> 00:29:52.140
+<v SPEAKER_2>And we had the good fortune of Teeb and Sebastian and Leo Lapworth and I being able to chat at the London Perl Workshop earlier and try and hammer out a deadline and what we needed to get done.
+
+00:29:52.140 --> 00:29:56.280
+<v SPEAKER_2>But after that, I think, yeah, so the last two weeks, I just started pulling people.
+
+00:29:56.280 --> 00:29:58.340
+<v SPEAKER_2>I'm like, who's on TPF Slack?
+
+00:29:58.340 --> 00:29:59.220
+<v SPEAKER_2>Who can keep a secret?
+
+00:29:59.720 --> 00:30:04.020
+<v SPEAKER_2>And so I started just saying to the people, like, I got a secret mission.
+
+00:30:04.020 --> 00:30:04.980
+<v SPEAKER_2>Will you accept it?
+
+00:30:04.980 --> 00:30:05.840
+<v SPEAKER_2>And they said yes.
+
+00:30:05.840 --> 00:30:07.180
+<v SPEAKER_2>And then I would explain to them.
+
+00:30:07.180 --> 00:30:15.020
+<v SPEAKER_2>And then I would say, look, you need to go to this GitHub repo, check out what's there, and then sort of join this channel and tell people what you think.
+
+00:30:15.020 --> 00:30:17.120
+<v SPEAKER_2>And that actually worked out really well.
+
+00:30:17.480 --> 00:30:23.060
+<v SPEAKER_2>There was one, I did actually have a chat with the, with the PSC briefly before that as well.
+
+00:30:23.060 --> 00:30:25.600
+<v SPEAKER_2>And I was actually surprised at the good feedback that I got there.
+
+00:30:25.600 --> 00:30:33.420
+<v SPEAKER_2>So even after we released it, there was like one person I could think of who was, who said, this is, this is not good.
+
+00:30:33.420 --> 00:30:34.760
+<v SPEAKER_2>This is a missed opportunity.
+
+00:30:34.760 --> 00:30:42.620
+<v SPEAKER_2>But other than that, people were generally just, just positive and on board with it because, and that's actually not what I was expecting.
+
+00:30:42.620 --> 00:30:50.400
+<v SPEAKER_2>Because there tends to be a lot of pushback on things that I think don't matter that much.
+
+00:30:50.400 --> 00:30:56.200
+<v SPEAKER_2>So I thought that this would be like the, this would be like a great opportunity for people to come in and complain about something.
+
+00:30:56.200 --> 00:31:03.980
+<v SPEAKER_2>I don't know if it's because we gave them enough options with colors, or if people maybe think that it would be nice to settle this.
+
+00:31:03.980 --> 00:31:08.540
+<v SPEAKER_2>Because there have been a lot of years, and the matter has never really been settled, right?
+
+00:31:08.540 --> 00:31:12.400
+<v SPEAKER_2>We've just kind of come up with different versions of things.
+
+00:31:12.400 --> 00:31:24.260
+<v SPEAKER_2>But in the absence of, you know, one person or one committee that can say, this is the thing, then I feel like this is kind of our best option to do that.
+
+00:31:24.400 --> 00:31:27.600
+<v SPEAKER_2>But yeah, like I was surprised that more people weren't complaining.
+
+00:31:27.660 --> 00:31:30.980
+<v SPEAKER_2>I really, almost disappointed, really.
+
+00:31:33.680 --> 00:31:35.140
+<v SPEAKER_2>Oh, actually, what else would be interesting?
+
+00:31:35.140 --> 00:31:36.600
+<v SPEAKER_2>So go ahead.
+
+00:31:36.600 --> 00:31:46.780
+<v Philippe> No, no, it was interesting to see how quickly the logo spread on perl.org, on the perl.org and perl.com and so on.
+
+00:31:47.100 --> 00:31:51.420
+<v Philippe> It, you know, it's been adopted very quickly.
+
+00:31:51.420 --> 00:32:00.500
+<v Philippe> Of course, you did the work in advance to make sure that you had some, some, you know, buy-in.
+
+00:32:00.500 --> 00:32:03.500
+<v Philippe> But still, that was pretty fast.
+
+00:32:03.500 --> 00:32:04.660
+<v SPEAKER_2>Yeah, that's actually been good.
+
+00:32:04.660 --> 00:32:11.000
+<v SPEAKER_2>I even had somebody that, somebody just emailed me, I think, the next day and they already said, I'm using the logo on my personal website.
+
+00:32:11.000 --> 00:32:15.320
+<v SPEAKER_2>So that I thought was great.
+
+00:32:15.320 --> 00:32:16.680
+<v SPEAKER_2>So yeah, I'm happy with the uptake.
+
+00:32:16.680 --> 00:32:19.580
+<v SPEAKER_2>Well, it's going to take a while and there'll be a few iterations on that.
+
+00:32:19.620 --> 00:32:29.280
+<v SPEAKER_2>I wanted to ask Sebastien, actually, if he wanted to talk about, like, just what his thought process was in putting the initial designs together.
+
+00:32:29.280 --> 00:32:38.900
+<v SPEAKER_7>I think I'm not going to speak about really the graphical part or anything, because the graphical part was really done by Zach.
+
+00:32:38.900 --> 00:32:48.760
+<v SPEAKER_7>And me, I think I mostly contributed something like making it more acceptable and thinking how we can take the history into account.
+
+00:32:49.520 --> 00:32:53.360
+<v SPEAKER_7>And thinking how we can, it can be a success.
+
+00:32:53.360 --> 00:33:15.640
+<v SPEAKER_7>Like during the reviewing process, I noticed that a few people said something like, oh, but it got less character than, for example, other things we saw in the community, like the Raptor, for example, it's got a lot of character, it's moving, it's very fun.
+
+00:33:16.000 --> 00:33:20.060
+<v SPEAKER_7>Or Camellia, for example, it's definitely fun.
+
+00:33:20.080 --> 00:33:23.200
+<v SPEAKER_7>It's very childish, very fun and stuff.
+
+00:33:23.200 --> 00:33:29.400
+<v SPEAKER_7>But obviously those two got some issues, and I like both of them.
+
+00:33:29.400 --> 00:33:37.400
+<v SPEAKER_7>But if you think about it, they are maybe not the best choices as a language logo for many reasons.
+
+00:33:37.400 --> 00:33:47.080
+<v SPEAKER_7>For example, this is only my personal opinion, but the Raptor, for example, okay, it's nice, it's well-designed, but it's very angry.
+
+00:33:47.080 --> 00:33:52.300
+<v SPEAKER_7>And maybe this is not what we want to show.
+
+00:33:52.300 --> 00:33:57.400
+<v SPEAKER_7>This is not the aspect we want to show of our communities.
+
+00:33:57.400 --> 00:34:00.040
+<v Philippe> You don't want to see an angry camel, though.
+
+00:34:01.180 --> 00:34:02.380
+<v SPEAKER_7>I don't know.
+
+00:34:02.380 --> 00:34:08.320
+<v SPEAKER_7>So there is something I don't really like in the camel we did.
+
+00:34:08.320 --> 00:34:10.980
+<v SPEAKER_7>I think it lacks a bit of fun.
+
+00:34:11.940 --> 00:34:13.780
+<v SPEAKER_7>It's very serious.
+
+00:34:13.780 --> 00:34:18.720
+<v SPEAKER_7>So it could be a critic I could do on our work.
+
+00:34:18.720 --> 00:34:33.300
+<v SPEAKER_7>But yeah, I think doing something with less character makes possible to have a wider range of people accepting it or something like that.
+
+00:34:33.760 --> 00:34:36.580
+<v SPEAKER_3>It's a very Zen camel.
+
+00:34:36.900 --> 00:34:42.460
+<v Philippe> You mentioned the history, and that is why it's facing left, right?
+
+00:34:42.460 --> 00:34:56.500
+<v Philippe> And it has its legs, like when you look outside of the circle, the legs on the right side are crossed, and it's also an influence from the camel on the book, right?
+
+00:34:56.500 --> 00:35:06.320
+<v SPEAKER_7>We tried to reverse it at some point, but there are really something like, it will be too violent because of the initial one.
+
+00:35:06.320 --> 00:35:07.920
+<v SPEAKER_4>Yeah.
+
+00:35:07.920 --> 00:35:14.160
+<v Philippe> The fun thing I'm looking at, so I have the pink camel, the first edition, the second.
+
+00:35:14.160 --> 00:35:29.060
+<v Philippe> Yeah, I have basically the four, five, four editions of the camel book, and the last two, the third and the fourth edition, on the spine of the book, you have just the head of the camel.
+
+00:35:29.060 --> 00:35:38.480
+<v Philippe> And for the second and third edition, no, for the second edition, it's facing left, like the camel, but for the third and fourth, it's facing right.
+
+00:35:38.480 --> 00:35:39.760
+<v Philippe> Yes.
+
+00:35:39.760 --> 00:35:47.540
+<v Philippe> So that's interesting that O'Reilly decided to make it face the other direction on the spine.
+
+00:35:47.540 --> 00:35:49.960
+<v Philippe> Not on the book, but just on the spine.
+
+00:35:50.100 --> 00:35:51.280
+<v Philippe> I don't know why.
+
+00:35:51.280 --> 00:36:00.060
+<v SPEAKER_7>I think this is very unusual for a logo to face on the left like this, because it's just a bad sign for the future or something.
+
+00:36:00.060 --> 00:36:01.900
+<v SPEAKER_7>Like it's looking at the past.
+
+00:36:01.900 --> 00:36:13.020
+<v SPEAKER_7>But most of the time, when there is a face in a logo, I think this is a role for a graphic designer to make the thing look on the right.
+
+00:36:13.240 --> 00:36:17.180
+<v Philippe> In left to right reading countries, cultures.
+
+00:36:17.220 --> 00:36:18.860
+<v SPEAKER_3>Yeah, sure.
+
+00:36:20.660 --> 00:36:31.080
+<v Philippe> Well, I mean, the fact that Perl is facing towards the past, maybe that's also a sign.
+
+00:36:31.080 --> 00:36:36.060
+<v SPEAKER_4>Well, the camel is looking to the past, but the camel is the future, right?
+
+00:36:36.580 --> 00:36:39.480
+<v SPEAKER_4>He's on the right, so maybe, I don't know.
+
+00:36:39.480 --> 00:36:44.040
+<v SPEAKER_5>Is it maybe facing Larry in California for us US people?
+
+00:36:45.920 --> 00:36:47.080
+<v SPEAKER_3>Good point.
+
+00:36:49.700 --> 00:36:50.580
+<v SPEAKER_5>How many?
+
+00:36:50.880 --> 00:36:59.200
+<v SPEAKER_5>I didn't think about camel, and then I looked it up, and they do have a double-humped camel as their logo, and I pasted the URL to that X thing.
+
+00:36:59.240 --> 00:37:14.620
+<v SPEAKER_5>So, yaml obviously has the, the mascot has to be a camel, not the logo, but the mascot, because the first sentence of the spec is yaml, in Peren's rhymes with camel, is, yeah.
+
+00:37:14.620 --> 00:37:17.540
+<v SPEAKER_5>And actually, just a little segue on that.
+
+00:37:17.540 --> 00:37:23.800
+<v SPEAKER_5>I sat through a Kubernetes class for three days taught by a French guy who said yaml.
+
+00:37:24.120 --> 00:37:25.340
+<v SPEAKER_5>And it just drove me insane.
+
+00:37:25.340 --> 00:37:31.300
+<v SPEAKER_5>I couldn't even learn a single thing, because he kept saying, and then in your yaml, and then I'm like, and I made some joke.
+
+00:37:31.300 --> 00:37:33.280
+<v SPEAKER_5>It's like, what rhymes with dromedary?
+
+00:37:33.280 --> 00:37:36.960
+<v SPEAKER_5>And trying to, I think, really get my point across.
+
+00:37:36.960 --> 00:37:45.680
+<v SPEAKER_5>But then I started working with a guy from Paris last year, and we talk every day, and I asked him, I'm like, how do you say camel?
+
+00:37:45.680 --> 00:37:48.320
+<v SPEAKER_5>I mean, we did this over chat, but I was like, I got the point.
+
+00:37:48.320 --> 00:37:52.800
+<v SPEAKER_5>He's like, oh, it's actually, you say camel in French, if you were to pronounce, is that right?
+
+00:37:53.240 --> 00:37:54.620
+<v SPEAKER_5>Am I right?
+
+00:37:54.620 --> 00:37:56.280
+<v SPEAKER_5>Is it closer to come out?
+
+00:37:56.280 --> 00:37:57.200
+<v SPEAKER_3>Come out, yes.
+
+00:37:57.200 --> 00:37:57.860
+<v Philippe> Oh, yeah.
+
+00:37:57.860 --> 00:38:05.640
+<v Philippe> Well, so actually we say chameau, but the, yeah, I mean, there was this cigarette brand, right?
+
+00:38:05.640 --> 00:38:07.940
+<v Philippe> And I think we'd say come out.
+
+00:38:07.940 --> 00:38:08.840
+<v SPEAKER_5>Come out.
+
+00:38:08.840 --> 00:38:09.000
+<v SPEAKER_6>Yeah.
+
+00:38:09.000 --> 00:38:11.120
+<v SPEAKER_5>So yeah, so this guy was right.
+
+00:38:11.120 --> 00:38:13.300
+<v SPEAKER_5>He did rhyme it with camel.
+
+00:38:13.300 --> 00:38:16.240
+<v SPEAKER_6>Did we consider doing any cross marketing with camel?
+
+00:38:16.320 --> 00:38:16.960
+<v SPEAKER_6>I'm just saying this.
+
+00:38:16.960 --> 00:38:17.820
+<v SPEAKER_6>They got a lot of money.
+
+00:38:18.120 --> 00:38:19.240
+<v SPEAKER_5>Yes.
+
+00:38:19.240 --> 00:38:20.780
+<v Philippe> Maybe just the band, right?
+
+00:38:21.180 --> 00:38:25.780
+<v Philippe> There is a progressive rock band from the 70s called Camel.
+
+00:38:25.780 --> 00:38:29.760
+<v SPEAKER_6>It seems pretty likely that if Perl had official music, it would be progressive rock.
+
+00:38:29.760 --> 00:38:30.220
+<v SPEAKER_6>I don't know.
+
+00:38:30.220 --> 00:38:33.060
+<v SPEAKER_6>Just decide how you feel about that on your own.
+
+00:38:33.060 --> 00:38:34.340
+<v SPEAKER_5>Yeah, most from 2001.
+
+00:38:34.340 --> 00:38:42.720
+<v SPEAKER_5>And I think that's when Europe actually, the first, no, sorry, that was 2006 when Ireland, the band's one.
+
+00:38:42.720 --> 00:38:44.240
+<v SPEAKER_6>All right.
+
+00:38:44.240 --> 00:38:50.100
+<v SPEAKER_3>And for some time, the Camel on the Camel Cigarettes Pack had a nickname.
+
+00:38:50.100 --> 00:38:51.560
+<v SPEAKER_3>It was Joe the Camel.
+
+00:38:51.560 --> 00:38:54.800
+<v SPEAKER_3>Maybe we will come with some nickname for it.
+
+00:38:54.800 --> 00:38:58.660
+<v Philippe> Well, the Perl Camel actually has several names.
+
+00:38:58.660 --> 00:39:06.160
+<v Philippe> If you look in the Camel Book, when they, when it shows the...
+
+00:39:06.160 --> 00:39:09.540
+<v Philippe> And the fun thing is, how is it done?
+
+00:39:09.680 --> 00:39:23.720
+<v Philippe> There is my $ Camel equals or something, and the string in the first edition is Fido, and in the third edition, it's Amedia.
+
+00:39:24.220 --> 00:39:24.900
+<v Philippe> I need to find...
+
+00:39:25.120 --> 00:39:30.260
+<v Philippe> I did a post on Perl Logos decades ago about this, because I did...
+
+00:39:30.460 --> 00:39:38.100
+<v Philippe> I worked on the translation of the third edition of The Camel in French, and so I was forced to read it, right?
+
+00:39:39.440 --> 00:39:45.880
+<v Philippe> And from the beginning to the end, not just peak in the interesting places.
+
+00:39:45.880 --> 00:39:51.840
+<v Philippe> And so I noticed this because we worked from the translation of the second edition.
+
+00:39:52.300 --> 00:39:57.240
+<v Philippe> And so someone, some editor, had highlighted for us all of the differences.
+
+00:39:57.240 --> 00:40:06.240
+<v Philippe> And I think the idea is that they would, you know, pay less for the translation work, because some of it had already been done.
+
+00:40:06.240 --> 00:40:09.960
+<v Philippe> And that's where I noticed the difference between Fido and Amelia.
+
+00:40:09.960 --> 00:40:13.420
+<v Philippe> And maybe Camelia comes from, you know...
+
+00:40:13.420 --> 00:40:16.080
+<v Philippe> Maybe that's a question we should ask Larry.
+
+00:40:16.100 --> 00:40:17.340
+<v SPEAKER_6>Well, it's documented.
+
+00:40:17.780 --> 00:40:20.440
+<v SPEAKER_6>This is a tested two-fact.
+
+00:40:20.440 --> 00:40:27.380
+<v SPEAKER_6>So the second is Fido, which is sort of a common stereotypical thing you call a dog, right?
+
+00:40:27.380 --> 00:40:31.700
+<v SPEAKER_6>Like Fido and Spot are the go-to names for your pet.
+
+00:40:31.700 --> 00:40:36.660
+<v SPEAKER_6>And Amelia is the name that Larry said the camel had, which has been...
+
+00:40:36.700 --> 00:40:40.080
+<v SPEAKER_6>That's posted on Perl Monks like 25 years ago even.
+
+00:40:40.080 --> 00:40:47.160
+<v SPEAKER_6>And so Camelia was a reference to the camel and to Amelia, but as a bug.
+
+00:40:48.340 --> 00:40:50.320
+<v SPEAKER_6>That's awesome.
+
+00:40:50.320 --> 00:40:54.740
+<v SPEAKER_3>So we need a new name for this new camel, not Amelia.
+
+00:40:54.740 --> 00:40:55.780
+<v SPEAKER_5>So what rhymes with Joe?
+
+00:40:55.780 --> 00:40:56.500
+<v SPEAKER_5>I was trying to think of it.
+
+00:40:56.540 --> 00:40:59.800
+<v SPEAKER_5>It could be like, oh, fine.
+
+00:40:59.800 --> 00:41:05.480
+<v SPEAKER_5>Or like, what's a pearl thing that rhymes with Joe?
+
+00:41:05.480 --> 00:41:07.760
+<v SPEAKER_6>Where are we running with Joe?
+
+00:41:08.700 --> 00:41:11.880
+<v SPEAKER_5>Or some play on that.
+
+00:41:11.880 --> 00:41:13.140
+<v SPEAKER_6>You can go for camel Job.
+
+00:41:13.140 --> 00:41:15.720
+<v SPEAKER_6>You get the biblical reference, long suffering.
+
+00:41:15.720 --> 00:41:16.960
+<v SPEAKER_5>There you go.
+
+00:41:16.960 --> 00:41:17.840
+<v SPEAKER_5>Camel Job.
+
+00:41:17.840 --> 00:41:18.720
+<v SPEAKER_5>I love it.
+
+00:41:18.780 --> 00:41:21.880
+<v SPEAKER_5>But we'll speak of GOP like Arrested Development, yeah?
+
+00:41:25.740 --> 00:41:27.900
+<v SPEAKER_6>That was the best.
+
+00:41:27.900 --> 00:41:43.620
+<v SPEAKER_3>It would be nice if it comes from some community jokes, not from us, but in six months, one year, someone post on a forum or Perlmunks, and it stays on the web.
+
+00:41:43.620 --> 00:41:43.840
+<v Philippe> Yeah.
+
+00:41:43.840 --> 00:41:45.920
+<v Philippe> I don't think we can really force this.
+
+00:41:46.120 --> 00:41:47.500
+<v Philippe> It will happen or it won't.
+
+00:41:48.140 --> 00:41:49.680
+<v SPEAKER_3>Yeah, exactly.
+
+00:41:50.920 --> 00:41:57.020
+<v Philippe> Another question, since we're talking about Larry, did he know about this?
+
+00:41:57.020 --> 00:41:58.080
+<v Philippe> Sorry?
+
+00:41:58.080 --> 00:42:00.120
+<v SPEAKER_5>No, I thought you were going to bring up the book thing.
+
+00:42:00.120 --> 00:42:01.760
+<v Philippe> No, no, no.
+
+00:42:03.180 --> 00:42:08.480
+<v Philippe> Did anyone show the logo to Larry, and why not, and does it matter?
+
+00:42:09.380 --> 00:42:11.180
+<v SPEAKER_5>I think you know the answer.
+
+00:42:11.180 --> 00:42:17.000
+<v SPEAKER_5>I mean, Larry, Larry, like, I called Gloria the last couple of years and said, hey, do you guys want to come to the thing?
+
+00:42:17.000 --> 00:42:18.640
+<v SPEAKER_5>He's like, no, we're really busy.
+
+00:42:18.640 --> 00:42:19.880
+<v SPEAKER_5>We've got family stuff.
+
+00:42:19.880 --> 00:42:26.540
+<v SPEAKER_5>It's just basically, you know, it's just like Larry's out, but, you know, he doesn't want to make it even seem like a big deal.
+
+00:42:28.260 --> 00:42:36.140
+<v SPEAKER_5>Yeah, and he's out, you know, he's concentrating on family for his remaining years rather than this silly programming thing.
+
+00:42:39.120 --> 00:42:46.760
+<v SPEAKER_5>I 100% believe that, but I don't know if I'm not speaking for Larry, but close to it, I guess.
+
+00:42:46.760 --> 00:42:47.080
+<v Philippe> Right.
+
+00:42:49.400 --> 00:42:54.880
+<v Philippe> So because I think I asked a question to Olaf about, oh yeah, did you show it to Larry?
+
+00:42:54.880 --> 00:43:03.040
+<v Philippe> And it was just, it's too close to 23rd of December, so we don't have the time.
+
+00:43:03.040 --> 00:43:09.960
+<v Philippe> And I think what Ingy was saying is basically, I don't think he would have, I don't think he cares, right?
+
+00:43:09.960 --> 00:43:18.800
+<v SPEAKER_5>So I will bring up your book, book, because Book wants to write a book about Larry.
+
+00:43:18.800 --> 00:43:21.540
+<v SPEAKER_5>I mean, he really wanted to do this for many years.
+
+00:43:21.540 --> 00:43:24.460
+<v SPEAKER_5>And, you know, and I talked to Gloria about it.
+
+00:43:24.460 --> 00:43:25.600
+<v Philippe> I don't want to write it.
+
+00:43:25.600 --> 00:43:27.380
+<v Philippe> I want to read it.
+
+00:43:27.380 --> 00:43:28.360
+<v SPEAKER_5>No, I know.
+
+00:43:28.360 --> 00:43:31.620
+<v SPEAKER_5>But you want there to be a book about, you want to help make a book about Larry.
+
+00:43:31.680 --> 00:43:32.260
+<v Philippe> Yeah.
+
+00:43:32.260 --> 00:43:36.520
+<v SPEAKER_5>And so I called Gloria, and she's like, yeah, he just doesn't, she's not that important.
+
+00:43:36.520 --> 00:43:37.600
+<v SPEAKER_5>He doesn't think he's that important.
+
+00:43:37.600 --> 00:43:39.500
+<v SPEAKER_5>It's just like, nobody would read it.
+
+00:43:39.500 --> 00:43:41.560
+<v SPEAKER_5>Basically, it was her.
+
+00:43:41.560 --> 00:43:46.660
+<v SPEAKER_5>He just, yeah, he just was like, I know, you did those things in the moment, and now he's doing this.
+
+00:43:46.660 --> 00:43:48.440
+<v Philippe> I would read it.
+
+00:43:48.440 --> 00:43:49.780
+<v SPEAKER_5>I know you would.
+
+00:43:50.840 --> 00:43:52.360
+<v SPEAKER_5>I know you would, and probably a lot of people would.
+
+00:43:52.360 --> 00:43:58.480
+<v SPEAKER_5>And Larry's one of the best storytellers I've ever heard when you get him, like, in the right setting.
+
+00:43:58.480 --> 00:43:59.800
+<v SPEAKER_5>He's got so many stories to tell.
+
+00:43:59.800 --> 00:44:09.720
+<v SPEAKER_5>So I had the honor of sitting with him and Joe Armstrong, and I just listened while they talked over dinner, and it's just like a tour of computing from the 60s on.
+
+00:44:10.780 --> 00:44:17.980
+<v Philippe> Yeah, I did the Computer History Museum about doing an interview.
+
+00:44:17.980 --> 00:44:22.880
+<v Philippe> I think they sent me a link to a form, and it took me a year to actually submit the form.
+
+00:44:22.880 --> 00:44:26.160
+<v Philippe> But I did it, and of course, I have not heard from them since.
+
+00:44:27.480 --> 00:44:30.440
+<v Philippe> And I put your name, Ingi, as a potential interviewer.
+
+00:44:30.440 --> 00:44:34.400
+<v Philippe> I mean, I said, I would love to do it, but you'd have to fly me to California.
+
+00:44:37.080 --> 00:44:43.760
+<v Philippe> And I also realized that actually, the Computer History Museum is also in California.
+
+00:44:43.760 --> 00:44:47.840
+<v Philippe> So they're probably not that far from Larry.
+
+00:44:47.840 --> 00:44:56.120
+<v Philippe> And if he would like to, you know, reply to an interviewer, maybe we could at least have one of those oral histories.
+
+00:44:56.740 --> 00:45:03.160
+<v Philippe> Because I find it a bit like there are hundreds of those oral history interviews.
+
+00:45:03.900 --> 00:45:04.940
+<v Philippe> And there's a lot of people.
+
+00:45:04.940 --> 00:45:07.760
+<v Philippe> There's Guido, there's Brian Cunningham.
+
+00:45:07.760 --> 00:45:13.400
+<v Philippe> There's one of the founders of Adobe, among the ones I've listened to.
+
+00:45:13.400 --> 00:45:25.480
+<v Philippe> And it's kind of a shame that even if, you know, Larry thinks he's not important, he's been very influential, or his work has been, or his person has been.
+
+00:45:26.680 --> 00:45:35.520
+<v Philippe> And it's kind of a shame that we don't get to have some first-person account of, you know, why he did the things.
+
+00:45:35.520 --> 00:45:36.600
+<v SPEAKER_5>There's an interesting idea.
+
+00:45:36.800 --> 00:45:43.420
+<v SPEAKER_5>Has anybody heard of, speaking of podcasts, the Dead Code podcast, our blog, or something like that?
+
+00:45:43.420 --> 00:45:43.880
+<v SPEAKER_5>I don't know.
+
+00:45:43.880 --> 00:45:49.580
+<v SPEAKER_5>I hadn't heard of it either, but somebody reached out to me from that and said, would you like to, would you do an interview?
+
+00:45:49.620 --> 00:45:56.080
+<v SPEAKER_5>And I guess in two weeks, I'm going to do this about YAML as Dead Code for their podcast.
+
+00:45:56.080 --> 00:46:00.340
+<v SPEAKER_5>I wonder if we could get Larry to do something like a podcast where somebody just calls him.
+
+00:46:00.380 --> 00:46:02.800
+<v SPEAKER_5>You could probably talk for an hour.
+
+00:46:02.800 --> 00:46:05.680
+<v Philippe> There are so many questions I want to ask him.
+
+00:46:05.680 --> 00:46:07.280
+<v SPEAKER_5>Okay.
+
+00:46:07.280 --> 00:46:16.700
+<v SPEAKER_5>Well, when I talk to these Dead Code people, I'll see if you could host the Larry Dead Code session.
+
+00:46:16.700 --> 00:46:17.300
+<v SPEAKER_5>I think that would be good.
+
+00:46:18.080 --> 00:46:23.040
+<v Philippe> Like Ingi said, if you have the right setting, maybe you could have a nice conversation.
+
+00:46:24.060 --> 00:46:29.300
+<v Philippe> That reminds me of I really hate email interviews.
+
+00:46:29.300 --> 00:46:35.980
+<v Philippe> As an interviewer, because you make the interviewee do all the work.
+
+00:46:35.980 --> 00:46:43.700
+<v Philippe> They have to come up with their thoughts and type, and I think the best way to do an interview is exactly what we're doing now.
+
+00:46:45.120 --> 00:46:58.660
+<v Philippe> You ask a question, and they just talk and tell you what they think, and they can change their mind, and you can push the interview, or push the answer in a direction that you find more or less interesting.
+
+00:46:58.660 --> 00:47:09.700
+<v Philippe> But the only thing they have to spend, the only effort they have to spend to do the interview is one hour of their time in a relaxed setting answering questions.
+
+00:47:11.620 --> 00:47:20.260
+<v Philippe> Unless you're an asshole interviewer who is going to ask the really bad questions, and they will leave the room and go.
+
+00:47:20.260 --> 00:47:28.420
+<v Philippe> But otherwise, doing an interview should take you exactly the time to talk to the other person.
+
+00:47:28.420 --> 00:47:37.080
+<v Philippe> And then the work is that of the interviewer, of transcribing the thing, editing it, having it reviewed.
+
+00:47:37.600 --> 00:47:40.100
+<v Philippe> But, yeah, so all of that to say...
+
+00:47:40.100 --> 00:47:42.060
+<v SPEAKER_5>That's what you're going to do for this conversation, right?
+
+00:47:42.060 --> 00:47:46.860
+<v SPEAKER_5>You're going to actually do the eight hours of editing.
+
+00:47:47.800 --> 00:47:48.280
+<v Philippe> Yeah.
+
+00:47:48.280 --> 00:47:59.880
+<v Philippe> Well, Tim said it would help me, so I painstakingly learned that, yeah, delegation is a superpower if you can use it.
+
+00:47:59.880 --> 00:48:12.340
+<v Philippe> And I haven't been able to in the many years I've been working, but I feel like I could delegate to Tim and go have a beer or something.
+
+00:48:12.340 --> 00:48:14.500
+<v SPEAKER_4>Yeah.
+
+00:48:14.520 --> 00:48:15.720
+<v SPEAKER_3>More than that.
+
+00:48:15.720 --> 00:48:17.120
+<v SPEAKER_3>Yeah.
+
+00:48:17.400 --> 00:48:36.560
+<v Philippe> I used to make interviews in a French Linux magazine, and I did what I just said before, which is I record people, I ask them tons of questions, then I have to transcribe it by hand because it's like 20 years ago, from English, and then translate the English into French.
+
+00:48:36.560 --> 00:48:47.380
+<v Philippe> And it turns out it's a lot of work, and I have a few interviews that are only a recording somewhere on my hard drive.
+
+00:48:47.380 --> 00:48:54.240
+<v Philippe> And now it's 20 years old, and so I don't know if it's interesting anymore.
+
+00:48:54.240 --> 00:49:04.580
+<v Philippe> I think I did interview Tim O'Reilly in 2005, and I'm sure I asked about the logo, but I never transcribed it.
+
+00:49:04.580 --> 00:49:05.780
+<v SPEAKER_6>Yeah, that would be interesting.
+
+00:49:05.780 --> 00:49:09.340
+<v SPEAKER_6>Yeah, that one you should dig up for this.
+
+00:49:09.340 --> 00:49:10.820
+<v SPEAKER_2>Yeah.
+
+00:49:10.820 --> 00:49:12.820
+<v SPEAKER_2>And I kind of want it.
+
+00:49:13.960 --> 00:49:18.920
+<v SPEAKER_5>I would say, for the audience members out there, they don't really know who's on this call.
+
+00:49:18.920 --> 00:49:27.820
+<v SPEAKER_5>So I was thinking we could go around, and I can start, maybe I'm going to say my name, my age, when I started programming, and when I started programming Perl.
+
+00:49:27.860 --> 00:49:33.020
+<v SPEAKER_5>So I think that's apropos, unless people don't want to share their age, but I mean, it kind of gives it away when you share the rest, right?
+
+00:49:33.020 --> 00:49:35.140
+<v SPEAKER_5>So I'm ingy.net.
+
+00:49:35.140 --> 00:49:46.420
+<v SPEAKER_5>I'm 60 years old, six zero, and I started programming in about 82, a little late, I was 18, and I started programming Perl in 98.
+
+00:49:49.160 --> 00:49:50.680
+<v SPEAKER_5>So should we go around the room?
+
+00:49:50.680 --> 00:49:51.600
+<v SPEAKER_5>Are you guys good with that?
+
+00:49:51.860 --> 00:49:55.160
+<v SPEAKER_5>I think it would be better if it would give some context to the listeners.
+
+00:49:55.340 --> 00:49:57.940
+<v SPEAKER_2>We probably should have done this at the beginning.
+
+00:49:57.940 --> 00:49:59.080
+<v SPEAKER_5>Yeah, we can edit.
+
+00:49:59.140 --> 00:50:02.440
+<v SPEAKER_2>Maybe we slice this, move it to the beginning.
+
+00:50:02.500 --> 00:50:04.220
+<v SPEAKER_7>There you go.
+
+00:50:04.220 --> 00:50:12.520
+<v SPEAKER_2>So anyway, just before we do this, I think as far as the editing goes, really, I don't think you would need to spend a lot of time on it.
+
+00:50:12.520 --> 00:50:20.020
+<v SPEAKER_2>I think if you go through it quickly, get rid of a few awkward pauses or maybe stuff that's not bringing anything to the table.
+
+00:50:20.080 --> 00:50:25.480
+<v SPEAKER_2>But I think that for something like this, you don't have to spend like eight hours in the editing room getting it ready to go.
+
+00:50:25.480 --> 00:50:31.240
+<v SPEAKER_2>I think the beauty of something like this is the spontaneity, which is what you don't get in the email interview, right?
+
+00:50:31.240 --> 00:50:36.660
+<v SPEAKER_2>Where you can filter everything, you can sit down and really consider all of your responses before you send them back.
+
+00:50:36.660 --> 00:50:39.020
+<v SPEAKER_2>And here you don't have that luxury.
+
+00:50:39.020 --> 00:50:41.720
+<v SPEAKER_2>So if you want to go around, people want to introduce themselves.
+
+00:50:41.820 --> 00:50:43.620
+<v SPEAKER_2>I should say, you don't have to say how old you are.
+
+00:50:44.020 --> 00:50:46.120
+<v SPEAKER_2>If I say how old I am, I'll never get hired again.
+
+00:50:48.820 --> 00:50:51.380
+<v SPEAKER_5>Yeah, I just already don't think I will get hired again.
+
+00:50:52.740 --> 00:50:58.540
+<v SPEAKER_5>So and I never knew it with Cygnus until just today when you said it.
+
+00:50:58.540 --> 00:51:01.260
+<v SPEAKER_6>I was like, yeah, I get all kinds, but Cygnus is kind of...
+
+00:51:01.780 --> 00:51:05.220
+<v SPEAKER_5>I probably said it and you never corrected it.
+
+00:51:06.260 --> 00:51:09.860
+<v SPEAKER_5>Anyway, so you have an incredibly rich history.
+
+00:51:09.860 --> 00:51:11.980
+<v SPEAKER_5>I expect more out of you in these future podcasts.
+
+00:51:12.060 --> 00:51:13.800
+<v SPEAKER_6>I just don't have a lot to say about logos.
+
+00:51:13.800 --> 00:51:14.560
+<v SPEAKER_6>That's the problem.
+
+00:51:14.860 --> 00:51:15.780
+<v SPEAKER_6>You got me on the wrong.
+
+00:51:15.820 --> 00:51:16.800
+<v SPEAKER_6>You got me on the wrong topic.
+
+00:51:16.800 --> 00:51:17.440
+<v Philippe> We'll talk about it.
+
+00:51:17.540 --> 00:51:21.880
+<v Philippe> Oh, I mean, I want to invite you again, right?
+
+00:51:21.880 --> 00:51:26.020
+<v Philippe> So I'm thinking, yeah, I was thinking one hour is probably a good time.
+
+00:51:26.020 --> 00:51:30.080
+<v Philippe> We're already over, but I'm in a chatterbox, so of course.
+
+00:51:31.820 --> 00:51:34.900
+<v Philippe> Something, I don't remember who said it.
+
+00:51:34.900 --> 00:51:39.620
+<v Philippe> Oh yeah, Olaf, about you were expecting pushback because that's how we do things.
+
+00:51:39.620 --> 00:51:46.240
+<v Philippe> And of course, the thing I thought about was Perl 7, which has a lot of terrible pushback.
+
+00:51:46.240 --> 00:51:47.720
+<v SPEAKER_6>Never heard of it.
+
+00:51:49.520 --> 00:52:01.200
+<v Philippe> And I'm thinking, maybe that's a good segue to have a conversation next time about this ID that some of us have put forward to drop the five.
+
+00:52:02.740 --> 00:52:06.720
+<v Philippe> And Rick, would you be interested in having that conversation again?
+
+00:52:06.720 --> 00:52:10.900
+<v Philippe> Because we had it already in the PSC.
+
+00:52:12.040 --> 00:52:13.580
+<v Philippe> We invited you.
+
+00:52:14.940 --> 00:52:17.480
+<v Philippe> You're muted, so I guess that's a yes.
+
+00:52:21.840 --> 00:52:23.700
+<v Philippe> Oh, he's more than muted.
+
+00:52:23.700 --> 00:52:24.520
+<v Philippe> He's frozen.
+
+00:52:24.520 --> 00:52:26.180
+<v Philippe> Yeah, he's more than muted.
+
+00:52:26.180 --> 00:52:28.140
+<v SPEAKER_3>He's frozen.
+
+00:52:28.540 --> 00:52:30.480
+<v SPEAKER_6>That's how much I didn't want to talk about it.
+
+00:52:30.600 --> 00:52:41.360
+<v SPEAKER_6>I have, for context, I have F8 is my toggle mute and not mute, and F9 is a shortcut to kill dash nine zoom.
+
+00:52:41.360 --> 00:52:42.140
+<v SPEAKER_5>Awesome.
+
+00:52:42.140 --> 00:52:50.440
+<v SPEAKER_6>And normally, I'm on a keyboard where F8 and F9 are in separate banks of function keys, but when I'm just on my laptop, they're not.
+
+00:52:52.160 --> 00:52:56.360
+<v SPEAKER_6>Yeah, I mean, look, I think that's all gonna be a question of whether that's a conversation.
+
+00:52:56.360 --> 00:53:01.240
+<v SPEAKER_6>Look, yeah, well, first off, I'll pull up my traditional Perl 7 slide.
+
+00:53:05.120 --> 00:53:08.960
+<v SPEAKER_6>I'm the short, you've heard the summary of my short position, which is that...
+
+00:53:08.960 --> 00:53:10.780
+<v Philippe> No, but that's for next time.
+
+00:53:10.960 --> 00:53:13.400
+<v SPEAKER_6>Yeah, all I'm saying is, I'm happy to talk about it.
+
+00:53:13.400 --> 00:53:16.320
+<v SPEAKER_6>You got to decide if you want me to talk about that.
+
+00:53:16.320 --> 00:53:18.000
+<v SPEAKER_2>Yeah, I'd like to hear that.
+
+00:53:18.000 --> 00:53:18.540
+<v SPEAKER_2>Yeah.
+
+00:53:18.540 --> 00:53:18.940
+<v Philippe> Yeah.
+
+00:53:18.940 --> 00:53:19.940
+<v SPEAKER_6>Okay.
+
+00:53:19.940 --> 00:53:23.560
+<v Philippe> So yeah, I guess that's a good topic for next time.
+
+00:53:23.620 --> 00:53:26.880
+<v Philippe> And so I think Ingy was asking about the formula.
+
+00:53:26.880 --> 00:53:38.540
+<v Philippe> I think the formula is going to be, let's talk about something, and hopefully during the conversation, there is something else that would be interesting to talk about, and we talk about it next time.
+
+00:53:38.540 --> 00:53:39.440
+<v SPEAKER_5>Yeah.
+
+00:53:39.440 --> 00:53:39.940
+<v SPEAKER_2>That's great.
+
+00:53:40.660 --> 00:53:47.320
+<v SPEAKER_2>I should interject that before this all started, Book gave me an assignment, and the one assignment was to make sure we stayed at the one-hour time box.
+
+00:53:48.780 --> 00:53:52.180
+<v SPEAKER_5>I thought I had it as two hours from the invite.
+
+00:53:52.180 --> 00:53:54.140
+<v SPEAKER_5>I was ready for two hours.
+
+00:53:54.260 --> 00:53:58.500
+<v Philippe> And also, Olaf, I asked you to be the moderator, so...
+
+00:53:59.080 --> 00:54:01.380
+<v SPEAKER_2>I didn't want to moderate your moderations.
+
+00:54:01.380 --> 00:54:03.520
+<v SPEAKER_5>You can't moderate shooting the S-word.
+
+00:54:03.520 --> 00:54:05.060
+<v SPEAKER_5>I mean, it's like...
+
+00:54:06.880 --> 00:54:08.440
+<v SPEAKER_5>I thought this was supposed to be a bar chat.
+
+00:54:08.440 --> 00:54:10.220
+<v SPEAKER_5>You don't moderate a bar chat, right?
+
+00:54:10.220 --> 00:54:10.460
+<v SPEAKER_2>Yeah.
+
+00:54:10.620 --> 00:54:14.320
+<v SPEAKER_2>We didn't have the awkward pauses, so I think it all went really...
+
+00:54:14.320 --> 00:54:15.080
+<v SPEAKER_2>Yeah.
+
+00:54:15.080 --> 00:54:16.140
+<v SPEAKER_2>I'm happy with the way things are going.
+
+00:54:17.200 --> 00:54:17.820
+<v Philippe> Yeah.
+
+00:54:17.820 --> 00:54:25.260
+<v Philippe> Speaking about the bar chat, I don't think we mentioned the name of this thing, which comes from a brainstorm.
+
+00:54:25.260 --> 00:54:26.780
+<v Philippe> Like, I was looking for a name.
+
+00:54:26.900 --> 00:54:35.880
+<v Philippe> I was pretty keen on the bar conversation feeling.
+
+00:54:35.880 --> 00:54:46.480
+<v Philippe> And I didn't want to have Perl in the name because it kind of excludes the people who hate Perl, which is weird because everybody here seems to love it.
+
+00:54:48.620 --> 00:54:50.860
+<v Philippe> And so, yeah.
+
+00:54:54.840 --> 00:55:03.120
+<v Philippe> Underbar is kind of a reference to the underscore that is famous in Perl for being the topicalizer and just the bar, right?
+
+00:55:03.120 --> 00:55:05.640
+<v Philippe> So that's where the name comes from.
+
+00:55:08.040 --> 00:55:09.620
+<v Philippe> That reminded me of something.
+
+00:55:11.900 --> 00:55:12.420
+<v Philippe> Oh, yeah.
+
+00:55:12.420 --> 00:55:16.460
+<v Philippe> And like, except Ingi, most of us started with Basic.
+
+00:55:16.460 --> 00:55:18.440
+<v Philippe> So I think that's where our love for...
+
+00:55:18.440 --> 00:55:19.320
+<v SPEAKER_5>I started with Basic.
+
+00:55:19.320 --> 00:55:21.320
+<v SPEAKER_5>I just didn't want to say it.
+
+00:55:23.320 --> 00:55:31.540
+<v SPEAKER_5>Like, for three days, I did Basic, then I did Fortran, and then Pascal, and then I went to IBM Assembly.
+
+00:55:31.600 --> 00:55:36.140
+<v Philippe> But that's really why we are not, you know...
+
+00:55:36.140 --> 00:55:40.640
+<v Philippe> We don't dislike the dollars in the Perl variable names because that's what Basic...
+
+00:55:40.640 --> 00:55:43.040
+<v Philippe> It comes from Basic, right?
+
+00:55:43.040 --> 00:55:44.380
+<v SPEAKER_6>Yeah, but they're good on their own.
+
+00:55:44.380 --> 00:55:47.740
+<v SPEAKER_6>If Basic never existed, they'd still be better to have the sigils than not.
+
+00:55:48.060 --> 00:55:49.840
+<v SPEAKER_6>That's just a fact.
+
+00:55:51.540 --> 00:55:54.220
+<v SPEAKER_5>I know that Larry took it from Shell.
+
+00:55:54.220 --> 00:55:56.460
+<v SPEAKER_5>I know 100% that he took it from...
+
+00:55:56.460 --> 00:55:57.860
+<v SPEAKER_5>Almost...
+
+00:55:57.860 --> 00:56:01.040
+<v SPEAKER_5>I know at 99% that he took it from Shell, not Basic.
+
+00:56:01.760 --> 00:56:02.340
+<v SPEAKER_5>Yeah.
+
+00:56:02.340 --> 00:56:05.280
+<v Philippe> Yeah, but people are probably exposed to Basic.
+
+00:56:05.280 --> 00:56:08.500
+<v Philippe> I mean, especially in the 80s, right?
+
+00:56:08.500 --> 00:56:11.040
+<v Philippe> People were exposed to Basic first.
+
+00:56:11.040 --> 00:56:12.940
+<v SPEAKER_5>I asked a really dumb question during...
+
+00:56:12.940 --> 00:56:18.780
+<v SPEAKER_5>I was giving a talk, and Larry was in the audience, and I said, I love interpolation.
+
+00:56:18.780 --> 00:56:19.540
+<v SPEAKER_5>Where did that come from?
+
+00:56:19.540 --> 00:56:20.940
+<v SPEAKER_5>And he's like, Shell.
+
+00:56:20.940 --> 00:56:22.380
+<v SPEAKER_5>And it's like...
+
+00:56:22.380 --> 00:56:22.780
+<v SPEAKER_5>I don't know.
+
+00:56:22.780 --> 00:56:24.100
+<v SPEAKER_5>I mean, it was just so obvious.
+
+00:56:24.160 --> 00:56:26.440
+<v SPEAKER_5>It's like, of course, but it's like...
+
+00:56:26.440 --> 00:56:28.100
+<v SPEAKER_5>I just kind of thought he invented it or something.
+
+00:56:28.100 --> 00:56:31.000
+<v SPEAKER_5>Anyway.
+
+00:56:31.000 --> 00:56:33.880
+<v SPEAKER_3>What is the logo of Basic?
+
+00:56:33.880 --> 00:56:35.360
+<v SPEAKER_3>There is so many names.
+
+00:56:35.360 --> 00:56:37.100
+<v Philippe> Which Basic?
+
+00:56:37.100 --> 00:56:38.100
+<v Philippe> Yeah.
+
+00:56:38.100 --> 00:56:39.920
+<v SPEAKER_5>Doesn't it?
+
+00:56:39.920 --> 00:56:41.500
+<v SPEAKER_5>Or...
+
+00:56:41.500 --> 00:56:49.680
+<v Philippe> I mean, like, you know, everybody says, yeah, there are thousands of programming languages, but I'm sure hundreds of them are different shades of Basic.
+
+00:56:53.320 --> 00:56:57.280
+<v SPEAKER_5>Book, while we're still here, I thought of one thing with your wanting to hear Larry's story.
+
+00:56:57.280 --> 00:56:58.320
+<v SPEAKER_5>What...
+
+00:56:58.320 --> 00:57:04.160
+<v SPEAKER_5>I wonder if you could have one about people who have a lot of stories they've heard from Larry.
+
+00:57:04.160 --> 00:57:05.960
+<v SPEAKER_5>You know, Larry's...
+
+00:57:05.960 --> 00:57:06.420
+<v SPEAKER_5>I don't know.
+
+00:57:06.420 --> 00:57:06.960
+<v SPEAKER_5>It's an idea.
+
+00:57:06.960 --> 00:57:18.960
+<v SPEAKER_6>Yeah, you just put together the interviews with everybody who has something to say about Larry and send it to Larry and say, I'm going to publish this with no response unless you go on the record with me to talk about the things people are saying.
+
+00:57:19.020 --> 00:57:21.900
+<v SPEAKER_5>Yeah, and then he wants to respond, and then...
+
+00:57:21.900 --> 00:57:27.460
+<v Philippe> I'm sure people will mostly say nice things, so it's probably safe.
+
+00:57:27.660 --> 00:57:32.200
+<v SPEAKER_6>Just let Damien in on the plan, and he'll help you out.
+
+00:57:32.200 --> 00:57:34.100
+<v SPEAKER_5>There you go.
+
+00:57:34.100 --> 00:57:35.940
+<v SPEAKER_6>All right, I do need to run, folks.
+
+00:57:35.940 --> 00:57:39.300
+<v Philippe> Yeah, I think it's a good time to end.
+
+00:57:39.680 --> 00:57:44.220
+<v Philippe> Thank you very much, everyone, for to have accepted my invitation.
+
+00:57:45.260 --> 00:57:52.220
+<v Philippe> And I'm definitely going to invite more of you to talk about Perl versions.
+
+00:57:52.220 --> 00:57:55.000
+<v SPEAKER_5>I just want everybody to know, I started at 8 a.m.
+
+00:57:55.000 --> 00:57:59.760
+<v SPEAKER_5>on this thing, but I'd actually done three hours of programming with GooGod in Japan.
+
+00:57:59.760 --> 00:58:02.800
+<v SPEAKER_5>So I got up at 4 to get ready for GooGod.
+
+00:58:02.800 --> 00:58:05.600
+<v SPEAKER_5>So, yeah, anyway, I just wanted to say that.
+
+00:58:05.600 --> 00:58:09.460
+<v SPEAKER_5>It feels like I really went overboard for this.
+
+00:58:09.460 --> 00:58:10.440
+<v SPEAKER_5>Just want to, yeah.
+
+00:58:11.220 --> 00:58:12.720
+<v SPEAKER_5>Peace out.
+
+00:58:12.720 --> 00:58:13.720
+<v Philippe> Thank you, everyone.
+
+00:58:13.720 --> 00:58:13.880
+<v SPEAKER_5>Bye.
