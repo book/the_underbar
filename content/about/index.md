@@ -205,6 +205,14 @@ etc.) is licensed under a
 
 For alternative licensing options, please contact ([Philippe Bruhat](mailto:underbar@cpan.io).
 
+## The Participation Rules
+
+By accepting an invitation to join the podcast and be recorded,
+you transfer copyright on the recordings and transcripts of
+your contributions, and grant permission to _The Underbar_'s
+owners to publish them on this website and the associated
+[Git repository](https://github.com/book/the_underbar).
+
 ## This is not the `(bar|podcast)` you are looking for
 
 First of all, _The Underbar_ is not the first Perl podcast:
