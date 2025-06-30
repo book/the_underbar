@@ -73,6 +73,27 @@ audio {
   justify-content: space-between;
 }
 
+.vtt-caption {
+  display: none;
+  height: 5em;
+  padding: 0.5ex;
+  border: 1px solid;
+}
+
+.vtt-speaker{
+  text-decoration: underline;
+}
+
+.vtt-text {
+  text-align: center;
+  vertical-align: center;
+  font-weight:bold;
+  text-wrap:balance;
+  // text-wrap:balance above helps text wrap without one word on the next line,
+  // making it easier to read
+  // https://developer.chrome.com/docs/css-ui/css-text-wrap-balance
+}
+
 #perl-ad-target {
     border-style: dashed;
     border-width: 1px;
