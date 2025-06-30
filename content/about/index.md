@@ -87,6 +87,12 @@ Here's what a traditional French "zinc" looks like:
   <small>(Photo from <https://francewithvero.com/blog/le-zinc-a-french-cafe-icon/>)</small>
 </center>
 
+The font used for the dollar sign (`$`) and underscore (`_`) characters is
+[Courier New Bold](https://en.wikipedia.org/wiki/Courier_(typeface)#Courier_New).
+The [beer mug](https://openmoji.org/library/emoji-1F37A/)
+([`U+1F37A`](https://emojipedia.org/beer-mug)) comes from
+[OpenMoji](https://openmoji.org/) – the open-source emoji and icon project.
+
 ## The Inspiration (or, How We Got Here)
 
 I love learning about the _history_ of science (especially mathematics)
