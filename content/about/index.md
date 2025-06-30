@@ -19,6 +19,21 @@ conference call, invite a few interesting people, pick a topic to start
 the conversation, hit "record", and stop after roughly one hour?
 And make the recording public afterwards, for others to enjoy.
 
+## The Intent
+
+My primary goal is to have fun chatting with my friends about
+interesting topics on a regular basis.
+
+I also believe that given enough time, the transcripts and notes I
+collect will build up an interesting (and valuable) collection of
+source material about and around the Perl and Open Source communities
+and projects.
+
+I'm actually hoping that someone (maybe me, maybe an actual author, or a
+scholar) will use this raw material to build something even more
+interesting on top of it. This could be a commercial book, for example,
+and I'd be open to collaborate on that.
+
 ## The Name
 
 The podcast's name comes from a quick brainstorm with Olaf Alders on
