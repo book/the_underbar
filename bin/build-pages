@@ -99,8 +99,10 @@ for my $file ( $todo{yaml}->@* ) {
         $yaml->{number} = $1;
         $yaml->{$_} = $strp{$_}->parse_datetime( $yaml->{$_} )
           for qw( published recorded );
-        $yaml->{yaml}     = $file;
-        $yaml->{file_url} = join '/', '/episodes', $yaml->{number}, $yaml->{file};
+        $yaml->{yaml} = $file;
+        $yaml->{$_}
+          and $yaml->{"${_}_url"} = join '/', '/episodes', $yaml->{number}, $yaml->{$_}
+          for qw( file transcript );
         if ( -e ( my $transcript = $file->parent->child('transcript.md') ) ) {
             $yaml->{transcript} = $md->markdown( $transcript->slurp_utf8 );
         }
@@ -182,6 +184,7 @@ for my $number ( 0 .. $vars{episodes}->$#* ) {
     my $dst     = $output_dir->child( episodes => $episode->{number}, 'index.html' );
     next
       if -e $dst && $episode->{yaml}->stat->mtime < $dst->stat->mtime
+      && $latest_dep < $dst->stat->mtime
       && !$option{force};
     warn "Rendering $dst\n";
     my $subtitle =
