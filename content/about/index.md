@@ -199,8 +199,11 @@ calls them) for historians of computing (and the bit I know the best: Perl).
 
 ## The License
 
-This work is licensed under a
+All the content related to The Underbar (recordings, transcripts, notes,
+etc.) is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+For alternative licensing options, please contact ([Philippe Bruhat](mailto:underbar@cpan.io).
 
 ## This is not the `(bar|podcast)` you are looking for
 
