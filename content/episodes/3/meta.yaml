@@ -1,8 +1,9 @@
 title: MetaCPAN
 description: >
   During the Perl Toolchain Summit 2025 in Leipzig, we interviewed
-  the MetaCPAN team.
-file: ...
+  the MetaCPAN team about the history of the project, how it's managed
+  and where it's going to.
+file: the_underbar-3-metacpan.mp3
 cast:
 - BOOK
 - OALDERS
@@ -12,7 +13,6 @@ cast:
 recorded: 2025-05-04
 published: 2025-07-11 14:00
 editors:
-- CONTRA
 - BOOK
 thanks:
 - SJN-PTS
