@@ -143,7 +143,7 @@ _Oxide and Friends_ feels like being in a bar conversation with other
 technical people. I don't always fully understand what they're talking
 about, but I definitely like what I hear.
 
-Bryan Cantrill of [0xide](https://oxide.computer) has strong opinions about
+Bryan Cantrill of [Oxide](https://oxide.computer) has strong opinions about
 sharing engineering knowledge, which [he presented](https://www.youtube.com/watch?v=W8qiDhlFVCE)
 at [GOTO Chicago 2023](https://gotopia.tech/conferences/66/goto-chicago-2023).
 
