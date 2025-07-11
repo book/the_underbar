@@ -26,6 +26,7 @@ Edited by <:
     else { ", " }
   }
 :>
+Published on <: $episode.published.strftime( "%A, %B %e, %Y" ) :>.
 <: for $episode.thanks -> $who { $podcast.thanks[$who]; " " } :>
 
 </small>
