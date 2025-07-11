@@ -203,7 +203,7 @@ All the content related to The Underbar (recordings, transcripts, notes,
 etc.) is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
-For alternative licensing options, please contact ([Philippe Bruhat](mailto:underbar@cpan.io).
+For alternative licensing options, please contact ([Philippe Bruhat](mailto:underbar@cpan.io)).
 
 ## The Participation Rules
 
