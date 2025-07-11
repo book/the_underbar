@@ -235,5 +235,6 @@ And also bars:
 * [The UnderBar](https://www.underbar.biz/) is a proud 100% LGBTQ+ owned bar in Vancouver.
 * [Underbar](https://www.instagram.com/UnderbarCraighallPark/) is a
   basement bar/lounge in Johannesburg, South Africa.
+* [Underbar](https://www.underbar.no/) is a whisky bar in Oslo, Norway.
 
 The underbar also a [Parkour technique](https://londonparkour.com/tutorial/basic-underbar/).
