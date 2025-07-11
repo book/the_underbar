@@ -19,7 +19,16 @@ GetOptions(
     'source=s',    # where the site sources are
     'force',       # force regeneration
     'verbose',
+    'date=s',
 ) or pod2usage(2);
+
+$option{date} &&= do {
+    die "Invalid date: $option{date}"
+      unless $option{date} =~ /\A\d{4}-\d{2}-\d{2}\z/;
+    my @ymd = split /-/, $option{date};
+    DateTime->new( year => $ymd[0], month => $ymd[1], day => $ymd[2] );
+};
+$option{date} //= DateTime->now;
 
 # content and output directories
 my $base_dir = path( $option{source} );
@@ -106,7 +115,7 @@ for my $file ( $todo{yaml}->@* ) {
         if ( -e ( my $transcript = $file->parent->child('transcript.md') ) ) {
             $yaml->{transcript} = $md->markdown( $transcript->slurp_utf8 );
         }
-        next if $yaml->{published} > DateTime->now;
+        next if $yaml->{published} > $option{date};
         $vars{episodes}[$1] = $yaml;
     }
     elsif ( $file =~ m{(?:/|\A)episodes/meta\.ya?ml\z} ) {
