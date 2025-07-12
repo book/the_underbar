@@ -13,7 +13,8 @@ The podcast is syndicated on
 [Spotify](https://open.spotify.com/show/4pdXwG9MdVKNPPJouTp6z7),
 [Episodes.fm](https://episodes.fm/1821292042),
 [Podchaser](https://www.podchaser.com/podcasts/the-underbar-5970261),
+[Castbox](https://castbox.fm/channel/id6649076),
 and
-[Castbox](https://castbox.fm/channel/id6649076).
+[Pocketcast](https://pocketcasts.com/podcasts/700902d0-2cb8-013e-d33f-0eeccf47baff).
 
 ## All Episodes
