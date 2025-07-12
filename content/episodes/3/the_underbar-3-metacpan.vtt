@@ -1,0 +1,1417 @@
+WEBVTT
+
+00:00:00.980 --> 00:00:06.560
+<v SPEAKER_1>So, we have the MetaCPAN team, or part of it, here today.
+
+00:00:06.560 --> 00:00:15.120
+<v SPEAKER_1>Maybe we can do a round of presenting yourselves, and then we'll talk about the history of MetaCPAN, how it came to be, and where is it now.
+
+00:00:15.120 --> 00:00:17.140
+<v SPEAKER_2>Okay, I'm Olaf Alders.
+
+00:00:17.140 --> 00:00:19.720
+<v SPEAKER_2>I'm coder number one on MetaCPAN.
+
+00:00:19.720 --> 00:00:23.460
+<v SPEAKER_2>I live outside of Toronto, Canada.
+
+00:00:23.460 --> 00:00:25.940
+<v SPEAKER_2>And, yeah, I'll pass the mic to Mickey.
+
+00:00:27.660 --> 00:00:32.180
+<v SPEAKER_3>Mickey, I live in the Netherlands.
+
+00:00:33.520 --> 00:00:34.160
+<v SPEAKER_4>I'm Sean.
+
+00:00:34.160 --> 00:00:41.000
+<v SPEAKER_4>I live on the opposite side of Toronto from Olaf, and I mostly deal with the infrastructure bits.
+
+00:00:42.400 --> 00:00:47.900
+<v SPEAKER_5>I'm Graham or Harg, and I've been working on MetaCPAN for a while.
+
+00:00:47.900 --> 00:00:50.660
+<v SPEAKER_1>So, yeah, and I'm just asking the questions.
+
+00:00:50.720 --> 00:00:52.580
+<v SPEAKER_1>I'm Philippe.
+
+00:00:52.580 --> 00:00:55.560
+<v SPEAKER_1>So, when did MetaCPAN start?
+
+00:00:55.560 --> 00:00:59.220
+<v SPEAKER_2>So, I think it was in the fall of 2010.
+
+00:00:59.220 --> 00:01:00.800
+<v SPEAKER_2>I was working on an iPhone app.
+
+00:01:00.800 --> 00:01:07.280
+<v SPEAKER_2>It was called ICPAN, and it was basically like, this is an offline collection of pod.
+
+00:01:07.280 --> 00:01:17.260
+<v SPEAKER_2>So, and it was all in a SQLite database on your phone, and I thought there should be a way, an easier way to get all that data so that I could build my database.
+
+00:01:17.260 --> 00:01:23.180
+<v SPEAKER_2>And I was at a Toronto Pearlmongers meeting, and somebody was saying, there's this cool new thing called Elasticsearch, and you really should try it.
+
+00:01:23.180 --> 00:01:29.240
+<v SPEAKER_2>So, I spent some evenings and weekends cobbling together an API that I could use for my app.
+
+00:01:29.240 --> 00:01:38.480
+<v SPEAKER_2>And then one of the other Pearlmongers, Mark Jubinville, he made this JavaScript frontend to it sort of as a proof of concept so that we could know the API was working.
+
+00:01:38.480 --> 00:01:47.540
+<v SPEAKER_2>And then we decided it would be kind of cool if we could have, you know, syntax highlighting for it, which Search.CPAN didn't have at the time.
+
+00:01:48.060 --> 00:01:50.680
+<v SPEAKER_2>And we thought authors should be able to have their own profile pages.
+
+00:01:50.680 --> 00:01:51.640
+<v SPEAKER_2>So we set up this.
+
+00:01:51.640 --> 00:01:53.800
+<v SPEAKER_2>We figured you could upload anything to pause.
+
+00:01:53.800 --> 00:02:02.120
+<v SPEAKER_2>So we said if you upload a JSON file and called author.json, we'll find it, we'll index it, and then you'll have sort of like a fancy author page.
+
+00:02:02.120 --> 00:02:04.360
+<v SPEAKER_2>And that, I think, is actually what got people interested.
+
+00:02:04.360 --> 00:02:08.280
+<v SPEAKER_2>So people started uploading these author.json files.
+
+00:02:08.860 --> 00:02:11.240
+<v SPEAKER_2>And then, yes, sort of the site kind of took off from there.
+
+00:02:11.240 --> 00:02:13.840
+<v SPEAKER_2>Lots of people started contributing.
+
+00:02:13.840 --> 00:02:15.600
+<v SPEAKER_1>So it started with the API.
+
+00:02:16.360 --> 00:02:21.620
+<v SPEAKER_2>It was never supposed to be about the front end, so I was never interested in building a front end for it.
+
+00:02:21.620 --> 00:02:22.680
+<v SPEAKER_2>We had the proof of concept.
+
+00:02:22.680 --> 00:02:25.340
+<v SPEAKER_2>And then Moritz Onken, he was a student at the time.
+
+00:02:25.340 --> 00:02:30.000
+<v SPEAKER_2>He showed up, and he was really interested in building a new front end for it.
+
+00:02:30.000 --> 00:02:31.320
+<v SPEAKER_2>And so he kind of took that on.
+
+00:02:31.320 --> 00:02:37.460
+<v SPEAKER_2>And then as part of that, he got himself invited to the QA Hackathon in Amsterdam.
+
+00:02:37.460 --> 00:02:41.120
+<v SPEAKER_2>And then he got a Google Summer of Code for it.
+
+00:02:41.120 --> 00:02:42.520
+<v SPEAKER_2>So he spent a summer working on that.
+
+00:02:42.800 --> 00:02:49.280
+<v SPEAKER_2>But really, from day one, I was never interested in the front end, and that was always just going to be somebody else's project.
+
+00:02:49.280 --> 00:02:49.820
+<v SPEAKER_1>Right.
+
+00:02:49.820 --> 00:02:54.020
+<v SPEAKER_1>And so that started, you said, fall of 2010?
+
+00:02:54.020 --> 00:02:54.340
+<v SPEAKER_2>Yeah.
+
+00:02:54.340 --> 00:03:03.080
+<v SPEAKER_1>But CPAN started in 1995, so there were web interfaces to CPAN before, right?
+
+00:03:03.400 --> 00:03:03.800
+<v SPEAKER_2>There were.
+
+00:03:03.800 --> 00:03:06.520
+<v SPEAKER_2>There was the COBE search, and there was search.CPAN.
+
+00:03:08.500 --> 00:03:14.000
+<v SPEAKER_2>Both of those, I think, were not open source, so I didn't see a clear way to be able to contribute to any of those.
+
+00:03:14.560 --> 00:03:22.720
+<v SPEAKER_2>And it really was sort of like with the code samples in the pod on search.CPAN, I always thought it would be great to be able to do syntax highlighting.
+
+00:03:22.720 --> 00:03:33.480
+<v SPEAKER_2>What I had actually done before was I built sort of like a plaque proxy that would go to search.CPAN and inject some JavaScript into it, do the syntax highlighting it so that I could run that locally.
+
+00:03:33.480 --> 00:03:44.820
+<v SPEAKER_2>But I had, yeah, there was not really a path to be able to get those changes in there, so it just ended up being, well, if we wanted to do something different, we'd probably just have to build it ourselves.
+
+00:03:44.820 --> 00:03:47.700
+<v SPEAKER_1>Search was Greinberg?
+
+00:03:47.700 --> 00:03:48.480
+<v SPEAKER_2>I think so.
+
+00:03:48.480 --> 00:03:49.340
+<v SPEAKER_1>Yeah.
+
+00:03:49.340 --> 00:03:51.820
+<v SPEAKER_1>And Cope Search was Randy Cope.
+
+00:03:51.820 --> 00:03:52.300
+<v SPEAKER_2>Right.
+
+00:03:52.300 --> 00:03:53.600
+<v SPEAKER_1>It was Canadian too.
+
+00:03:53.820 --> 00:03:57.780
+<v SPEAKER_2>I think he was a professor at a university.
+
+00:03:57.960 --> 00:04:01.960
+<v SPEAKER_5>I thought I remember that some connection was like Toronto, but I could be wrong with that.
+
+00:04:01.960 --> 00:04:02.160
+<v SPEAKER_2>Yeah.
+
+00:04:02.400 --> 00:04:04.600
+<v SPEAKER_2>I don't know him from being local to Toronto.
+
+00:04:04.600 --> 00:04:12.760
+<v SPEAKER_2>I think maybe he was at West, and then I think he passed away sort of a few years after that, and then the Cope Search disappeared.
+
+00:04:14.720 --> 00:04:34.640
+<v SPEAKER_1>So, yeah, so there was in Amsterdam in 2011, I remember Moritz being in the crowd, but he was only a temporary force in the MetaCPAN thing because he was doing the first UI, and then the Summer of Code ended, I guess, and he moved on to other things.
+
+00:04:35.120 --> 00:04:54.380
+<v SPEAKER_2>So, he did the second UI, yeah, and then he, initially, he, so when we started, it was, I think, like a custom framework written, just basically written around plaque, and we had it just deployed on a small VM running in screen, and I remember Dave Rolski showed up, he said, that's not how you deploy things.
+
+00:04:54.380 --> 00:05:06.380
+<v SPEAKER_2>And so, yeah, it kind of grew from there, and when he got the Google Summer of Code, then his supervisor was Florian Ragwitz, and we sat down and said, if we're going to do this, it can't be a custom framework.
+
+00:05:06.380 --> 00:05:08.660
+<v SPEAKER_2>You're going to have to choose at the time.
+
+00:05:08.660 --> 00:05:15.360
+<v SPEAKER_2>I think it was between Mojo and Catalyst, maybe Dancer, so, and then he settled on Catalyst.
+
+00:05:15.520 --> 00:05:17.620
+<v SPEAKER_2>Then it kind of grew from there.
+
+00:05:17.620 --> 00:05:20.340
+<v SPEAKER_1>And speaking of growing, how did the team grow?
+
+00:05:20.340 --> 00:05:23.380
+<v SPEAKER_1>Like, how did you get more people to help?
+
+00:05:23.380 --> 00:05:41.580
+<v SPEAKER_1>Because nowadays, like, one of the recognizable moments that the Pro2Chain Summit starts is when we open the doors, the MetaCPAN team just grabs a bunch of tables and makes their own island with their screens and their setup, and they're ready from, like, the fifth minute.
+
+00:05:41.580 --> 00:05:42.320
+<v SPEAKER_2>Yeah.
+
+00:05:42.320 --> 00:05:43.800
+<v SPEAKER_1>You're ready and running.
+
+00:05:43.800 --> 00:05:51.360
+<v SPEAKER_2>Yeah, so, I mean, so, yeah, the first one I was at was in Paris, and Florian had invited me to that, and I wasn't sure if I wanted to come, and he talked me into it, and I came.
+
+00:05:51.360 --> 00:05:52.020
+<v SPEAKER_2>I had a great time.
+
+00:05:52.020 --> 00:05:57.080
+<v SPEAKER_2>Then in Lancaster, I wasn't invited, and then I've been invited in the years since then.
+
+00:05:57.780 --> 00:06:03.280
+<v SPEAKER_2>But basically, I wasn't on IRC, and Shlomi Fish showed up, and he said, You should be on IRC.
+
+00:06:03.280 --> 00:06:05.180
+<v SPEAKER_2>And I said, I don't know how to create a channel.
+
+00:06:05.180 --> 00:06:07.960
+<v SPEAKER_2>So he said, I'll create one for you.
+
+00:06:07.960 --> 00:06:10.700
+<v SPEAKER_2>And then people started showing up in the channel.
+
+00:06:10.700 --> 00:06:14.320
+<v SPEAKER_2>Leo was there just kind of hanging around, Leo Lapworth.
+
+00:06:14.320 --> 00:06:25.360
+<v SPEAKER_2>And I think we've sort of tried from the beginning to make it easy to contribute, like pretty flexible about handing out commit bits, and if people want to contribute, then we tried to encourage that.
+
+00:06:27.080 --> 00:06:28.940
+<v SPEAKER_2>I think...
+
+00:06:28.940 --> 00:06:30.920
+<v SPEAKER_1>Yeah, how did you, Mickey, get involved?
+
+00:06:30.920 --> 00:06:34.240
+<v SPEAKER_2>Yeah, so I think Mickey has a different origin story.
+
+00:06:35.920 --> 00:06:44.840
+<v SPEAKER_3>Yeah, so mine is, I might be off by a year, but I think it's 2016, 16 or 17, something like that.
+
+00:06:44.840 --> 00:06:47.680
+<v SPEAKER_3>The year when we had the PTS in rugby.
+
+00:06:47.680 --> 00:06:48.460
+<v SPEAKER_1>That's 16.
+
+00:06:48.460 --> 00:07:09.740
+<v SPEAKER_3>So a little bit before that, a couple months before that, I was working at the infrastructure team at Booking, reporting to Stephen Little, and he had this crazy idea of installing a local MetaCPAN set up.
+
+00:07:09.740 --> 00:07:12.800
+<v SPEAKER_3>And I got that as a task, which I loved.
+
+00:07:12.800 --> 00:07:15.680
+<v SPEAKER_3>And so I started digging into it.
+
+00:07:16.720 --> 00:07:21.160
+<v SPEAKER_3>My first obstacle was the version of Elasticsearch.
+
+00:07:21.780 --> 00:07:29.100
+<v SPEAKER_3>Because at the time, everything was built on Elasticsearch 0.20, I think, in production.
+
+00:07:29.100 --> 00:07:36.760
+<v SPEAKER_3>And our sysadmins could not offer me anything less than 2.3.
+
+00:07:36.760 --> 00:07:47.320
+<v SPEAKER_3>And in between them, there are about 70 separate, not backward compatible versions.
+
+00:07:47.980 --> 00:07:56.100
+<v SPEAKER_3>So I went through hell, trying to adapt that code and make it work.
+
+00:07:57.160 --> 00:08:04.460
+<v SPEAKER_3>And I was bugging Olaf and Leo on, I think, I wasn't even on IRC.
+
+00:08:04.460 --> 00:08:07.920
+<v SPEAKER_3>It was through emails.
+
+00:08:07.920 --> 00:08:11.360
+<v SPEAKER_3>And at some point, I realized they're going to be in Rugby working on it.
+
+00:08:11.360 --> 00:08:14.480
+<v SPEAKER_3>And I asked to be invited.
+
+00:08:14.480 --> 00:08:15.520
+<v SPEAKER_3>And they arranged it.
+
+00:08:16.600 --> 00:08:19.360
+<v SPEAKER_3>And I think that's when it really took off.
+
+00:08:19.360 --> 00:08:25.900
+<v SPEAKER_3>Like, I could complete the work on upgrading the Elasticsearch.
+
+00:08:25.900 --> 00:08:29.280
+<v SPEAKER_3>Then we had an idea to turn it into something even more.
+
+00:08:29.280 --> 00:08:36.280
+<v SPEAKER_3>Like, we had our own MetaCPAN hackathon that year, and it just went from there.
+
+00:08:36.280 --> 00:08:37.520
+<v SPEAKER_1>Right.
+
+00:08:37.520 --> 00:08:43.760
+<v SPEAKER_1>I remember in Berlin in 2015, someone from Elasticsearch, I forgot his name.
+
+00:08:43.860 --> 00:08:44.880
+<v SPEAKER_2>Clinton Gormley.
+
+00:08:44.880 --> 00:08:46.440
+<v SPEAKER_1>Yes.
+
+00:08:46.440 --> 00:08:53.840
+<v SPEAKER_1>Was there, was he involved also with MetaCPAN and Elasticsearch, or was it unrelated?
+
+00:08:53.840 --> 00:08:56.300
+<v SPEAKER_2>Yeah, he was, I think, because he was...
+
+00:08:56.300 --> 00:09:00.680
+<v SPEAKER_2>So he was just sort of an interested person in Elasticsearch.
+
+00:09:00.680 --> 00:09:04.180
+<v SPEAKER_2>So he'd been hanging around in the Elasticsearch IRC channel.
+
+00:09:04.420 --> 00:09:05.660
+<v SPEAKER_1>He was an employee, right?
+
+00:09:05.660 --> 00:09:07.120
+<v SPEAKER_2>Well, there was no company.
+
+00:09:07.580 --> 00:09:09.880
+<v SPEAKER_2>This was just an open-source product at the time, right?
+
+00:09:10.140 --> 00:09:14.900
+<v SPEAKER_2>And the CTO was just a guy on IRC back then.
+
+00:09:14.900 --> 00:09:17.900
+<v SPEAKER_2>So we could just go to them and get help.
+
+00:09:17.900 --> 00:09:20.960
+<v SPEAKER_2>It was even like a super big IRC channel, as I remember.
+
+00:09:20.960 --> 00:09:29.820
+<v SPEAKER_2>But anyway, so Clinton, I think he was writing a Pearl wrapper around Elasticsearch, and we were using it internally as well.
+
+00:09:29.820 --> 00:09:31.740
+<v SPEAKER_2>So there was good reason to be in touch.
+
+00:09:31.740 --> 00:09:35.580
+<v SPEAKER_2>And then I think he also helped us get our very first hosting.
+
+00:09:36.120 --> 00:09:44.400
+<v SPEAKER_2>There was a hosting company that he knew, and he managed to get us some free bare metal servers to host on.
+
+00:09:44.400 --> 00:09:47.780
+<v SPEAKER_2>Eventually, that became a company, and he was working for the company.
+
+00:09:47.780 --> 00:09:50.340
+<v SPEAKER_2>I think he was like employee number six or something like that.
+
+00:09:50.340 --> 00:09:55.580
+<v SPEAKER_2>And then they flew him out to Berlin to help us with an Elasticsearch upgrade.
+
+00:09:55.580 --> 00:10:01.920
+<v SPEAKER_2>It was, I think, it was a small group, and I had been kind of struggling with this a little bit by myself.
+
+00:10:02.240 --> 00:10:09.700
+<v SPEAKER_2>And so he came in and helped a lot to sort of get us over the hump of upgrading ES there, yeah.
+
+00:10:09.700 --> 00:10:20.000
+<v SPEAKER_1>I remember something about the name of the module being capitalized or not capitalized or capitalized or something, and there were some issues there.
+
+00:10:20.640 --> 00:10:25.660
+<v SPEAKER_5>I think they tried to change it from capitalized to not capitalized.
+
+00:10:25.660 --> 00:10:28.280
+<v SPEAKER_5>It became a problem, which is why they renamed it.
+
+00:10:28.340 --> 00:10:33.460
+<v SPEAKER_5>So it became Search Colonial and Elastic Search instead of Just Elastic Search.
+
+00:10:33.460 --> 00:10:37.560
+<v SPEAKER_1>And you, Sean, how did you get involved with MetaCPAN?
+
+00:10:37.560 --> 00:10:40.460
+<v SPEAKER_4>It was around 2018, 2019.
+
+00:10:40.460 --> 00:10:43.760
+<v SPEAKER_4>I was at Toronto Pearlmongers regularly.
+
+00:10:43.760 --> 00:10:48.140
+<v SPEAKER_4>Olaf and I kind of handed off presenting at those meetings for a while.
+
+00:10:48.140 --> 00:10:56.240
+<v SPEAKER_4>And we were hanging out at a bar afterwards, and I was always into infrastructure, and I said, hey, do you have any need to help out?
+
+00:10:56.420 --> 00:11:01.820
+<v SPEAKER_4>And he offered to let me do some things, and I did a couple of things.
+
+00:11:01.820 --> 00:11:05.500
+<v SPEAKER_4>And then we started a little bit of a Docker migration.
+
+00:11:05.500 --> 00:11:14.920
+<v SPEAKER_4>And the next thing, I was invited to Marlowe to sit in on PTS and do some more Docker things, and it's just kept going since then.
+
+00:11:16.280 --> 00:11:24.720
+<v SPEAKER_5>I don't know exactly when in terms of date, but it was probably, I don't know, 2016 or maybe before that.
+
+00:11:25.060 --> 00:11:37.380
+<v SPEAKER_5>I just started sending patches to the front end because it was easy to do, and yeah, and eventually just became more involved over time and now contribute to a bunch of other parts.
+
+00:11:37.380 --> 00:11:51.720
+<v SPEAKER_1>Yeah, and something I've noticed in every year where at the PTS, when I see the MetaCPAN team working, is you always seem to be involved in some kind of migration upgrade.
+
+00:11:51.720 --> 00:11:54.580
+<v SPEAKER_1>Like, so, I mean, what I mean by that is positive.
+
+00:11:54.660 --> 00:11:57.980
+<v SPEAKER_1>It's like, you're not standing still and you are...
+
+00:11:58.080 --> 00:12:05.320
+<v SPEAKER_1>And I guess also the traffic, when Search and Coby Search disappeared, you were the only CPAN thing.
+
+00:12:05.320 --> 00:12:08.800
+<v SPEAKER_1>And for a bunch of people, MetaCPAN is CPAN.
+
+00:12:08.800 --> 00:12:21.620
+<v SPEAKER_1>They don't realize, oh yeah, CPAN used to be this network of mirrors, and it's actually just a bunch of files and a bunch of directories, and you can access it maybe not through FTP anymore, but just get the files, which is what the clients do.
+
+00:12:21.880 --> 00:12:26.720
+<v SPEAKER_1>You don't need the web UI to use or participate in CPAN.
+
+00:12:26.720 --> 00:12:28.680
+<v SPEAKER_1>You're constantly moving.
+
+00:12:28.680 --> 00:12:35.900
+<v SPEAKER_2>Yeah, so we're usually blocked on something big, and then when we all get together, then we can try and work our way past that.
+
+00:12:35.900 --> 00:12:38.500
+<v SPEAKER_2>We initially started to try to make it easy.
+
+00:12:38.500 --> 00:12:45.620
+<v SPEAKER_2>We were using Vagrant, and those were VMs were really hard to set up, but they were easier.
+
+00:12:45.620 --> 00:12:53.620
+<v SPEAKER_2>The blocker has basically been, the front end was always easy to spin up, but trying to get a working Elasticsearch locally was like always not really trivial.
+
+00:12:53.620 --> 00:12:56.920
+<v SPEAKER_2>So we had Vagrant, and then we started using Puppet.
+
+00:12:56.920 --> 00:13:02.260
+<v SPEAKER_2>Leo did a whole Puppet thing, so that we could start deploying to production with that.
+
+00:13:02.260 --> 00:13:09.500
+<v SPEAKER_2>And then eventually, we did move from Vagrant to Docker, and for a while, we were moving from Puppet to Ansible.
+
+00:13:09.500 --> 00:13:17.580
+<v SPEAKER_2>We didn't get super far with that, and now it's more of a Kubernetes thing, which Sean could speak to.
+
+00:13:18.960 --> 00:13:28.500
+<v SPEAKER_2>But generally, it's been, yeah, sometimes these sort of pivotal migrations that we need to make, and it's really, really hard to do those across different time zones and everyone's different schedules.
+
+00:13:28.500 --> 00:13:37.080
+<v SPEAKER_2>This year, we're looking at migrating from Elasticsearch to basically straight to 8, and that's what we'll be working on this weekend.
+
+00:13:37.080 --> 00:13:45.200
+<v SPEAKER_5>Yeah, I mean, for as good as Elasticsearch is, the version, the major version changes all have some breaking changes in them.
+
+00:13:45.740 --> 00:13:52.080
+<v SPEAKER_5>And so, you know, unless we have the time to dedicate to it, it makes it kind of hard to keep up with those sometimes.
+
+00:13:52.080 --> 00:14:00.200
+<v SPEAKER_5>So we have lagged behind, but, you know, we're hoping to get back to, you know, more modern versions of stuff.
+
+00:14:00.200 --> 00:14:04.000
+<v SPEAKER_1>Which is not an issue you have with upgrading Perl, I guess.
+
+00:14:04.000 --> 00:14:05.600
+<v SPEAKER_5>No, not generally.
+
+00:14:05.600 --> 00:14:07.320
+<v SPEAKER_2>I think we're on three, four.
+
+00:14:08.760 --> 00:14:18.860
+<v SPEAKER_5>Yeah, I mean, we also, although we, on our, on the infrastructure side, we also kind of got paused because Puppet is good at what it does, but it's not the friendliest thing to work with for everyone.
+
+00:14:18.860 --> 00:14:26.960
+<v SPEAKER_5>So the server, the software set that's on the servers has kind of been the same for the last, I don't know how many years.
+
+00:14:29.440 --> 00:14:36.540
+<v SPEAKER_5>So it's been one of those things that, yeah, it needs some dedicated time to unblock those kinds of things.
+
+00:14:36.540 --> 00:14:41.080
+<v SPEAKER_1>Could you speak to the relationship with the toolchain summit?
+
+00:14:41.080 --> 00:14:50.300
+<v SPEAKER_1>Because it feels like, from what you said, every year you do the big upgrade where you need to have everyone in the same time zone and in the same place to do this.
+
+00:14:50.300 --> 00:14:52.380
+<v SPEAKER_1>How does that work?
+
+00:14:52.380 --> 00:15:02.000
+<v SPEAKER_2>Well, yeah, there's this kind of like, our cadence is that in the spring, usually it's like we ramp up to PTS, people do the preparatory work before we get here.
+
+00:15:02.000 --> 00:15:06.460
+<v SPEAKER_2>This year was coordinating with Elastic, the company that's providing the hosting for us.
+
+00:15:07.140 --> 00:15:19.180
+<v SPEAKER_2>And then, yeah, we got our core work done together, and then there will be some cleanup work, you know, in the next few weeks, we get home and then people will get distracted by whatever life events they have.
+
+00:15:20.040 --> 00:15:22.780
+<v SPEAKER_2>And then we'll be looking forward to next spring.
+
+00:15:22.780 --> 00:15:26.480
+<v SPEAKER_2>Things will happen in the meantime, but they won't happen nearly as quickly.
+
+00:15:26.480 --> 00:15:37.800
+<v SPEAKER_2>Sometimes we have, three times now, we've had a meta hack where we'll get together, like in the fall or in December, and do another three or four days together, and then kind of have that same kind of cadence.
+
+00:15:37.800 --> 00:15:41.000
+<v SPEAKER_2>But right now, we're actually kind of still in a transitional thing.
+
+00:15:41.220 --> 00:15:44.940
+<v SPEAKER_2>We have some of our hosting on bare metal, and some of it's in the cloud.
+
+00:15:44.940 --> 00:15:48.180
+<v SPEAKER_1>And the goal is to be everything on the cloud?
+
+00:15:48.180 --> 00:15:48.840
+<v SPEAKER_2>I think so.
+
+00:15:49.460 --> 00:15:52.220
+<v SPEAKER_2>The bare metal machines are just hard to upgrade.
+
+00:15:52.220 --> 00:15:57.620
+<v SPEAKER_2>And because of Elasticsearch, we generally would like two or three of them running at the same time.
+
+00:15:57.620 --> 00:16:06.080
+<v SPEAKER_2>It just becomes a harder problem with logging, trying to figure out which machine is serving up the problematic requests, or even just keeping the OSs up to date and things like that.
+
+00:16:06.080 --> 00:16:15.380
+<v SPEAKER_2>We're working out of two different data centers with different sets of machines, but it's just easier to spin up a VM and do what you need to do, so...
+
+00:16:15.380 --> 00:16:19.780
+<v SPEAKER_1>From the top of your head, what is the traffic on MetaCPAN?
+
+00:16:19.780 --> 00:16:23.040
+<v SPEAKER_1>Like, the API, the website, the...
+
+00:16:23.040 --> 00:16:24.620
+<v SPEAKER_5>I have no idea.
+
+00:16:24.620 --> 00:16:26.760
+<v SPEAKER_2>Sean's been looking at the logs a bit.
+
+00:16:26.760 --> 00:16:29.500
+<v SPEAKER_4>I had the Grafana dashboard up yesterday.
+
+00:16:29.500 --> 00:16:31.740
+<v SPEAKER_4>I think it's 20 requests per second.
+
+00:16:32.320 --> 00:16:33.620
+<v SPEAKER_1>Is that a lot?
+
+00:16:33.620 --> 00:16:34.500
+<v SPEAKER_1>Not much?
+
+00:16:34.500 --> 00:16:36.560
+<v SPEAKER_1>Is it going up or down?
+
+00:16:36.560 --> 00:16:37.800
+<v SPEAKER_1>Over time?
+
+00:16:37.800 --> 00:16:44.620
+<v SPEAKER_4>I've only had statistics for three days, so it's hard to tell.
+
+00:16:44.620 --> 00:16:45.260
+<v SPEAKER_1>Okay.
+
+00:16:45.260 --> 00:16:58.380
+<v SPEAKER_5>That's also not going to tell the entire story as well, because we have Fastly in front of everything, so the CDN is going to be taking a lot of those requests, depending on where you're looking.
+
+00:16:58.820 --> 00:17:15.080
+<v SPEAKER_3>And also depends on what you're looking to measure, because traffic on the site itself on the front end is not the same as the API, which serves a lot of different components in the Perl ecosystem.
+
+00:17:15.080 --> 00:17:25.400
+<v SPEAKER_3>There's a very nice diagram by Neil Bars that describes where MetaCPAN is in the ecosystem and all the things that depend on it and connect to it.
+
+00:17:25.920 --> 00:17:28.720
+<v SPEAKER_3>And it's really at the core of everything.
+
+00:17:29.460 --> 00:17:32.240
+<v SPEAKER_3>That's probably why the team is growing, as you mentioned.
+
+00:17:32.240 --> 00:17:43.740
+<v SPEAKER_3>And what all have touched on with the development environment, also improving the vagrant to where we are today, also allows this growth as well.
+
+00:17:43.740 --> 00:17:51.120
+<v SPEAKER_1>Yeah, because I was saying earlier, it used to be a network of mirrors, but there are no mirrors anymore.
+
+00:17:51.160 --> 00:17:51.920
+<v SPEAKER_1>There is...
+
+00:17:51.920 --> 00:17:53.860
+<v SPEAKER_5>There's one.
+
+00:17:53.860 --> 00:17:54.360
+<v SPEAKER_2>Yeah, right.
+
+00:17:54.360 --> 00:17:55.540
+<v SPEAKER_1>Yeah, there is.
+
+00:17:55.700 --> 00:18:05.500
+<v SPEAKER_1>And when people upload things to Pose that is not CPAN yet, it is then mirrored to the central place.
+
+00:18:05.500 --> 00:18:06.500
+<v SPEAKER_2>Yeah.
+
+00:18:06.880 --> 00:18:16.800
+<v SPEAKER_1>I remember some people in France were running a CPAN mirror, and someday found out that, huh, we don't get updates anymore.
+
+00:18:16.800 --> 00:18:25.020
+<v SPEAKER_1>And they were kind of angry to realize that actually the mirror network has been shut down and nobody told us.
+
+00:18:25.020 --> 00:18:27.120
+<v SPEAKER_5>I'm sure there's plenty of mirrors out there still.
+
+00:18:28.320 --> 00:18:38.560
+<v SPEAKER_5>The way to keep them up to date, like, we haven't changed anything, and we have a mirror of CPAN, in fact, a back pan, which means we don't delete anything.
+
+00:18:38.560 --> 00:18:43.200
+<v SPEAKER_5>So things get removed from CPAN, we still hold on to a copy of them.
+
+00:18:43.200 --> 00:18:51.080
+<v SPEAKER_5>But that's using the same code, etc., infrastructure that was in place for the mirror network.
+
+00:18:51.080 --> 00:18:54.560
+<v SPEAKER_5>It's just that the mirror list is gone at this point.
+
+00:18:54.560 --> 00:18:58.200
+<v SPEAKER_5>So I'm sure there's still a bunch of mirrors out there keeping up to date.
+
+00:18:58.200 --> 00:18:59.720
+<v SPEAKER_1>Nobody touched the cron drop.
+
+00:18:59.720 --> 00:19:01.040
+<v SPEAKER_5>Exactly.
+
+00:19:01.040 --> 00:19:09.060
+<v SPEAKER_5>Somebody set one up on a server, and no one has rebutted that machine in 15 years.
+
+00:19:09.060 --> 00:19:11.980
+<v SPEAKER_1>How do you see the future of MetaCPAN?
+
+00:19:11.980 --> 00:19:42.920
+<v SPEAKER_2>We actually don't, I mean, we were always just talking about what's the next upgrades, or, I mean, right, the thing in the near future would be, like, we have a V1 endpoint for the API, and talking about transitioning to V2, and the interesting thing about MetaCPAN is that, with the backend, you can sort of get these baked-in queries that we already support, but you can also do arbitrary queries against Elasticsearch, which, I don't know if there's any other language that offers anything like that, or maybe even that needs it.
+
+00:19:43.480 --> 00:19:52.760
+<v SPEAKER_2>But, so we need to support those things going forward, maybe for a few months, still have the old API available.
+
+00:19:52.820 --> 00:20:02.240
+<v SPEAKER_2>We're still trying to figure that out, but that's kind of how far we're maybe thinking ahead to the next PTS, but I don't know if anybody has any grand plans beyond that.
+
+00:20:02.240 --> 00:20:15.200
+<v SPEAKER_3>Yeah, as long as MetaCPAN is positioned where it is in the ecosystem of Perl, then it's tightly coupled with the future of Perl, right?
+
+00:20:15.200 --> 00:20:15.900
+<v SPEAKER_1>Yeah.
+
+00:20:15.900 --> 00:20:28.500
+<v SPEAKER_5>I mean, I think most of our plans have been around getting our infrastructure kind of modernized and into the place we want it, which means both just software versions as well as the organization.
+
+00:20:28.500 --> 00:20:34.760
+<v SPEAKER_5>But aside from that, there's been any number of requests from other people for new data to attach.
+
+00:20:34.760 --> 00:20:42.440
+<v SPEAKER_5>A big emphasis of many people right now has been CVE data and making sure that that's represented.
+
+00:20:42.440 --> 00:20:46.120
+<v SPEAKER_5>And for the most part, we've already added some of that.
+
+00:20:46.120 --> 00:20:55.760
+<v SPEAKER_5>It's generally been, you know, that was kind of one of the original points of the site, was to aggregate a bunch of data about CPAN disks into one place.
+
+00:20:55.760 --> 00:20:59.080
+<v SPEAKER_5>So we've been able to add that where needed.
+
+00:21:01.120 --> 00:21:12.940
+<v SPEAKER_3>So that's a great motivation for us to move forward so we can support all those requests and keep the environment up and running, because yeah, like security or whatever request is coming.
+
+00:21:12.940 --> 00:21:19.060
+<v SPEAKER_2>Yeah, so one thing I should add to that is that, like, we don't have a really big roadmap.
+
+00:21:19.060 --> 00:21:21.000
+<v SPEAKER_2>We kind of just, we do the things that we're interested in.
+
+00:21:21.000 --> 00:21:26.380
+<v SPEAKER_2>So if somebody sees something that they think needs to be done and they want to do it, then that's the way it gets done.
+
+00:21:26.380 --> 00:21:29.920
+<v SPEAKER_2>We don't traditionally say, Sean, can you do this?
+
+00:21:29.920 --> 00:21:31.440
+<v SPEAKER_2>Graham, could you do that?
+
+00:21:31.440 --> 00:21:35.860
+<v SPEAKER_2>We just wait for people to find things that they want to do, and that's how they get done.
+
+00:21:36.020 --> 00:21:48.860
+<v SPEAKER_1>And being together at the PTS, does that encourage more things to be done because you have this emulation or, you know, talking about things, new ideas coming up, that kind of stuff, does that do?
+
+00:21:48.960 --> 00:21:51.760
+<v SPEAKER_3>Absolutely, that keeps us going.
+
+00:21:51.760 --> 00:22:01.920
+<v SPEAKER_3>And yeah, without those check-ins in person, I don't think we would be as engaged as we are.
+
+00:22:01.920 --> 00:22:10.680
+<v SPEAKER_5>I mean, it's partly just the time, like just having a solid block of time to work on it, which, you know, don't always get in your regular day-to-day life.
+
+00:22:10.680 --> 00:22:23.920
+<v SPEAKER_5>But then also, you know, yeah, the availability of the people to, if you are thinking about whatever project, whatever part of the project you are working on, someone is right there to ask a question about, you know, how they think something should be.
+
+00:22:23.920 --> 00:22:33.040
+<v SPEAKER_5>And then just the general encouragement of it, like it puts you in a mindset to actually, you know, work and care about these things.
+
+00:22:33.700 --> 00:22:38.840
+<v SPEAKER_5>And you are getting questions from outside the group of, wouldn't it be cool if MetaCPAN could do that?
+
+00:22:38.840 --> 00:22:42.480
+<v SPEAKER_5>And you are like, yeah, sure, I mean, it can do that.
+
+00:22:42.540 --> 00:22:43.600
+<v SPEAKER_1>Patch is welcome.
+
+00:22:44.680 --> 00:22:45.820
+<v SPEAKER_4>It's also helpful.
+
+00:22:45.820 --> 00:22:56.400
+<v SPEAKER_4>Like I can see what they're working on beside me and say, well, I think they're going to need this, so I'll start heading down a route to make sure that things are available for them when they're ready for it.
+
+00:22:56.400 --> 00:23:00.420
+<v SPEAKER_4>And being together allows for that, where a part...
+
+00:23:00.420 --> 00:23:01.740
+<v SPEAKER_1>Picking over the shoulder.
+
+00:23:01.740 --> 00:23:04.460
+<v SPEAKER_4>Yeah, yeah, I don't get that view.
+
+00:23:04.460 --> 00:23:10.280
+<v SPEAKER_1>We were talking earlier about, it used to be a bare metal thing, and now it's on the cloud.
+
+00:23:10.280 --> 00:23:11.740
+<v SPEAKER_1>All of those things cost money.
+
+00:23:12.440 --> 00:23:15.740
+<v SPEAKER_1>How do you manage to keep things running?
+
+00:23:15.740 --> 00:23:19.240
+<v SPEAKER_1>Where does the money come from, but also how do you manage it?
+
+00:23:19.240 --> 00:23:27.920
+<v SPEAKER_2>So we started in the pub, and we passed the hat around, and I got $30, and then I think my VM was $5 a month, and that's how we got started.
+
+00:23:28.120 --> 00:23:34.940
+<v SPEAKER_2>And then we moved to, I think it was Clinton set us up with the hosting agreement, and then that hosting company was purchased.
+
+00:23:34.940 --> 00:23:47.100
+<v SPEAKER_2>They gave us 30 days to move to a new hosting company, at which point Leo talked to Mark from ShadowCat, and they got ByteMark to become our host.
+
+00:23:47.100 --> 00:23:55.600
+<v SPEAKER_2>And then at some point, somebody from Liquid Web just approached us and offered us some machines, so we got a set up going there as well.
+
+00:23:55.600 --> 00:24:10.880
+<v SPEAKER_2>And then, I can't remember how we got the footer sponsors going, but people wanted to have their logo, and so I think we did the logo possibly, we did it for the hosting sponsors, because they were giving us such sort of valuable hosting.
+
+00:24:10.880 --> 00:24:17.600
+<v SPEAKER_2>And then more people wanted to be on the site, so we said, that's fine, and we set a price for it.
+
+00:24:17.600 --> 00:24:21.680
+<v SPEAKER_2>And then EPO handled the invoicing for that.
+
+00:24:21.680 --> 00:24:27.860
+<v SPEAKER_2>When search.CPAN disappeared, one of the previous sponsors from there came to us and then became a sponsor.
+
+00:24:27.860 --> 00:24:45.140
+<v SPEAKER_2>And after EPO shut down, we switched to Open Collective, and now basically, if somebody wants to sponsor us, they can just go click a button, and then they can either give an arbitrary amount, or they can make a recurring payment.
+
+00:24:45.140 --> 00:24:48.460
+<v SPEAKER_2>And then we used that to pay some of our hosting bills.
+
+00:24:48.460 --> 00:24:58.940
+<v SPEAKER_2>So when we start an agreement, when we start using a service, we usually will approach that service and ask if they can sponsor us, which in a lot of cases, they do.
+
+00:24:58.940 --> 00:25:01.060
+<v SPEAKER_2>So Fastly is a sponsor.
+
+00:25:01.060 --> 00:25:02.960
+<v SPEAKER_2>I think Leo had set that up initially.
+
+00:25:03.980 --> 00:25:10.700
+<v SPEAKER_2>And then in early days, GitHub sponsored us as well before they had all the free offerings.
+
+00:25:10.700 --> 00:25:14.040
+<v SPEAKER_1>Fastly was started with some pro people.
+
+00:25:14.040 --> 00:25:14.700
+<v SPEAKER_2>Yeah, right.
+
+00:25:14.700 --> 00:25:21.000
+<v SPEAKER_2>So I think Leo knew the CEO or CTO there, and so he got the sponsorship for that.
+
+00:25:21.000 --> 00:25:30.940
+<v SPEAKER_2>So a lot of this, or sometimes it was just like, I just reach out on Twitter at the time and say, can somebody help me get some free monitoring?
+
+00:25:30.940 --> 00:25:36.840
+<v SPEAKER_2>So we were trying to get pinged him at the time, and they wouldn't give us anything, so then another competing company offered to give us that.
+
+00:25:36.840 --> 00:25:42.640
+<v SPEAKER_2>So there are a few things that we are paying for right now, like Digital Ocean and Hetzner.
+
+00:25:42.640 --> 00:25:53.300
+<v SPEAKER_2>I could never get in touch with anyone at Amazon, but a lot of it's this in-kind donations, and a lot of it has been either us networking or just people coming to us.
+
+00:25:53.300 --> 00:25:57.580
+<v SPEAKER_2>And we try to be pretty frugal with the money that we have coming in.
+
+00:25:57.580 --> 00:26:00.440
+<v SPEAKER_2>I think we have about 30,000 US in the bank right now.
+
+00:26:00.960 --> 00:26:06.600
+<v SPEAKER_2>Part of that is if our bare metal hosting disappears, that we could make up those shortages.
+
+00:26:06.600 --> 00:26:13.520
+<v SPEAKER_2>Also, when we get together for a MetaHack, we all have to fly somewhere and stay somewhere, then we use the money for that.
+
+00:26:13.520 --> 00:26:16.140
+<v SPEAKER_2>So because it's through Open Collective, it's all transparent.
+
+00:26:16.140 --> 00:26:19.360
+<v SPEAKER_2>You can see all the money that comes in, all the money that goes out.
+
+00:26:19.360 --> 00:26:23.820
+<v SPEAKER_2>There's somebody at Open Collective that has to sign off on any kind of money that gets transferred out.
+
+00:26:23.820 --> 00:26:26.740
+<v SPEAKER_2>So that's basically how it happens.
+
+00:26:27.100 --> 00:26:33.540
+<v SPEAKER_2>The neat thing about MetaCPAN is that because there's this visibility that you get when you sponsor us.
+
+00:26:33.540 --> 00:26:37.200
+<v SPEAKER_2>Way back, somebody had said, oh, I want to have a link on all the pages.
+
+00:26:37.200 --> 00:26:38.260
+<v SPEAKER_2>And I said, well, I can't really do that.
+
+00:26:38.260 --> 00:26:39.740
+<v SPEAKER_2>I can give you something on one page.
+
+00:26:39.740 --> 00:26:45.400
+<v SPEAKER_2>And he said to me, if you give us a link on one page, I can use my open source budget.
+
+00:26:45.400 --> 00:26:49.420
+<v SPEAKER_2>If you give me a link on every page, I can use the SEO budget, and that's a lot bigger.
+
+00:26:49.420 --> 00:26:56.900
+<v SPEAKER_2>So once you start doing those calculations, it gets easier to bring sponsors on board.
+
+00:26:57.300 --> 00:27:06.160
+<v SPEAKER_2>So it's different from, say, other projects where you don't have that branding out in front of people's faces all the time, like you do with MetaCPAN.
+
+00:27:06.160 --> 00:27:07.920
+<v SPEAKER_2>So we're lucky in that regard.
+
+00:27:07.920 --> 00:27:10.880
+<v SPEAKER_2>And then we just try to make it easy for people to donate.
+
+00:27:10.880 --> 00:27:13.280
+<v SPEAKER_1>You're not running short of money to...
+
+00:27:13.280 --> 00:27:20.260
+<v SPEAKER_1>Like, MetaCPAN is not in danger of disappearing because there is nobody to pay the bills, right?
+
+00:27:20.260 --> 00:27:27.220
+<v SPEAKER_2>No, there's always the chance that we lose our recurring sponsors, but we have runway for the time being.
+
+00:27:27.220 --> 00:27:31.340
+<v SPEAKER_2>We're not really worried about that, but we're always looking for new sponsors.
+
+00:27:31.340 --> 00:27:32.720
+<v SPEAKER_1>And is the...
+
+00:27:32.720 --> 00:27:44.620
+<v SPEAKER_1>Because now you have an open collective thing, are you looking at getting involved with other pro communities or, you know, groups or things like that?
+
+00:27:44.620 --> 00:27:49.900
+<v SPEAKER_2>So we've always kind of thought we'd like to provide a home for other projects that need it.
+
+00:27:50.120 --> 00:27:59.300
+<v SPEAKER_2>We actually took on the Test Smoke project, hosting around, I think, last August or September.
+
+00:27:59.300 --> 00:28:06.480
+<v SPEAKER_2>There's some talk of us possibly hosting some of the DevL cover stuff that Paul's working on.
+
+00:28:06.480 --> 00:28:15.860
+<v SPEAKER_2>Yeah, we thought, like, just for infrastructure that needs a home where we could provide it, we would try to accommodate that, but we don't have sort of a lot of firm plans for that.
+
+00:28:16.240 --> 00:28:16.880
+<v SPEAKER_1>Right.
+
+00:28:17.000 --> 00:28:20.600
+<v SPEAKER_1>And there is no competition with other groups.
+
+00:28:20.600 --> 00:28:33.520
+<v SPEAKER_1>Like, I'm thinking about CPAN Testers, for example, is also another infrastructure that runs things, and Test Smoke and DevL Cover sound like more test-oriented things.
+
+00:28:33.520 --> 00:28:37.760
+<v SPEAKER_1>So it could also be natural for them to be hosted there.
+
+00:28:37.980 --> 00:28:40.880
+<v SPEAKER_1>Is there some, like, oh no, I want to host these guys.
+
+00:28:40.880 --> 00:28:42.080
+<v SPEAKER_1>Oh no, no, it should be me.
+
+00:28:43.220 --> 00:28:45.680
+<v SPEAKER_1>Is there that kind of competition between projects?
+
+00:28:45.680 --> 00:28:58.980
+<v SPEAKER_2>No, well, there's the Pearl Knock as well, where you could, if you can, yeah, make an arrangement with them, with CPAN Testers, because it's been basically one person for so long, until this weekend, I guess.
+
+00:28:59.120 --> 00:29:06.220
+<v SPEAKER_2>I don't think Doug has been really trying to get anyone else's stuff hosted, because he's got a huge job just keeping that stuff online.
+
+00:29:08.160 --> 00:29:21.240
+<v SPEAKER_5>I think we have had other smaller projects and things hosted, so we have always had more of a setup that was oriented to being able to spin up smaller projects along with it.
+
+00:29:21.240 --> 00:29:31.520
+<v SPEAKER_5>Whether that was on the bare-metal servers before, there was various like GitHub meets CPAN, or one of these arbitrary sub-domains that we had.
+
+00:29:31.520 --> 00:29:54.380
+<v SPEAKER_5>Or, but now, having a Kubernetes setup that it's set up for spinning up new things in, that is, I think it's just the setup we had is more conducive to adding some projects to than the setup that, say, develop cover or CPAN testers had classically.
+
+00:29:54.400 --> 00:29:56.180
+<v SPEAKER_1>Right.
+
+00:29:56.180 --> 00:29:59.680
+<v SPEAKER_2>I think we're also hosting security.metacpan.org, is that?
+
+00:29:59.680 --> 00:30:00.000
+<v SPEAKER_1>Yeah.
+
+00:30:00.000 --> 00:30:01.920
+<v SPEAKER_1>Yeah.
+
+00:30:01.920 --> 00:30:03.020
+<v SPEAKER_2>Or at least host the DNS.
+
+00:30:04.020 --> 00:30:05.820
+<v SPEAKER_5>At least a few parts for them.
+
+00:30:08.240 --> 00:30:18.900
+<v SPEAKER_1>So, it seems to me that MetaCPAN is kind of the frontend or the portal to Perl, in a sense.
+
+00:30:18.900 --> 00:30:20.540
+<v SPEAKER_1>You need the Perl binary.
+
+00:30:20.540 --> 00:30:25.180
+<v SPEAKER_1>Are you going to go look for it on perl.org or on MetaCPAN?
+
+00:30:25.180 --> 00:30:26.340
+<v SPEAKER_1>Right.
+
+00:30:27.440 --> 00:30:36.980
+<v SPEAKER_1>And so you've been doing these ads for, and which have helped the PTS, right, when we start doing the PTS and looking for sponsors.
+
+00:30:36.980 --> 00:30:41.040
+<v SPEAKER_1>There is a banner that shows up on MetaCPAN saying, you know, this is an important event.
+
+00:30:41.040 --> 00:30:42.700
+<v SPEAKER_1>Here's a link.
+
+00:30:42.700 --> 00:30:43.460
+<v SPEAKER_1>Go help them.
+
+00:30:43.460 --> 00:30:50.440
+<v SPEAKER_1>And it's not the only thing that runs on the ad server.
+
+00:30:50.440 --> 00:31:03.480
+<v SPEAKER_1>Do you, like, the front page for MetaCPAN is kind of Google in 2002, where you have just the search box and a suggestion for task control, and that's it.
+
+00:31:04.060 --> 00:31:21.260
+<v SPEAKER_1>Do you see that changing and, like, becoming, you know, more of an actual portal to the rest of the pearl community, or do you think more like, we're the search engine for CPAN, and that's our main job, and other things can exist on their own.
+
+00:31:21.260 --> 00:31:26.940
+<v SPEAKER_1>The fact that they're hosted by us is a technical detail.
+
+00:31:26.940 --> 00:31:28.080
+<v SPEAKER_1>How do you see that?
+
+00:31:28.080 --> 00:31:31.100
+<v SPEAKER_1>Because security is actually.metacpan.org.
+
+00:31:31.680 --> 00:31:33.960
+<v SPEAKER_1>So, there is this connection.
+
+00:31:33.960 --> 00:31:37.860
+<v SPEAKER_1>They don't have their own top level domain or anything.
+
+00:31:37.860 --> 00:31:38.360
+<v SPEAKER_2>Yeah, right.
+
+00:31:38.360 --> 00:31:43.800
+<v SPEAKER_2>So, when we started, there were the other CPAN search sites, and we weren't really getting, I think, a lot of traffic compared with them.
+
+00:31:43.800 --> 00:31:48.460
+<v SPEAKER_2>And then, just over time, organically, we've gotten that traffic.
+
+00:31:48.600 --> 00:31:54.560
+<v SPEAKER_2>And right, so the initial design was basically mimicking an old Google design.
+
+00:31:54.560 --> 00:32:10.840
+<v SPEAKER_2>And I think we haven't done a good job of using that real estate to try and get other messages across with Dave Cross' Perl ad server that we just integrated, I don't know, maybe even a month or two ago, that we've done a better job of getting the word out.
+
+00:32:10.840 --> 00:32:17.540
+<v SPEAKER_2>So I think we would be open to trying to find other ways of making other resources available.
+
+00:32:17.540 --> 00:32:28.720
+<v SPEAKER_2>I feel like we could have a link to various communities, like ways like the TPR of Slack and Reddit and PerlMonks, other ways to get in touch with people to get help that you need.
+
+00:32:28.720 --> 00:32:33.280
+<v SPEAKER_2>So we do have a Slack that we have for ourselves internally.
+
+00:32:33.280 --> 00:32:35.040
+<v SPEAKER_2>We might at some point open that up.
+
+00:32:35.040 --> 00:32:39.860
+<v SPEAKER_2>I think we could so that people could use it just for regular chat.
+
+00:32:39.860 --> 00:32:41.820
+<v SPEAKER_2>We have our IRC channel.
+
+00:32:41.820 --> 00:32:47.580
+<v SPEAKER_2>Yeah, I mean, we haven't done too much thinking around UI, partly because we haven't really had someone full-time working on UI.
+
+00:32:48.480 --> 00:32:59.200
+<v SPEAKER_2>I don't know if you remember, but the UI was revamped a couple of years ago, and that was a colleague of mine, Dallas Hogan, and I convinced her to help us out, and so she did that complete overhaul.
+
+00:32:59.200 --> 00:33:05.400
+<v SPEAKER_2>And then Julian brought his coworker, Jordan, with him this weekend, and he was then working on front-end stuff.
+
+00:33:05.400 --> 00:33:12.380
+<v SPEAKER_2>But we traditionally haven't had someone who's, say, like a full-stack developer with emphasis on the front-end who really wants to tackle those problems.
+
+00:33:12.440 --> 00:33:13.560
+<v SPEAKER_2>It's just been...
+
+00:33:13.740 --> 00:33:24.440
+<v SPEAKER_5>I mean, I think I've kind of been the primary front-end developer for the site for any number of years, until Dallas and Everett People now.
+
+00:33:24.440 --> 00:33:27.700
+<v SPEAKER_5>Like, there's a bit more involvement in that.
+
+00:33:27.700 --> 00:33:36.220
+<v SPEAKER_5>And yeah, it's like, I can do some things, but I'm not a front-end dev or designer or anything like that by nature.
+
+00:33:36.220 --> 00:33:43.340
+<v SPEAKER_5>So it's mainly been small tweaks and improvements and yeah, little things like that.
+
+00:33:43.340 --> 00:33:47.640
+<v SPEAKER_5>So there's been more effort on that more recently, thankfully.
+
+00:33:47.880 --> 00:33:56.020
+<v SPEAKER_2>We did have some sort of blueprints put together by Babs Veloso a number of years ago that we were sort of basing part of this design off of.
+
+00:33:56.020 --> 00:34:03.440
+<v SPEAKER_2>But sort of the community that we serve is probably not heavy on full-stack front-end-y kind of people.
+
+00:34:04.760 --> 00:34:16.940
+<v SPEAKER_3>I think in terms of intention, we don't really limit ourself in thinking about doing more things in the future, which is what you're basically referring to.
+
+00:34:16.940 --> 00:34:31.660
+<v SPEAKER_3>Because I think if we say, oh, this is only what we're doing, and we're never going to expand from that, then we're limiting a very key component of the Perl ecosystem, which is not what we want to do.
+
+00:34:31.660 --> 00:34:33.680
+<v SPEAKER_1>Completely unrelated question.
+
+00:34:34.940 --> 00:34:38.040
+<v SPEAKER_1>What is your relationship with the Perl and RICO Foundation?
+
+00:34:38.040 --> 00:34:40.420
+<v SPEAKER_1>Do you have any relationship with them?
+
+00:34:40.660 --> 00:34:42.540
+<v SPEAKER_2>So that's a good question.
+
+00:34:42.540 --> 00:34:48.640
+<v SPEAKER_2>Personally, I have a relationship with TPR because I'm doing fundraising for them right now.
+
+00:34:48.640 --> 00:34:53.700
+<v SPEAKER_2>So I'm actually like a contract, an employee handling their fundraising.
+
+00:34:54.920 --> 00:35:03.880
+<v SPEAKER_2>But separate from that, we have Digital Craftsmen who are helping us with our Kubernetes and helping us with our uptime.
+
+00:35:03.880 --> 00:35:10.420
+<v SPEAKER_2>And we have a support contract with them, and TPR, I think, actually pays for that whole contract.
+
+00:35:10.420 --> 00:35:10.720
+<v SPEAKER_1>Okay.
+
+00:35:10.720 --> 00:35:12.740
+<v SPEAKER_1>So you're sponsored.
+
+00:35:12.740 --> 00:35:13.460
+<v SPEAKER_2>We are.
+
+00:35:13.480 --> 00:35:17.260
+<v SPEAKER_2>Yeah, we need to actually add their logo to the footer.
+
+00:35:17.260 --> 00:35:18.520
+<v SPEAKER_2>So that's sort of what it is.
+
+00:35:19.240 --> 00:35:23.400
+<v SPEAKER_2>We did made a pitch to the board, and they kindly agreed to fund that for us.
+
+00:35:23.400 --> 00:35:26.740
+<v SPEAKER_2>So that was a big expense, and we really appreciate that.
+
+00:35:26.740 --> 00:35:29.040
+<v SPEAKER_2>But there's nothing beyond that.
+
+00:35:30.420 --> 00:35:32.780
+<v SPEAKER_2>We're not part of TPF.
+
+00:35:32.780 --> 00:35:37.820
+<v SPEAKER_2>We're just like any other community, going to them and asking for help.
+
+00:35:38.160 --> 00:35:44.920
+<v SPEAKER_1>Is there any question I forgot to ask, and you desperately want to give me your answer to that?
+
+00:35:44.920 --> 00:35:50.180
+<v SPEAKER_3>I think there was one thing that Olaf mentioned, and maybe you missed.
+
+00:35:50.620 --> 00:35:55.480
+<v SPEAKER_3>He mentioned MetaHack, and you should ask him, what is MetaHack?
+
+00:35:55.480 --> 00:35:56.500
+<v SPEAKER_1>Yes.
+
+00:35:56.500 --> 00:35:56.980
+<v SPEAKER_2>Oh, okay.
+
+00:35:56.980 --> 00:36:07.780
+<v SPEAKER_2>So MetaHack is kind of like PTS, but just for us, or I guess PCPAN testers as well, because we did it, how many times we were in Chicago?
+
+00:36:07.780 --> 00:36:08.640
+<v SPEAKER_2>Two times?
+
+00:36:09.220 --> 00:36:13.800
+<v SPEAKER_2>Twice in Chicago with Joel Berger and with Doug Bell.
+
+00:36:13.800 --> 00:36:22.900
+<v SPEAKER_2>So that generally has been in the fall, so that we kind of have six months between PTS and MetaHack to get together and work on our stuff.
+
+00:36:22.900 --> 00:36:27.600
+<v SPEAKER_2>And the last time that we met was in December of 2019.
+
+00:36:28.320 --> 00:36:35.740
+<v SPEAKER_2>Yeah, so we had, there were just kind of rumblings about something possibly going on, and we had no idea that it was going to be years before we'd see each other impersonating it.
+
+00:36:35.800 --> 00:36:42.580
+<v SPEAKER_2>But we had that one at a hotel in Toronto, and we worked out of the booking.com offices in Toronto for that one.
+
+00:36:42.580 --> 00:36:47.900
+<v SPEAKER_3>Yes, yes, they were kind enough to host us there over the weekend, and it was really nice.
+
+00:36:47.900 --> 00:36:51.920
+<v SPEAKER_1>And so we were talking about sponsoring money before.
+
+00:36:51.920 --> 00:37:03.280
+<v SPEAKER_1>That is also something that anyone interested in the health of MetaCPAN, like the PTS exists already, but MetaHack is run by you guys.
+
+00:37:04.120 --> 00:37:15.860
+<v SPEAKER_1>If you got more sponsorship, you could use that to kind of ensure there is a MetaHack six months apart from the PTS, and you really have this rhythm over the year.
+
+00:37:15.860 --> 00:37:20.280
+<v SPEAKER_2>Yeah, well, you know how expensive it is to fly people in and get a hotel and those kinds of things.
+
+00:37:20.280 --> 00:37:23.340
+<v SPEAKER_2>So yeah, that's sort of been one concern.
+
+00:37:23.700 --> 00:37:32.820
+<v SPEAKER_2>We've sort of been discussing a little bit maybe about doing it again this year, but that generally has been a big part of our development cycle.
+
+00:37:32.820 --> 00:37:38.420
+<v SPEAKER_2>Also, if we do the MetaHack, then we'll have that cadence of a little bit more work before, a little bit more work after.
+
+00:37:38.420 --> 00:37:39.700
+<v SPEAKER_2>That helps us to get more done.
+
+00:37:39.860 --> 00:37:55.020
+<v SPEAKER_3>And our employers, both for us, bookking.com, and for Joel and Doug, who are working at Server Central, who hosted our MetaHack.
+
+00:37:55.020 --> 00:38:04.580
+<v SPEAKER_3>I mean, they financed our travel and stay and work, so it was sponsored, even if it was not.
+
+00:38:04.580 --> 00:38:05.320
+<v SPEAKER_1>Directly money.
+
+00:38:05.320 --> 00:38:06.760
+<v SPEAKER_1>It's in-kind sponsorship.
+
+00:38:06.820 --> 00:38:08.000
+<v SPEAKER_3>So, yeah, absolutely.
+
+00:38:08.500 --> 00:38:12.520
+<v SPEAKER_3>And that also ties to one of your earlier questions.
+
+00:38:12.520 --> 00:38:16.640
+<v SPEAKER_3>The PTS meetings are important for us, but they're not even enough.
+
+00:38:16.640 --> 00:38:21.820
+<v SPEAKER_3>So this is why we had to have more in-person meetings.
+
+00:38:21.820 --> 00:38:24.540
+<v SPEAKER_1>We're definitely not doing two PTS a year.
+
+00:38:25.140 --> 00:38:26.540
+<v SPEAKER_1>That's for sure.
+
+00:38:27.760 --> 00:38:29.140
+<v SPEAKER_3>No, we're not asking for it.
+
+00:38:29.140 --> 00:38:31.200
+<v SPEAKER_3>But MetaHack is there to fill the gap.
+
+00:38:31.260 --> 00:38:32.080
+<v SPEAKER_1>Yeah.
+
+00:38:32.080 --> 00:38:38.780
+<v SPEAKER_1>What is the spread of people involved in MetaCPAN over the globe?
+
+00:38:38.780 --> 00:38:44.200
+<v SPEAKER_1>Like, you have two people in Toronto, you're in the Netherlands, you're in the Netherlands too.
+
+00:38:44.200 --> 00:38:45.660
+<v SPEAKER_3>Two in the Amsterdam area.
+
+00:38:45.660 --> 00:38:47.280
+<v SPEAKER_3>Yeah, yeah.
+
+00:38:47.280 --> 00:38:49.620
+<v SPEAKER_3>And we had two in Chicago at the time.
+
+00:38:49.620 --> 00:38:51.000
+<v SPEAKER_5>At the time, yeah.
+
+00:38:51.000 --> 00:38:53.500
+<v SPEAKER_2>And Leo is in Bath, in the Netherlands.
+
+00:38:53.500 --> 00:38:54.300
+<v SPEAKER_3>Yeah.
+
+00:38:54.300 --> 00:38:59.420
+<v SPEAKER_3>We had a couple of guys in the West Coast for some short time.
+
+00:38:59.760 --> 00:39:02.060
+<v SPEAKER_3>Thomas was in Seattle.
+
+00:39:02.060 --> 00:39:06.160
+<v SPEAKER_3>Brad is in the San Francisco area.
+
+00:39:06.160 --> 00:39:10.000
+<v SPEAKER_2>And Randy Stowner, like, way, way back as well.
+
+00:39:10.000 --> 00:39:21.320
+<v SPEAKER_1>Do you have what you consider a core MetaCPAN team, or is it just whoever is interested, you know, and participates for a few months and then moves away?
+
+00:39:21.320 --> 00:39:26.440
+<v SPEAKER_1>Or is there really this core group of five, six people who you would say aren't in the team?
+
+00:39:26.520 --> 00:39:31.780
+<v SPEAKER_3>Anyone can join if they're engaged enough and become a core member.
+
+00:39:31.780 --> 00:39:35.140
+<v SPEAKER_3>There's no initiation or restriction there.
+
+00:39:35.140 --> 00:39:37.560
+<v SPEAKER_3>It's just a matter of how much you want in.
+
+00:39:37.560 --> 00:39:48.720
+<v SPEAKER_5>Yeah, I mean, it's kind of been that the core group for a bit has been like us and Leo, but Leo has also has not been as available recently.
+
+00:39:48.720 --> 00:39:50.380
+<v SPEAKER_5>He has other demands on his time, et cetera.
+
+00:39:50.380 --> 00:39:55.520
+<v SPEAKER_5>So it's been a certain set for a while, but it's nothing fixed like that.
+
+00:39:55.680 --> 00:40:03.680
+<v SPEAKER_5>It's, you know, however things kind of flow with people wanting to contribute or not.
+
+00:40:04.320 --> 00:40:17.560
+<v SPEAKER_3>Many of us also have been drafting away from pearl in our day-to-day jobs, and that's also affecting the amount of time we are putting in on working on MetaCPAN.
+
+00:40:17.560 --> 00:40:30.120
+<v SPEAKER_3>So I can see more people who are more involved with pearl work wanting or joining the core group if they have the time.
+
+00:40:30.120 --> 00:40:38.240
+<v SPEAKER_1>So I guess the message for the listeners is, you two can help, and it will start with a pull request, and you might get sucked in.
+
+00:40:38.240 --> 00:40:39.020
+<v SPEAKER_3>Absolutely.
+
+00:40:39.020 --> 00:40:43.880
+<v SPEAKER_3>You don't have to join as a core member, but you can always contribute.
+
+00:40:43.880 --> 00:40:45.040
+<v SPEAKER_1>Until you become one.
+
+00:40:45.040 --> 00:40:51.940
+<v SPEAKER_3>I mean, there are people who are asking for changes instead of just submitting those as pull requests, yeah.
+
+00:40:52.400 --> 00:40:59.140
+<v SPEAKER_5>And we've had, I mean, at PTS, we have two new contributors to MetaCPAN.
+
+00:40:59.140 --> 00:41:04.200
+<v SPEAKER_3>I think every PTS, we have new contributors, because the whole...
+
+00:41:04.200 --> 00:41:10.100
+<v SPEAKER_5>Yeah, but it's always, you know, we always try to get new people involved where we can.
+
+00:41:10.500 --> 00:41:20.400
+<v SPEAKER_2>Yeah, that's a big part of Docker, like the Docker containers, is just trying to make it easy for somebody to show up, get an environment running, and then make their pull requests and leave.
+
+00:41:20.900 --> 00:41:30.520
+<v SPEAKER_3>And I can testify to how easy it is now compared to what we had when I started working on it and tried to figure out how to even run the thing.
+
+00:41:30.780 --> 00:41:46.400
+<v SPEAKER_3>And now it's a matter of, like, a few minutes of just, like, installing, like, firing up a VMware and downloading the Docker, cloning the Docker repo, and just running a script, and you're up and running in 10, 15 minutes.
+
+00:41:47.820 --> 00:42:04.120
+<v SPEAKER_5>I feel like the first five years or something of my contributions, I stuck entirely to the front end just because getting the API side running with, you know, in the various VMs, et cetera, and Elasticsearch was just, it was pretty painful.
+
+00:42:04.120 --> 00:42:04.640
+<v SPEAKER_5>So-
+
+00:42:04.640 --> 00:42:06.500
+<v SPEAKER_3>You refused to run the Vanguard.
+
+00:42:06.540 --> 00:42:06.780
+<v SPEAKER_5>Exactly.
+
+00:42:06.780 --> 00:42:09.180
+<v SPEAKER_3>Which was a little bit easier than what you did.
+
+00:42:10.020 --> 00:42:23.960
+<v SPEAKER_5>So I just stuck to the front end, and then I would send patches to the API without even syntax checking them because, but it's much better now than much, and it's much more possible to contribute pretty easily.
+
+00:42:24.500 --> 00:42:25.300
+<v SPEAKER_5>To the back end.
+
+00:42:25.300 --> 00:42:31.660
+<v SPEAKER_1>So you're saying I can delete the Vanguard file I was given sometime at a BTS.
+
+00:42:31.920 --> 00:42:32.640
+<v SPEAKER_3>You probably should.
+
+00:42:32.640 --> 00:42:34.660
+<v SPEAKER_5>I don't think that one's going to work anymore.
+
+00:42:35.240 --> 00:42:39.420
+<v SPEAKER_1>Okay, well, I will save space on that USB stick.
+
+00:42:39.420 --> 00:42:41.540
+<v SPEAKER_1>Okay, I think we've...
+
+00:42:41.540 --> 00:42:48.600
+<v SPEAKER_1>I have asked most of the questions that I had, and thank you very much for your time.
+
+00:42:48.600 --> 00:42:50.240
+<v SPEAKER_1>And, yeah.
+
+00:42:50.240 --> 00:42:50.840
+<v SPEAKER_5>Thank you.
+
+00:42:50.840 --> 00:42:53.440
+<v SPEAKER_1>Contributions welcome, I think, is the message.
+
+00:42:53.440 --> 00:42:54.640
+<v SPEAKER_5>Yeah, definitely.
+
+00:42:56.900 --> 00:42:58.440
+<v SPEAKER_5>And sponsors welcome, as well.
+
+00:42:58.440 --> 00:42:59.620
+<v SPEAKER_1>And sponsors.
+
+00:43:01.200 --> 00:43:06.940
+<v SPEAKER_1>Make sure they have the meta hack in the fall.
+
+00:43:06.940 --> 00:43:07.240
+<v SPEAKER_5>Thanks.
