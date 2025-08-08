@@ -1,0 +1,16 @@
+title: Test::Smoke
+description: >
+  During the Perl Toolchain Summit 2025 in Leipzig, we interviewed the
+  Test::Smoke founder and new maintainer about the history of the project,
+  and how contribute to it.
+file: the_underbar-4-test-smoke.mp3
+cast:
+- BOOK
+- CONTRA
+- HMBRAND
+recorded: 2025-05-04
+published: 2025-09-26 14:00
+editors:
+- CONTRA
+thanks:
+- SJN-PTS
