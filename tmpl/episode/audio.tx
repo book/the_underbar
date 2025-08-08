@@ -22,7 +22,7 @@ document.getElementById('vtt-player-<: $episode.number :>').addEventListener('pl
 
 document.getElementById('vtt-player-<: $episode.number :>').textTracks[0].addEventListener('cuechange', function() {
     //Update the caption
-    matched = this.activeCues[0].text.match( /<v (?<speaker>[^>]*)+>(?<text>.*)/ );
+    matched = this.activeCues[0].text.match( /^(?:<v (?<speaker>[^>]*)+>)?(?<text>.*)/ );
     document.getElementById('vtt-speaker-<: $episode.number :>').innerText = matched.groups.speaker;
     document.getElementById('vtt-text-<: $episode.number :>').innerText = matched.groups.text;
 });
