@@ -203,7 +203,7 @@ All the content related to The Underbar (recordings, transcripts, notes,
 etc.) is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
-For alternative licensing options, please contact ([Philippe Bruhat](mailto:underbar@cpan.io)).
+For alternative licensing options, please contact [Philippe Bruhat](mailto:underbar@cpan.io).
 
 ## The Participation Rules
 
@@ -220,9 +220,8 @@ First of all, _The Underbar_ is not the first Perl podcast:
 * [Perlcast](https://www.perlcast.net/), by Josh McAdams, ran from 2005 to 2010.
 
 Although I thought I had found an original and inventive name for this
-podcast, it turns out I didn't really.
-
-The name is already used by other podcasts:
+podcast, it turns out I didn't really. The name is already used by
+other podcasts:
 
 * [Under The Bar](https://underthebarpodcast.com/) is a Sydney-based
   fitness podcast (last episode published in July 2021).
