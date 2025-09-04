@@ -1,0 +1,1443 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100"
+   height="100"
+   viewBox="0 0 25 25"
+   version="1.1"
+   id="svg134"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="episode-4.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#">
+  <sodipodi:namedview
+     id="namedview136"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="8.05"
+     inkscape:cx="46.459627"
+     inkscape:cy="50.124224"
+     inkscape:window-width="1854"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs131" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g1861"
+       transform="translate(0,-0.0833751)">
+      <rect
+         fill="#003399"
+         width="10"
+         height="6.66675"
+         id="rect565"
+         x="13.75"
+         y="3"
+         style="stroke-width:0.0123458" />
+      <g
+         fill="#ffcc00"
+         transform="matrix(0.37037038,0,0,0.37037501,18.750002,6.3333757)"
+         id="g584">
+        <g
+           id="use567-7"
+           transform="translate(0,-6)">
+          <g
+             id="g1235">
+            <path
+               id="path1231"
+               d="M 0,0 V 1 H 0.5 Z"
+               transform="rotate(18,3.1568758,-0.5)" />
+            <path
+               id="use1233"
+               d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+          </g>
+          <g
+             id="g1241">
+            <g
+               id="use1237"
+               transform="rotate(72)">
+              <path
+                 id="path1367"
+                 d="M 0,0 V 1 H 0.5 Z"
+                 transform="rotate(18,3.1568758,-0.5)" />
+              <path
+                 id="use1369"
+                 d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+            </g>
+            <g
+               id="use1239"
+               transform="rotate(144)">
+              <path
+                 id="path1373"
+                 d="M 0,0 V 1 H 0.5 Z"
+                 transform="rotate(18,3.1568758,-0.5)" />
+              <path
+                 id="use1375"
+                 d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+            </g>
+          </g>
+          <g
+             id="use1243"
+             transform="scale(-1,1)">
+            <g
+               id="g1507"
+               transform="rotate(72)">
+              <path
+                 id="path1503"
+                 d="M 0,0 V 1 H 0.5 Z"
+                 transform="rotate(18,3.1568758,-0.5)" />
+              <path
+                 id="path1505"
+                 d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+            </g>
+            <g
+               id="g1513"
+               transform="rotate(144)">
+              <path
+                 id="path1509"
+                 d="M 0,0 V 1 H 0.5 Z"
+                 transform="rotate(18,3.1568758,-0.5)" />
+              <path
+                 id="path1511"
+                 d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+            </g>
+          </g>
+        </g>
+        <g
+           id="use569"
+           transform="translate(0,6)">
+          <g
+             id="g1251">
+            <path
+               id="path1247"
+               d="M 0,0 V 1 H 0.5 Z"
+               transform="rotate(18,3.1568758,-0.5)" />
+            <path
+               id="use1249"
+               d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+          </g>
+          <g
+             id="g1257">
+            <g
+               id="use1253"
+               transform="rotate(72)">
+              <path
+                 id="path1379"
+                 d="M 0,0 V 1 H 0.5 Z"
+                 transform="rotate(18,3.1568758,-0.5)" />
+              <path
+                 id="use1381"
+                 d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+            </g>
+            <g
+               id="use1255"
+               transform="rotate(144)">
+              <path
+                 id="path1385"
+                 d="M 0,0 V 1 H 0.5 Z"
+                 transform="rotate(18,3.1568758,-0.5)" />
+              <path
+                 id="use1387"
+                 d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+            </g>
+          </g>
+          <g
+             id="use1259"
+             transform="scale(-1,1)">
+            <g
+               id="g1521"
+               transform="rotate(72)">
+              <path
+                 id="path1517"
+                 d="M 0,0 V 1 H 0.5 Z"
+                 transform="rotate(18,3.1568758,-0.5)" />
+              <path
+                 id="path1519"
+                 d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+            </g>
+            <g
+               id="g1527"
+               transform="rotate(144)">
+              <path
+                 id="path1523"
+                 d="M 0,0 V 1 H 0.5 Z"
+                 transform="rotate(18,3.1568758,-0.5)" />
+              <path
+                 id="path1525"
+                 d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+            </g>
+          </g>
+        </g>
+        <g
+           id="l">
+          <g
+             id="use571"
+             transform="translate(-6)">
+            <g
+               id="g1267">
+              <path
+                 id="path1263"
+                 d="M 0,0 V 1 H 0.5 Z"
+                 transform="rotate(18,3.1568758,-0.5)" />
+              <path
+                 id="use1265"
+                 d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+            </g>
+            <g
+               id="g1273">
+              <g
+                 id="use1269"
+                 transform="rotate(72)">
+                <path
+                   id="path1391"
+                   d="M 0,0 V 1 H 0.5 Z"
+                   transform="rotate(18,3.1568758,-0.5)" />
+                <path
+                   id="use1393"
+                   d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+              </g>
+              <g
+                 id="use1271"
+                 transform="rotate(144)">
+                <path
+                   id="path1397"
+                   d="M 0,0 V 1 H 0.5 Z"
+                   transform="rotate(18,3.1568758,-0.5)" />
+                <path
+                   id="use1399"
+                   d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+              </g>
+            </g>
+            <g
+               id="use1275"
+               transform="scale(-1,1)">
+              <g
+                 id="g1535"
+                 transform="rotate(72)">
+                <path
+                   id="path1531"
+                   d="M 0,0 V 1 H 0.5 Z"
+                   transform="rotate(18,3.1568758,-0.5)" />
+                <path
+                   id="path1533"
+                   d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+              </g>
+              <g
+                 id="g1541"
+                 transform="rotate(144)">
+                <path
+                   id="path1537"
+                   d="M 0,0 V 1 H 0.5 Z"
+                   transform="rotate(18,3.1568758,-0.5)" />
+                <path
+                   id="path1539"
+                   d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+              </g>
+            </g>
+          </g>
+          <g
+             id="use573-5"
+             transform="rotate(-144,-2.3441661,-2.1106967)">
+            <g
+               id="g1283">
+              <path
+                 id="path1279"
+                 d="M 0,0 V 1 H 0.5 Z"
+                 transform="rotate(18,3.1568758,-0.5)" />
+              <path
+                 id="use1281"
+                 d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+            </g>
+            <g
+               id="g1289">
+              <g
+                 id="use1285"
+                 transform="rotate(72)">
+                <path
+                   id="path1403"
+                   d="M 0,0 V 1 H 0.5 Z"
+                   transform="rotate(18,3.1568758,-0.5)" />
+                <path
+                   id="use1405"
+                   d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+              </g>
+              <g
+                 id="use1287"
+                 transform="rotate(144)">
+                <path
+                   id="path1409"
+                   d="M 0,0 V 1 H 0.5 Z"
+                   transform="rotate(18,3.1568758,-0.5)" />
+                <path
+                   id="use1411"
+                   d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+              </g>
+            </g>
+            <g
+               id="use1291"
+               transform="scale(-1,1)">
+              <g
+                 id="g1549"
+                 transform="rotate(72)">
+                <path
+                   id="path1545"
+                   d="M 0,0 V 1 H 0.5 Z"
+                   transform="rotate(18,3.1568758,-0.5)" />
+                <path
+                   id="path1547"
+                   d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+              </g>
+              <g
+                 id="g1555"
+                 transform="rotate(144)">
+                <path
+                   id="path1551"
+                   d="M 0,0 V 1 H 0.5 Z"
+                   transform="rotate(18,3.1568758,-0.5)" />
+                <path
+                   id="path1553"
+                   d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+              </g>
+            </g>
+          </g>
+          <g
+             id="use575"
+             transform="rotate(144,-2.1106967,-2.3441661)">
+            <g
+               id="g1299">
+              <path
+                 id="path1295"
+                 d="M 0,0 V 1 H 0.5 Z"
+                 transform="rotate(18,3.1568758,-0.5)" />
+              <path
+                 id="use1297"
+                 d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+            </g>
+            <g
+               id="g1305">
+              <g
+                 id="use1301"
+                 transform="rotate(72)">
+                <path
+                   id="path1415"
+                   d="M 0,0 V 1 H 0.5 Z"
+                   transform="rotate(18,3.1568758,-0.5)" />
+                <path
+                   id="use1417"
+                   d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+              </g>
+              <g
+                 id="use1303"
+                 transform="rotate(144)">
+                <path
+                   id="path1421"
+                   d="M 0,0 V 1 H 0.5 Z"
+                   transform="rotate(18,3.1568758,-0.5)" />
+                <path
+                   id="use1423"
+                   d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+              </g>
+            </g>
+            <g
+               id="use1307"
+               transform="scale(-1,1)">
+              <g
+                 id="g1563"
+                 transform="rotate(72)">
+                <path
+                   id="path1559"
+                   d="M 0,0 V 1 H 0.5 Z"
+                   transform="rotate(18,3.1568758,-0.5)" />
+                <path
+                   id="path1561"
+                   d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+              </g>
+              <g
+                 id="g1569"
+                 transform="rotate(144)">
+                <path
+                   id="path1565"
+                   d="M 0,0 V 1 H 0.5 Z"
+                   transform="rotate(18,3.1568758,-0.5)" />
+                <path
+                   id="path1567"
+                   d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+              </g>
+            </g>
+          </g>
+          <g
+             id="use577-3"
+             transform="rotate(72,-4.6626491,-2.0759451)">
+            <g
+               id="g1315">
+              <path
+                 id="path1311"
+                 d="M 0,0 V 1 H 0.5 Z"
+                 transform="rotate(18,3.1568758,-0.5)" />
+              <path
+                 id="use1313"
+                 d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+            </g>
+            <g
+               id="g1321">
+              <g
+                 id="use1317"
+                 transform="rotate(72)">
+                <path
+                   id="path1427"
+                   d="M 0,0 V 1 H 0.5 Z"
+                   transform="rotate(18,3.1568758,-0.5)" />
+                <path
+                   id="use1429"
+                   d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+              </g>
+              <g
+                 id="use1319"
+                 transform="rotate(144)">
+                <path
+                   id="path1433"
+                   d="M 0,0 V 1 H 0.5 Z"
+                   transform="rotate(18,3.1568758,-0.5)" />
+                <path
+                   id="use1435"
+                   d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+              </g>
+            </g>
+            <g
+               id="use1323"
+               transform="scale(-1,1)">
+              <g
+                 id="g1577"
+                 transform="rotate(72)">
+                <path
+                   id="path1573"
+                   d="M 0,0 V 1 H 0.5 Z"
+                   transform="rotate(18,3.1568758,-0.5)" />
+                <path
+                   id="path1575"
+                   d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+              </g>
+              <g
+                 id="g1583"
+                 transform="rotate(144)">
+                <path
+                   id="path1579"
+                   d="M 0,0 V 1 H 0.5 Z"
+                   transform="rotate(18,3.1568758,-0.5)" />
+                <path
+                   id="path1581"
+                   d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+              </g>
+            </g>
+          </g>
+          <g
+             id="use579-5"
+             transform="rotate(72,-5.0759451,0.53350333)">
+            <g
+               id="g1331">
+              <path
+                 id="path1327"
+                 d="M 0,0 V 1 H 0.5 Z"
+                 transform="rotate(18,3.1568758,-0.5)" />
+              <path
+                 id="use1329"
+                 d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+            </g>
+            <g
+               id="g1337">
+              <g
+                 id="use1333"
+                 transform="rotate(72)">
+                <path
+                   id="path1439"
+                   d="M 0,0 V 1 H 0.5 Z"
+                   transform="rotate(18,3.1568758,-0.5)" />
+                <path
+                   id="use1441"
+                   d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+              </g>
+              <g
+                 id="use1335"
+                 transform="rotate(144)">
+                <path
+                   id="path1445"
+                   d="M 0,0 V 1 H 0.5 Z"
+                   transform="rotate(18,3.1568758,-0.5)" />
+                <path
+                   id="use1447"
+                   d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+              </g>
+            </g>
+            <g
+               id="use1339"
+               transform="scale(-1,1)">
+              <g
+                 id="g1591"
+                 transform="rotate(72)">
+                <path
+                   id="path1587"
+                   d="M 0,0 V 1 H 0.5 Z"
+                   transform="rotate(18,3.1568758,-0.5)" />
+                <path
+                   id="path1589"
+                   d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+              </g>
+              <g
+                 id="g1597"
+                 transform="rotate(144)">
+                <path
+                   id="path1593"
+                   d="M 0,0 V 1 H 0.5 Z"
+                   transform="rotate(18,3.1568758,-0.5)" />
+                <path
+                   id="path1595"
+                   d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+              </g>
+            </g>
+          </g>
+        </g>
+        <use
+           xlink:href="#l"
+           transform="scale(-1,1)"
+           id="use582" />
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:23.1961px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke-width:0.414216"
+       x="7.1257005"
+       y="17.399626"
+       id="underscore"
+       transform="scale(1.0259056,0.97474852)"
+       inkscape:label="#underscore"><tspan
+         sodipodi:role="line"
+         id="tspan111-7-9"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:23.1961px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke-width:0.414216"
+         x="7.1257005"
+         y="17.399626">_ </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:23.1961px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke-width:0.414216;image-rendering:auto"
+       x="0.43487105"
+       y="17.399626"
+       id="dollar"
+       transform="scale(1.0259056,0.97474852)"
+       inkscape:label="#dollar"><tspan
+         sodipodi:role="line"
+         id="tspan111-7-9-1"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:23.1961px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke-width:0.414216"
+         x="0.43487105"
+         y="17.399626">$ </tspan></text>
+    <g
+       id="beer"
+       transform="matrix(0.26309532,0,0,0.23620175,5.2534566,6.1264796)"
+       inkscape:label="#beer">
+      <g
+         id="g497"
+         transform="translate(-9.3089803e-8,-3.176991)">
+        <g
+           id="color">
+          <rect
+             x="19"
+             y="23.230101"
+             width="29.999701"
+             height="36.385601"
+             fill="#fcea2b"
+             id="rect380" />
+          <polygon
+             fill="#f1b31c"
+             points="33,59.6157 48.9998,59.6157 48.9998,23.2301 40.5264,23.2301 "
+             id="polygon382" />
+          <path
+             fill="#ffffff"
+             d="m 44.1933,15.3999 c -1.304,-0.001 -2.5018,0.4709 -3.4585,1.2577 -0.9376,-1.9375 -2.8336,-3.2665 -5.0258,-3.2682 -0.8005,-6e-4 -1.5606,0.1771 -2.2511,0.4952 -1.1199,-1.5208 -2.8597,-2.5031 -4.819,-2.5046 -2.9465,-0.0023 -5.4063,2.205 -5.997,5.1492 C 22.294,16.4418 21.9358,16.3844 21.5634,16.3841 18.9601,16.382 16.8472,18.6237 16.845,21.39 l -0.0063,8.0154 c -9e-4,1.1021 0.847,2.0045 1.8842,2.0053 l 0.9429,7e-4 c 1.0372,8e-4 1.8865,-0.9002 1.8873,-2.0024 l 0.0013,-1.5991 c 0.5711,0.3722 1.2338,0.5981 1.9494,0.5987 l 1.8546,0.0015 c 1.2022,9e-4 2.2653,-0.6144 2.9581,-1.5517 1.0256,1.5428 2.7125,2.5581 4.6153,2.5596 3.1115,0.0025 5.6594,-2.7007 5.662,-6.0071 l 10.9214,0.0086 c 0.2098,-0.627 0.3301,-1.3002 0.3306,-2.0036 0.0027,-3.3203 -2.5278,-6.0135 -5.6525,-6.016 z"
+             id="path384" />
+          <path
+             fill="#ffffff"
+             d="m 19.8066,24.8075 c 0.0022,-2.6882 2.115,-4.8665 4.7184,-4.8646 0.3724,3e-4 0.7307,0.0561 1.0785,0.141 0.5907,-2.861 3.0506,-5.006 5.9971,-5.0037 1.9593,0.0015 3.699,0.956 4.8189,2.4339 0.6904,-0.3091 1.4505,-0.4818 2.2511,-0.4812 2.1922,0.0017 4.0882,1.2932 5.0258,3.1759 0.9567,-0.7645 2.1545,-1.2232 3.4585,-1.2222 0.5297,4e-4 1.0401,0.0815 1.5261,0.2223 -0.7688,-2.2807 -2.8627,-3.9207 -5.3338,-3.9226 -1.304,-0.001 -2.5018,0.4577 -3.4585,1.2222 -0.9376,-1.8828 -2.8336,-3.1742 -5.0258,-3.1759 -0.8005,-6e-4 -1.5607,0.1721 -2.2511,0.4812 -1.1199,-1.4778 -2.8597,-2.4324 -4.8189,-2.4339 -2.9465,-0.0023 -5.4064,2.1427 -5.9971,5.0037 -0.3478,-0.085 -0.7061,-0.1407 -1.0785,-0.141 -2.6034,-0.002 -4.7163,2.1764 -4.7184,4.8646 l -0.0063,7.7891 c -9e-4,1.071 0.847,1.9479 1.8842,1.9487 l 0.9429,7e-4 c 0.3605,3e-4 0.6951,-0.1105 0.9824,-0.2934 z"
+             id="path386" />
+        </g>
+        <g
+           id="hair" />
+        <g
+           id="skin" />
+        <g
+           id="skin-shadow" />
+        <g
+           id="line-1">
+          <path
+             fill="none"
+             stroke="#000000"
+             stroke-linecap="round"
+             stroke-linejoin="round"
+             stroke-miterlimit="10"
+             stroke-width="2"
+             d="m 49.5,50.5 h 6 c 2.2,0 4,-1.8 4,-4 v -14 c 0,-2.2 -1.8,-4 -4,-4 h -6"
+             id="path392-7" />
+          <polyline
+             fill="none"
+             stroke="#000000"
+             stroke-linecap="round"
+             stroke-linejoin="round"
+             stroke-miterlimit="10"
+             stroke-width="2.0185"
+             points="38.5938,23.2301 48.9997,23.2301 48.9997,60 20,60 20,39.6348"
+             id="polyline394-7" />
+          <path
+             fill="none"
+             stroke="#000000"
+             stroke-linecap="round"
+             stroke-linejoin="round"
+             stroke-miterlimit="10"
+             stroke-width="2"
+             d="m 20.2515,31.3124 c 0.753,-0.2628 1.3009,-1.0182 1.3016,-1.9033 L 21.5544,27.81 c 0.5711,0.3722 1.2338,0.5981 1.9494,0.5987 l 1.8546,0.0015 c 1.2022,9e-4 2.2653,-0.6144 2.9581,-1.5517 1.0256,1.5428 2.7125,2.5581 4.6153,2.5596 3.1115,0.0025 5.6594,-2.7007 5.662,-6.0071 l 10.9214,0.0086 c 0.2098,-0.627 0.3301,-1.3002 0.3306,-2.0036 0.0026,-3.3204 -2.5278,-6.0136 -5.6525,-6.016 -1.304,-0.001 -2.5018,0.4709 -3.4585,1.2577 -0.9376,-1.9375 -2.8336,-3.2665 -5.0258,-3.2682 -0.8005,-6e-4 -1.5606,0.1771 -2.2511,0.4952 -1.1199,-1.5208 -2.8597,-2.5031 -4.819,-2.5046 -2.9465,-0.0023 -5.4063,2.205 -5.997,5.1492 -0.3479,-0.0874 -0.7061,-0.1448 -1.0785,-0.1451 -2.6033,-0.0021 -4.7162,2.2396 -4.7184,5.0059 l -0.0063,8.0154 c -9e-4,1.1021 0.847,2.0045 1.8842,2.0053 l 0.9429,7e-4 c 0.2042,10e-5 0.4011,-0.0347 0.5857,-0.0991"
+             id="path396-1" />
+        </g>
+      </g>
+    </g>
+    <g
+       id="g417"
+       transform="matrix(30,0,0,30,405,270)">
+      <g
+         id="use217"
+         transform="translate(0,-6)">
+        <g
+           id="g543">
+          <path
+             id="path539"
+             d="M 0,0 V 1 H 0.5 Z"
+             transform="rotate(18,3.1568758,-0.5)" />
+          <path
+             id="use541"
+             d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+        </g>
+        <g
+           id="g549">
+          <g
+             id="use545"
+             transform="rotate(72)">
+            <path
+               id="path803"
+               d="M 0,0 V 1 H 0.5 Z"
+               transform="rotate(18,3.1568758,-0.5)" />
+            <path
+               id="use805"
+               d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+          </g>
+          <g
+             id="use547"
+             transform="rotate(144)">
+            <path
+               id="path809"
+               d="M 0,0 V 1 H 0.5 Z"
+               transform="rotate(18,3.1568758,-0.5)" />
+            <path
+               id="use811"
+               d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+          </g>
+        </g>
+        <g
+           id="use551"
+           transform="scale(-1,1)">
+          <g
+             id="use731"
+             transform="rotate(72)">
+            <path
+               id="path947"
+               d="M 0,0 V 1 H 0.5 Z"
+               transform="rotate(18,3.1568758,-0.5)" />
+            <path
+               id="use949"
+               d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+          </g>
+          <g
+             id="use733"
+             transform="rotate(144)">
+            <path
+               id="path953"
+               d="M 0,0 V 1 H 0.5 Z"
+               transform="rotate(18,3.1568758,-0.5)" />
+            <path
+               id="use955"
+               d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+          </g>
+        </g>
+      </g>
+      <g
+         id="use219"
+         transform="translate(0,6)">
+        <g
+           id="g559">
+          <path
+             id="path555"
+             d="M 0,0 V 1 H 0.5 Z"
+             transform="rotate(18,3.1568758,-0.5)" />
+          <path
+             id="use557"
+             d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+        </g>
+        <g
+           id="g565">
+          <g
+             id="use561"
+             transform="rotate(72)">
+            <path
+               id="path815"
+               d="M 0,0 V 1 H 0.5 Z"
+               transform="rotate(18,3.1568758,-0.5)" />
+            <path
+               id="use817"
+               d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+          </g>
+          <g
+             id="use563"
+             transform="rotate(144)">
+            <path
+               id="path821"
+               d="M 0,0 V 1 H 0.5 Z"
+               transform="rotate(18,3.1568758,-0.5)" />
+            <path
+               id="use823"
+               d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+          </g>
+        </g>
+        <g
+           id="use567"
+           transform="scale(-1,1)">
+          <g
+             id="use737"
+             transform="rotate(72)">
+            <path
+               id="path959"
+               d="M 0,0 V 1 H 0.5 Z"
+               transform="rotate(18,3.1568758,-0.5)" />
+            <path
+               id="use961"
+               d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+          </g>
+          <g
+             id="use739"
+             transform="rotate(144)">
+            <path
+               id="path965"
+               d="M 0,0 V 1 H 0.5 Z"
+               transform="rotate(18,3.1568758,-0.5)" />
+            <path
+               id="use967"
+               d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+          </g>
+        </g>
+      </g>
+      <g
+         id="use232"
+         transform="scale(-1,1)">
+        <g
+           id="use527"
+           transform="translate(-6)">
+          <g
+             id="g655">
+            <path
+               id="path651"
+               d="M 0,0 V 1 H 0.5 Z"
+               transform="rotate(18,3.1568758,-0.5)" />
+            <path
+               id="use653"
+               d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+          </g>
+          <g
+             id="g661">
+            <g
+               id="use657"
+               transform="rotate(72)">
+              <path
+                 id="path887"
+                 d="M 0,0 V 1 H 0.5 Z"
+                 transform="rotate(18,3.1568758,-0.5)" />
+              <path
+                 id="use889"
+                 d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+            </g>
+            <g
+               id="use659"
+               transform="rotate(144)">
+              <path
+                 id="path893"
+                 d="M 0,0 V 1 H 0.5 Z"
+                 transform="rotate(18,3.1568758,-0.5)" />
+              <path
+                 id="use895"
+                 d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+            </g>
+          </g>
+          <g
+             id="use663"
+             transform="scale(-1,1)">
+            <g
+               id="use773"
+               transform="rotate(72)">
+              <path
+                 id="path1031"
+                 d="M 0,0 V 1 H 0.5 Z"
+                 transform="rotate(18,3.1568758,-0.5)" />
+              <path
+                 id="use1033"
+                 d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+            </g>
+            <g
+               id="use775"
+               transform="rotate(144)">
+              <path
+                 id="path1037"
+                 d="M 0,0 V 1 H 0.5 Z"
+                 transform="rotate(18,3.1568758,-0.5)" />
+              <path
+                 id="use1039"
+                 d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+            </g>
+          </g>
+        </g>
+        <g
+           id="use529"
+           transform="rotate(-144,-2.3441661,-2.1106967)">
+          <g
+             id="g671">
+            <path
+               id="path667"
+               d="M 0,0 V 1 H 0.5 Z"
+               transform="rotate(18,3.1568758,-0.5)" />
+            <path
+               id="use669"
+               d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+          </g>
+          <g
+             id="g677">
+            <g
+               id="use673"
+               transform="rotate(72)">
+              <path
+                 id="path899"
+                 d="M 0,0 V 1 H 0.5 Z"
+                 transform="rotate(18,3.1568758,-0.5)" />
+              <path
+                 id="use901"
+                 d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+            </g>
+            <g
+               id="use675"
+               transform="rotate(144)">
+              <path
+                 id="path905"
+                 d="M 0,0 V 1 H 0.5 Z"
+                 transform="rotate(18,3.1568758,-0.5)" />
+              <path
+                 id="use907"
+                 d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+            </g>
+          </g>
+          <g
+             id="use679"
+             transform="scale(-1,1)">
+            <g
+               id="use779"
+               transform="rotate(72)">
+              <path
+                 id="path1043"
+                 d="M 0,0 V 1 H 0.5 Z"
+                 transform="rotate(18,3.1568758,-0.5)" />
+              <path
+                 id="use1045"
+                 d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+            </g>
+            <g
+               id="use781"
+               transform="rotate(144)">
+              <path
+                 id="path1049"
+                 d="M 0,0 V 1 H 0.5 Z"
+                 transform="rotate(18,3.1568758,-0.5)" />
+              <path
+                 id="use1051"
+                 d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+            </g>
+          </g>
+        </g>
+        <g
+           id="use531"
+           transform="rotate(144,-2.1106967,-2.3441661)">
+          <g
+             id="g687">
+            <path
+               id="path683"
+               d="M 0,0 V 1 H 0.5 Z"
+               transform="rotate(18,3.1568758,-0.5)" />
+            <path
+               id="use685"
+               d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+          </g>
+          <g
+             id="g693">
+            <g
+               id="use689"
+               transform="rotate(72)">
+              <path
+                 id="path911"
+                 d="M 0,0 V 1 H 0.5 Z"
+                 transform="rotate(18,3.1568758,-0.5)" />
+              <path
+                 id="use913"
+                 d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+            </g>
+            <g
+               id="use691"
+               transform="rotate(144)">
+              <path
+                 id="path917"
+                 d="M 0,0 V 1 H 0.5 Z"
+                 transform="rotate(18,3.1568758,-0.5)" />
+              <path
+                 id="use919"
+                 d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+            </g>
+          </g>
+          <g
+             id="use695"
+             transform="scale(-1,1)">
+            <g
+               id="use785"
+               transform="rotate(72)">
+              <path
+                 id="path1055"
+                 d="M 0,0 V 1 H 0.5 Z"
+                 transform="rotate(18,3.1568758,-0.5)" />
+              <path
+                 id="use1057"
+                 d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+            </g>
+            <g
+               id="use787"
+               transform="rotate(144)">
+              <path
+                 id="path1061"
+                 d="M 0,0 V 1 H 0.5 Z"
+                 transform="rotate(18,3.1568758,-0.5)" />
+              <path
+                 id="use1063"
+                 d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+            </g>
+          </g>
+        </g>
+        <g
+           id="use533"
+           transform="rotate(72,-4.6626491,-2.0759451)">
+          <g
+             id="g703">
+            <path
+               id="path699"
+               d="M 0,0 V 1 H 0.5 Z"
+               transform="rotate(18,3.1568758,-0.5)" />
+            <path
+               id="use701"
+               d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+          </g>
+          <g
+             id="g709">
+            <g
+               id="use705"
+               transform="rotate(72)">
+              <path
+                 id="path923"
+                 d="M 0,0 V 1 H 0.5 Z"
+                 transform="rotate(18,3.1568758,-0.5)" />
+              <path
+                 id="use925"
+                 d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+            </g>
+            <g
+               id="use707"
+               transform="rotate(144)">
+              <path
+                 id="path929"
+                 d="M 0,0 V 1 H 0.5 Z"
+                 transform="rotate(18,3.1568758,-0.5)" />
+              <path
+                 id="use931"
+                 d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+            </g>
+          </g>
+          <g
+             id="use711"
+             transform="scale(-1,1)">
+            <g
+               id="use791"
+               transform="rotate(72)">
+              <path
+                 id="path1067"
+                 d="M 0,0 V 1 H 0.5 Z"
+                 transform="rotate(18,3.1568758,-0.5)" />
+              <path
+                 id="use1069"
+                 d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+            </g>
+            <g
+               id="use793"
+               transform="rotate(144)">
+              <path
+                 id="path1073"
+                 d="M 0,0 V 1 H 0.5 Z"
+                 transform="rotate(18,3.1568758,-0.5)" />
+              <path
+                 id="use1075"
+                 d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+            </g>
+          </g>
+        </g>
+        <g
+           id="use535"
+           transform="rotate(72,-5.0759451,0.53350333)">
+          <g
+             id="g719">
+            <path
+               id="path715"
+               d="M 0,0 V 1 H 0.5 Z"
+               transform="rotate(18,3.1568758,-0.5)" />
+            <path
+               id="use717"
+               d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+          </g>
+          <g
+             id="g725">
+            <g
+               id="use721"
+               transform="rotate(72)">
+              <path
+                 id="path935"
+                 d="M 0,0 V 1 H 0.5 Z"
+                 transform="rotate(18,3.1568758,-0.5)" />
+              <path
+                 id="use937"
+                 d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+            </g>
+            <g
+               id="use723"
+               transform="rotate(144)">
+              <path
+                 id="path941"
+                 d="M 0,0 V 1 H 0.5 Z"
+                 transform="rotate(18,3.1568758,-0.5)" />
+              <path
+                 id="use943"
+                 d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+            </g>
+          </g>
+          <g
+             id="use727"
+             transform="scale(-1,1)">
+            <g
+               id="use797"
+               transform="rotate(72)">
+              <path
+                 id="path1079"
+                 d="M 0,0 V 1 H 0.5 Z"
+                 transform="rotate(18,3.1568758,-0.5)" />
+              <path
+                 id="use1081"
+                 d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+            </g>
+            <g
+               id="use799"
+               transform="rotate(144)">
+              <path
+                 id="path1085"
+                 d="M 0,0 V 1 H 0.5 Z"
+                 transform="rotate(18,3.1568758,-0.5)" />
+              <path
+                 id="use1087"
+                 d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g421"
+       transform="matrix(30,0,0,30,405,270)">
+      <g
+         id="use221"
+         transform="translate(-6)">
+        <g
+           id="g575">
+          <path
+             id="path571"
+             d="M 0,0 V 1 H 0.5 Z"
+             transform="rotate(18,3.1568758,-0.5)" />
+          <path
+             id="use573"
+             d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+        </g>
+        <g
+           id="g581">
+          <g
+             id="use577"
+             transform="rotate(72)">
+            <path
+               id="path827"
+               d="M 0,0 V 1 H 0.5 Z"
+               transform="rotate(18,3.1568758,-0.5)" />
+            <path
+               id="use829"
+               d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+          </g>
+          <g
+             id="use579"
+             transform="rotate(144)">
+            <path
+               id="path833"
+               d="M 0,0 V 1 H 0.5 Z"
+               transform="rotate(18,3.1568758,-0.5)" />
+            <path
+               id="use835"
+               d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+          </g>
+        </g>
+        <g
+           id="use583"
+           transform="scale(-1,1)">
+          <g
+             id="use743"
+             transform="rotate(72)">
+            <path
+               id="path971"
+               d="M 0,0 V 1 H 0.5 Z"
+               transform="rotate(18,3.1568758,-0.5)" />
+            <path
+               id="use973"
+               d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+          </g>
+          <g
+             id="use745"
+             transform="rotate(144)">
+            <path
+               id="path977"
+               d="M 0,0 V 1 H 0.5 Z"
+               transform="rotate(18,3.1568758,-0.5)" />
+            <path
+               id="use979"
+               d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+          </g>
+        </g>
+      </g>
+      <g
+         id="use223"
+         transform="rotate(-144,-2.3441661,-2.1106967)">
+        <g
+           id="g591">
+          <path
+             id="path587"
+             d="M 0,0 V 1 H 0.5 Z"
+             transform="rotate(18,3.1568758,-0.5)" />
+          <path
+             id="use589"
+             d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+        </g>
+        <g
+           id="g597">
+          <g
+             id="use593"
+             transform="rotate(72)">
+            <path
+               id="path839"
+               d="M 0,0 V 1 H 0.5 Z"
+               transform="rotate(18,3.1568758,-0.5)" />
+            <path
+               id="use841"
+               d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+          </g>
+          <g
+             id="use595"
+             transform="rotate(144)">
+            <path
+               id="path845"
+               d="M 0,0 V 1 H 0.5 Z"
+               transform="rotate(18,3.1568758,-0.5)" />
+            <path
+               id="use847"
+               d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+          </g>
+        </g>
+        <g
+           id="use599"
+           transform="scale(-1,1)">
+          <g
+             id="use749"
+             transform="rotate(72)">
+            <path
+               id="path983"
+               d="M 0,0 V 1 H 0.5 Z"
+               transform="rotate(18,3.1568758,-0.5)" />
+            <path
+               id="use985"
+               d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+          </g>
+          <g
+             id="use751"
+             transform="rotate(144)">
+            <path
+               id="path989"
+               d="M 0,0 V 1 H 0.5 Z"
+               transform="rotate(18,3.1568758,-0.5)" />
+            <path
+               id="use991"
+               d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+          </g>
+        </g>
+      </g>
+      <g
+         id="use225"
+         transform="rotate(144,-2.1106967,-2.3441661)">
+        <g
+           id="g607">
+          <path
+             id="path603"
+             d="M 0,0 V 1 H 0.5 Z"
+             transform="rotate(18,3.1568758,-0.5)" />
+          <path
+             id="use605"
+             d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+        </g>
+        <g
+           id="g613">
+          <g
+             id="use609"
+             transform="rotate(72)">
+            <path
+               id="path851"
+               d="M 0,0 V 1 H 0.5 Z"
+               transform="rotate(18,3.1568758,-0.5)" />
+            <path
+               id="use853"
+               d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+          </g>
+          <g
+             id="use611"
+             transform="rotate(144)">
+            <path
+               id="path857"
+               d="M 0,0 V 1 H 0.5 Z"
+               transform="rotate(18,3.1568758,-0.5)" />
+            <path
+               id="use859"
+               d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+          </g>
+        </g>
+        <g
+           id="use615"
+           transform="scale(-1,1)">
+          <g
+             id="use755"
+             transform="rotate(72)">
+            <path
+               id="path995"
+               d="M 0,0 V 1 H 0.5 Z"
+               transform="rotate(18,3.1568758,-0.5)" />
+            <path
+               id="use997"
+               d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+          </g>
+          <g
+             id="use757"
+             transform="rotate(144)">
+            <path
+               id="path1001"
+               d="M 0,0 V 1 H 0.5 Z"
+               transform="rotate(18,3.1568758,-0.5)" />
+            <path
+               id="use1003"
+               d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+          </g>
+        </g>
+      </g>
+      <g
+         id="use227"
+         transform="rotate(72,-4.6626491,-2.0759451)">
+        <g
+           id="g623">
+          <path
+             id="path619"
+             d="M 0,0 V 1 H 0.5 Z"
+             transform="rotate(18,3.1568758,-0.5)" />
+          <path
+             id="use621"
+             d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+        </g>
+        <g
+           id="g629">
+          <g
+             id="use625"
+             transform="rotate(72)">
+            <path
+               id="path863"
+               d="M 0,0 V 1 H 0.5 Z"
+               transform="rotate(18,3.1568758,-0.5)" />
+            <path
+               id="use865"
+               d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+          </g>
+          <g
+             id="use627"
+             transform="rotate(144)">
+            <path
+               id="path869"
+               d="M 0,0 V 1 H 0.5 Z"
+               transform="rotate(18,3.1568758,-0.5)" />
+            <path
+               id="use871"
+               d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+          </g>
+        </g>
+        <g
+           id="use631"
+           transform="scale(-1,1)">
+          <g
+             id="use761"
+             transform="rotate(72)">
+            <path
+               id="path1007"
+               d="M 0,0 V 1 H 0.5 Z"
+               transform="rotate(18,3.1568758,-0.5)" />
+            <path
+               id="use1009"
+               d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+          </g>
+          <g
+             id="use763"
+             transform="rotate(144)">
+            <path
+               id="path1013"
+               d="M 0,0 V 1 H 0.5 Z"
+               transform="rotate(18,3.1568758,-0.5)" />
+            <path
+               id="use1015"
+               d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+          </g>
+        </g>
+      </g>
+      <g
+         id="use229"
+         transform="rotate(72,-5.0759451,0.53350333)">
+        <g
+           id="g639">
+          <path
+             id="path635"
+             d="M 0,0 V 1 H 0.5 Z"
+             transform="rotate(18,3.1568758,-0.5)" />
+          <path
+             id="use637"
+             d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+        </g>
+        <g
+           id="g645">
+          <g
+             id="use641"
+             transform="rotate(72)">
+            <path
+               id="path875"
+               d="M 0,0 V 1 H 0.5 Z"
+               transform="rotate(18,3.1568758,-0.5)" />
+            <path
+               id="use877"
+               d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+          </g>
+          <g
+             id="use643"
+             transform="rotate(144)">
+            <path
+               id="path881"
+               d="M 0,0 V 1 H 0.5 Z"
+               transform="rotate(18,3.1568758,-0.5)" />
+            <path
+               id="use883"
+               d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+          </g>
+        </g>
+        <g
+           id="use647"
+           transform="scale(-1,1)">
+          <g
+             id="use767"
+             transform="rotate(72)">
+            <path
+               id="path1019"
+               d="M 0,0 V 1 H 0.5 Z"
+               transform="rotate(18,3.1568758,-0.5)" />
+            <path
+               id="use1021"
+               d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+          </g>
+          <g
+             id="use769"
+             transform="rotate(144)">
+            <path
+               id="path1025"
+               d="M 0,0 V 1 H 0.5 Z"
+               transform="rotate(18,3.1568758,-0.5)" />
+            <path
+               id="use1027"
+               d="m 0,-1 0.30901699,0.95105652 -0.47552825,0.15450849 z" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g429" />
+    <g
+       id="g431" />
+    <g
+       id="g433" />
+  </g>
+  <metadata
+     id="metadata252">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:prohibits
+           rdf:resource="http://creativecommons.org/ns#CommercialUse" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

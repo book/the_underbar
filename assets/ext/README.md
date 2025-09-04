@@ -14,3 +14,5 @@ The emojis come from [OpenMoji](https://openmoji.org/) – the open-source emoji
 The others come from various sources:
 
 * `perl-camel.svg` - [The Perl Logo](https://github.com/metacpan/perl-assets)
+* `Flag_of_Europe.svg` - [Flag of Europe](https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg)
+
