@@ -239,4 +239,13 @@ And also bars:
   ("underbar" also means "wonderful" in Norwegian).
 * [Underbar](https://underbarchicago.com/) is a bar in Chicago, USA.
 
+And restaurants:
+
+* [Underbar](https://www.underbar.com.au/) is a restaurant in Ballarat,
+  Victoria, Australia.
+* [Underbar](https://restaurangunderbar.se) is a Lebanese restaurant
+  in Stockholm, Sweden.
+* [Underbar](https://underbarvisby.se/) is a Lebanese restaurant (same
+  chain as the above) in Visby, Sweden.
+
 The underbar also a [Parkour technique](https://londonparkour.com/tutorial/basic-underbar/).
