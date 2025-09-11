@@ -231,10 +231,12 @@ other podcasts:
 
 And also bars:
 
-* [The UnderBar](https://www.underbar.biz/) is a proud 100% LGBTQ+ owned bar in Vancouver.
+* [The UnderBar](https://www.underbar.biz/) is a proud 100% LGBTQ+
+  owned bar in Vancouver, Canada.
 * [Underbar](https://www.instagram.com/UnderbarCraighallPark/) is a
   basement bar/lounge in Johannesburg, South Africa.
 * [Underbar](https://www.underbar.no/) is a whisky bar in Oslo, Norway
   ("underbar" also means "wonderful" in Norwegian).
+* [Underbar](https://underbarchicago.com/) is a bar in Chicago, USA.
 
 The underbar also a [Parkour technique](https://londonparkour.com/tutorial/basic-underbar/).
