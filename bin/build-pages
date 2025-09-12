@@ -283,7 +283,7 @@ if ( !-e $dst || $dst->stat->mtime < $latest_dep || $option{force} ) {
             $podcast->{base_url},
             episodes => $episode->{number} => $episode->{file} // '' );
         $feed->add_item(
-            title => "The Underbar, episode $episode->{number}: $episode->{title}",
+            title => "Episode $episode->{number} - $episode->{title}",
             link  => join( '/', $podcast->{base_url}, episodes => $episode->{number} ),
             permaLink => $link,    # guid with permaLink=true
             enclosure => {
@@ -294,6 +294,7 @@ if ( !-e $dst || $dst->stat->mtime < $latest_dep || $option{force} ) {
             pubDate     => $episode->{published}->strftime("%a, %e %b %Y %T %z"),
             description => "<![CDATA[$episode->{description}]]>",
             itunes      => {
+                title => $episode->{title},
                 image => {
                     href => join( '/',
                         $podcast->{base_url},
