@@ -11,7 +11,7 @@ The podcast is syndicated on
 [Podcast Index](https://podcastindex.org/podcast/7377089),
 [Apple Podcasts](https://podcasts.apple.com/us/podcast/the-underbar/id1821292042),
 [Spotify](https://open.spotify.com/show/4pdXwG9MdVKNPPJouTp6z7),
-[Episodes.fm](https://episodes.fm/1821292042),
+[Podlink](https://pod.link/1821292042),
 [Podchaser](https://www.podchaser.com/podcasts/the-underbar-5970261),
 [Castbox](https://castbox.fm/channel/id6649076),
 and

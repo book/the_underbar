@@ -21,9 +21,9 @@ syndication:
   - slug: spotify
     name: Spotify
     link: https://open.spotify.com/show/4pdXwG9MdVKNPPJouTp6z7
-  - slug: episodes_fm
-    name: Episodes.fm
-    link: https://episodes.fm/1821292042
+  - slug: podlink
+    name: Podlink
+    link: https://pod.link/1821292042
   - slug: podchaser
     name: Podchaser
     link: https://www.podchaser.com/podcasts/the-underbar-5970261
