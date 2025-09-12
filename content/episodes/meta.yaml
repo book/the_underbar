@@ -11,3 +11,25 @@ thanks:
     Thanks to [Salve J. Nilsen](https://metacpan.org/author/SJN) for
     lending his microphones and camera, and recording this episode
     during the Perl Toolchain Summit 2025 in Leipzig.
+syndication:
+  - slug: podindex
+    name: Podcast Index
+    link: https://podcastindex.org/podcast/7377089
+  - slug: apple
+    name: Apple Podcasts
+    link: https://podcasts.apple.com/us/podcast/the-underbar/id1821292042
+  - slug: spotify
+    name: Spotify
+    link: https://open.spotify.com/show/4pdXwG9MdVKNPPJouTp6z7
+  - slug: episodes_fm
+    name: Episodes.fm
+    link: https://episodes.fm/1821292042
+  - slug: podchaser
+    name: Podchaser
+    link: https://www.podchaser.com/podcasts/the-underbar-5970261
+  - slug: castbox
+    name: Castbox
+    link: https://castbox.fm/channel/id6649076
+  - slug: pocketcast
+    name: Pocketcast
+    link: https://pocketcasts.com/podcasts/700902d0-2cb8-013e-d33f-0eeccf47baff
