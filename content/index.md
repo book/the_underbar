@@ -2,7 +2,7 @@ title: The Underbar
 subtitle: A Perl-adjacent maybe-podcast, hosted by Philippe Bruhat (BooK).
 template: home.tx
 ---
-## The concept
+## [The Concept](/about/)
 
 If there's one thing I like more than writing code, it's *talking*
 about code. My best memories about code usually involve a late night
