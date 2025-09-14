@@ -46,7 +46,7 @@ if [ $LOGO_SVG -nt $DEST/favicon.ico ] ; then
 fi
 
 # prepare the output directory for images
-for SIZE in $SIZES ; do
+for SIZE in $SIZES icons ; do
     mkdir -p $IMG/${SIZE}
 done
 
@@ -90,5 +90,23 @@ for SVG in $(
                     $FILE
             fi
         done
+    done
+done
+
+# PODCAST ICONS
+for BASENAME in apple spotify ; do
+    SIZE=24
+    SVG=$ASSETS/icons/$BASENAME.svg
+    for COLOR in none white ; do
+        FILE=$IMG/icons/$BASENAME-$COLOR.png
+        if [ $SVG -nt $FILE ] ; then
+            echo Generating $FILE
+            convert \
+                -background $COLOR \
+                -density 1000 -resize ${SIZE}x${SIZE} \
+                $SVG \
+                -geometry +0+0 \
+                $FILE
+        fi
     done
 done
