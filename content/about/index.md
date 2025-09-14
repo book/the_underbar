@@ -232,6 +232,13 @@ other podcasts:
 * [En Underbar Pod med Clara och Erica](https://podcasts.apple.com/us/podcast/en-underbar-pod-med-clara-och-erica/id1148963533)
   is a Swedish ("underbar" means "wonderful" in Swedish) podcast (last
   episode published in June 2021).
+* [Under BAR Review](https://linktr.ee/underbarreview) is a fútbol
+  podcast, by "a few friends who love the game, cracking open beers
+  and talking teams, matches, players, rivalries, and all the drama in
+  between". Started in July 2025.
+* [Under the Bar](https://open.spotify.com/show/714BfC3He6b41XASNWAtWT)
+  is a podcast that "takes you behind the scenes of law, legal tech, and
+  life's unexpected twists". Started in September 2025.
 
 And also bars:
 
