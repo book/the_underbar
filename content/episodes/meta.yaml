@@ -11,25 +11,42 @@ thanks:
     Thanks to [Salve J. Nilsen](https://metacpan.org/author/SJN) for
     lending his microphones and camera, and recording this episode
     during the Perl Toolchain Summit 2025 in Leipzig.
-syndication:
-  - slug: podindex
+syndicate:
+  podcast_index:
     name: Podcast Index
-    link: https://podcastindex.org/podcast/7377089
-  - slug: apple
+    link: https://podcastindex.org/
+    pos: 0
+  apple:
     name: Apple Podcasts
-    link: https://podcasts.apple.com/us/podcast/the-underbar/id1821292042
-  - slug: spotify
+    link: https://podcasts.apple.com/
+    pos: 1
+    show: 1
+  spotify:
     name: Spotify
-    link: https://open.spotify.com/show/4pdXwG9MdVKNPPJouTp6z7
-  - slug: podlink
+    link: https://open.spotify.com
+    pos: 2
+    show: 1
+  podlink:
     name: Podlink
-    link: https://pod.link/1821292042
-  - slug: podchaser
+    link: https://pod.link/
+    pos: 3
+  podchaser:
     name: Podchaser
-    link: https://www.podchaser.com/podcasts/the-underbar-5970261
-  - slug: castbox
+    link: https://www.podchaser.com/
+    pos: 4
+  castbox:
     name: Castbox
-    link: https://castbox.fm/channel/id6649076
-  - slug: pocketcast
-    name: Pocketcast
-    link: https://pocketcasts.com/podcasts/700902d0-2cb8-013e-d33f-0eeccf47baff
+    link: https://castbox.fm/
+    pos: 5
+  pocketcasts:
+    name: Pocket Casts
+    link: https://pocketcasts.com/
+    pos: 6
+syndication:
+  apple: https://podcasts.apple.com/us/podcast/the-underbar/id1821292042
+  castbox: https://castbox.fm/channel/id6649076
+  pocketcasts: https://pocketcasts.com/podcasts/700902d0-2cb8-013e-d33f-0eeccf47baff
+  podchaser: https://www.podchaser.com/podcasts/the-underbar-5970261
+  podcast_index: https://podcastindex.org/podcast/7377089
+  podlink: https://pod.link/1821292042
+  spotify: https://open.spotify.com/show/4pdXwG9MdVKNPPJouTp6z7
