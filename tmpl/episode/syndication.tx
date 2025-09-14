@@ -1,0 +1,11 @@
+: for $podcast.syndicate.keys()
+:     .sort( -> $a, $b { $podcast.syndicate[$a].pos <=> $podcast.syndicate[$b].pos } ) -> $slug {
+:     next if !$podcast.syndicate[$slug].show
+      <a href="<: $episode
+                ? $episode.syndication[$slug]
+                : $podcast.syndication[$slug]
+                :>" title="Listen on <: $podcast.syndicate[$slug].name :>"><img src="/img/icons/<: $slug :>-none.png" /></a>
+:     if ! $~slug.is_last() {
+      <br/>
+:     }
+: }
