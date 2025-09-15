@@ -5,6 +5,7 @@ Cast (in order of appearance): <:
     if ( $~who.is_last ) { ". " } else { ", " }
   }
 :>
+<br/>
 Edited by <:
   for $episode.editors -> $who {
     "["; $cast[$who].name; "](https://metacpan.org/author/"; $cast[$who].profile.pause; ")";
