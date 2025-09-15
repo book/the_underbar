@@ -55,11 +55,11 @@ my $tx = Text::Xslate->new(
 my %todo;
 $content_dir->visit(
     sub {
-	return unless -f;
+        return unless -f;
         my $type =
             /\.ya?ml\z/        ? 'yaml'
           : /\.(?:md|html?)\z/ ? 'tmpl'
-	  : /\.(?:swp)\z/      ? 'skip'
+          : /\.(?:swp)\z/      ? 'skip'
           :                      'copy';
         push $todo{$type}->@*, $_;
     },
@@ -72,7 +72,7 @@ my $latest_dep = 0;
 $base_dir->child($_)->visit(
     sub {
         return unless -f;
-	return unless /\.(?:ya?ml|tx)\z/;
+        return unless /\.(?:ya?ml|tx)\z/;
         $latest_dep = $_->stat->mtime
           if $latest_dep < $_->stat->mtime;
     },
@@ -167,7 +167,7 @@ for my $src ( $todo{tmpl}->@* ) {
             $meta->{template} // 'basic.tx',
             {
                 %vars,
-		%$meta,
+                %$meta,
                 content => mark_raw(
                     $src =~ /\.md\z/    # markdown?
                     ? $md->markdown($content)
@@ -303,7 +303,7 @@ if ( !-e $dst || $dst->stat->mtime < $latest_dep || $option{force} ) {
             permaLink => $link,    # guid with permaLink=true
             enclosure => {
                 url    => $link,
-		#length => $episode->{length} // 0,
+                #length => $episode->{length} // 0,
                 type   => 'audio/mpeg'
             },
             pubDate     => $episode->{published}->strftime("%a, %e %b %Y %T %z"),
