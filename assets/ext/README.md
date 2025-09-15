@@ -22,3 +22,4 @@ The others come from various sources:
 
 * `icons/Apple_Podcasts_Icon_blk_lg_060623.svg` - [Apple Podcast Icon](https://apple.ent.box.com/s/03awr22q9ee9xtlppvubvwy66oxn7dwa/file/1404157115202)
 * `icons/Spotify_Primary_Logo_RGB_Black.png` - [Spotify Press Center](https://newsroom.spotify.com/media-kit/logo-and-brand-assets/)
+* `icons/podlink.svg` - [Podlink](https://pod.link) (edited from the embedded SVG in the home page)

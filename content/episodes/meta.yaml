@@ -30,6 +30,7 @@ syndicate:
     name: Podlink
     link: https://pod.link/
     pos: 3
+    show: 1
   podchaser:
     name: Podchaser
     link: https://www.podchaser.com/

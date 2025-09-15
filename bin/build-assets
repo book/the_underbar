@@ -94,9 +94,9 @@ for SVG in $(
 done
 
 # PODCAST ICONS
-for BASENAME in apple spotify ; do
+for SVG in $ASSETS/icons/*.svg ; do
     SIZE=24
-    SVG=$ASSETS/icons/$BASENAME.svg
+    BASENAME=$( basename $SVG .svg )
     for COLOR in none white ; do
         FILE=$IMG/icons/$BASENAME-$COLOR.png
         if [ $SVG -nt $FILE ] ; then
