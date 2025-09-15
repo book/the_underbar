@@ -1,3 +1,13 @@
+<div class="crumbs">
+<a href="/">Home</a>
+: for $crumbs -> $crumb {
+:     if $~crumb.is_last() {
+» <: $crumb[1] :>
+:     } else {
+» <a href="<: $crumb[0] :>"><: $crumb[1] :></a>
+:     }
+: }
+</div>
 <div style="width: 0; float:right;">
   <div style="position:fixed; margin-left: 1.5em"><: include episode::syndication :></div>
 </div>

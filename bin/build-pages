@@ -150,6 +150,16 @@ for my $src ( $todo{tmpl}->@* ) {
     ( $meta, $content ) = ( '{}', $meta ) unless defined $content;
     $meta = $ypp->load_string($meta);
 
+    # compute crumbs
+    my @crumbs = map [ $_, ucfirst ], split '/',
+      $src->relative($content_dir) =~ s/\.[^.]*\z//r;
+    pop @crumbs if $crumbs[-1][1] eq 'Index';
+    for my $i ( 0 .. $#crumbs ) {
+        $crumbs[$i][0] = $i
+          ? "$crumbs[$i-1][0]$crumbs[$i][0]/"
+          : "/$crumbs[$i][0]/";
+    }
+
     # render and save the file
     warn "Rendering $src -> $dst\n";
     $dst->spew_utf8(
@@ -163,6 +173,7 @@ for my $src ( $todo{tmpl}->@* ) {
                     ? $md->markdown($content)
                     : $content
                 ),
+                crumbs => \@crumbs,
             }
         )
     );
@@ -222,6 +233,10 @@ for my $number ( 0 .. $vars{episodes}->$#* ) {
                 title    => $episode->{title},
                 subtitle => $subtitle,
                 logo     => "episode-$episode->{number}-none.png",
+                crumbs   => [
+                    [ '/episodes/'                   => 'Episodes' ],
+                    [ "/episodes/$episode->{number}" => $episode->{number} ]
+                ],
             }
         )
     );

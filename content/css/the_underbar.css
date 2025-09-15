@@ -63,6 +63,12 @@ audio {
     height: 2em;
 }
 
+.crumbs {
+    font-size: x-small;
+    padding-left: 1em;
+    margin-bottom: 1.5em;
+}
+
 .flex-container {
   display: flex;
   justify-content: space-between;
