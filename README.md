@@ -17,6 +17,9 @@ See the [About](https://underbar.cpan.io/about/) page for more details about lic
    ```
    bin/build-pages $directory
    ```
+   Options:
+   * `--force` re-generate all files
+   * `--date YYYY-MM-DD` specify a generation date
 3. point a webserver at `$directory`
 
 ---
