@@ -7,6 +7,18 @@ and its official web site is at <https://underbar.cpan.io/>.
 
 See the [About](https://underbar.cpan.io/about/) page for more details about licensing and history.
 
+# Generating the static website
+
+1. generate the graphic assets
+   ```
+   bin/build-assets $directory
+   ```
+2. generate the HTML and static content
+   ```
+   bin/build-pages $directory
+   ```
+3. point a webserver at `$directory`
+
 ---
 
 This work is licensed under a
