@@ -1,32 +1,32 @@
-: if $episode.transcript_url {
+%% if $episode.transcript_url {
 <!-- Inspired by: https://james.cridland.net/blog/2025/html-audio-player-with-captions/ -->
-<audio id="vtt-player-<: $episode.number :>" controls src="<: $episode.file_url :>">
-    <track default kind="captions" label="captions" srclang="en" src="<: $episode.transcript_url :>" />
+<audio id="vtt-player-[% $episode.number %]" controls src="[% $episode.file_url %]">
+    <track default kind="captions" label="captions" srclang="en" src="[% $episode.transcript_url %]" />
 </audio>
 <br /><br />
-<div id="vtt-caption-<: $episode.number :>" class="vtt-caption">
-  <div id="vtt-speaker-<: $episode.number :>" class="vtt-speaker"></div>
-  <div id="vtt-text-<: $episode.number :>" class="vtt-text"></div>
+<div id="vtt-caption-[% $episode.number %]" class="vtt-caption">
+  <div id="vtt-speaker-[% $episode.number %]" class="vtt-speaker"></div>
+  <div id="vtt-text-[% $episode.number %]" class="vtt-text"></div>
 </div>
 
 <script>
 // Safari needs to be specifically told to show this track, for some reason.
-document.getElementById('vtt-player-<: $episode.number :>').textTracks[0].mode="showing";
+document.getElementById('vtt-player-[% $episode.number %]').textTracks[0].mode="showing";
 
-document.getElementById('vtt-player-<: $episode.number :>').addEventListener('play', function() {
+document.getElementById('vtt-player-[% $episode.number %]').addEventListener('play', function() {
     //We hid the captions in the div above, since Safari shows them on page load
     //Now the listener has hit play, show them.
-    document.getElementById('vtt-caption-<: $episode.number :>').style.display="block";
-    document.getElementById('vtt-text-<: $episode.number :>').style.display="block";
+    document.getElementById('vtt-caption-[% $episode.number %]').style.display="block";
+    document.getElementById('vtt-text-[% $episode.number %]').style.display="block";
 });
 
-document.getElementById('vtt-player-<: $episode.number :>').textTracks[0].addEventListener('cuechange', function() {
+document.getElementById('vtt-player-[% $episode.number %]').textTracks[0].addEventListener('cuechange', function() {
     //Update the caption
     matched = this.activeCues[0].text.match( /^(?:<v (?<speaker>[^>]*)+>)?(?<text>.*)/ );
-    document.getElementById('vtt-speaker-<: $episode.number :>').innerText = matched.groups.speaker;
-    document.getElementById('vtt-text-<: $episode.number :>').innerText = matched.groups.text;
+    document.getElementById('vtt-speaker-[% $episode.number %]').innerText = matched.groups.speaker;
+    document.getElementById('vtt-text-[% $episode.number %]').innerText = matched.groups.text;
 });
 </script>
-: } else {
-<audio id="vtt-player-<: $episode.number :>" class="vtt-player" controls src="<: $episode.file_url :>"></audio>
-: }
+%% } else {
+<audio id="vtt-player-[% $episode.number %]" class="vtt-player" controls src="[% $episode.file_url %]"></audio>
+%% }

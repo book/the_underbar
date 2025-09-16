@@ -1,28 +1,28 @@
-: block cast | markdown -> {
-Cast (in order of appearance): <:
+%% block cast | markdown -> {
+Cast (in order of appearance): [%
   for $episode.cast -> $who {
     "["; $cast[$who].name; "](https://metacpan.org/author/"; $cast[$who].profile.pause; ")";
     if ( $~who.is_last ) { ". " } else { ", " }
   }
-:>
+%]
 <br/>
-Edited by <:
+Edited by [%
   for $episode.editors -> $who {
     "["; $cast[$who].name; "](https://metacpan.org/author/"; $cast[$who].profile.pause; ")";
     if ( $~who.is_last ) { ". " }
     else if ( $~who.count == $~who.max_index ) { " and " }
     else { ", " }
   }
-:>
+%]
 
 <small>
-<: for $episode.thanks -> $who { $podcast.thanks[$who]; " " } :>
+[% for $episode.thanks -> $who { $podcast.thanks[$who]; " " } %]
 </small>
 
-: }
+%% }
 
 <h2>Abstract</h2>
-<p><: $episode.description :></p>
+<p>[% $episode.description %]</p>
 
-: include "episode/audio.tx" { file => $episode.file_url }
+%% include "episode/audio.tx" { file => $episode.file_url }
 

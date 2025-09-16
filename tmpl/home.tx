@@ -1,6 +1,6 @@
-<: $content :>
+[% $content %]
 
-: include perl_ad
+%% include perl_ad
 
 <h2><a href="/episodes/">The Podcast</a>
   <div style="float: right; font-weight: normal; font-size: small; margin-top: 1ex;">
@@ -10,6 +10,6 @@
 
 (Latest episodes)
 
-:  for [ $episodes[-1], $episodes[-2] ] -> $episode {
-:     include episode::summary { episode => $episode, player => true }
-:   }
+%%  for [ $episodes[-1], $episodes[-2] ] -> $episode {
+%%     include episode::summary { episode => $episode, player => true }
+%%   }

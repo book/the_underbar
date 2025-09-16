@@ -42,6 +42,7 @@ my $ypp = YAML::PP->new;
 # prepare the template engine
 my $md = Text::Markdown->new( trust_list_start_value => 1 );
 my $tx = Text::Xslate->new(
+    syntax    => 'Metakolon',
     path      => $base_dir->child('tmpl'),
     cache_dir => $base_dir->child('.cache'),
     header    => ['header.tx'],
