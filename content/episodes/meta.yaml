@@ -4,9 +4,13 @@ description: The Underbar
 publisher: Philippe Bruhat (BooK)
 email: underbar@cpan.io
 thanks:
-  TPRF-Zoom: >
+  TPRF-Zoom-basic: >
     Thanks to [The Perl and Raku Foundation](https://www.perlfoundation.org/)
     for letting us use their Zoom license to record the episode.
+  TPRF-Zoom: >
+    Thanks to [The Perl and Raku Foundation](https://www.perlfoundation.org/)
+    for letting us use their Zoom license to record the episode and
+    produce the AI-generated transcript.
   SJN-PTS: >
     Thanks to [Salve J. Nilsen](https://metacpan.org/author/SJN) for
     lending his microphones and camera, and recording this episode
