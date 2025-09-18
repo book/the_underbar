@@ -6,7 +6,7 @@ body {
 }
 
 h1 {
-    font-size: 2.5rem
+    font-size: 2.5rem;
     margin: 0 0 .5rem 0;
 }
 
@@ -28,7 +28,7 @@ blockquote {
 
 div.document {
     margin: auto;
-    max-width: 43rem;
+    max-width: 42rem;
     text-align: justify;
 }
 
@@ -69,7 +69,7 @@ audio {
 .box-left { /* position left of its container */
     width: 0;
     position: relative;
-    right: 23rem; /* 20rem + 3rem */
+    right: 21.25rem; /* 20rem + 1.25rem */
 }
 
 .crumbs {
@@ -78,7 +78,7 @@ audio {
     font-size: large;
     white-space: nowrap;
     text-align: right;
-    margin-right: 3rem;
+    margin-right: 1.25rem;
 }
 
 .box-right {
@@ -88,7 +88,7 @@ audio {
 
 .syndication {
     position: fixed;
-    margin-left: 3rem;
+    margin-left: 1.25rem;
 }
 
 .vtt-caption {
@@ -107,9 +107,11 @@ audio {
   vertical-align: center;
   font-weight:bold;
   text-wrap:balance;
-  // text-wrap:balance above helps text wrap without one word on the next line,
-  // making it easier to read
-  // https://developer.chrome.com/docs/css-ui/css-text-wrap-balance
+  /*
+   * text-wrap:balance above helps text wrap without one word on the next line,
+   * making it easier to read
+   * https://developer.chrome.com/docs/css-ui/css-text-wrap-balance
+   */
 }
 
 #perl-ad-target {
