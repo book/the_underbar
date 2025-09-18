@@ -5,15 +5,15 @@
   <div class="box-left">
      <div class="crumbs">
 %% if $crumbs.size() {
-       <a href="/">Home</a> «<br/>
+       <a href="/">Home</a> 🍺<br/>
 %% } else {
-       <b>Home</b> «<br/>
+       <b>Home</b> 🍻<br/>
 %% }
 %% for $crumbs -> $crumb {
 %%     if $~crumb.is_last() {
-       <b>[% $crumb[1] %]</b> «<br/>
+       <b>[% $crumb[1] %]</b> 🍻<br/>
 %%     } else {
-       <a href="[% $crumb[0] %]">[% $crumb[1] %]</a> «</br>
+       <a href="[% $crumb[0] %]">[% $crumb[1] %]</a> 🍺</br>
 %%     }
 %% }
     </div>
