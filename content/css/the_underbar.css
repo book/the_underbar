@@ -1,42 +1,40 @@
 body {
     font-family: 'Varela Round', sans-serif;
     color: #333;
-    font-size: 12pt;
-    margin: 20px;
+    margin: 2em;
     background: #fcfcfc;
 }
 
 h1 {
-    font-size: 32pt;
-    margin: 0 0 .5ex 0;
-    white-space: nowrap;
+    font-size: 2.5rem
+    margin: 0 0 .5rem 0;
 }
 
 h2 {
-    font-size: 18pt;
-    margin: .5ex 0 .5ex 0;
+    font-size: 1.5rem;
+    margin: .5rem 0 .5rem 0;
 }
 
 h3 {
-    font-size: 14pt;
-    margin: .5ex 0 .5ex 0;
+    font-size: 1.2rem;
+    margin: .5rem 0 .5rem 0;
 }
 
 blockquote {
     margin: 0;
     padding: 0 1em 0 1em;
-    border-left: .25ex solid lightgray;
+    border-left: .25em solid lightgray;
 }
 
 div.document {
     margin: auto;
-    max-width: 80ex;
+    max-width: 43rem;
     text-align: justify;
 }
 
 a {
     text-decoration: underline;
-    text-underline-offset: 0.33ex;
+    text-underline-offset: .1em;
 }
 a:link, a:visited {
     color: #333;
@@ -63,21 +61,40 @@ audio {
     height: 2em;
 }
 
-.crumbs {
-    font-size: x-small;
-    padding-left: 1em;
-    margin-bottom: 1.5em;
-}
-
 .flex-container {
   display: flex;
   justify-content: space-between;
 }
 
+.box-left { /* position left of its container */
+    width: 0;
+    position: relative;
+    right: 22rem; /* 20rem + 2rem */
+}
+
+.crumbs {
+    position: fixed;
+    width: 20rem;
+    font-size: x-small;
+    white-space: nowrap;
+    text-align: right;
+    margin-right: 1rem;
+}
+
+.box-right {
+    width: 0;
+    float: right;
+}
+
+.syndication {
+    position: fixed;
+    margin-left: 2rem;
+}
+
 .vtt-caption {
   display: none;
   height: 5em;
-  padding: 0.5ex;
+  padding: 0.5em;
   border: 1px solid;
 }
 
