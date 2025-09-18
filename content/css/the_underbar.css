@@ -69,16 +69,16 @@ audio {
 .box-left { /* position left of its container */
     width: 0;
     position: relative;
-    right: 22rem; /* 20rem + 2rem */
+    right: 23rem; /* 20rem + 3rem */
 }
 
 .crumbs {
     position: fixed;
     width: 20rem;
-    font-size: x-small;
+    font-size: large;
     white-space: nowrap;
     text-align: right;
-    margin-right: 1rem;
+    margin-right: 3rem;
 }
 
 .box-right {
@@ -88,7 +88,7 @@ audio {
 
 .syndication {
     position: fixed;
-    margin-left: 2rem;
+    margin-left: 3rem;
 }
 
 .vtt-caption {

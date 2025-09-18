@@ -95,7 +95,7 @@ done
 
 # PODCAST ICONS
 for SVG in $ASSETS/icons/*.svg ; do
-    SIZE=24
+    SIZE=32
     BASENAME=$( basename $SVG .svg )
     for COLOR in none white ; do
         FILE=$IMG/icons/$BASENAME-$COLOR.png
