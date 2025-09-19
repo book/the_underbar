@@ -1,8 +1,9 @@
 title: Test::Smoke
 description: >
-  During the Perl Toolchain Summit 2025 in Leipzig, we interviewed the
-  Test::Smoke founder and new maintainer about the history of the project,
-  and how contribute to it.
+  During the Perl Toolchain Summit 2025 in Leipzig, we interviewed
+  Merijn Brand, Test::Smoke's founder, and Thibault Duponchelle, its new
+  maintainer following the passing of Abe Timmerman, about the history
+  of the project, and how contribute to it.
 file: the_underbar-4-test-smoke.mp3
 cast:
 - BOOK
