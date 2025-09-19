@@ -17,6 +17,8 @@ The others come from various sources:
 
 * `perl-camel.svg` - [The Perl Logo](https://github.com/metacpan/perl-assets)
 * `Flag_of_Europe.svg` - [Flag of Europe](https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg)
+* `aiga-smoking.svg` - A SVG conversion of the [Smoking Sign](https://openclipart.org/detail/26336/aiga-smoking)
+  from the [AIGA Symbols](https://www.aiga.org/resources/symbol-signs) collection
 
 ## Podcast icons
 
