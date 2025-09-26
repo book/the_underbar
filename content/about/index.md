@@ -199,7 +199,7 @@ having transcripts, accompanied with copious notes and links.
 
 My long-term goal for this podcast is that it can serve as a "primary
 source" (as Sean Haas from [Advent of Computing](https://adventofcomputing.com/)
-calls them) for historians of computing (and the bit I know the best: Perl).
+calls them) for historians of computing (and the bit I know the best: [Perl](https://www.perl.org/)).
 
 <img src="https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png" style="float: right; margin: 1ex;" />
 
