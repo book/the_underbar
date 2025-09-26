@@ -2,7 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>[% $title %]</title>
+    <title>
+%% if $episode { $title ~ " - The Underbar, episode " ~ $episode.number }
+%% else        { $title }
+    </title>
 %% include og_meta
     <link rel=stylesheet type="text/css" href="/css/the_underbar.css">
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
