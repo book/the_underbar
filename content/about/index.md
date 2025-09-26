@@ -179,9 +179,9 @@ and I had talked with too many people about it already.
 
 So I eventually stopped planning for perfection, got Olaf and Ricardo on
 board, invited more people involved with the new Perl logo (the topic of
-the Perl Advent entry published the day after mine), talked with Amber
-Krawczyk from TPRF to setup a Zoom meeting with recording. And on
-January 10, 2025, the magic happened.
+the [Perl Advent entry published the day after mine](https://perladvent.org/2024/2024-12-23.html)),
+talked with Amber Krawczyk from TPRF to setup a Zoom meeting with
+recording. And on January 10, 2025, the magic happened.
 
 ## The Format
 
