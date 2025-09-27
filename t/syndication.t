@@ -1,4 +1,3 @@
-## Please see file perltidy.ERR
 use v5.38;
 use Test2::V0;
 use YAML::PP;
@@ -13,4 +12,5 @@ for my $file ( 'content/episodes/meta.yaml', glob 'content/episodes/*/meta.yaml'
         ok( exists $episode->{syndication}{$slug}, "$file $slug" );
     }
 }
+
 done_testing;
