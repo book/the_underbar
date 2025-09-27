@@ -26,6 +26,18 @@ for my $episode_yaml ( map path($_), glob 'content/episodes/*/meta.yaml' ) {
     ok( exists $episode->{syndication}{$_}, "episode $number - $_ link" )
       for @slugs;
 
+    # required values
+    for my $required (qw( title description recorded published file )) {
+        ok( exists $episode->{$required},
+            "episode $number - $required exists" );
+    }
+
+    # required arrays
+    for my $required (qw( cast editors )) {
+        ok( exists $episode->{$required} && $episode->{$required}->@*,
+            "episode $number - $required not empty" );
+    }
+
     # linked files
     for my $file (qw( file transcript )) {
       SKIP: {
