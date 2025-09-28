@@ -1,0 +1,19 @@
+<div class="document">
+[% $content %]
+
+%% block cast | markdown -> {
+%%   for [ 'staff', 'patrons' ] -> $group {
+## [% $group | ucfirst  %]
+
+<div style="display: flex; flex-wrap: wrap;">
+
+%%     for __ROOT__[$group] -> $who {
+%%       include "cast/person_short.tx" { person => $cast[$who] }
+%%     }
+
+</div>
+
+%%   }
+%% }
+
+</div>
