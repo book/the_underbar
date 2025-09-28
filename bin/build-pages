@@ -49,6 +49,7 @@ my $tx = Text::Xslate->new(
     footer    => ['footer.tx'],
     function  => {
         markdown => sub { mark_raw( $md->markdown(shift) ) },
+        ucfirst  => sub { ucfirst(shift) },
     },
 );
 
