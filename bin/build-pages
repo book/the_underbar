@@ -11,6 +11,7 @@ use Text::Markdown;
 use Text::Xslate qw( mark_raw );
 use XML::RSS;
 use DateTime::Format::Strptime;
+use Digest::MD5 qw( md5_hex );
 
 # process options
 my %option = ( source => '.' );
@@ -49,6 +50,7 @@ my $tx = Text::Xslate->new(
     footer    => ['footer.tx'],
     function  => {
         markdown => sub { mark_raw( $md->markdown(shift) ) },
+        ucfirst  => sub { ucfirst(shift) },
     },
 );
 
@@ -98,12 +100,14 @@ my %strp = (
 
 # process all files in 'yaml'
 my %vars;
-for my $file ( $todo{yaml}->@* ) {
+for my $file ( sort $todo{yaml}->@* ) {
     my $yaml = $ypp->load_file($file);
     if ( $file =~ m{(?:/|\A)cast/([^/]+)\.ya?ml\z} ) {
         $yaml->{fullname}  //= $yaml->{name};
         $yaml->{shortname} //= ( split / /, $yaml->{name} )[0];
         $vars{cast}{$1} = $yaml;
+        $vars{cast}{$1}{$_} = [] for qw( episodes edited );
+        push $vars{ $yaml->{staff} ? 'staff' : 'patrons'}->@*, $1;
     }
     elsif ( $file =~ m{(?:/|\A)episodes/([0-9]+)/meta\.ya?ml\z} ) {
         $yaml->{number} = $1;
@@ -117,6 +121,12 @@ for my $file ( $todo{yaml}->@* ) {
             $yaml->{transcript} = $md->markdown( $transcript->slurp_utf8 );
         }
         next if $yaml->{published} > $option{date};
+        for my $who ( $yaml->{cast}->@* ) {
+            push $vars{cast}{$who}{episodes}->@*, $yaml->{number};
+        }
+        for my $who ( $yaml->{editors}->@* ) {
+            push $vars{cast}{$who}{edited}->@*, $yaml->{number};
+        }
         $vars{episodes}[$1] = $yaml;
     }
     elsif ( $file =~ m{(?:/|\A)episodes/meta\.ya?ml\z} ) {
@@ -128,6 +138,24 @@ for my $file ( $todo{yaml}->@* ) {
     }
     warn "Merged $file in the tempate variables\n" if $option{verbose};
 }
+
+# some post-processing of the vars
+# - sort people by the most episodes edited and participated, then by name
+$vars{$_} = [
+    sort {
+        $vars{cast}{$b}{episodes}->@* + $vars{cast}{$b}{edited}->@*
+    <=> $vars{cast}{$a}{episodes}->@* + $vars{cast}{$a}{edited}->@*
+     || $vars{cast}{$a}{name} cmp $vars{cast}{$b}{name}
+    } $vars{$_}->@*
+  ]
+  for qw( staff patrons );
+
+# - compute gravatar urls from PAUSE id
+$vars{cast}{$_}{avatar_url} =
+    "https://gravatar.com/avatar/"
+  . md5_hex( lc "$vars{cast}{$_}{profile}{pause}\@cpan.org" )
+  . "?d=identicon"
+  for keys $vars{cast}->%*;
 
 # process all files in 'tmpl'
 for my $src ( $todo{tmpl}->@* ) {

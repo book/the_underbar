@@ -1,0 +1,22 @@
+<div class="person">
+%% block person | markdown {
+<img src="[% $person.avatar_url %]" />
+
+### [% $person.name %]
+
+Participated to:
+
+%% for $person.episodes.reverse() -> $number {
+* Episode [% $number %] - [[% $episodes[$number].title %]](/episodes/[% $number %])
+%% }
+
+%% if $person.edited.size() {
+Edited:
+
+%%   for $person.edited.reverse() -> $number {
+* Episode [% $number %] - [[% $episodes[$number].title %]](/episodes/[% $number %])
+%%   }
+%% }
+
+%% }
+</div>

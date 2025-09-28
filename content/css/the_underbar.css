@@ -61,6 +61,18 @@ audio {
     height: 2em;
 }
 
+.person {
+    width: calc(50% - 1.5rem);
+    padding-right: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.person img {
+    float: right;
+    width: 60px;
+    height: 60px;
+}
+
 .flex-container {
   display: flex;
   justify-content: space-between;

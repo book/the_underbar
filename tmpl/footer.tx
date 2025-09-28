@@ -4,6 +4,7 @@
       <div class="flex-container">
         <div><a href="/">Home</a></div>
         <div><a href="/episodes/">Episodes</a></div>
+        <div><a href="/cast/">Cast</a></div>
         <div><a href="/about/">About</a></div>
       </div>
       </small>
