@@ -11,6 +11,7 @@ use Text::Markdown;
 use Text::Xslate qw( mark_raw );
 use XML::RSS;
 use DateTime::Format::Strptime;
+use Digest::MD5 qw( md5_hex );
 
 # process options
 my %option = ( source => '.' );
@@ -148,6 +149,13 @@ $vars{$_} = [
     } $vars{$_}->@*
   ]
   for qw( staff patrons );
+
+# - compute gravatar urls from PAUSE id
+$vars{cast}{$_}{avatar_url} =
+    "https://gravatar.com/avatar/"
+  . md5_hex( lc "$vars{cast}{$_}{profile}{pause}\@cpan.org" )
+  . "?d=identicon"
+  for keys $vars{cast}->%*;
 
 # process all files in 'tmpl'
 for my $src ( $todo{tmpl}->@* ) {
