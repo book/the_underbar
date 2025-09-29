@@ -4,7 +4,7 @@
 
 ### [% $person.name %]
 
-Participated to:
+Participated in:
 
 %% for $person.episodes.reverse() -> $number {
 * Episode [% $number %] - [[% $episodes[$number].title %]](/episodes/[% $number %])
