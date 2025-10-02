@@ -1,4 +1,17 @@
 name: Olaf Alders
 staff: true
+bio: >
+  You might recognize Olaf as the guy behind MetaCPAN. He co-founded
+  the project in late 2010 as a means to aggregate data for an iOS
+  application. The phone app fizzled, but MetaCPAN took on a life of its
+  own. Olaf has been part of the team working on it ever since. MetaCPAN
+  is a user-friendly search and discovery platform for Perl modules and
+  distributions, based on CPAN (Comprehensive Perl Archive Network).
+
+  When Olaf is not working on websites, he is spending time with
+  his family and his dog. He enjoys open-water swimming, biking, and
+  running. He is in the pool regularly with his local Masters Swim
+  Club. He is currently recording guitar parts for a post-punk song
+  cycle about Ragnarök.
 profile:
   pause: OALDERS
