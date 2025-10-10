@@ -1,0 +1,19 @@
+title: CPAN Testers
+description: >
+  During the Perl Toolchain Summit 2025 in Leipzig, we interviewed the
+  CPAN Testers team. They told us about the history of the project,
+  its recent problems, and how a new team formed around its (then)
+  lone maintainer. They also told us about their plans for the future.
+cast:
+- BOOK
+- PREACTION
+- GEEKRUTH
+- FERKI
+- GARU
+recorded: 2025-05-04
+published: 2025-10-10 11:30
+editors:
+- BOOK
+thanks:
+- SJN-PTS
+syndication:
