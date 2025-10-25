@@ -21,6 +21,7 @@ GetOptions(
     'force',       # force regeneration
     'verbose',
     'date=s',
+    'analytics',
 ) or pod2usage(2);
 
 $option{date} &&= do {
@@ -116,7 +117,7 @@ for my $file ( sort $todo{yaml}->@* ) {
         $yaml->{yaml} = $file;
         $yaml->{$_}
           and $yaml->{"${_}_url"} = join '/', '/episodes', $yaml->{number}, $yaml->{$_}
-          for qw( file transcript );
+          for qw( transcript );
         if ( -e ( my $transcript = $file->parent->child('transcript.md') ) ) {
             $yaml->{transcript} = $md->markdown( $transcript->slurp_utf8 );
         }
@@ -156,6 +157,13 @@ $vars{cast}{$_}{avatar_url} =
   . md5_hex( lc "$vars{cast}{$_}{profile}{pause}\@cpan.org" )
   . "?d=identicon"
   for keys $vars{cast}->%*;
+
+# add the analytics prefix to all mp3 links
+$_->{file} and $_->{file_url} = join( '/',
+    ( $vars{podcast}{analytics_prefix} )x!! $option{analytics},
+    $vars{podcast}{base_url},
+    'episodes', $_->{number}, $_->{file} // '' )
+  for $vars{episodes}->@*;
 
 # process all files in 'tmpl'
 for my $src ( $todo{tmpl}->@* ) {
@@ -323,15 +331,15 @@ if ( !-e $dst || $dst->stat->mtime < $latest_dep || $option{force} ) {
 
     # add the episodes
     for my $episode ( $vars{episodes}->@* ) {
-        my $link = join( '/',
+        my $guid = join( '/',
             $podcast->{base_url},
             episodes => $episode->{number} => $episode->{file} // '' );
         $feed->add_item(
             title => "Episode $episode->{number} - $episode->{title}",
             link  => join( '/', $podcast->{base_url}, episodes => $episode->{number} ),
-            permaLink => $link,    # guid with permaLink=true
+            permaLink => $guid,    # guid with permaLink=true
             enclosure => {
-                url    => join( '/', $podcast->{analytics_prefix}, $link ),
+                url    => $episode->{file_url},
                 #length => $episode->{length} // 0,
                 type   => 'audio/mpeg'
             },
