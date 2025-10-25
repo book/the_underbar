@@ -91,7 +91,7 @@ Here's what a traditional French "zinc" looks like:
   <small>(Photo from <https://francewithvero.com/blog/le-zinc-a-french-cafe-icon/>)</small>
 </center>
 
-I produced the actual designed the day after, using [Inkscape](https://inkscape.org/).
+I produced the actual design the day after, using [Inkscape](https://inkscape.org/).
 
 The font used for the dollar sign (`$`) and underscore (`_`) characters is
 [Courier New Bold](https://en.wikipedia.org/wiki/Courier_(typeface)#Courier_New).
