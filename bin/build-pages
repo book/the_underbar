@@ -331,7 +331,7 @@ if ( !-e $dst || $dst->stat->mtime < $latest_dep || $option{force} ) {
             link  => join( '/', $podcast->{base_url}, episodes => $episode->{number} ),
             permaLink => $link,    # guid with permaLink=true
             enclosure => {
-                url    => $link,
+                url    => join( '/', $podcast->{analytics_prefix}, $link ),
                 #length => $episode->{length} // 0,
                 type   => 'audio/mpeg'
             },
