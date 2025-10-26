@@ -270,7 +270,12 @@ for my $number ( 0 .. $vars{episodes}->$#* ) {
                 title    => $episode->{title},
                 subtitle => $subtitle,
                 logo     => "episode-$episode->{number}-none.png",
-                crumbs   => [
+                og_logo  => "episode-$episode->{number}-white.png",
+                og_title => "The Underbar, episode $episode->{number}: $episode->{title}",
+                self_url => join( '/',
+                    $vars{podcast}{base_url},
+                    episodes => $episode->{number} ),
+                crumbs => [
                     [ '/episodes/'                   => 'Episodes' ],
                     [ "/episodes/$episode->{number}" => $episode->{number} ]
                 ],
