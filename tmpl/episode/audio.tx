@@ -1,6 +1,6 @@
 %% if $episode.transcript_url {
 <!-- Inspired by: https://james.cridland.net/blog/2025/html-audio-player-with-captions/ -->
-<audio id="vtt-player-[% $episode.number %]" controls src="[% $episode.file_url %]">
+<audio id="vtt-player-[% $episode.number %]" controls src="[% $episode.file_url %]" preload="none">
     <track default kind="captions" label="captions" srclang="en" src="[% $episode.transcript_url %]" />
 </audio>
 <br /><br />
@@ -28,5 +28,5 @@ document.getElementById('vtt-player-[% $episode.number %]').textTracks[0].addEve
 });
 </script>
 %% } else {
-<audio id="vtt-player-[% $episode.number %]" class="vtt-player" controls src="[% $episode.file_url %]"></audio>
+<audio id="vtt-player-[% $episode.number %]" class="vtt-player" controls src="[% $episode.file_url %]" preload="none"></audio>
 %% }
