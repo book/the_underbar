@@ -1,0 +1,20 @@
+title: CPAN Security Group
+description: >
+  This is the last of the interviews recorded during the Perl Toolchain
+  Summit 2025 in Leipzig, this time with the CPAN Security Group.
+  We talked about how the group was formed, the security landscape for
+  Perl and CPAN, and how volunteers are always needed.
+file: the_underbar-7-cpan-sec.mp3
+cast:
+- BOOK
+- SJN
+- STIGTSP
+- HMBRAND
+- TIMLEGGE
+- GARU
+recorded: 2025-05-04
+published: 2025-11-14 19:00
+editors:
+- BOOK
+thanks:
+- SJN-GARU-PTS2025
