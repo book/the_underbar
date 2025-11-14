@@ -5,6 +5,11 @@
 %%   for [ 'staff', 'patrons' ] -> $group {
 ## [% $group | ucfirst  %]
 
+%% if $group == 'patrons' {
+We have hosted [% __ROOT__[$group].size() %] people on the
+[% __ROOT__['episodes'].size() %] episodes of the podcast so far.
+%% }
+
 <div style="display: flex; flex-wrap: wrap;">
 
 %%     for __ROOT__[$group] -> $who {
