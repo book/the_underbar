@@ -17,4 +17,7 @@ The podcast is syndicated on
 and
 [Pocketcast](https://pocketcasts.com/podcasts/700902d0-2cb8-013e-d33f-0eeccf47baff).
 
+We use the prefix service [op3.dev](https://op3.dev/) to collect
+[statistics](https://op3.dev/show/9f61bc43-19fe-5ca7-90e7-6b12fad7ccd5).
+
 ## All Episodes
