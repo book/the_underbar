@@ -1,6 +1,6 @@
 <div class="box-right">
     <div class="syndication">
-      <a href="/feed.rss"><img src="/img/icons/rss-none.png" alt="RSS feed"></a><br>
+      <a href="/feed.rss"><img src="/img/icons/rss-none.png" title="RSS feed"></a><br>
 [% include episode::syndication %]
     </div>
 </div>
