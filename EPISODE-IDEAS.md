@@ -1,6 +1,19 @@
 This page lists ideas for future episodes,
 with potential participants.
 
+## Early CPAN Testers
+
+(2025-11)
+
+This is a follow-up to episode 6.
+It would be neat to have Barbie tell
+his side of the CPAN Testers story,
+along with the new team.
+
+* Barbie (BARBIE)
+* Doug Bell (PREACTION)
+* ...
+
 ## The Challenges of Perl
 
 (2025-11)
