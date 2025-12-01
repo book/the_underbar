@@ -1,6 +1,14 @@
 This page lists ideas for future episodes,
 with potential participants.
 
+## Obfsucation, Golf and Secret OPerators
+
+(2025-12)
+
+* Abigail
+* Andrew Savige
+* José Castro
+
 ## Early CPAN Testers
 
 (2025-11)
