@@ -46,6 +46,7 @@ since Larry's own rewrite of Perl when he created Perl 5.
 * Sapphire <https://www.perl.com/pub/2000/09/sapphire.html/>
 * Punie <https://en.wikipedia.org/wiki/Punie>
 * Ponie <https://www.poniecode.org/>
+* PerlOnJava <https://github.com/fglock/PerlOnJava>
 
 Thibault has already gone into some details:
 <https://dev.to/thibaultduponchelle/raku-other-implementations-archeology-and-glorious-details-c3b>
