@@ -43,8 +43,12 @@ since Larry's own rewrite of Perl when he created Perl 5.
 * Moe (2012-2013), by Stevan Little (STEVAN) <https://github.com/MoeOrganization/moe>
 * Velociperl, by Ruben Navarro <https://velociperl.com/>
 * cperl, RPerl, etc. <https://perl11.github.io/>
+* Sapphire <https://www.perl.com/pub/2000/09/sapphire.html/>
+* Niecza <https://github.com/sorear/niecza>
+* Punie <https://en.wikipedia.org/wiki/Punie>
+* Ponie <https://www.poniecode.org/>
 
-Thibauld has already gone into some details:
+Thibault has already gone into some details:
 <https://dev.to/thibaultduponchelle/raku-other-implementations-archeology-and-glorious-details-c3b>
 
 ## Perl Weekly
