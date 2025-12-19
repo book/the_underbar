@@ -135,7 +135,7 @@ far. (They would be too controversial to share anyway...)
 
 This podcast also would not exist if I hadn't listened to:
 
-* [On The Metal](https://onthemetal.transistor.fm/) (recommended by my colleague Bailey Stewart)
+* [On The Metal](https://onthemetal.transistor.fm/) (recommended by my colleague [Bailey Stewart](https://hachyderm.io/@bailey_writes))
 * [Digital Citizen](https://www.fastmail.com/digitalcitizen/) (hosted by my friend Ricardo Signes)
 * [Advent of Computing](https://adventofcomputing.com/) (recommended by Ricardo)
 * [Oxide and Friends](https://oxide-and-friends.transistor.fm/) (the successor of _On The Metal_)
