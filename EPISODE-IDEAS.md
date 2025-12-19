@@ -44,7 +44,6 @@ since Larry's own rewrite of Perl when he created Perl 5.
 * Velociperl, by Ruben Navarro <https://velociperl.com/>
 * cperl, RPerl, etc. <https://perl11.github.io/>
 * Sapphire <https://www.perl.com/pub/2000/09/sapphire.html/>
-* Niecza <https://github.com/sorear/niecza>
 * Punie <https://en.wikipedia.org/wiki/Punie>
 * Ponie <https://www.poniecode.org/>
 
