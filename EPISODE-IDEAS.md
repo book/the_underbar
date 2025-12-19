@@ -1,7 +1,28 @@
 This page lists ideas for future episodes,
 with potential participants.
 
-## Obfsucation, Golf and Secret OPerators
+## The dependency on Makefiles
+
+CPAN distribution installers and builders
+(ExtUtils::MakeMaker, Module::Build, Module::Install, ...)
+
+From #pts, 2025-12-11:
+
+```
+<leont> It went this way because MakeMaker predates CPAN.pm. It started with core needing something to build its modules, something that integrated with perl's own configuration.
+<leont> Makefile.PL exists because Makefile.SH couldn't handle things anymore by late 1994
+<leont> "It all made sense in 1995"
+<BooK> I would love to have some relevant people talk about how we depend on make to install Perl modules on the podcast
+<BooK> and yeah, ending up injecting text in a generated Makefile via heredocs in a Perl script sounds... convoluted 
+```
+
+(2025-12)
+
+* Leon Timmermans
+* Merijn Brand
+* Ricardo Signes
+
+## Obfsucation, Golf and Secret OPerators (OGSOP)
 
 (2025-12)
 
