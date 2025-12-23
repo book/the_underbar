@@ -1,6 +1,13 @@
 This page lists ideas for future episodes,
 with potential participants.
 
+## Perlmonks
+
+(2025-12)
+
+* Tim Vroom
+* other prominent members
+
 ## Perl Advent Calendar
 
 (2025-12)
