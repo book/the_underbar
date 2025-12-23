@@ -1,6 +1,15 @@
 This page lists ideas for future episodes,
 with potential participants.
 
+## Perl Advent Calendar
+
+(2025-12)
+
+Some discussion of the 25+ years old project.
+
+* Mark Fowler
+* Olaf Alders
+
 ## The dependency on Makefiles
 
 CPAN distribution installers and builders
