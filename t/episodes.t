@@ -23,7 +23,7 @@ for my $episode_yaml ( map path($_), glob 'content/episodes/*/meta.yaml' ) {
     my $episode = $yaml_pp->load_file($episode_yaml);
 
     # syndication
-    ok( exists $episode->{syndication}{$_}, "episode $number - $_ link" )
+    ok( $episode->{syndication}{$_}, "episode $number - $_ link" )
       for @slugs;
 
     # required values
