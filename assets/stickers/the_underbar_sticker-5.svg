@@ -8,8 +8,8 @@
    version="1.1"
    id="svg5"
    inkscape:version="1.4.2 (2aeb623e1d, 2025-05-12)"
-   sodipodi:docname="the_underbar_sticker-4.svg"
-   inkscape:export-filename="../9783a266/the_underbar_sticker-4.png"
+   sodipodi:docname="the_underbar_sticker-5.svg"
+   inkscape:export-filename="../3029f399/the_underbar_sticker-5.png"
    inkscape:export-xdpi="98.32"
    inkscape:export-ydpi="98.32"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -32,15 +32,15 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="px"
      showgrid="false"
-     inkscape:zoom="3.9209525"
-     inkscape:cx="17.087685"
-     inkscape:cy="110.55987"
+     inkscape:zoom="2.7725321"
+     inkscape:cx="36.789475"
+     inkscape:cy="84.579724"
      inkscape:window-width="1582"
      inkscape:window-height="1269"
      inkscape:window-x="26"
      inkscape:window-y="23"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="color"
      showguides="true">
     <sodipodi:guide
        position="26.793409,25.64458"
@@ -76,7 +76,7 @@
      transform="translate(-50.144562,-144.06438)">
     <path
        id="rect2"
-       style="opacity:1;vector-effect:non-scaling-stroke;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:0.75;-inkscape-stroke:hairline"
+       style="opacity:1;vector-effect:non-scaling-stroke;fill:#fcfcfc;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:0.75;-inkscape-stroke:hairline"
        d="M 59.083551 144.06438 C 56.852091 144.06238 54.989578 145.56366 54.542226 147.56546 C 54.278752 147.50616 54.007251 147.46706 53.725222 147.46676 C 51.753676 147.46476 50.153463 148.98932 50.151797 150.87017 L 50.151797 150.88825 L 50.151797 150.88877 C 50.143303 158.06975 50.144168 164.7085 50.145596 171.4994 C 50.145054 171.52092 50.144562 171.54285 50.144562 171.56451 L 50.144562 191.56432 C 50.144562 192.94932 51.259668 194.06443 52.644668 194.06443 L 72.64448 194.06443 C 74.02948 194.06443 75.144586 192.94932 75.144586 191.56432 L 75.144586 183.2222 L 75.144586 171.56451 C 75.144586 171.5635 75.144587 171.56242 75.144586 171.56141 L 75.144586 150.88722 C 75.146686 148.62969 73.230127 146.7982 70.863711 146.79651 L 70.863711 146.79858 C 69.876158 146.7979 68.968764 147.11885 68.244232 147.65382 C 67.534163 146.3365 66.098472 145.43291 64.438263 145.43174 C 63.832022 145.43132 63.256392 145.55193 62.733458 145.76815 C 61.88533 144.73414 60.567377 144.06642 59.083551 144.06541 L 59.083551 144.06438 z " />
     <text
        xml:space="preserve"
@@ -208,17 +208,17 @@
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.25504px;line-height:0.8;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;letter-spacing:-0.0159564px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#1a1a1a;stroke-width:0.133538"
        x="72.692741"
-       y="174.34647"
+       y="174.21152"
        id="text2"><tspan
          sodipodi:role="line"
          id="tspan1"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.25504px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#1a1a1a;stroke-width:0.133538"
          x="72.692741"
-         y="174.34647">the</tspan><tspan
+         y="174.21152">the</tspan><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.25504px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#1a1a1a;stroke-width:0.133538"
          x="72.676788"
-         y="177.7505"
+         y="177.61555"
          id="tspan2">Underbar</tspan></text>
   </g>
   <metadata
