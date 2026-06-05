@@ -1,0 +1,20 @@
+<div class="person">
+%% block person | markdown {
+<img src="[% $person.avatar_url %]" />
+
+### [% $person.name %]
+
+Participated in episodes
+%% for $person.episodes.reverse() -> $number {
+%%    "["; $number; "](/episodes/"; $number; ")"; if ( $~number.is_last ) { "." } else { ",\n" }
+%% }
+
+%% if $person.edited.size() {
+Edited episodes
+%%   for $person.edited.reverse() -> $number {
+%%    "["; $number; "](/episodes/"; $number; ")"; if ( $~number.is_last ) { "." } else { ",\n" }
+%%   }
+%% }
+
+%% }
+</div>

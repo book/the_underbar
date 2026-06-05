@@ -13,7 +13,11 @@ We have hosted [% __ROOT__[$group].size() %] people on the
 <div style="display: flex; flex-wrap: wrap;">
 
 %%     for __ROOT__[$group] -> $who {
-%%       include "cast/person_short.tx" { person => $cast[$who] }
+%%       if $group == 'patrons' {
+%%         include "cast/person_short.tx" { person => $cast[$who] }
+%%       } else {
+%%         include "cast/person_compact.tx" { person => $cast[$who] }
+%%       }
 %%     }
 
 </div>
