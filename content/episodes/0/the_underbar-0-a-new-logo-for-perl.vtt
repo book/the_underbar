@@ -13,7 +13,7 @@ WEBVTT
 <v Philippe>So, yeah, my idea for this is let's invite, you know, people, technical people, who know about stuff, and we'll talk about it without censoring themselves for the hypothetical audience that doesn't know everything they know.
 
 00:00:45.460 --> 00:01:04.480
-<v Philippe>So it's really about we, people do interesting technical stuff, and I want to hear those conversation, I want to ask questions, and I like the way people think and work, so let's start with those.
+<v Philippe>So it's really about we, people do interesting technical stuff, and I want to hear those conversations, I want to ask questions, and I like the way Perl people think and work, so let's start with those.
 
 00:01:04.480 --> 00:01:06.120
 <v Philippe>That's also most of the people I know, right?
@@ -28,10 +28,10 @@ WEBVTT
 <v Olaf>You know, actually, as you were, so actually, I can give some background on the logo.
 
 00:01:40.620 --> 00:01:50.360
-<v Olaf>Basically, actually, you know who should give background on the logo is Teeb, because I think he said a lot of this into motion.
+<v Olaf>Basically, actually, you know who should give background on the logo is Tib, because I think he said a lot of this into motion.
 
 00:01:51.940 --> 00:01:56.780
-<v Thibault>Yeah, can he start the conversation on the logo?
+<v Thibault>Yeah, [I] can kickstart the conversation on the logo.
 
 00:01:56.800 --> 00:02:00.200
 <v Thibault>It has always been a problem for Perl.
@@ -40,25 +40,25 @@ WEBVTT
 <v Thibault>I mean, we inherited from O'Reilly this nice mascot, but it has always been legally a problem.
 
 00:02:09.220 --> 00:02:17.260
-<v Thibault>They did some usage, license delegated to Perlmonks, Perlmongers, TPF, et cetera.
+<v Thibault>They did some usage license, delegated to Perlmonks, Perlmongers, TPF, et cetera.
 
 00:02:17.260 --> 00:02:32.920
-<v Thibault>But that was four years, numerous discussions on Reddit, on Perlmonks, et cetera, and especially a problem for people like me that wants to illustrate blog posts, prospectus, et cetera.
+<v Thibault>But there was, for years, numerous discussions on Reddit, on Perlmonks, et cetera, and especially a problem for people like me, who want to illustrate blog posts, prospectus, et cetera.
 
 00:02:32.920 --> 00:02:45.460
-<v Thibault>We can ask why a programming language need a logo, if they don't have really a logo, even if they produce something to be able to put on meme types.
+<v Thibault>We can ask why a programming language needs a logo. C doesn't have really a logo, even if they produce something to be able to put on MIME types.
 
 00:02:45.460 --> 00:02:51.480
-<v Thibault>Ten years ago, I think, Sebastian Riedel came with Velociaptor.
+<v Thibault>Ten years ago, I think, Sebastian Riedel came [up] with [the] Velociraptor.
 
 00:02:51.480 --> 00:03:07.900
-<v Thibault>More recently, I started to speak about the complex topic of Perlogos, and aside from that, Neil contacted Tim Morelli for his position, and came with a cartoonish logo.
+<v Thibault>More recently, I started to speak about the complex topic of Perl logos, and aside from that, Neil contacted Tim O'Reilly for his position, and came with a cartoonish logo.
 
 00:03:07.900 --> 00:03:11.720
-<v Thibault>It did not work at that time.
+<v Thibault>It did not work, at that time.
 
 00:03:11.720 --> 00:03:20.220
-<v Thibault>And then more recently, we continuously hit the ground with blogs, discussions, me and others.
+<v Thibault>And then more recently, we continuously hit the [wall] with blogs, discussions, me and others.
 
 00:03:20.220 --> 00:03:39.660
 <v Thibault>And two years ago, Bruno, who is here, kickstarted really the initiative that has succeeded, which is posting to Ubuntu an issue about their logo, that they designed it with something totally different from the O'Reilly camel.
@@ -67,43 +67,43 @@ WEBVTT
 <v Thibault>Still a camel, for some, but totally different.
 
 00:03:42.400 --> 00:03:47.860
-<v Thibault>And from there, we have basically the core team, which is there, missing neighbors.
+<v Thibault>And from there, we have basically the core team, which is there, missing Neil Bowers.
 
 00:03:47.860 --> 00:04:07.620
-<v Thibault>Just as a team, we tried to design, to move forward with ideas, at start with one thing, which was trying to standardize on a shadow camel, mainly with Bruno, but it was legally still a problem, being a derivative, and we were not all agreeing with that.
+<v Thibault>Just as a team, we tried to design, to move forward with ideas, at start with one thing, which was trying to standardize on a [camel shadow], mainly with Bruno, but it was legally still a problem, being a derivative, and we were not all agreeing with that.
 
 00:04:07.620 --> 00:04:23.520
-<v Thibault>On my side, starting from the statement that we were not able in the past to standardize on any different design, I was more trying to, okay, we cannot come with a new logo, so try to free the current one.
+<v Thibault>On my side, starting from the statement that we were not able in the past to standardize on any different design, I was more trying to: okay, we cannot come with a new logo, so try to free the current one.
 
 00:04:23.520 --> 00:04:43.700
-<v Thibault>So I started to dig the dirt and to post to Hacker News on Dev2 to try to ask Tim to free the camel, because the position he had about the camel 20 years ago, I know it well-versed in open source and free software, and for me, there is some discrepancy.
+<v Thibault>So I started to [hit] the dirt, and to post to Hacker News, on dev.to, to try to ask Tim to free the camel. Because, the position he had about the camel 20 years ago, I know [he's] well-versed in open source and free software, and for me, there is some discrepancy.
 
 00:04:43.700 --> 00:05:01.700
-<v Thibault>But they are still friends, and it was difficult for them to free the logo without taking risk for them, for their trademark dress in general, for all books, all services, because I think it's one cornerstone of their protection of trademark.
+<v Thibault>But they are still friends, and it was difficult for them to free the logo without taking risks, for them, for their trademark dress in general, for all books, all services, because I think it's one cornerstone of their protection of trademark.
 
 00:05:01.700 --> 00:05:13.780
-<v Thibault>And then Olaf, which is there, I did most of the leading of the initiative, contacted the holders, presented to Pertusian Sumit, to Perlstirin Conceal, et cetera, et cetera.
+<v Thibault>And then Olaf, [who] is there, did most of the leading of the initiative: contacted stakeholders, presented to Perl Toolchain Sumit, to Perl Steering Council, et cetera, et cetera.
 
 00:05:13.780 --> 00:05:17.580
 <v Thibault>Really the leadership part of the initiative.
 
 00:05:17.580 --> 00:05:25.280
-<v Thibault>And Sebastien, so after the Pertusian Sumit, they decided to move forward with an external design.
+<v Thibault>And Sébastien. So, after the Perl Toolchain Summit, they decided to move forward with an external design.
 
 00:05:25.280 --> 00:05:28.880
-<v Thibault>They sourced someone to design a new logo.
+<v Thibault>Neil sourced someone to design a new logo.
 
 00:05:28.880 --> 00:05:30.740
 <v Thibault>Olaf came back to us with the logo.
 
 00:05:30.740 --> 00:05:35.600
-<v Thibault>Sebastien started to work on the design to improve it and to make it ready to use for us.
+<v Thibault>Sébastien started to work on the design, to improve it, and to make it ready to use for us.
 
 00:05:36.100 --> 00:05:46.740
-<v Thibault>And then, the end of the story is more recently about voting, including more stakeholders, Rally More, Olaf's side, and Sebastien.
+<v Thibault>And then, the end of the story is, more recently, about voting, including more stakeholders, really more Olaf's side, and Sébastien.
 
 00:05:46.740 --> 00:05:58.400
-<v Thibault>We took the risk, actually, on the advent calendar, to present it and to face possibly some big pushback, as we have seen in the Perl community for other topics.
+<v Thibault>We took the risk, actually, on the [Perl] Advent Calendar, to present it, and to face possibly some big pushback, as we have seen in the Perl community for other topics.
 
 00:05:59.980 --> 00:06:04.300
 <v Thibault>And no, it's going well.
@@ -121,7 +121,7 @@ WEBVTT
 <v Thibault>Fall in love, take your time.
 
 00:06:14.000 --> 00:06:16.220
-<v Thibault>Use it if you want or don't.
+<v Thibault>Use it if you want, or don't.
 
 00:06:16.220 --> 00:06:20.760
 <v Thibault>And we see that infrastructure is slowly using it.
@@ -130,25 +130,25 @@ WEBVTT
 <v Thibault>Bruno just posted for Ubuntu to use it for the icons.
 
 00:06:25.260 --> 00:06:29.980
-<v Thibault>So it seems to be a great success.
+<v Thibault>So it seems to be, it's a great success.
 
 00:06:29.980 --> 00:06:32.840
 <v Thibault>I think we are all proud to be part of it.
 
 00:06:32.840 --> 00:06:39.400
-<v Thibault>And I can leave the mic to maybe Olaf, which was leading most of the initiative.
+<v Thibault>And I can leave the mic to maybe Olaf, [who] was leading most of the initiative.
 
 00:06:39.400 --> 00:06:40.140
 <v Olaf>Yeah, thanks, too.
 
 00:06:40.900 --> 00:06:43.460
-<v Olaf>I think that's a great summary.
+<v Olaf>I think, that's a great summary.
 
 00:06:44.760 --> 00:06:58.420
 <v Olaf>Like, the backstory on the logo is basically that, right, so that we had this camel, and that there have been various attempts over the years to try and come up with some other design that people can unify on.
 
 00:06:58.420 --> 00:07:01.480
-<v Olaf>Like, the Pearl Foundation had the onion.
+<v Olaf>Like, the Perl Foundation had the onion.
 
 00:07:01.480 --> 00:07:03.980
 <v Olaf>There was a velociraptor.
@@ -187,7 +187,7 @@ WEBVTT
 <v Olaf>So there's no one person who can say, we should get a new logo, and this is going to be it.
 
 00:08:03.600 --> 00:08:10.600
-<v Olaf>So one of the things we did talk about at the Perl tool change some of, like, there were a couple of ways that we could go with this.
+<v Olaf>So one of the things we did talk about at the Perl Toolchain Summit, like, there were a couple of ways that we could go with this.
 
 00:08:10.600 --> 00:08:28.600
 <v Olaf>We could just try and come up with a camel that everyone could use, or we could try and figure out who all the stakeholders are, get them all together, try and rethink the branding entirely, come up with a new logo, and then try and get community adoption for that.
@@ -196,7 +196,7 @@ WEBVTT
 <v Olaf>But that's really hard, because...
 
 00:08:32.980 --> 00:08:38.280
-<v Philippe>It sounds like you were having to decide between top down and bottom up.
+<v Philippe>It sounds like you were having to decide between top-down and bottom-up.
 
 00:08:38.280 --> 00:08:40.880
 <v Olaf>Yeah, yeah, I think that's a good way of putting it.
@@ -217,13 +217,13 @@ WEBVTT
 <v Olaf>And then if you needed to, you could move them to some other thing in the meantime.
 
 00:09:22.400 --> 00:09:30.180
-<v Olaf>And what we've done with the logo is, like, we have kind of an 80-20 solution where we kind of threw this one over the wall to see what happens with it.
+<v Olaf>And what we've done with the logo is, like, we have kind of an 80-20 solution, where we kind of threw this one over the wall to see what happens with it.
 
 00:09:30.180 --> 00:09:36.620
-<v Olaf>And now we're finding that we need to iterate on it a bit because maybe it doesn't look great in this background.
+<v Olaf>And now we're finding that we need to iterate on it a bit, because maybe it doesn't look great in this background.
 
 00:09:36.620 --> 00:09:40.220
-<v Olaf>Or I don't know if somebody decides to use it first, like, a print or on a t-shirt.
+<v Olaf>Or I don't know if somebody decides to use it first, like, a print or on a T-shirt.
 
 00:09:40.220 --> 00:09:43.460
 <v Olaf>They might think there's some ways that they want to tweak it.
@@ -232,10 +232,10 @@ WEBVTT
 <v Olaf>But basically, we have the camel artwork that anybody can use.
 
 00:09:47.180 --> 00:09:53.680
-<v Olaf>It's CCBY is the license, so you just need to give some attribution.
+<v Olaf>It's CC-BY is the license, so you just need to give some attribution.
 
 00:09:55.360 --> 00:10:06.900
-<v Olaf>And then, yeah, I just hope that people will be creative with it, but that we'll have something that's sort of distinctive, that you can look at and go, okay, that's definitely the pearl camel.
+<v Olaf>And then, yeah, I just hope that people will be creative with it, but that we'll have something that's sort of distinctive, that you can look at and go, okay, that's definitely the Perl camel.
 
 00:10:06.900 --> 00:10:10.080
 <v Olaf>So that's kind of the problem that we were trying to solve.
@@ -250,7 +250,7 @@ WEBVTT
 <v Olaf>And so I feel good that it's, like we've got some momentum on this.
 
 00:10:28.900 --> 00:10:41.620
-<v Olaf>It's not gonna be used by everyone everywhere, but I feel like it's definitely an improvement over what we had, like because we had like kind of a Tim Tote situation with people doing logos.
+<v Olaf>It's not gonna be used by everyone everywhere, but I feel like it's definitely an improvement over what we had, like because we had like kind of a TIMTOWTDI situation with people doing logos.
 
 00:10:41.620 --> 00:10:43.720
 <v Olaf>The one thing I want to say is that...
@@ -262,7 +262,7 @@ WEBVTT
 <v Bruno>No, no, no.
 
 00:10:49.020 --> 00:10:52.840
-<v Bruno>I'm just watching India with his Velociraptor.
+<v Bruno>I'm just watching Ingy with his Velociraptor.
 
 00:10:52.840 --> 00:10:54.000
 <v Bruno>Oh, okay.
@@ -283,64 +283,64 @@ WEBVTT
 <v Philippe>Noise in the sense of pushback, maybe.
 
 00:11:16.680 --> 00:11:25.140
-<v Philippe>But eventually, it was useful to separate between Pearl-5 and Pearl-6 and Pearl-6 as it had its Camellia logo.
+<v Philippe>But eventually, it was useful to separate between Perl 5 and Perl 6, and Perl 6 as it had its Camelia logo.
 
 00:11:27.820 --> 00:11:40.380
-<v Philippe>And so what Ingy was showing is a T-shirt for Velociraptor, which is a fork, a not public fork of Pearl, focused on speed.
+<v Philippe>And so what Ingy was showing is a T-shirt for Velociperl, which is a fork, a not public fork, of Perl, focused on speed.
 
 00:11:40.380 --> 00:11:49.380
-<v Philippe>And it's funny to have this, like the point of the raptor was, you know, it's old, it's a dinosaur, but it's fast and scary.
+<v Philippe>And it's funny to have this. Like, the point of the raptor was, you know, it's old, it's a dinosaur, but it's fast, and scary.
 
 00:11:49.380 --> 00:11:52.840
-<v Philippe>And that was the message you wanted to do with this.
+<v Philippe>And that was the message he wanted to do with this.
 
 00:11:54.640 --> 00:12:10.360
-<v Bruno>I want to explain about that shirt a little bit, because the people that were at the Pearl Toolchain Summit last year, I invited Ruben, who Olaf introduced me at the previous YAPC, or CPRC, in Toronto.
+<v Ingy>I want to explain about that shirt a little bit, because the people that were at the Perl Toolchain Summit last year, I invited Ruben, who Olaf introduced me at the previous YAPC, or TPRC, in Toronto.
 
 00:12:10.360 --> 00:12:20.940
-<v Bruno>And he's like 28, 29, 30 years old, super smart kid, knows more about pearl than maybe Rick, and then, like, because he's rewritten the internals of it to be faster, right?
+<v Ingy>And he's like 28, 29, 30 years old, super smart kid, knows more about Perl than maybe Rik, and then, like, because he's rewritten the internals of it to be faster, right?
 
 00:12:20.940 --> 00:12:24.580
-<v Bruno>And he's a really cool kid, and we're good friends in Toronto now.
+<v Ingy>And he's a really cool kid, and we're good friends in Toronto now.
 
 00:12:24.580 --> 00:12:33.060
-<v Bruno>So I was hanging out with him last May, and I said, hey, I'm going to the Perl Conference in Vegas.
+<v Ingy>So I was hanging out with him last May, and I said, hey, I'm going to the Perl Conference in Vegas.
 
 00:12:33.060 --> 00:12:37.340
-<v Bruno>And he's like, oh, do you give a shout out to Velociperl, my thing?
+<v Ingy>And he's like, oh, do you give a shout out to Velociperl, my thing?
 
 00:12:37.340 --> 00:12:39.520
-<v Bruno>And I'm like, yeah, do you have a t-shirt?
+<v Ingy>And I'm like, yeah, do you have a T-shirt?
 
 00:12:39.520 --> 00:12:41.520
-<v Bruno>And he's like, give me 10 minutes.
+<v Ingy>And he's like, give me 10 minutes.
 
 00:12:41.520 --> 00:12:54.980
-<v Bruno>And then so I think he just threw this up, and this is, it's a little dinosaur, for those of you in the audience who can't see it, that's about, looks like it took about three minutes to make, which the new Camel logo looks like it took about three minutes to make.
+<v Ingy>And then so, I think he just threw this up, and this is, it's a little dinosaur, for those of you in the audience who can't see it, that's about, looks like it took about three minutes to make, which the new camel logo looks like it took about three minutes to make.
 
 00:12:55.040 --> 00:13:00.260
-<v Bruno>From my, you know, it's just like a line drawing of a Camel, a line drawing of a little Velociraptor.
+<v Ingy>From my, you know, it's just like a line drawing of a camel, a line drawing of a little velociraptor.
 
 00:13:00.260 --> 00:13:02.680
-<v Bruno>So it's, maybe that's just the new thing.
+<v Ingy>So it's, maybe that's just the new thing.
 
 00:13:02.680 --> 00:13:06.800
-<v Bruno>Maybe this is, I mean, if it's coming from Ruben, it's got to be cool, right?
+<v Ingy>Maybe this is, I mean, if it's coming from Ruben, it's got to be cool, right?
 
 00:13:06.800 --> 00:13:10.980
-<v Bruno>So I think that's a good sign for our new logo.
+<v Ingy>So I think that's a good sign for our new logo.
 
 00:13:12.620 --> 00:13:17.860
-<v Philippe>Olaf made an interesting point about Go and the difference between a mascot and a logo.
+<v Philippe>Olaf made an interesting point about Go, and the difference between a mascot and a logo.
 
 00:13:17.860 --> 00:13:31.180
 <v Philippe>And why didn't, when working on this new logo, why didn't you try to make this distinction of saying, okay, so the camel is our mascot, and any plush camel will do.
 
 00:13:31.180 --> 00:14:02.620
-<v Philippe>And then we make a logo, and maybe in the logo, we emphasize, you know, $ at percent, for example, like the Dutch Perlmongers, their logo was, or not, rather, the Amsterdam Perlmonger, because the city of Amsterdam's, I don't know if it's a logo, the symbol is XXX, and the Amsterdam Perlmonger's logo is $X at X percent X with the Amsterdam X, which is a very specific shape.
+<v Philippe>And then we make a logo, and maybe in the logo, we emphasize, you know, $, @, %, for example, like the Dutch Perlmongers, their logo was, or not, rather, the Amsterdam Perlmonger, because the city of Amsterdam's, I don't know if it's a logo, the symbol is XXX, and the Amsterdam Perlmonger's logo is $X, @X, %X with the Amsterdam X, which is a very specific shape.
 
 00:14:02.620 --> 00:14:14.340
-<v Philippe>And so I was wondering, now that since you knew about the difference between a mascot and a logo, why didn't you decide to not use the mascot on the logo?
+<v Philippe>And so I was wondering now that, since you knew about the difference between a mascot and a logo, why didn't you decide to not use the mascot on the logo?
 
 00:14:16.180 --> 00:14:20.220
 <v Olaf>Yeah, I mean, I just at some point, I talked to Neil about it when we were going back and forth.
@@ -367,7 +367,7 @@ WEBVTT
 <v Olaf>So I have to, because to be honest, I was not 100% happy with the camel until I saw it in a circle.
 
 00:14:47.640 --> 00:14:57.900
-<v Olaf>And then I thought, that is great, because there was, we were, I'll get back and forth on the hump and the belly and the legs and taking those out of the equation.
+<v Olaf>And then I thought, that is great, because there was, we were, [getting] back and forth on the hump and the belly and the legs and taking those out of the equation.
 
 00:14:57.900 --> 00:15:00.800
 <v Olaf>And then I was like, wow, this actually kind of, this...
@@ -415,49 +415,46 @@ WEBVTT
 <v Olaf>But just taking just that one part of the body and focusing on it, to me, that kind of distilled it down to, I think, what we were looking for.
 
 00:16:21.800 --> 00:16:26.740
-<v Bruno>It feels kind of right that it's pearl and everything's complicated and weird.
+<v Ingy>It feels kind of right that it's Perl, and everything's complicated and weird.
 
-00:16:26.740 --> 00:16:28.920
-<v Bruno>And the logo doesn't match, though.
-
-00:16:28.920 --> 00:16:29.300
-<v Bruno>Whatever.
+00:16:26.740 --> 00:16:29.300
+<v Ingy>And the logo doesn't match the whatever.
 
 00:16:29.300 --> 00:16:31.860
-<v Bruno>I mean, that's very pearl.
+<v Ingy>I mean, that's very Perl.
 
 00:16:31.860 --> 00:16:38.980
-<v Bruno>I kind of wanted to almost step back to say, like, how did we get from cobalt or sea or whatever to mascot-driven design, right?
+<v Ingy>I kind of wanted to almost step back to say, like, how did we get from COBOL, or C, or whatever, to mascot-driven design, right?
 
 00:16:39.080 --> 00:16:48.600
-<v Bruno>So language design, because like Go, I mean, like, you know, well, Android had the Android immediately, and Go had the Gopher, and then Rust had its press.
+<v Ingy>So language design, because like Go, I mean, like, you know, well, Android had the Android immediately, and Go had the Gopher, and then Rust had its crust[acean].
 
 00:16:48.600 --> 00:16:57.140
-<v Bruno>You know, when you make a new language, you come up with the, at least the logo and the mascot and all of its animations immediately.
+<v Ingy>You know, when you make a new language, you come up with the, at least the logo, and the mascot, and all of its animations immediately.
 
 00:16:57.140 --> 00:16:59.080
-<v Bruno>That's what kind of drives the market.
+<v Ingy>That's what kind of drives the market.
 
 00:16:59.080 --> 00:17:02.360
-<v Bruno>I guess, I mean, that's languages coming from big money.
+<v Ingy>I guess, I mean, that's languages coming from big money.
 
 00:17:02.360 --> 00:17:06.120
-<v Bruno>But yeah, I like to hear from, does Rick have anything?
+<v Ingy>But yeah, I like to hear from, does Rik have anything?
 
 00:17:06.120 --> 00:17:06.960
-<v Bruno>Did Rick leave?
+<v Ingy>Did Rik leave?
 
 00:17:06.960 --> 00:17:07.280
-<v Bruno>Is he there?
+<v Ingy>Is he there?
 
 00:17:08.660 --> 00:17:09.200
-<v Bruno>Oh, okay.
+<v Ingy>Oh, okay.
 
 00:17:09.200 --> 00:17:12.080
-<v Bruno>I was just thinking like, because C doesn't have a logo, right?
+<v Ingy>I was just thinking like, because C doesn't have a logo, right?
 
 00:17:12.080 --> 00:17:14.240
-<v Bruno>And like...
+<v Ingy>And like...
 
 00:17:14.240 --> 00:17:18.500
 <v Ricardo>Yeah, I was thinking as you asked that, what's the history of language mascots, right?
@@ -466,7 +463,7 @@ WEBVTT
 <v Ricardo>And...
 
 00:17:19.160 --> 00:17:20.040
-<v Bruno>Or logos.
+<v Ingy>Or logos.
 
 00:17:20.220 --> 00:17:21.840
 <v Ricardo>Or logos.
@@ -478,10 +475,10 @@ WEBVTT
 <v Ricardo>That comes from the Plan 9 bunny, right?
 
 00:17:27.740 --> 00:17:28.960
-<v Bruno>Okay, didn't know that.
+<v Ingy>Okay, didn't know that.
 
 00:17:28.960 --> 00:17:39.440
-<v Ricardo>Yeah, yeah, the Go Gopher is, it seems very clearly to be a riff on Bob Pike's Plan 9, which had the Glenda.
+<v Ricardo>Yeah, yeah, the Go Gopher is, it seems very clearly to be a riff on [R]ob Pike's Plan 9, which had the Glenda.
 
 00:17:39.440 --> 00:17:40.520
 <v Ricardo>Anyway, it's a bunny.
@@ -508,16 +505,16 @@ WEBVTT
 <v Ricardo>It's, you see a computer anything with a little happy devil on it.
 
 00:18:05.220 --> 00:18:07.160
-<v Ricardo>And you're like, oh yeah, this is Beastie.
+<v Ricardo>And you're like, oh yeah, this is BSD.
 
 00:18:08.820 --> 00:18:09.160
-<v Bruno>I don't know.
+<v Ingy>I don't know.
 
 00:18:09.160 --> 00:18:12.640
-<v Bruno>And C still doesn't have anything, does it?
+<v Ingy>And C still doesn't have anything, does it?
 
 00:18:12.640 --> 00:18:14.520
-<v Bruno>Or C++, or?
+<v Ingy>Or C++, or?
 
 00:18:14.520 --> 00:18:16.520
 <v Philippe>Well, they don't have mascots, for sure.
@@ -526,7 +523,7 @@ WEBVTT
 <v Bruno>They have logos?
 
 00:18:17.200 --> 00:18:18.780
-<v Bruno>Does C++ have a logo?
+<v Ingy>Does C++ have a logo?
 
 00:18:18.780 --> 00:18:20.220
 <v Ricardo>Yeah, but it's extremely boring.
@@ -535,7 +532,7 @@ WEBVTT
 <v Ricardo>It's like the letter C in a hexagon with two pluses.
 
 00:18:23.800 --> 00:18:24.700
-<v Bruno>Or JavaScript.
+<v Ingy>Or JavaScript.
 
 00:18:24.700 --> 00:18:28.060
 <v Sébastien>You can see it on Wikipedia or something like that.
@@ -544,10 +541,10 @@ WEBVTT
 <v Sébastien>They got just a C that is identified as a sort of logo, I think.
 
 00:18:32.280 --> 00:18:33.740
-<v Bruno>Is JavaScript in that camp?
+<v Ingy>Is JavaScript in that camp?
 
 00:18:33.740 --> 00:18:34.800
-<v Bruno>Is it just JS?
+<v Ingy>Is it just JS?
 
 00:18:36.140 --> 00:18:37.240
 <v Ricardo>Yeah.
@@ -556,19 +553,19 @@ WEBVTT
 <v Bruno>It's the yellow square with JS in the middle, like in the corner.
 
 00:18:41.560 --> 00:18:41.800
-<v Bruno>Yeah.
+<v Ricardo>Yeah.
 
 00:18:41.960 --> 00:18:47.760
 <v Philippe>I think JavaScript doesn't need a logo because all of the JavaScript frameworks have one.
 
 00:18:51.600 --> 00:19:20.980
-<v Bruno>But it's something that I feel like it's interesting to see on Perl, because I work at Red Hat, and there was a time where everyone knows, like you said about the BC on BSD, everyone that look at the shadow man, that like the guy in the shadows with the red hat, the red fedora, everyone like, okay, I know there is this red hat, and it was the logo at first, and it became the mascot later on.
+<v Bruno>But it's something that I feel like it's interesting to see on Perl, because I work at Red Hat, and there was a time where everyone knows, like you said about the Beastie on BSD, everyone that look at the shadow man, that like the guy in the shadows with the red hat, the red fedora, everyone like, okay, I know there is this Red Hat, and it was the logo at first, and it became the mascot later on.
 
 00:19:20.980 --> 00:19:27.700
 <v Bruno>And a few years ago, they removed the guy, like the shadow man, and it's just a boring red hat.
 
 00:19:27.700 --> 00:19:38.700
-<v Bruno>And no one actually knows about this red hat, because red hat, the company itself, has so like a baggage on the shadow man, when it was created.
+<v Bruno>And no one actually knows about this red hat, because Red Hat, the company itself, has so like a baggage on the shadow man, when it was created.
 
 00:19:39.260 --> 00:19:47.260
 <v Bruno>Like throughout the whole mid-90s to beginning of 20s, it's pretty interesting to see how a logo became the mascot.
@@ -607,7 +604,7 @@ WEBVTT
 <v Bruno>So the mascot was Perl.
 
 00:20:38.340 --> 00:20:39.620
-<v Bruno>The Perl was the mascot.
+<v Bruno>The [camel] was the mascot.
 
 00:20:40.160 --> 00:20:48.920
 <v Bruno>And now, moving the mascot to the official logo, I think it's something everyone was expecting, in the sense of, I know Perl.
@@ -616,7 +613,7 @@ WEBVTT
 <v Bruno>I know camels.
 
 00:20:49.940 --> 00:21:02.320
-<v Bruno>Even though we have old camel, the language, it's sort of like in my head, even though I knew about old camel, camel always remembered me about Perl.
+<v Bruno>Even though we have OCaml, the language, it's sort of like in my head, even though I knew about OCaml, camel always [reminded] me about Perl.
 
 00:21:02.400 --> 00:21:07.460
 <v Bruno>I don't know, I think it's a close relation between the two.
@@ -625,7 +622,7 @@ WEBVTT
 <v Philippe>I just want to interject about the onion, because to me, the onion is a symbol.
 
 00:21:14.100 --> 00:21:37.000
-<v Philippe>It represents the community, and that's why it's the perfect logo for the Perl Foundation, because the onion and the layers, it's a metaphor that Larry used like 25 years ago, to talk about the Perl community being shaped like an onion, and is devoid in the center of the community.
+<v Philippe>It represents the community, and that's why it's the perfect logo for the Perl Foundation, because the onion and the layers, it's a metaphor that Larry used like 25 years ago, to talk about the Perl community being shaped like an onion, and he's the void in the center of the community.
 
 00:21:37.000 --> 00:21:38.500
 <v Bruno>State of the onion.
@@ -649,7 +646,7 @@ WEBVTT
 <v Thibault>Yes, but the licensing and the restriction of the onion is not, are not good for us to use for blogs, prospectus.
 
 00:22:11.580 --> 00:22:17.280
-<v Thibault>It's okay when you are Perlmongers, when you are Perlmonks.
+<v Thibault>It's okay when you are Perl Mongers, when you are Perlmonks.
 
 00:22:17.280 --> 00:22:18.280
 <v Philippe>When you're making a conference?
@@ -691,31 +688,31 @@ WEBVTT
 <v Sébastien>And yeah, I think in the end, we got the camel as both a logo and a mascot because of history, and we had to take all this history into account so that in the end, someone could make sense out of it because there were really a lot of confusion.
 
 00:23:46.100 --> 00:23:51.600
-<v Bruno>There's something special about O'Reilly, though, because I recall the story.
+<v Ingy>There's something special about O'Reilly, though, because I recall the story.
 
 00:23:51.600 --> 00:23:54.860
-<v Bruno>O'Reilly chooses your book cover for you.
+<v Ingy>O'Reilly chooses your book cover for you.
 
 00:23:54.860 --> 00:24:02.780
-<v Bruno>You do not choose it, except in Perl's case, Larry was allowed to choose it, and he very purposefully chose the camel.
+<v Ingy>You do not choose it, except in Perl's case, Larry was allowed to choose it, and he very purposefully chose the camel.
 
 00:24:02.780 --> 00:24:08.320
-<v Bruno>So it's not like it was just O'Reilly chose the camel for us.
+<v Ingy>So it's not like it was just O'Reilly chose the camel for us.
 
 00:24:08.320 --> 00:24:10.020
-<v Bruno>It was Larry chose the camel for us.
+<v Ingy>It was Larry chose the camel for us.
 
 00:24:11.080 --> 00:24:17.120
-<v Bruno>And, Rick, was it something like, camel is a horse by committee?
+<v Ingy>And, Rik, was it something like, camel is a horse by committee?
 
 00:24:17.120 --> 00:24:18.100
 <v Ricardo>Yeah, I don't know if that's...
 
 00:24:18.100 --> 00:24:19.640
-<v Bruno>Some story like that.
+<v Ingy>Some story like that.
 
 00:24:19.640 --> 00:24:21.080
-<v Bruno>I don't know if that was from Larry.
+<v Ingy>I don't know if that was from Larry.
 
 00:24:21.080 --> 00:24:22.440
 <v Ricardo>It's got to be something like that.
@@ -730,10 +727,10 @@ WEBVTT
 <v Philippe>Yeah, somebody wrote down that history.
 
 00:24:31.360 --> 00:24:35.160
-<v Philippe>I think, Sebastien, you have the pink camel, right?
+<v Philippe>I think, Sébastien, you have the pink camel, right?
 
 00:24:35.200 --> 00:24:41.920
-<v Philippe>And in the Assets Pository, there are the mention of the camel.
+<v Philippe>And in the assets repository, there are the mention of the camel.
 
 00:24:41.920 --> 00:24:47.160
 <v Philippe>So there is an index entry for the camel, and it points to a few code examples.
@@ -766,10 +763,10 @@ WEBVTT
 <v Philippe>So, yeah, Perl is special.
 
 00:25:37.220 --> 00:25:38.540
-<v Bruno>I don't think it was the eye of the needle.
+<v Ingy>I don't think it was the eye of the needle.
 
 00:25:38.540 --> 00:25:45.280
-<v Bruno>I think it was more that a camel just was like this jack of all trades that got everything done, and that was kind of Perl's spirit, right?
+<v Ingy>I think it was more that a camel just was like this jack of all trades that got everything done, and that was kind of Perl's spirit, right?
 
 00:25:45.280 --> 00:25:48.340
 <v Philippe>Yeah, because the committee thing doesn't make sense, right?
@@ -784,40 +781,40 @@ WEBVTT
 <v Philippe>So I think that's where it was.
 
 00:25:59.020 --> 00:26:02.480
-<v Bruno>When did the camel book was like early 90s, right?
+<v Ingy>When did the camel book was like early 90s, right?
 
 00:26:02.480 --> 00:26:03.360
-<v Bruno>It was like around the 90s?
+<v Ingy>It was like around the 90s?
 
 00:26:05.340 --> 00:26:14.440
 <v Ricardo>So I'm going to quote for you from Perl Monks, where someone claims to be quoting the pink camel, but my pink camel is at home, so I can't fact check it.
 
 00:26:14.440 --> 00:26:14.820
-<v Ricardo>Where are you?
+<v Ingy>Where are you?
 
 00:26:14.820 --> 00:26:17.160
-<v Ricardo>It says, I'm at the office.
+<v Ricardo>It says... I'm at the office.
 
 00:26:17.180 --> 00:26:18.540
-<v Ricardo>Okay.
+<v Ingy>Okay.
 
 00:26:18.540 --> 00:26:20.160
 <v Ricardo>Oh, I've lost it.
 
 00:26:22.900 --> 00:26:28.360
-<v Ricardo>We often joke that a camel is a horse designed by committee, but if you think about it, the camel is self-sufficient.
+<v Ricardo>"We often joke that a camel is a horse designed by committee, but if you think about it, the camel is self-sufficient."
 
 00:26:28.360 --> 00:26:32.760
-<v Ricardo>On the other hand, the camel has not evolved to smell good, and neither has Perl.
+<v Ricardo>"(On the other hand, the camel has not evolved to smell good, and neither has Perl.)"
 
 00:26:32.760 --> 00:26:41.860
-<v Ricardo>This is one of the many strange reasons we picked the camel to be Perl's mascot, but it doesn't have much to do with linguistics, which if nothing else for vibe, I'll believe that's from Larry.
+<v Ricardo>"This is one of the many strange reasons we picked the camel to be Perl's mascot, but it doesn't have much to do with linguistics.", which if nothing else for vibe, I'll believe that's from Larry.
 
 00:26:41.860 --> 00:26:42.600
 <v Philippe>Yeah, yeah.
 
 00:26:42.600 --> 00:26:43.040
-<v Bruno>That's Larry.
+<v Ingy>That's Larry.
 
 00:26:43.040 --> 00:26:44.220
 <v Philippe>Sounds like it.
@@ -826,7 +823,7 @@ WEBVTT
 <v Sébastien>I think there's also something about, he said something like it's ugly, but useful or something like that in an interview.
 
 00:26:52.360 --> 00:26:54.880
-<v Thibault>It makes me think about Gnu.
+<v Thibault>It makes me think about GNU.
 
 00:26:54.880 --> 00:26:57.820
 <v Thibault>It's exactly ugly and weird animal.
@@ -835,7 +832,7 @@ WEBVTT
 <v Thibault>Gnu, we say that it's a mix of several different animals.
 
 00:27:02.100 --> 00:27:06.180
-<v Thibault>And camels, for me, it's like Gnu from Gnu Linux.
+<v Thibault>And camels, for me, it's like GNU from GNU/Linux.
 
 00:27:06.180 --> 00:27:18.040
 <v Philippe>I was thinking also, so even the current logo has an interesting lineage because it's not just a mascot that became a logo, it's a book cover that became a mascot.
@@ -853,10 +850,10 @@ WEBVTT
 <v Olaf>So we did talk about it in Lisbon, and we had a small group of us together, and there was one person who insisted what we were doing was maybe not a great idea.
 
 00:28:00.200 --> 00:28:05.920
-<v Olaf>But so we didn't get 100% consensus, but we had most of the people on the same page.
+<v Olaf>But, so we didn't get 100% consensus, but we had most of the people on the same page.
 
 00:28:05.920 --> 00:28:15.420
-<v Olaf>And there were enough people in the room there that we did get a good sense that we could move ahead with it.
+<v Olaf>And there were enough people in the room there, that we did get a good sense that we could move ahead with it.
 
 00:28:15.420 --> 00:28:21.520
 <v Olaf>The thing was like, people generally thought, yes, this is a good idea.
@@ -892,7 +889,7 @@ WEBVTT
 <v Olaf>And I think that actually just kind of helped not to keep us from going off in too many different directions, right?
 
 00:29:07.640 --> 00:29:14.380
-<v Olaf>And then we brought it into the bigger group with Bruno and Teeve and Sebastian.
+<v Olaf>And then we brought it into the bigger group with Bruno and Tib and Sebastian.
 
 00:29:14.380 --> 00:29:20.860
 <v Olaf>And then we got sort of the, well, I really got most of the core designs that we ended up going with.
@@ -907,10 +904,10 @@ WEBVTT
 <v Olaf>That would be like a fun Christmas gift.
 
 00:29:29.560 --> 00:29:36.540
-<v Olaf>And also that gives us a target date because without a target date, something like this, I think, could stretch on for a long time if you really wanted to.
+<v Olaf>And also that gives us a target date, because without a target date, something like this, I think, could stretch on for a long time, if you really wanted to.
 
 00:29:36.540 --> 00:29:52.140
-<v Olaf>And we had the good fortune of Teeb and Sebastian and Leo Lapworth and I being able to chat at the London Perl Workshop earlier and try and hammer out a deadline and what we needed to get done.
+<v Olaf>And we had the good fortune of Tib and Sebastian and Leo Lapworth and I being able to chat at the London Perl Workshop earlier and try and hammer out a deadline and what we needed to get done.
 
 00:29:52.140 --> 00:29:56.280
 <v Olaf>But after that, I think, yeah, so the last two weeks, I just started pulling people.
@@ -979,13 +976,13 @@ WEBVTT
 <v Olaf>I really, almost disappointed, really.
 
 00:31:33.680 --> 00:31:35.140
-<v Olaf>Oh, actually, what else would be interesting?
+<v Olaf>Oh, actually...
 
 00:31:35.140 --> 00:31:36.600
 <v Olaf>So go ahead.
 
 00:31:36.600 --> 00:31:46.780
-<v Philippe>No, no, it was interesting to see how quickly the logo spread on perl.org, on the perl.org and perl.com and so on.
+<v Philippe>No, no, it was interesting to see how quickly the logo spread on perldoc.perl.org, on perl.org, and perl.com, and so on.
 
 00:31:47.100 --> 00:31:51.420
 <v Philippe>It, you know, it's been adopted very quickly.
@@ -1012,7 +1009,7 @@ WEBVTT
 <v Olaf>Well, it's going to take a while and there'll be a few iterations on that.
 
 00:32:19.620 --> 00:32:29.280
-<v Olaf>I wanted to ask Sebastien, actually, if he wanted to talk about, like, just what his thought process was in putting the initial designs together.
+<v Olaf>I wanted to ask Sébastien, actually, if he wanted to talk about, like, just what his thought process was in putting the initial designs together.
 
 00:32:29.280 --> 00:32:38.900
 <v Sébastien>I think I'm not going to speak about really the graphical part or anything, because the graphical part was really done by Zach.
@@ -1024,10 +1021,10 @@ WEBVTT
 <v Sébastien>And thinking how we can, it can be a success.
 
 00:32:53.360 --> 00:33:15.640
-<v Sébastien>Like during the reviewing process, I noticed that a few people said something like, oh, but it got less character than, for example, other things we saw in the community, like the Raptor, for example, it's got a lot of character, it's moving, it's very fun.
+<v Sébastien>During the reviewing process, I noticed that a few people said something like, oh, but it got less character than, for example, other things we saw in the community, like the Raptor, for example, it's got a lot of character, it's moving, it's very fun.
 
 00:33:16.000 --> 00:33:20.060
-<v Sébastien>Or Camellia, for example, it's definitely fun.
+<v Sébastien>Or Camelia, for example, it's definitely fun.
 
 00:33:20.080 --> 00:33:23.200
 <v Sébastien>It's very childish, very fun and stuff.
@@ -1081,7 +1078,7 @@ WEBVTT
 <v Sébastien>We tried to reverse it at some point, but there are really something like, it will be too violent because of the initial one.
 
 00:35:06.320 --> 00:35:07.920
-<v Bruno>Yeah.
+<v Philippe>Yeah.
 
 00:35:07.920 --> 00:35:14.160
 <v Philippe>The fun thing I'm looking at, so I have the pink camel, the first edition, the second.
@@ -1129,52 +1126,52 @@ WEBVTT
 <v Bruno>He's on the right, so maybe, I don't know.
 
 00:36:39.480 --> 00:36:44.040
-<v Bruno>Is it maybe facing Larry in California for us US people?
+<v Ingy>Is it maybe facing Larry in California for us US people?
 
 00:36:45.920 --> 00:36:47.080
 <v Thibault>Good point.
 
 00:36:49.700 --> 00:36:50.580
-<v Bruno>How many?
+<v Ingy>Dont' know.
 
 00:36:50.880 --> 00:36:59.200
-<v Bruno>I didn't think about camel, and then I looked it up, and they do have a double-humped camel as their logo, and I pasted the URL to that X thing.
+<v Ingy>I didn't think of OCaml, and then I looked it up, and they do have a double-humped camel as their logo, and I pasted the URL to that X thing.
 
 00:36:59.240 --> 00:37:14.620
-<v Bruno>So, yaml obviously has the, the mascot has to be a camel, not the logo, but the mascot, because the first sentence of the spec is yaml, in Peren's rhymes with camel, is, yeah.
+<v Ingy>So, YAML obviously has the, the mascot has to be a camel, not the logo, but the mascot, because the first sentence of the spec is YAML, in parens rhymes with camel, is, yeah.
 
 00:37:14.620 --> 00:37:17.540
-<v Bruno>And actually, just a little segue on that.
+<v Ingy>And actually, just a little segue on that.
 
 00:37:17.540 --> 00:37:23.800
-<v Bruno>I sat through a Kubernetes class for three days taught by a French guy who said yaml.
+<v Ingy>I sat through a Kubernetes class for three days taught by a French guy who said "yamel".
 
 00:37:24.120 --> 00:37:25.340
-<v Bruno>And it just drove me insane.
+<v Ingy>And it just drove me insane.
 
 00:37:25.340 --> 00:37:31.300
-<v Bruno>I couldn't even learn a single thing, because he kept saying, and then in your yaml, and then I'm like, and I made some joke.
+<v Ingy>I couldn't even learn a single thing, because he kept saying "and then in your yamel", and then I'm like, and I made some joke.
 
 00:37:31.300 --> 00:37:33.280
-<v Bruno>It's like, what rhymes with dromedary?
+<v Ingy>It's like, what rhymes with dromedary?
 
 00:37:33.280 --> 00:37:36.960
-<v Bruno>And trying to, I think, really get my point across.
+<v Ingy>And trying to, I think, really get my point across.
 
 00:37:36.960 --> 00:37:45.680
-<v Bruno>But then I started working with a guy from Paris last year, and we talk every day, and I asked him, I'm like, how do you say camel?
+<v Ingy>But then I started working with a guy from Paris last year, and we talk every day, and I asked him, I'm like, how do you say camel?
 
 00:37:45.680 --> 00:37:48.320
-<v Bruno>I mean, we did this over chat, but I was like, I got the point.
+<v Ingy>I mean, we did this over chat, but I was like, I got the point.
 
 00:37:48.320 --> 00:37:52.800
-<v Bruno>He's like, oh, it's actually, you say camel in French, if you were to pronounce, is that right?
+<v Ingy>He's like, oh, it's actually, you say camel in French, if you were to pronounce, is that right?
 
 00:37:53.240 --> 00:37:54.620
-<v Bruno>Am I right?
+<v Ingy>Am I right?
 
 00:37:54.620 --> 00:37:56.280
-<v Bruno>Is it closer to come out?
+<v Ingy>Is it closer to come out?
 
 00:37:56.280 --> 00:37:57.200
 <v Thibault>Come out, yes.
@@ -1183,25 +1180,25 @@ WEBVTT
 <v Philippe>Oh, yeah.
 
 00:37:57.860 --> 00:38:05.640
-<v Philippe>Well, so actually we say chameau, but the, yeah, I mean, there was this cigarette brand, right?
+<v Philippe>Well, so actually we say "chameau", but the, yeah, I mean, there was this cigarette brand, right?
 
 00:38:05.640 --> 00:38:07.940
-<v Philippe>And I think we'd say come out.
+<v Philippe>And I think we'd say "camel".
 
 00:38:07.940 --> 00:38:08.840
-<v Bruno>Come out.
+<v Ingy>Camel.
 
 00:38:08.840 --> 00:38:09.000
 <v Ricardo>Yeah.
 
 00:38:09.000 --> 00:38:11.120
-<v Bruno>So yeah, so this guy was right.
+<v Ingy>So yeah, so this guy was right.
 
 00:38:11.120 --> 00:38:13.300
-<v Bruno>He did rhyme it with camel.
+<v Ingy>He did rhyme it with camel.
 
 00:38:13.300 --> 00:38:16.240
-<v Ricardo>Did we consider doing any cross marketing with camel?
+<v Ricardo>Did we consider doing any cross marketing with Camel?
 
 00:38:16.320 --> 00:38:16.960
 <v Ricardo>I'm just saying this.
@@ -1210,7 +1207,7 @@ WEBVTT
 <v Ricardo>They got a lot of money.
 
 00:38:18.120 --> 00:38:19.240
-<v Bruno>Yes.
+<v Ingy>Yes.
 
 00:38:19.240 --> 00:38:20.780
 <v Philippe>Maybe just the band, right?
@@ -1228,16 +1225,16 @@ WEBVTT
 <v Ricardo>Just decide how you feel about that on your own.
 
 00:38:33.060 --> 00:38:34.340
-<v Bruno>Yeah, most from 2001.
+<v Ingy>Yeah, most from 2001.
 
 00:38:34.340 --> 00:38:42.720
-<v Bruno>And I think that's when Europe actually, the first, no, sorry, that was 2006 when Ireland, the band's one.
+<v Ingy>And I think that's when Europe actually, the first, no, sorry, that was 2006 when Ireland, the band's one.
 
 00:38:42.720 --> 00:38:44.240
-<v Ricardo>All right.
+<v Ingy>All right.
 
 00:38:44.240 --> 00:38:50.100
-<v Thibault>And for some time, the Camel on the Camel Cigarettes Pack had a nickname.
+<v Thibault>And for some time, the Camel on the Camel cigarettes packs had a nickname.
 
 00:38:50.100 --> 00:38:51.560
 <v Thibault>It was Joe the Camel.
@@ -1246,16 +1243,16 @@ WEBVTT
 <v Thibault>Maybe we will come with some nickname for it.
 
 00:38:54.800 --> 00:38:58.660
-<v Philippe>Well, the Perl Camel actually has several names.
+<v Philippe>Well, the Perl camel actually has several names.
 
 00:38:58.660 --> 00:39:06.160
-<v Philippe>If you look in the Camel Book, when they, when it shows the...
+<v Philippe>If you look in the camel book, when they, when it shows the...
 
 00:39:06.160 --> 00:39:09.540
 <v Philippe>And the fun thing is, how is it done?
 
 00:39:09.680 --> 00:39:23.720
-<v Philippe>There is my $ Camel equals or something, and the string in the first edition is Fido, and in the third edition, it's Amedia.
+<v Philippe>There is my $camel = or something, and the string in the first edition is Fido, and in the third edition, it's Amelia.
 
 00:39:24.220 --> 00:39:24.900
 <v Philippe>I need to find...
@@ -1264,10 +1261,10 @@ WEBVTT
 <v Philippe>I did a post on Perl Logos decades ago about this, because I did...
 
 00:39:30.460 --> 00:39:38.100
-<v Philippe>I worked on the translation of the third edition of The Camel in French, and so I was forced to read it, right?
+<v Philippe>I worked on the translation of the third edition of the Camel in French, and so I was forced to read it, right?
 
 00:39:39.440 --> 00:39:45.880
-<v Philippe>And from the beginning to the end, not just peak in the interesting places.
+<v Philippe>And from the beginning to the end, not just peek in the interesting places.
 
 00:39:45.880 --> 00:39:51.840
 <v Philippe>And so I noticed this because we worked from the translation of the second edition.
@@ -1309,22 +1306,22 @@ WEBVTT
 <v Ricardo>And so Camelia was a reference to the camel and to Amelia, but as a bug.
 
 00:40:48.340 --> 00:40:50.320
-<v Ricardo>That's awesome.
+<v Ingy>That's awesome.
 
 00:40:50.320 --> 00:40:54.740
 <v Thibault>So we need a new name for this new camel, not Amelia.
 
 00:40:54.740 --> 00:40:55.780
-<v Bruno>So what rhymes with Joe?
+<v Ingy>So what rhymes with Joe?
 
 00:40:55.780 --> 00:40:56.500
-<v Bruno>I was trying to think of it.
+<v Ingy>I was trying to think of it.
 
 00:40:56.540 --> 00:40:59.800
-<v Bruno>It could be like, oh, fine.
+<v Bruno>It could be like, -O fun.
 
 00:40:59.800 --> 00:41:05.480
-<v Bruno>Or like, what's a pearl thing that rhymes with Joe?
+<v Ingy>Or like, what's a Perl thing that rhymes with Joe?
 
 00:41:05.480 --> 00:41:07.760
 <v Ricardo>Where are we running with Joe?
@@ -1339,22 +1336,22 @@ WEBVTT
 <v Ricardo>You get the biblical reference, long suffering.
 
 00:41:15.720 --> 00:41:16.960
-<v Bruno>There you go.
+<v Ingy>There you go.
 
 00:41:16.960 --> 00:41:17.840
-<v Bruno>Camel Job.
+<v Ingy>Camel Job.
 
 00:41:17.840 --> 00:41:18.720
-<v Bruno>I love it.
+<v Ingy>I love it.
 
 00:41:18.780 --> 00:41:21.880
-<v Bruno>But we'll speak of GOP like Arrested Development, yeah?
+<v Ingy>But we'll speak of GOP like Arrested Development, yeah?
 
 00:41:25.740 --> 00:41:27.900
-<v Ricardo>That was the best.
+<v Ingy>That was the best.
 
 00:41:27.900 --> 00:41:43.620
-<v Thibault>It would be nice if it comes from some community jokes, not from us, but in six months, one year, someone post on a forum or Perlmunks, and it stays on the web.
+<v Thibault>It would be nice if it comes from some community jokes, not from us, but in six months, one year, someone post on a forum or Perlmonks, and it stays on the web.
 
 00:41:43.620 --> 00:41:43.840
 <v Philippe>Yeah.
@@ -1375,7 +1372,7 @@ WEBVTT
 <v Philippe>Sorry?
 
 00:41:58.080 --> 00:42:00.120
-<v Bruno>No, I thought you were going to bring up the book thing.
+<v Ingy>No, I thought you were going to bring up the book thing.
 
 00:42:00.120 --> 00:42:01.760
 <v Philippe>No, no, no.
@@ -1384,25 +1381,25 @@ WEBVTT
 <v Philippe>Did anyone show the logo to Larry, and why not, and does it matter?
 
 00:42:09.380 --> 00:42:11.180
-<v Bruno>I think you know the answer.
+<v Ingy>I think you know the answer.
 
 00:42:11.180 --> 00:42:17.000
-<v Bruno>I mean, Larry, Larry, like, I called Gloria the last couple of years and said, hey, do you guys want to come to the thing?
+<v Ingy>I mean, Larry, Larry, like, I called Gloria the last couple of years and said, hey, do you guys want to come to the thing?
 
 00:42:17.000 --> 00:42:18.640
-<v Bruno>He's like, no, we're really busy.
+<v Ingy>He's like, no, we're really busy.
 
 00:42:18.640 --> 00:42:19.880
-<v Bruno>We've got family stuff.
+<v Ingy>We've got family stuff.
 
 00:42:19.880 --> 00:42:26.540
-<v Bruno>It's just basically, you know, it's just like Larry's out, but, you know, he doesn't want to make it even seem like a big deal.
+<v Ingy>It's just basically, you know, it's just like Larry's out, but, you know, he doesn't want to make it even seem like a big deal.
 
 00:42:28.260 --> 00:42:36.140
-<v Bruno>Yeah, and he's out, you know, he's concentrating on family for his remaining years rather than this silly programming thing.
+<v Ingy>Yeah, and he's out, you know, he's concentrating on family for his remaining years rather than this silly programming thing.
 
 00:42:39.120 --> 00:42:46.760
-<v Bruno>I 100% believe that, but I don't know if I'm not speaking for Larry, but close to it, I guess.
+<v Ingy>I 100% believe that, but I don't know if I'm not speaking for Larry, but close to it, I guess.
 
 00:42:46.760 --> 00:42:47.080
 <v Philippe>Right.
@@ -1417,13 +1414,13 @@ WEBVTT
 <v Philippe>And I think what Ingy was saying is basically, I don't think he would have, I don't think he cares, right?
 
 00:43:09.960 --> 00:43:18.800
-<v Bruno>So I will bring up your book, book, because Book wants to write a book about Larry.
+<v Ingy>So I will bring up your book, BooK, because BooK wants to write a book about Larry.
 
 00:43:18.800 --> 00:43:21.540
-<v Bruno>I mean, he really wanted to do this for many years.
+<v Ingy>I mean, he really wanted to do this for many years.
 
 00:43:21.540 --> 00:43:24.460
-<v Bruno>And, you know, and I talked to Gloria about it.
+<v Ingy>And, you know, and I talked to Gloria about it.
 
 00:43:24.460 --> 00:43:25.600
 <v Philippe>I don't want to write it.
@@ -1432,49 +1429,49 @@ WEBVTT
 <v Philippe>I want to read it.
 
 00:43:27.380 --> 00:43:28.360
-<v Bruno>No, I know.
+<v Ingy>No, I know.
 
 00:43:28.360 --> 00:43:31.620
-<v Bruno>But you want there to be a book about, you want to help make a book about Larry.
+<v Ingy>But you want there to be a book about, you want to help make a book about Larry.
 
 00:43:31.680 --> 00:43:32.260
 <v Philippe>Yeah.
 
 00:43:32.260 --> 00:43:36.520
-<v Bruno>And so I called Gloria, and she's like, yeah, he just doesn't, she's not that important.
+<v Ingy>And so I called Gloria, and she's like, yeah, he just doesn't, he's not that important.
 
 00:43:36.520 --> 00:43:37.600
-<v Bruno>He doesn't think he's that important.
+<v Ingy>He doesn't think he's that important.
 
 00:43:37.600 --> 00:43:39.500
-<v Bruno>It's just like, nobody would read it.
+<v Ingy>It's just like, nobody would read it.
 
 00:43:39.500 --> 00:43:41.560
-<v Bruno>Basically, it was her.
+<v Ingy>Basically, it was her...
 
 00:43:41.560 --> 00:43:46.660
-<v Bruno>He just, yeah, he just was like, I know, you did those things in the moment, and now he's doing this.
+<v Ingy>He just, yeah, he just was like, I know, you did those things in the moment, and now he's doing this.
 
 00:43:46.660 --> 00:43:48.440
 <v Philippe>I would read it.
 
 00:43:48.440 --> 00:43:49.780
-<v Bruno>I know you would.
+<v Ingy>I know you would.
 
 00:43:50.840 --> 00:43:52.360
-<v Bruno>I know you would, and probably a lot of people would.
+<v Ingy>I know you would, and probably a lot of people would.
 
 00:43:52.360 --> 00:43:58.480
-<v Bruno>And Larry's one of the best storytellers I've ever heard when you get him, like, in the right setting.
+<v Ingy>And Larry's one of the best storytellers I've ever heard when you get him, like, in the right setting.
 
 00:43:58.480 --> 00:43:59.800
-<v Bruno>He's got so many stories to tell.
+<v Ingy>He's got so many stories to tell.
 
 00:43:59.800 --> 00:44:09.720
-<v Bruno>So I had the honor of sitting with him and Joe Armstrong, and I just listened while they talked over dinner, and it's just like a tour of computing from the 60s on.
+<v Ingy>So I had the honor of sitting with him and Joe Armstrong, and I just listened while they talked over dinner, and it's just like a tour of computing from the 60s on.
 
 00:44:10.780 --> 00:44:17.980
-<v Philippe>Yeah, I did the Computer History Museum about doing an interview.
+<v Philippe>Yeah, I did poke the Computer History Museum about doing an interview.
 
 00:44:17.980 --> 00:44:22.880
 <v Philippe>I think they sent me a link to a form, and it took me a year to actually submit the form.
@@ -1483,7 +1480,7 @@ WEBVTT
 <v Philippe>But I did it, and of course, I have not heard from them since.
 
 00:44:27.480 --> 00:44:30.440
-<v Philippe>And I put your name, Ingi, as a potential interviewer.
+<v Philippe>And I put your name, Ingy, as a potential interviewer.
 
 00:44:30.440 --> 00:44:34.400
 <v Philippe>I mean, I said, I would love to do it, but you'd have to fly me to California.
@@ -1504,7 +1501,7 @@ WEBVTT
 <v Philippe>And there's a lot of people.
 
 00:45:04.940 --> 00:45:07.760
-<v Philippe>There's Guido, there's Brian Cunningham.
+<v Philippe>There's Guido, there's Brian Kernighan.
 
 00:45:07.760 --> 00:45:13.400
 <v Philippe>There's one of the founders of Adobe, among the ones I've listened to.
@@ -1516,43 +1513,43 @@ WEBVTT
 <v Philippe>And it's kind of a shame that we don't get to have some first-person account of, you know, why he did the things.
 
 00:45:35.520 --> 00:45:36.600
-<v Bruno>There's an interesting idea.
+<v Ingy>There's an interesting idea.
 
 00:45:36.800 --> 00:45:43.420
-<v Bruno>Has anybody heard of, speaking of podcasts, the Dead Code podcast, our blog, or something like that?
+<v Ingy>Has anybody heard of, speaking of podcasts, the Dead Code podcast, or blog, or something like that?
 
 00:45:43.420 --> 00:45:43.880
-<v Bruno>I don't know.
+<v Ingy>I don't know.
 
 00:45:43.880 --> 00:45:49.580
-<v Bruno>I hadn't heard of it either, but somebody reached out to me from that and said, would you like to, would you do an interview?
+<v Ingy>I hadn't heard of it either, but somebody reached out to me from that and said, would you like to, would you do an interview?
 
 00:45:49.620 --> 00:45:56.080
-<v Bruno>And I guess in two weeks, I'm going to do this about YAML as Dead Code for their podcast.
+<v Ingy>And I guess in two weeks, I'm going to do this about YAML as Dead Code for their podcast.
 
 00:45:56.080 --> 00:46:00.340
-<v Bruno>I wonder if we could get Larry to do something like a podcast where somebody just calls him.
+<v Ingy>I wonder if we could get Larry to do something like a podcast where somebody just calls him.
 
 00:46:00.380 --> 00:46:02.800
-<v Bruno>You could probably talk for an hour.
+<v Ingy>You could probably talk for an hour.
 
 00:46:02.800 --> 00:46:05.680
 <v Philippe>There are so many questions I want to ask him.
 
 00:46:05.680 --> 00:46:07.280
-<v Bruno>Okay.
+<v Ingy>Okay.
 
 00:46:07.280 --> 00:46:16.700
-<v Bruno>Well, when I talk to these Dead Code people, I'll see if you could host the Larry Dead Code session.
+<v Ingy>Well, when I talk to these Dead Code people, I'll see if you could host the Larry Dead Code session.
 
 00:46:16.700 --> 00:46:17.300
-<v Bruno>I think that would be good.
+<v Ingy>I think that would be good.
 
 00:46:18.080 --> 00:46:23.040
-<v Philippe>Like Ingi said, if you have the right setting, maybe you could have a nice conversation.
+<v Philippe>Like Ingy said, if you have the right setting, maybe you could have a nice conversation.
 
 00:46:24.060 --> 00:46:29.300
-<v Philippe>That reminds me of I really hate email interviews.
+<v Philippe>That reminds me of... I really hate email interviews.
 
 00:46:29.300 --> 00:46:35.980
 <v Philippe>As an interviewer, because you make the interviewee do all the work.
@@ -1564,7 +1561,7 @@ WEBVTT
 <v Philippe>You ask a question, and they just talk and tell you what they think, and they can change their mind, and you can push the interview, or push the answer in a direction that you find more or less interesting.
 
 00:46:58.660 --> 00:47:09.700
-<v Philippe>But the only thing they have to spend, the only effort they have to spend to do the interview is one hour of their time in a relaxed setting answering questions.
+<v Philippe>But the only thing they have to spend, the only effort they have to spend to do the interview is one hour of their time, in a relaxed setting, answering questions.
 
 00:47:11.620 --> 00:47:20.260
 <v Philippe>Unless you're an asshole interviewer who is going to ask the really bad questions, and they will leave the room and go.
@@ -1579,22 +1576,22 @@ WEBVTT
 <v Philippe>But, yeah, so all of that to say...
 
 00:47:40.100 --> 00:47:42.060
-<v Bruno>That's what you're going to do for this conversation, right?
+<v Ingy>That's what you're going to do for this conversation, right?
 
 00:47:42.060 --> 00:47:46.860
-<v Bruno>You're going to actually do the eight hours of editing.
+<v Ingy>You're going to actually do the eight hours of editing.
 
 00:47:47.800 --> 00:47:48.280
 <v Philippe>Yeah.
 
 00:47:48.280 --> 00:47:59.880
-<v Philippe>Well, Tim said it would help me, so I painstakingly learned that, yeah, delegation is a superpower if you can use it.
+<v Philippe>Well, Tib said it would help me, so I painstakingly learned that, yeah, delegation is a superpower, if you can use it.
 
 00:47:59.880 --> 00:48:12.340
-<v Philippe>And I haven't been able to in the many years I've been working, but I feel like I could delegate to Tim and go have a beer or something.
+<v Philippe>And I haven't been able to in the many years I've been working, but I feel like I could delegate to Tib, and go have a beer or something.
 
 00:48:12.340 --> 00:48:14.500
-<v Bruno>Yeah.
+<v Thibault>Yeah.
 
 00:48:14.520 --> 00:48:15.720
 <v Thibault>More than that.
@@ -1615,52 +1612,52 @@ WEBVTT
 <v Philippe>I think I did interview Tim O'Reilly in 2005, and I'm sure I asked about the logo, but I never transcribed it.
 
 00:49:04.580 --> 00:49:05.780
-<v Ricardo>Yeah, that would be interesting.
+<v Olaf>Yeah, that would be interesting.
 
 00:49:05.780 --> 00:49:09.340
 <v Ricardo>Yeah, that one you should dig up for this.
 
 00:49:09.340 --> 00:49:10.820
-<v Olaf>Yeah.
+<v Philippe>Yeah.
 
 00:49:10.820 --> 00:49:12.820
-<v Olaf>And I kind of want it.
+<v Ingy>And I kind of want it.
 
 00:49:13.960 --> 00:49:18.920
-<v Bruno>I would say, for the audience members out there, they don't really know who's on this call.
+<v Ingy>I would say, for the audience members out there, they don't really know who's on this call.
 
 00:49:18.920 --> 00:49:27.820
-<v Bruno>So I was thinking we could go around, and I can start, maybe I'm going to say my name, my age, when I started programming, and when I started programming Perl.
+<v Ingy>So I was thinking we could go around, and I can start, maybe I'm going to say my name, my age, when I started programming, and when I started programming Perl.
 
 00:49:27.860 --> 00:49:33.020
-<v Bruno>So I think that's apropos, unless people don't want to share their age, but I mean, it kind of gives it away when you share the rest, right?
+<v Ingy>So I think that's apropos, unless people don't want to share their age, but I mean, it kind of gives it away when you share the rest, right?
 
 00:49:33.020 --> 00:49:35.140
-<v Bruno>So I'm ingy.net.
+<v Ingy>So I'm Ingyi döt Net.
 
 00:49:35.140 --> 00:49:46.420
-<v Bruno>I'm 60 years old, six zero, and I started programming in about 82, a little late, I was 18, and I started programming Perl in 98.
+<v Ingy>I'm 60 years old, six zero, and I started programming in about 82, a little late, I was 18, and I started programming Perl in 98.
 
 00:49:49.160 --> 00:49:50.680
-<v Bruno>So should we go around the room?
+<v Ingy>So should we go around the room?
 
 00:49:50.680 --> 00:49:51.600
-<v Bruno>Are you guys good with that?
+<v Ingy>Are you guys good with that?
 
 00:49:51.860 --> 00:49:55.160
-<v Bruno>I think it would be better if it would give some context to the listeners.
+<v Ingy>I think it would be better if it would give some context to the listeners.
 
 00:49:55.340 --> 00:49:57.940
 <v Olaf>We probably should have done this at the beginning.
 
 00:49:57.940 --> 00:49:59.080
-<v Bruno>Yeah, we can edit.
+<v Philippe>Yeah, we can edit.
 
 00:49:59.140 --> 00:50:02.440
 <v Olaf>Maybe we slice this, move it to the beginning.
 
 00:50:02.500 --> 00:50:04.220
-<v Sébastien>There you go.
+<v Ingy>There you go.
 
 00:50:04.220 --> 00:50:12.520
 <v Olaf>So anyway, just before we do this, I think as far as the editing goes, really, I don't think you would need to spend a lot of time on it.
@@ -1690,22 +1687,22 @@ WEBVTT
 <v Olaf>If I say how old I am, I'll never get hired again.
 
 00:50:48.820 --> 00:50:51.380
-<v Bruno>Yeah, I just already don't think I will get hired again.
+<v Ingy>Yeah, I just already don't think I will get hired again.
 
 00:50:52.740 --> 00:50:58.540
-<v Bruno>So and I never knew it with Cygnus until just today when you said it.
+<v Ingy>So and I never knew it with Signes until just today when you said it.
 
 00:50:58.540 --> 00:51:01.260
-<v Ricardo>I was like, yeah, I get all kinds, but Cygnus is kind of...
+<v Ricardo>I was like, yeah, I get all kinds, but Signes is kind of...
 
 00:51:01.780 --> 00:51:05.220
-<v Bruno>I probably said it and you never corrected it.
+<v Ingy>I probably said it and you never corrected it.
 
 00:51:06.260 --> 00:51:09.860
-<v Bruno>Anyway, so you have an incredibly rich history.
+<v Ingy>Anyway, so you have an incredibly rich history.
 
 00:51:09.860 --> 00:51:11.980
-<v Bruno>I expect more out of you in these future podcasts.
+<v Ingy>I expect more out of you in these future podcasts.
 
 00:51:12.060 --> 00:51:13.800
 <v Ricardo>I just don't have a lot to say about logos.
@@ -1720,7 +1717,7 @@ WEBVTT
 <v Ricardo>You got me on the wrong topic.
 
 00:51:16.800 --> 00:51:17.440
-<v Philippe>We'll talk about it.
+<v Ricardo>We'll talk about something...
 
 00:51:17.540 --> 00:51:21.880
 <v Philippe>Oh, I mean, I want to invite you again, right?
@@ -1729,7 +1726,7 @@ WEBVTT
 <v Philippe>So I'm thinking, yeah, I was thinking one hour is probably a good time.
 
 00:51:26.020 --> 00:51:30.080
-<v Philippe>We're already over, but I'm in a chatterbox, so of course.
+<v Philippe>We're already over, but I'm a chatterbox, so of course.
 
 00:51:31.820 --> 00:51:34.900
 <v Philippe>Something, I don't remember who said it.
@@ -1744,13 +1741,13 @@ WEBVTT
 <v Ricardo>Never heard of it.
 
 00:51:49.520 --> 00:52:01.200
-<v Philippe>And I'm thinking, maybe that's a good segue to have a conversation next time about this ID that some of us have put forward to drop the five.
+<v Philippe>And I'm thinking, maybe that's a good segue to have a conversation next time about this idea that some of us have put forward to "drop the 5".
 
 00:52:02.740 --> 00:52:06.720
 <v Philippe>And Rick, would you be interested in having that conversation again?
 
 00:52:06.720 --> 00:52:10.900
-<v Philippe>Because we had it already in the PSC.
+<v Philippe>Because we had it already, in the PSC.
 
 00:52:12.040 --> 00:52:13.580
 <v Philippe>We invited you.
@@ -1768,16 +1765,16 @@ WEBVTT
 <v Philippe>Yeah, he's more than muted.
 
 00:52:26.180 --> 00:52:28.140
-<v Thibault>He's frozen.
+<v Philippe>He's frozen.
 
 00:52:28.540 --> 00:52:30.480
 <v Ricardo>That's how much I didn't want to talk about it.
 
 00:52:30.600 --> 00:52:41.360
-<v Ricardo>I have, for context, I have F8 is my toggle mute and not mute, and F9 is a shortcut to kill dash nine zoom.
+<v Ricardo>I have, for context, I have F8 is my toggle mute and not mute, and F9 is a shortcut to kill -9 zoom.
 
 00:52:41.360 --> 00:52:42.140
-<v Bruno>Awesome.
+<v Ingy>Awesome.
 
 00:52:42.140 --> 00:52:50.440
 <v Ricardo>And normally, I'm on a keyboard where F8 and F9 are in separate banks of function keys, but when I'm just on my laptop, they're not.
@@ -1789,7 +1786,7 @@ WEBVTT
 <v Ricardo>Look, yeah, well, first off, I'll pull up my traditional Perl 7 slide.
 
 00:53:05.120 --> 00:53:08.960
-<v Ricardo>I'm the short, you've heard the summary of my short position, which is that...
+<v Ricardo>The short, you've heard the summary of my short position, which is that...
 
 00:53:08.960 --> 00:53:10.780
 <v Philippe>No, but that's for next time.
@@ -1822,19 +1819,19 @@ WEBVTT
 <v Philippe>I think the formula is going to be, let's talk about something, and hopefully during the conversation, there is something else that would be interesting to talk about, and we talk about it next time.
 
 00:53:38.540 --> 00:53:39.440
-<v Bruno>Yeah.
+<v Ingy>Yeah.
 
 00:53:39.440 --> 00:53:39.940
 <v Olaf>That's great.
 
 00:53:40.660 --> 00:53:47.320
-<v Olaf>I should interject that before this all started, Book gave me an assignment, and the one assignment was to make sure we stayed at the one-hour time box.
+<v Olaf>I should interject that before this all started, BooK gave me an assignment, and the one assignment was to make sure we stayed at the one-hour time box.
 
 00:53:48.780 --> 00:53:52.180
-<v Bruno>I thought I had it as two hours from the invite.
+<v Ingy>I thought I had it as two hours from the invite.
 
 00:53:52.180 --> 00:53:54.140
-<v Bruno>I was ready for two hours.
+<v Ingy>I was ready for two hours.
 
 00:53:54.260 --> 00:53:58.500
 <v Philippe>And also, Olaf, I asked you to be the moderator, so...
@@ -1843,16 +1840,16 @@ WEBVTT
 <v Olaf>I didn't want to moderate your moderations.
 
 00:54:01.380 --> 00:54:03.520
-<v Bruno>You can't moderate shooting the S-word.
+<v Ingy>You can't moderate shooting the S-word.
 
 00:54:03.520 --> 00:54:05.060
-<v Bruno>I mean, it's like...
+<v Ingy>I mean, it's like...
 
 00:54:06.880 --> 00:54:08.440
-<v Bruno>I thought this was supposed to be a bar chat.
+<v Ingy>I thought this was supposed to be a bar chat.
 
 00:54:08.440 --> 00:54:10.220
-<v Bruno>You don't moderate a bar chat, right?
+<v Ingy>You don't moderate a bar chat, right?
 
 00:54:10.220 --> 00:54:10.460
 <v Olaf>Yeah.
@@ -1897,145 +1894,145 @@ WEBVTT
 <v Philippe>Oh, yeah.
 
 00:55:12.420 --> 00:55:16.460
-<v Philippe>And like, except Ingi, most of us started with Basic.
+<v Philippe>And like, except Ingy, most of us started with BASIC.
 
 00:55:16.460 --> 00:55:18.440
 <v Philippe>So I think that's where our love for...
 
 00:55:18.440 --> 00:55:19.320
-<v Bruno>I started with Basic.
+<v Bruno>I started with BASIC.
 
 00:55:19.320 --> 00:55:21.320
 <v Bruno>I just didn't want to say it.
 
 00:55:23.320 --> 00:55:31.540
-<v Bruno>Like, for three days, I did Basic, then I did Fortran, and then Pascal, and then I went to IBM Assembly.
+<v Bruno>Like, for three days, I did BASIC, then I did Fortran, and then Pascal, and then I went to IBM Assembly.
 
 00:55:31.600 --> 00:55:36.140
 <v Philippe>But that's really why we are not, you know...
 
 00:55:36.140 --> 00:55:40.640
-<v Philippe>We don't dislike the dollars in the Perl variable names because that's what Basic...
+<v Philippe>We don't dislike the dollars in the Perl variable names because that's what BASIC...
 
 00:55:40.640 --> 00:55:43.040
-<v Philippe>It comes from Basic, right?
+<v Philippe>It comes from BASIC, right?
 
 00:55:43.040 --> 00:55:44.380
 <v Ricardo>Yeah, but they're good on their own.
 
 00:55:44.380 --> 00:55:47.740
-<v Ricardo>If Basic never existed, they'd still be better to have the sigils than not.
+<v Ricardo>If BASIC never existed, they'd still be better to have the sigils than not.
 
 00:55:48.060 --> 00:55:49.840
 <v Ricardo>That's just a fact.
 
 00:55:51.540 --> 00:55:54.220
-<v Bruno>I know that Larry took it from Shell.
+<v Ingy>I know that Larry took it from shell.
 
 00:55:54.220 --> 00:55:56.460
-<v Bruno>I know 100% that he took it from...
+<v Ingy>I know 100% that he took it from...
 
 00:55:56.460 --> 00:55:57.860
-<v Bruno>Almost...
+<v Ingy>Almost...
 
 00:55:57.860 --> 00:56:01.040
-<v Bruno>I know at 99% that he took it from Shell, not Basic.
+<v Ingy>I know at 99% that he took it from shell, not BASIC.
 
 00:56:01.760 --> 00:56:02.340
 <v Bruno>Yeah.
 
 00:56:02.340 --> 00:56:05.280
-<v Philippe>Yeah, but people are probably exposed to Basic.
+<v Philippe>Yeah, but people are probably exposed to BASIC.
 
 00:56:05.280 --> 00:56:08.500
 <v Philippe>I mean, especially in the 80s, right?
 
 00:56:08.500 --> 00:56:11.040
-<v Philippe>People were exposed to Basic first.
+<v Philippe>People were exposed to BASIC first.
 
 00:56:11.040 --> 00:56:12.940
-<v Bruno>I asked a really dumb question during...
+<v Ingy>I asked a really dumb question during...
 
 00:56:12.940 --> 00:56:18.780
-<v Bruno>I was giving a talk, and Larry was in the audience, and I said, I love interpolation.
+<v Ingy>I was giving a talk, and Larry was in the audience, and I said, I love interpolation.
 
 00:56:18.780 --> 00:56:19.540
-<v Bruno>Where did that come from?
+<v Ingy>Where did that come from?
 
 00:56:19.540 --> 00:56:20.940
-<v Bruno>And he's like, Shell.
+<v Ingy>And he's like, shell.
 
 00:56:20.940 --> 00:56:22.380
-<v Bruno>And it's like...
+<v Ingy>And it's like...
 
 00:56:22.380 --> 00:56:22.780
-<v Bruno>I don't know.
+<v Ingy>I don't know.
 
 00:56:22.780 --> 00:56:24.100
-<v Bruno>I mean, it was just so obvious.
+<v Ingy>I mean, it was just so obvious.
 
 00:56:24.160 --> 00:56:26.440
-<v Bruno>It's like, of course, but it's like...
+<v Ingy>It's like, of course, but it's like...
 
 00:56:26.440 --> 00:56:28.100
-<v Bruno>I just kind of thought he invented it or something.
+<v Ingy>I just kind of thought he invented it or something.
 
 00:56:28.100 --> 00:56:31.000
-<v Bruno>Anyway.
+<v Ingy>Anyway.
 
 00:56:31.000 --> 00:56:33.880
-<v Thibault>What is the logo of Basic?
+<v Thibault>What is the logo of BASIC?
 
 00:56:33.880 --> 00:56:35.360
-<v Thibault>There is so many names.
+<v Thibault>There is so many BASIC.
 
 00:56:35.360 --> 00:56:37.100
-<v Philippe>Which Basic?
+<v Philippe>Which BASIC?
 
 00:56:37.100 --> 00:56:38.100
-<v Philippe>Yeah.
+<v Bruno>Yeah.
 
 00:56:38.100 --> 00:56:39.920
-<v Bruno>Doesn't it?
+<v Ingy>Doesn't it...
 
 00:56:39.920 --> 00:56:41.500
 <v Bruno>Or...
 
 00:56:41.500 --> 00:56:49.680
-<v Philippe>I mean, like, you know, everybody says, yeah, there are thousands of programming languages, but I'm sure hundreds of them are different shades of Basic.
+<v Philippe>I mean, like, you know, everybody says, yeah, there are thousands of programming languages, but I'm sure hundreds of them are different shades of BASIC.
 
 00:56:53.320 --> 00:56:57.280
-<v Bruno>Book, while we're still here, I thought of one thing with your wanting to hear Larry's story.
+<v Bruno>BooK, while we're still here, I thought of one thing with your wanting to hear Larry's story.
 
 00:56:57.280 --> 00:56:58.320
-<v Bruno>What...
+<v Ingy>What...
 
 00:56:58.320 --> 00:57:04.160
-<v Bruno>I wonder if you could have one about people who have a lot of stories they've heard from Larry.
+<v Ingy>I wonder if you could have one about people who have a lot of stories they've heard from Larry.
 
 00:57:04.160 --> 00:57:05.960
-<v Bruno>You know, Larry's...
+<v Ingy>You know, Larry's...
 
 00:57:05.960 --> 00:57:06.420
-<v Bruno>I don't know.
+<v Ingy>I don't know.
 
 00:57:06.420 --> 00:57:06.960
-<v Bruno>It's an idea.
+<v Ingy>It's an idea.
 
 00:57:06.960 --> 00:57:18.960
 <v Ricardo>Yeah, you just put together the interviews with everybody who has something to say about Larry and send it to Larry and say, I'm going to publish this with no response unless you go on the record with me to talk about the things people are saying.
 
 00:57:19.020 --> 00:57:21.900
-<v Bruno>Yeah, and then he wants to respond, and then...
+<v Ingy>Yeah, and then he wants to respond, and then...
 
 00:57:21.900 --> 00:57:27.460
 <v Philippe>I'm sure people will mostly say nice things, so it's probably safe.
 
 00:57:27.660 --> 00:57:32.200
-<v Ricardo>Just let Damien in on the plan, and he'll help you out.
+<v Ricardo>Just let Damian in on the plan, and he'll help you out.
 
 00:57:32.200 --> 00:57:34.100
-<v Bruno>There you go.
+<v Ingy>There you go.
 
 00:57:34.100 --> 00:57:35.940
 <v Ricardo>All right, I do need to run, folks.
@@ -2044,34 +2041,34 @@ WEBVTT
 <v Philippe>Yeah, I think it's a good time to end.
 
 00:57:39.680 --> 00:57:44.220
-<v Philippe>Thank you very much, everyone, for to have accepted my invitation.
+<v Philippe>Thank you very much, everyone, for... to accepted my invitation.
 
 00:57:45.260 --> 00:57:52.220
 <v Philippe>And I'm definitely going to invite more of you to talk about Perl versions.
 
 00:57:52.220 --> 00:57:55.000
-<v Bruno>I just want everybody to know, I started at 8 a.m.
+<v Ingy>I just want everybody to know, I started at 8AM.
 
 00:57:55.000 --> 00:57:59.760
-<v Bruno>on this thing, but I'd actually done three hours of programming with GooGod in Japan.
+<v Ingy>on this thing, but I'd actually done three hours of programming with GUGOD in Japan.
 
 00:57:59.760 --> 00:58:02.800
-<v Bruno>So I got up at 4 to get ready for GooGod.
+<v Ingy>So I got up at 4 to get ready for GUGOD.
 
 00:58:02.800 --> 00:58:05.600
-<v Bruno>So, yeah, anyway, I just wanted to say that.
+<v Ingy>So, yeah, anyway, I just wanted to say that.
 
 00:58:05.600 --> 00:58:09.460
-<v Bruno>It feels like I really went overboard for this.
+<v Ingy>It feels like I really went overboard for this.
 
 00:58:09.460 --> 00:58:10.440
-<v Bruno>Just want to, yeah.
+<v Ingy>Just want to, yeah.
 
 00:58:11.220 --> 00:58:12.720
-<v Bruno>Peace out.
+<v Ingy>Peace out.
 
 00:58:12.720 --> 00:58:13.720
 <v Philippe>Thank you, everyone.
 
 00:58:13.720 --> 00:58:13.880
-<v Bruno>Bye.
+<v Ingy>Bye.
