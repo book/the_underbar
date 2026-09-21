@@ -101,7 +101,7 @@ my %strp = (
 
 # process all files in 'yaml'
 my %vars;
-for my $file ( sort $todo{yaml}->@* ) {
+for my $file ( $todo{yaml}->@* ) {
     my $yaml = $ypp->load_file($file);
     if ( $file =~ m{(?:/|\A)cast/([^/]+)\.ya?ml\z} ) {
         $yaml->{fullname}  //= $yaml->{name};
@@ -141,15 +141,22 @@ for my $file ( sort $todo{yaml}->@* ) {
 }
 
 # some post-processing of the vars
+# - sort episodes numerically (for episodes & edited )
 # - sort people by the most episodes edited and participated, then by name
-$vars{$_} = [
-    sort {
-        $vars{cast}{$b}{episodes}->@* + $vars{cast}{$b}{edited}->@*
-    <=> $vars{cast}{$a}{episodes}->@* + $vars{cast}{$a}{edited}->@*
-     || $vars{cast}{$a}{name} cmp $vars{cast}{$b}{name}
-    } $vars{$_}->@*
-  ]
-  for qw( staff patrons );
+for my $party (qw( staff patrons )) {
+    for my $person ( keys $vars{cast}->%* ) {
+        $vars{cast}{$person}{$_} =
+          [ sort { $a <=> $b } $vars{cast}{$person}{$_}->@* ]
+          for qw( episodes edited );
+    }
+    $vars{$party} = [
+        sort {
+            $vars{cast}{$b}{episodes}->@* + $vars{cast}{$b}{edited}->@*
+        <=> $vars{cast}{$a}{episodes}->@* + $vars{cast}{$a}{edited}->@*
+         || $vars{cast}{$a}{name} cmp $vars{cast}{$b}{name}
+        } $vars{$party}->@*
+    ];
+}
 
 # - compute gravatar urls from PAUSE id
 $vars{cast}{$_}{avatar_url} =
