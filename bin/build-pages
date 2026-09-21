@@ -282,7 +282,7 @@ for my $number ( 0 .. $vars{episodes}->$#* ) {
                 og_url   => join( '/',
                     $vars{podcast}{base_url},
                     episodes => $episode->{number} ),
-	        og_description => $episode->{description},
+                og_description => $episode->{description},
                 crumbs => [
                     [ '/episodes/'                   => 'Episodes' ],
                     [ "/episodes/$episode->{number}" => $episode->{number} ]
