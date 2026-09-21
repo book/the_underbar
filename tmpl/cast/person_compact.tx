@@ -6,13 +6,13 @@
 
 Participated in episodes
 %% for $person.episodes.reverse() -> $number {
-%%    "["; $number; "](/episodes/"; $number; ")"; if ( $~number.is_last ) { "." } else { ",\n" }
+%%    "["; $number; "](/episodes/"; $number; ")"; if ( $~number.is_last ) { ".\n" } else { ",\n" }
 %% }
 
 %% if $person.edited.size() {
 Edited episodes
 %%   for $person.edited.reverse() -> $number {
-%%    "["; $number; "](/episodes/"; $number; ")"; if ( $~number.is_last ) { "." } else { ",\n" }
+%%    "["; $number; "](/episodes/"; $number; ")"; if ( $~number.is_last ) { ".\n" } else { ",\n" }
 %%   }
 %% }
 
