@@ -71,6 +71,7 @@ audio {
     float: right;
     width: 60px;
     height: 60px;
+    padding: 0 0 .75rem .75rem;
 }
 
 .flex-container {
