@@ -5,18 +5,15 @@ publisher: Philippe Bruhat (BooK)
 email: underbar@cpan.io
 analytics_prefix: https://op3.dev/e,pg=9f61bc43-19fe-5ca7-90e7-6b12fad7ccd5
 thanks:
-  TPRF-Zoom-basic: >
+  TPRF-Zoom-Amber: >
     Thanks to [The Perl and Raku Foundation](https://www.perlfoundation.org/)
-    for letting us use their Zoom license to record the episode.
-  TPRF-Zoom-Bruce: >
+    for letting us use their Zoom license to record the episode, and to
+    Amber Krawczyk for being our host during the recording session.
+  TPRF-Zoom-BGRAY: >
     Thanks to [The Perl and Raku Foundation](https://www.perlfoundation.org/)
-    for letting us use their Zoom license to record the episode and
-    produce the AI-generated transcript, and to [Bruce Gray](https://metacpan.org/author/BGRAY)
-    for being our host during the recording session.
-  TPRF-Zoom: >
-    Thanks to [The Perl and Raku Foundation](https://www.perlfoundation.org/)
-    for letting us use their Zoom license to record the episode and
-    produce the AI-generated transcript.
+    for letting us use their Zoom license to record the episode, and to
+    [Bruce Gray](https://metacpan.org/author/BGRAY) for being our host
+    during the recording session.
   PTS2025-SJN: >
     Thanks to [Salve J. Nilsen](https://metacpan.org/author/SJN) for
     lending his microphones and camera, and recording this episode
