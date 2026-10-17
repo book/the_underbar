@@ -130,8 +130,10 @@ for my $file ( $todo{yaml}->@* ) {
         }
         $vars{episodes}[$1] = $yaml;
     }
-    elsif ( $file =~ m{(?:/|\A)episodes/meta\.ya?ml\z} ) {
+    elsif ( $file =~ m{(?:/|\A)meta\.ya?ml\z} ) {
         $vars{podcast} = $yaml;
+        $vars{podcast}{description_cdata} =
+          $md->markdown( $vars{podcast}{description} );
     }
     else {
         warn "Unexpected YAML file: $file\n";
@@ -176,6 +178,7 @@ for ( $vars{episodes}->@* ) {
         $_->{length} =      # compute the file size
           -s $content_dir->child( 'episodes', $_->{number}, $_->{file} // '' );
     }
+    $_->{description_cdata} = $md->markdown( $_->{description} );
 }
 
 # process all files in 'tmpl'
@@ -288,7 +291,7 @@ for my $number ( 0 .. $vars{episodes}->$#* ) {
                 og_url   => join( '/',
                     $vars{podcast}{base_url},
                     episodes => $episode->{number} ),
-                og_description => $episode->{description},
+                og_description => $episode->{description_cdata},
                 crumbs => [
                     [ '/episodes/'                   => 'Episodes' ],
                     [ "/episodes/$episode->{number}" => $episode->{number} ]
@@ -321,7 +324,7 @@ if ( !-e $dst || $dst->stat->mtime < $latest_dep || $option{force} ) {
         language    => 'en',
         publisher   => $podcast->{publisher},
         link        => "$podcast->{base_url}/",
-        description => $podcast->{description},
+        description => $podcast->{description_cdata},
         atom        => {
             link => {
                 href => "$podcast->{base_url}/feed.rss",
@@ -345,7 +348,7 @@ if ( !-e $dst || $dst->stat->mtime < $latest_dep || $option{force} ) {
     $feed->image(
         title       => $podcast->{title},
         link        => "$podcast->{base_url}/img/1400/the_underbar-white.png",
-        description => $podcast->{description},
+        description => $podcast->{description_cdata},
     );
 
     # add the episodes
@@ -363,7 +366,7 @@ if ( !-e $dst || $dst->stat->mtime < $latest_dep || $option{force} ) {
                 type   => 'audio/mpeg'
             },
             pubDate     => $episode->{published}->strftime("%a, %d %b %Y %T %z"),
-            description => "<![CDATA[$episode->{description}]]>",
+            description => "<![CDATA[$episode->{description_cdata}]]>",
             itunes      => {
                 title => $episode->{title},
                 image => {
