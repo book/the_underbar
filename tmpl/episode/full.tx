@@ -22,7 +22,7 @@ Edited by [%
 %% }
 
 <h2>Abstract</h2>
-<p>[% $episode.description %]</p>
+<p>[% $episode.description | markdown %]</p>
 
 %% include "episode/audio.tx" { file => $episode.file_url }
 
