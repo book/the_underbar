@@ -357,7 +357,7 @@ if ( !-e $dst || $dst->stat->mtime < $latest_dep || $option{force} ) {
                 #length => $episode->{length} // 0,
                 type   => 'audio/mpeg'
             },
-            pubDate     => $episode->{published}->strftime("%a, %e %b %Y %T %z"),
+            pubDate     => $episode->{published}->strftime("%a, %d %b %Y %T %z"),
             description => "<![CDATA[$episode->{description}]]>",
             itunes      => {
                 title => $episode->{title},
