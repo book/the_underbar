@@ -165,13 +165,18 @@ $vars{cast}{$_}{avatar_url} =
   . "?d=identicon"
   for keys $vars{cast}->%*;
 
-# add the analytics prefix to all mp3 links
-$_->{file} and $_->{file_url} = join( '/',
-    $option{analytics}
-    ? ( $vars{podcast}{analytics_prefix}, $vars{podcast}{base_url} )
-    : (''),
-    'episodes', $_->{number}, $_->{file} // '' )
-  for $vars{episodes}->@*;
+for ( $vars{episodes}->@* ) {
+    if ( $_->{file} ) {
+        $_->{file_url} =    # add the analytics prefix if needed
+          join( '/',
+            $option{analytics}
+            ? ( $vars{podcast}{analytics_prefix}, $vars{podcast}{base_url} )
+            : (''),
+            'episodes', $_->{number}, $_->{file} // '' );
+        $_->{length} =      # compute the file size
+          -s $content_dir->child( 'episodes', $_->{number}, $_->{file} // '' );
+    }
+}
 
 # process all files in 'tmpl'
 for my $src ( $todo{tmpl}->@* ) {
@@ -354,7 +359,7 @@ if ( !-e $dst || $dst->stat->mtime < $latest_dep || $option{force} ) {
             permaLink => $guid,    # guid with permaLink=true
             enclosure => {
                 url    => $episode->{file_url},
-                #length => $episode->{length} // 0,
+                length => $episode->{length},
                 type   => 'audio/mpeg'
             },
             pubDate     => $episode->{published}->strftime("%a, %d %b %Y %T %z"),
