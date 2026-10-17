@@ -330,7 +330,7 @@ if ( !-e $dst || $dst->stat->mtime < $latest_dep || $option{force} ) {
             image  => {
                 href => "$podcast->{base_url}/img/1400/the_underbar-white.png"
             },
-            explicit => 'False',
+            explicit => 'false',
             category => { text => 'Technology' },
         },
         podcast => {
