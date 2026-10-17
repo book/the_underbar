@@ -167,8 +167,9 @@ $vars{cast}{$_}{avatar_url} =
 
 # add the analytics prefix to all mp3 links
 $_->{file} and $_->{file_url} = join( '/',
-    ( $vars{podcast}{analytics_prefix} )x!! $option{analytics},
-    $vars{podcast}{base_url},
+    $option{analytics}
+    ? ( $vars{podcast}{analytics_prefix}, $vars{podcast}{base_url} )
+    : (''),
     'episodes', $_->{number}, $_->{file} // '' )
   for $vars{episodes}->@*;
 
